@@ -1,0 +1,7 @@
+# Pastas que NÃO devem ser versionadas
+DeepLearning/
+SENTENCAS_HTML/
+
+# Arquivos temporários
+__pycache__/
+.ipynb_checkpoints/

@@ -1,9 +1,0 @@
-1) CRIAR ARQUIVO README
-README: versões de Python/pacotes, como obter/atualizar chave pública do DataJud, e como executar os 3 scripts em sequência
-
-2) ARQUIVO .CSV após rodar código python 1 deve gerar + 500 processos para a temática de SAÚDE (assuntos diversos)
-- 1° grau
-- Verificar com o professor se podem entrar processos de 2° GRAU, Turma Recursal (porque sentença é só 1° GRAU)???
-
-3) 
-
