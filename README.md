@@ -1,6 +1,10 @@
-## MESTRADO EM ADMINISTRAÇÃO PÚBLICA COM ÊNFASE EM CIÊNCIA DE DADOS E INTELIGÊNCIA ARTIFICIAL
-## TRABALHO FINAL DA DISCIPLINA DE DEEP LEARNING - PROFESSOR: DANNY DE CASTRO
-## ANÁLISE DE SENTENÇAS JUDICIAIS COM PROCESSAMENTO DE LINGUAGEM NATURAL (PLN)
+---
+#### Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa (IDP)
+#### Mestrado em Administração Pública com ênfase em Ciência de Dados e Inteligência Artificial
+#### Trabalho Final da Disciplina de Deep Learning - Professor Danny de Castro
+#### Análise de Sentenças Judiciais com Processamento de Linguagem Natural (PLN)
+#### Alunos: Fabiana Milhomem e Mairton Damasceno
+---
 
 Este repositório contém o código-fonte desenvolvido em **Jupyter Notebook** para coleta, tratamento e análise de sentenças judiciais do **Tribunal de Justiça de Alagoas (TJAL)**, com aplicação de técnicas de **Processamento de Linguagem Natural (PLN)**, **aprendizagem de máquina** e **deep learning** para classificação de sentimento jurídico.
 
