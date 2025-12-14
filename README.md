@@ -2,7 +2,7 @@
 
 Este repositório contém o código-fonte desenvolvido em **Jupyter Notebook** para coleta, tratamento e análise de sentenças judiciais do **Tribunal de Justiça de Alagoas (TJAL)**, com aplicação de técnicas de **Processamento de Linguagem Natural (PLN)**, **aprendizagem de máquina** e **deep learning** para classificação de sentimento jurídico.
 
-**O código notebook (TrabalhoFinal_DeepLearning_TJAL.ipynb) deve ser executado obrigatoriamente no Jupyter Notebook**, pois contém células sequenciais, logs de execução e visualizações intermediárias que podem não funcionar corretamente fora desse ambiente.
+**O código notebook (TrabalhoFinal_DeepLearning_TJAL.ipynb) deve ser executado no Jupyter Notebook**, pois contém células sequenciais, logs de execução e visualizações intermediárias que podem não funcionar corretamente fora desse ambiente.
 
 ---
 
