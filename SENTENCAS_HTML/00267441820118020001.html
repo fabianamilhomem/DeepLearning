@@ -1,0 +1,7406 @@
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+	
+
+
+
+
+
+
+
+
+    <script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/verificarLogin.js?script=1764429819473"></script>
+
+    <script language="javascript">
+        if (window.sajcas && window.sajcas.usuarioLogadoNoCasServer) {
+            var GATEWAY_TRUE = 'gateway=true', GATEWAY_FALSE = 'gateway=false';
+            var urlRetornoSistema = '';
+            if (urlRetornoSistema === '') {
+                urlRetornoSistema = window.location.href;
+            }
+
+            if (urlRetornoSistema.indexOf(GATEWAY_FALSE) !== -1) {
+                urlRetornoSistema = urlRetornoSistema.replace(GATEWAY_FALSE, GATEWAY_TRUE);
+            } else {
+                urlRetornoSistema.lastIndexOf('?') !== -1 ? urlRetornoSistema += '&' : urlRetornoSistema += '?';
+                urlRetornoSistema += GATEWAY_TRUE;
+            }
+
+            window.location.href = urlRetornoSistema;
+        }
+    </script>
+
+
+	<title>Portal de Serviços e-SAJ</title>
+
+	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/cpopg/softheme/src/css/app.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/softheme/src/fonts/saj/styles.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/css/formulario.css?v=2.8.34-30" type="text/css">
+	
+
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2-bootstrap.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/css/saj/select2/saj-select2.css">
+
+	
+ 
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cpopg';
+	window.saj.env.css = '/cpopg/css';
+	window.saj.env.js = '/cpopg/js';
+	window.saj.env.imagens = '/cpopg/imagens';
+	window.saj.env.queryString = 'processo.codigo=01000D2NC0000&processo.foro=1&processo.numero=0026744-18.2011.8.02.0001';	
+
+	window.saj.cpo = window.saj.cpo || {};
+
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+</script>
+
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.min.js?n=1620728708"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.func_toggle.js?n=e83d5f02-da83-4d63-9e1c-028656c6e0a3"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.blockUI.min.js?n=d9105760-8182-4c35-8c9b-ca307f219e51"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.browser.min.js?n=cd84d821-9807-4510-8a0c-550d906e46da"></script>
+
+	<script language="javascript" type="text/javascript" src="/cpopg/webjars/lodash/4.17.21/lodash.js?n=6e84eefe-af50-4a93-b699-5146183901b6"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/select2/select2.js?n=7f62b0a4-f1ea-4234-a606-842fb2683766"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/webjars/select2/3.5.4/select2_locale_pt-BR.js?n=1781cdbd-4a5b-45b4-9e94-44c8a6ecc22b"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-select2.js?n=5a1b788d-8d25-4df4-9b56-8b99deb7fe6d"></script>
+
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-web-2.2.41-4.js?n=fc1c2d21-aa0a-411e-bf0e-9c3cc5e96ab0"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-tooltip.js?n=246c5ee0-8c94-4be5-82b2-a33d36ea8114"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-popup-modal-1.0.0-1.js?n=3c390c44-6390-4136-bd46-1f26c02bf2ab"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-browser.js?n=79b1f9f8-f10e-43b1-a4c4-2f95099d8953"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-mascara-input.js?n=345bac87-71d5-4dc9-851c-5cd5aa2451b7"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-numeroProcesso.js?n=2ef0473d-d6d9-4591-b77c-4055570ccd19"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj-cpo-cbpesquisa.js?n=295666404"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/acessibilidade/acessibilidade.js?n=5d0c3f37-c697-4936-ba14-85c20019acfe"></script>
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/softheme/src/js/app.js?n=789536343"></script>   
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js?n=21126482-c82f-444d-aa6d-7c68dde067d2" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js?n=1791337263" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	
+
+
+
+
+<script>
+	(function($){
+		$(function(){
+			var intervalo = 1795000;
+			$.saj.manterSessao('/cpopg/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script>
+
+
+
+
+	
+    <script language="javascript" type="text/JavaScript">
+        $.saj = $.saj || {};
+        $.saj.acessoRecurso = {
+            abrirPastaDigitalEmPopup: 'true' == 'true',
+            idRecursoQueProvocouLiberacaoPorSenha: '',
+            limitaAcessoPastaDigital: 'false',
+            popupSenha: {
+                mostrar: 'false' == 'true',
+                titulo: 'Senha do processo',
+                altura: 220 + Number("10"),
+                alturaAdicionalParaMensagemValidacao: Number("0"),
+                largura: 580
+            },
+            popupMensagem: {
+                titulo: 'Aviso:',
+                texto: 'Você atingiu o limite diário de acessos Ã  pasta digital em processos que não está vinculado.'
+            }
+        };
+
+        $.saj.getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+    </script>
+    <script language="javascript" type="text/JavaScript" src="/cpopg/jsp/show-2.8.33-0.js?n=856054158"></script>
+
+	<script type="text/javascript">
+		(function($) {
+			$(function(){
+				// Correção temporária do alinhamento do divisor de seção de formulário do SPW 
+				$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top');
+				
+			})
+		})(jQuery);
+	</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if (!captcha) {
+                return;
+            }
+
+            if(!captcha){
+                return;
+            }
+            var $processoPrinc = $('.processoPrinc');
+            $processoPrinc.attr('href', $processoPrinc.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            $('.incidente').each(function () {
+                var $incidente = $(this);
+                var url = $incidente.attr('href');
+                $incidente.attr('href', url + '&uuidCaptcha=' + captcha);
+            });
+
+        })
+    })(jQuery);
+</script>
+
+<!-- HEADER-->
+<div class="unj-entity-header">
+    
+
+
+
+
+<div class="unj-entity-header__actions">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i id="setaVoltar" class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+                <!-- CDAS -->
+                
+                <!-- Custas -->
+                
+                <!-- Pasta digital -->
+                
+                    
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                        
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPasta" aria-hidden="true" title="Pasta digital" href="#liberarAutoPorSenha">
+                                Visualizar autos
+                            </a>
+                            <!-- link da pasta digital exibido somente para leitores de tela (deficientes visuais), neste caso o link anterior é ignorado pelo leitor
+                            Obs: necessário manter a table devido aos atributos de acessibilidade se comportarem adequadamente com a tabela, comportamento que não é possível colocando
+                            os atributos somente na tag do link-->
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPastaAcessibilidade" style="font-size:0;height:0;width:0;padding:0;margin:0;border:none" href="#liberarAutoPorSenha&amp;acessibilidade=true">
+                                Visualizar autos
+                            </a>
+                        
+                    
+                
+                
+                    
+                    
+                    
+                    
+                        <!-- Peticionar -->
+                        
+                        
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="unj-entity-header__summary">
+    <div id="containerDadosPrincipaisProcesso" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-13">
+                <!--principal -->
+                
+                    <span id="numeroProcesso" class="unj-larger-1">
+                        0026744-18.2011.8.02.0001
+                    </span>
+                    
+                    
+                        <span id="labelSituacaoProcesso" class="unj-tag">Baixado</span>
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+                
+            </div>
+
+        </div>
+        <div class="row">
+            <input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+            
+                <div class="col-lg-3 col-xl-3 mb-3">
+                    <span id="labelClasseProcesso" class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2"><span id="classeProcesso" title="Procedimento Comum Cível">Procedimento Comum Cível</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-3 mb-3">
+                    <span id="labelAssuntoProcesso" class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="assuntoProcesso" title="Indenização por Dano Moral">Indenização por Dano Moral</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-2 mb-2">
+                    <span id="labelForoProcesso" class="unj-label">
+                        Foro
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="foroProcesso" title="Foro de Maceió">Foro de Maceió</span></div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-xl-2 mb-2">
+                    <span id="labelVaraProcesso" class="unj-label">
+                        Vara
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"><span id="varaProcesso" title="14ª Vara Cível da Capital / Fazenda Municipal">14ª Vara Cível da Capital / Fazenda Municipal</span></div>
+                </div>
+            
+
+            
+                <div class="col-lg-3 mb-2">
+                    <span id="labelJuizProcesso" class="unj-label">Juiz</span>
+                    <div class="line-clamp__2"> <span id="juizProcesso" title="Antonio Emanuel Dória Ferreira">Antonio Emanuel Dória Ferreira</span> </div>
+                </div>
+            
+
+            <!-- Processo principal -->
+            
+
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="unj-entity-header__details">
+    <div class="container">
+        <div class="unj-ta-r">
+            
+                <a href="#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                    <span class="unj-link-collapse__show">
+                        <i id="botaoExpandirDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                        Mais
+                    </span>
+                    <span class="unj-link-collapse__hide">
+                        <i id="botaoRecolherDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                        Recolher
+                    </span>
+                </a>
+            
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelDistribuicaoProcesso" class="unj-label">Distribuição </span>
+                        <div id="dataHoraDistribuicaoProcesso">26/05/2011 às 09:48 - Sorteio</div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelControleProcesso" class="unj-label">Controle</span>
+                        <div id="numeroControleProcesso">2011/000487</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 col-xl-2 mb-2">
+                        <span id="labelAreaProcesso" class="unj-label">Área</span>
+                        <div id="areaProcesso" class="lh-1-1 line-clamp__2"> <span title="Cível">Cível</span></div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span id="lavelValorAcaoProcesso" class="unj-label">Valor da ação</span>
+                        <div id="valorAcaoProcesso">R$         545,00</div>
+                    </div>
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+
+<div class="div-conteudo container mb-90">
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left ">
+    <div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--light.png" alt="">
+            </a>
+        </header>
+        <nav class="aside-nav__main-menu">
+            <ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Consultas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cpopg/open.do" class="aside-nav__main-menu__list__item__link">Processos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Ordem de Processos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeAtoPg.do" class="aside-nav__main-menu__list__item__link">Publicação e Cumprimento de Atos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeJulgamentoPg.do" class="aside-nav__main-menu__list__item__link">Julgamento do 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cposg5/open.do" class="aside-nav__main-menu__list__item__link">Processos de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento-virtual" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento Virtual do Segundo Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Recolhimento de Custas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustas.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=1&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690003" class="aside-nav__main-menu__list__item__link">Custas Iniciais de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=15&amp;flTipoCusta=5&amp;cdServicoCalculoCusta=690004" class="aside-nav__main-menu__list__item__link">Atos Avulsos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=10&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690005" class="aside-nav__main-menu__list__item__link">Custas de Preparo de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=14&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690006" class="aside-nav__main-menu__list__item__link">Custas Juizado Especial - Recurso Inominado</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=3&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690009" class="aside-nav__main-menu__list__item__link">Custas Intermediárias de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustasSg.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690205&amp;flTipoCusta=0&amp;cdTipoCusta=1" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690206&amp;flTipoCusta=5&amp;cdTipoCusta=4" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690207&amp;flTipoCusta=1&amp;cdTipoCusta=3" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Jurisprudência</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaSimples.do" class="aside-nav__main-menu__list__item__link">Simples</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaCompleta.do" class="aside-nav__main-menu__list__item__link">Completa</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cdje" class="aside-nav__main-menu__list__item__link">Diário da Justiça Eletrônico</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Push</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushpg" class="aside-nav__main-menu__list__item__link">1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushsg5" class="aside-nav__main-menu__list__item__link">2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento/consulta" class="aside-nav__main-menu__list__item__link">Consulta da Pauta de Julgamento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões de 1º grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirCadastro.do" class="aside-nav__main-menu__list__item__link">Pedido de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirConferencia.do" class="aside-nav__main-menu__list__item__link">Conferência de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirDownload.do" class="aside-nav__main-menu__list__item__link">Baixar Certidão de 1º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Conferência de Documentos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/pg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/sg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Intimação e Citação Eletrônica</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosRecebidos.do" class="aside-nav__main-menu__list__item__link">Consulta de Recebidas</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosNaoRecebidos.do" class="aside-nav__main-menu__list__item__link">Recebimento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoInicial.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoIntermediaria.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoInicial.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoIntermediaria.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de Turmas Recursais / Plantão (2º Grau)/ Precatórios</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoInicial.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoIntermediaria.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições - TR/ Plantão TJ/ Precat.</a>
+</li>
+</ul></li>
+</ul></li></ul>
+        </nav>
+        <div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside>
+<aside class="aside-nav aside-nav--right aside-nav__user ">
+    <div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="https://www2.tjal.jus.br/esaj/img/aside/brasoes/br-tjal.jpg" alt="">
+            </div>
+            <ul class="aside-nav__user__sign__list">
+                <li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado de Alagoas</span></li>
+            </ul>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--dark.png" alt="">
+            </a>
+        </div>
+        <hr>
+        <div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+            <ul class="aside-nav__user__info__list-access">
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<header>
+    <link rel="shortcut icon" href="https://www2.tjal.jus.br/esaj/tema/padrao/clientes/AL/imagens/favicon.ico" type="image/x-icon">
+    <link href="https://www2.tjal.jus.br/esaj/app.css" rel="stylesheet" type="text/css">
+    <nav class="header__navbar--normal">
+        
+        <a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href=""><a class="linkLogo" href="https://www2.tjal.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos de 1º Grau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+            <li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="http://www.tjal.jus.br"> TJAL </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text">Identificar-se </span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script>
+
+
+
+<script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://www2.tjal.jus.br/esaj/menuPortalV2Html.do?servico=190101';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://www2.tjal.jus.br/sajcas/conteudoIdentificacaoJson?script=1764399748930&retorno=' + encodeURIComponent(location.href);
+</script>
+<script src="https://www2.tjal.jus.br/esaj/js/portalV2-bundle.js?n=806192629"></script>
+
+<script src="https://www2.tjal.jus.br/sajcas/seletorVersaoBeta.js?n=f4741b53-5491-43cc-ad66-7b5c4f6d6477&amp;versao=2"></script>
+<script>
+    function exibirLibras() {
+        document.getElementById("gifLibras").style.display = 'block';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'static');
+        mudarPosicao(cel2, 'static');
+    }
+    function ocultarLibras() {
+        document.getElementById("gifLibras").style.display = 'none';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'relative');
+        mudarPosicao(cel2, 'relative');
+    }
+
+    function mudarPosicao(coll, posicao) {
+        if (!coll) {
+            return;
+        }
+        for (var i = 0, len = coll.length; i < len; i++) {
+            coll[i].style["position"] = posicao;
+        }
+    }
+</script>
+
+	
+
+
+
+
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Partes do processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+
+
+
+
+
+
+
+
+
+<tbody><tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Autor&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Aecyo Vinicius Barbosa de Aquino
+				
+			
+
+			
+		 
+		
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Bel. Aryelison Barbosa de Aquino
+					
+				&nbsp;
+				
+			
+		
+		
+	</td>
+</tr>
+
+	
+		
+
+
+
+
+
+
+
+
+
+<tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Ré&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió
+				
+			
+
+			
+		 
+		
+			
+				<br>
+				<span class="mensagemExibindo">Procurador:&nbsp;</span>
+				
+					
+					
+						Procurador Geral do Município de Maceió
+					
+				&nbsp;
+				
+			
+		
+		
+	</td>
+</tr>
+
+	
+</tbody></table>
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Movimentações</h2>
+		
+	
+</div>
+
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+			<thead>
+				<tr>
+				  <th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true">&nbsp;</th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+
+			
+			<tbody id="tabelaUltimasMovimentacoes" style="display: none;">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Baixa Definitiva
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-35207871" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-35207871" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão de Arquivamento Sem Custas a recolher
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				CERTIDÃO Autos n° 0026744-18.2011.8.02.0001 Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió CERTIFICO, conforme disposto no Provimento de nº 07/2019 que, inexistem custas processuais a recolher. Certifico, por fim, que, a seguir, passo a arquivar os presentes. O referido é verdade. Dou fé. Maceió, 21 de setembro de 2020. Glauquia Heires Rocha e Passos Analista Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-35207830" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-35207830" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos nº: 0026744-18.2011.8.02.0001 Ação: Procedimento Comum Cível Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió CERTIDÃO CERTIFICO, para os devidos fins, que decorreu o prazo sem que houvesse a manifestação das partes nos autos do processo. O referido é verdade, do que dou fé. Maceió, 21 de setembro de 2020. Glauquia Heires Rocha e Passos Analista Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de AR - Cumprido
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Em 31  de  julho  de  2020 é juntado a estes autos o aviso de recebimento (AR183695748TJ - Cumprido), referente  ao  ofício  n. 0026744-18.2011.8.02.0001-000001, emitido para Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió. Usuário: 
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34293973" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34293973" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				AR DIGITAL- Intimação - Despacho - Ato Ordinatório - Genérica
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+			
+			
+			<tbody style="" id="tabelaTodasMovimentacoes">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Baixa Definitiva
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-35207871" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-35207871" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão de Arquivamento Sem Custas a recolher
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				CERTIDÃO Autos n° 0026744-18.2011.8.02.0001 Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió CERTIFICO, conforme disposto no Provimento de nº 07/2019 que, inexistem custas processuais a recolher. Certifico, por fim, que, a seguir, passo a arquivar os presentes. O referido é verdade. Dou fé. Maceió, 21 de setembro de 2020. Glauquia Heires Rocha e Passos Analista Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-35207830" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-35207830" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos nº: 0026744-18.2011.8.02.0001 Ação: Procedimento Comum Cível Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió CERTIDÃO CERTIFICO, para os devidos fins, que decorreu o prazo sem que houvesse a manifestação das partes nos autos do processo. O referido é verdade, do que dou fé. Maceió, 21 de setembro de 2020. Glauquia Heires Rocha e Passos Analista Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de AR - Cumprido
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Em 31  de  julho  de  2020 é juntado a estes autos o aviso de recebimento (AR183695748TJ - Cumprido), referente  ao  ofício  n. 0026744-18.2011.8.02.0001-000001, emitido para Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió. Usuário: 
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34293973" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34293973" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				AR DIGITAL- Intimação - Despacho - Ato Ordinatório - Genérica
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/07/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-29639855" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-29639855" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Citação e Intimação - Portal - Procuradoria Geral do Estado de Alagoas - PGEAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/07/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0303/2019
+Data da Publicação: 12/07/2019
+Número do Diário: 2381
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/07/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0303/2019
+Teor do ato: Vista as partes para requerer o que de direito.
+Advogados(s): Procurador Geral do Município de Maceió (OAB /PG), Bel. Aryelison Barbosa de Aquino (OAB 10073/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/07/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Vista à PGE - Portal Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/07/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-29427258" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-29427258" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Remessa de Citação e Intimação para o Portal - Procuradoria Geral do Estado de Alagoas - PGEAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/07/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-29427155" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-29427155" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Vista as partes para requerer o que de direito.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/06/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebido recurso eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Data do julgamento: 10/04/2019
+Trânsito em julgado: 
+Tipo de julgamento: Acórdão
+Decisão: por unanimidade de votos, em conhecer de ambos os apelos, por admissíveis, para, no mérito, negar provimento ao recurso manejado por Aecyo Vinivius Barbosa de Aquino e dar provimento a apelação adesiva interposta pela Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió. 
+Situação do provimento: 
+Relator: Des. Pedro Augusto Mendonça de Araújo
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/08/2018
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido recurso eletrônico ao Tribunal de Justiça/Turma de recurso
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/10/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-21769934" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-21769934" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Citação e Intimação - Portal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/10/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-21747562" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-21747562" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				ATO ORDINATÓRIOEm cumprimento ao disposto no artigo 2.º, XLIX, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas, considerando que já restou oportunizado prazo para a apresentação de razões e contrarrazões recursais, passo a fazer a remessa dos autos ao Egrégio Tribunal de Justiça de Alagoas, competente para o julgamento do recurso. Maceió, 05 de outubro de 2017Cláudia Maria Coimbra da SilvaFuncionária cedida
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			30/09/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.17.80052089-7
+Tipo da Petição: Ciência da Decisão
+Data: 30/09/2017 16:25
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/09/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-21654861" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-21654861" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Remessa de Citação e Intimação para o Portal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/09/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-21654827" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-21654827" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato Ordinatório - Artigo 162, §4º, CPC
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Ato O. Vistas ao MP
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/09/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-21654545" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-21654545" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/07/2016
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0035/2016
+Data da Publicação: 25/07/2016
+Data da Disponibilização: 22/07/2016
+Número do Diário: 1672
+Página: 73
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/07/2016
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0035/2016
+Teor do ato: Autos n°: 0026744-18.2011.8.02.0001 Ação: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de MaceióATO ORDINATÓRIOVista ao apelado para, querendo, oferecer contrarrazões. Maceió, 15 de julho de 2016.Antônia Danyra Ramos de LimaServidora Cedida
+Advogados(s): Bel. Aryelison Barbosa de Aquino (OAB 10073/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/07/2016
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-17455063" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-17455063" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n°: 0026744-18.2011.8.02.0001 Ação: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de MaceióATO ORDINATÓRIOVista ao apelado para, querendo, oferecer contrarrazões. Maceió, 15 de julho de 2016.Antônia Danyra Ramos de LimaServidora Cedida
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/07/2016
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.16.70087157-3
+Tipo da Petição: Recurso de Apelação
+Data: 14/07/2016 12:33
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/07/2016
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Contra Razões
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.16.70087154-9
+Tipo da Petição: Contra-razões de Apelação
+Data: 14/07/2016 12:31
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/07/2016
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0028/2016
+Data da Publicação: 07/07/2016
+Data da Disponibilização: 06/07/2016
+Número do Diário: 1660
+Página: 78
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/07/2016
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0028/2016
+Teor do ato: Autos n° 0026744-18.2011.8.02.0001 Ação: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transporte e Trânsito - SMTT Maceió DESPACHOA teor do art. 1.010, caput e § 1º, determino a intimação da parte apelada para, no prazo de 15 (quinze) dias, oferecer contrarrazões ao recurso de apelação.Oferecidas ou não as contrarrazões, remetam-se os autos ao egrégio Tribunal de Justiça do Estado de Alagoas, nos termos do § 3º, do referido dispositivo legal.Maceió, 23 de maio de 2016Luciano Andrade de SouzaJuiz(a) de Direito
+Advogados(s): Procurador Geral do Município de Maceió (OAB /PG)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/05/2016
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-17135932" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=17135932&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-17135932" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=17135932&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0026744-18.2011.8.02.0001 Ação: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transporte e Trânsito - SMTT Maceió DESPACHOA teor do art. 1.010, caput e § 1º, determino a intimação da parte apelada para, no prazo de 15 (quinze) dias, oferecer contrarrazões ao recurso de apelação.Oferecidas ou não as contrarrazões, remetam-se os autos ao egrégio Tribunal de Justiça do Estado de Alagoas, nos termos do § 3º, do referido dispositivo legal.Maceió, 23 de maio de 2016Luciano Andrade de SouzaJuiz(a) de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/08/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/03/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Tornado Processo Digital
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				3 N  SALA DE AUDIÊNCIA
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/12/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-13612610" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=13612610&amp;nmRecursoAcessado=Visto+em+correi%C3%A7%C3%A3o" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-13612610" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=13612610&amp;nmRecursoAcessado=Visto+em+correi%C3%A7%C3%A3o" target="_blank"> Visto em correição
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0099169-48.2008.8.02.0001 Ação: Procedimento Ordinário Requerente: Adeilton Bias dos Santos e outros Requerido: Município de Maceió DESPACHO - VISTO EM CORREIÇÃO - Provimento nº 19/2011 1. ( ) PROCESSO EM ORDEM, NADA A PROVER. 2. À CONCLUSÃO PARA: 2.1. ( x ) DESPACHO 2.2. ( ) DECISÃO 2.3. ( ) SENTENÇA 3. COBRE-SE: 3.1. ( ) A DEVOLUÇÃO DE PRECATÓRIA 3.2. ( ) A DEVOLUÇÃO DE MANDADO 4. ( ) CUMPRA-SE O DESPACHO DE FLS. 5. ( ) REITERE-SE O DESPACHO DE FLS. 6. ( ) MANTENHA-SE O FEITO SOBRESTADO. 7. ( ) ARQUIVE-SE, APÓS BAIXA NA DISTRIBUIÇÃO. 8. ( ) AUTUE-SE. 9. REMETA-SE 9.1. ( ) AO TRIBUNAL DE JUSTIÇA 9.2. ( ) À CONTADORIA 9.3. ( ) À DISTRIBUIÇÃO 10. ( ) EXPEÇA-SE CERTIDÃO AO FUNJURIS 11. COLOQUE-SE NA PAUTA DE AUDIÊNCIA: 11.1. ( ) CONCILIAÇÃO 11.2. ( ) INSTRUÇÃO 11.3. ( ) OUTRA 12. ABRA-SE VISTA AO ADVOGADO: 12.1. ( ) DO AUTOR 12.2. ( ) DO RÉU 12.3. ( ) DAS PARTES 13. ( ) ABRA-SE VISTA AO DEFENSOR PÚBLICO 14. ( ) ABRA-SE VISTA AO MINISTÉRIO PÚBLICO 15. ( ) JUNTE-SE PETIÇÃO 16. ( ) CUMPRA-SE O ATO PROCESSUAL DETERMINADO 17. ( ) REITERE-SE OFÍCIO 18. EXPEÇA-SE: 18.1. ( ) ATO ORDINATÓRIO 18.2. ( ) EDITAL 18.3. ( ) PRECATÓRIA 18.4. ( ) OFÍCIO 18.5. ( ) MANDADO 18.4. ( ) OFÍCIO 18.5. ( ) MANDADO 18.6. ( ) CARTA 18.7. ( ) ALVARÁ 19. PUBLIQUE-SE: 19.1. ( ) ATO ORDINATÓRIO 19.2. ( ) DESPACHO 19.3. ( ) DECISÃO 19.4. ( ) SENTENÇA 20. ( ) CERTIFIQUE-SE O DECURSO DO PRAZO 21. ( ) DEVOLVA-SE CARTA PRECATÓRIA 22. ( ) RETORNEM OS AUTOS AO ARQUIVO 23. ( ) AGUARDE-SE O PRAZO DE SUSPENSÃO 24. ( ) OUTROS: Maceió(AL), 01 de dezembro de 2014 Claudio José Gomes Lopes Juiz de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/09/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				3 N
+Tipo de local de destino: Juiz(a) de Direito
+Especificação do local de destino: Manoel Cavalcante de Lima Neto
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/09/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Recurso
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Juntada a petição diversa - Tipo: Recurso de Apelação em Procedimento Ordinário - Número: 80002 - Protocolo: CPMA14000369893
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/08/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0030/2014
+Data da Disponibilização: 14/08/2014
+Data da Publicação: 15/08/2014
+Número do Diário: 1215
+Página: 18
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/08/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0030/2014
+Teor do ato: Autos n° 0026744-18.2011.8.02.0001 Ação: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió SENTENÇA Trata-se de Procedimento Ordinário com pedido de antecipação de tutela demandada por Aecyo Vinicius Barbosa de Aquino, devidamente qualificado e por intermédio de seu Advogado legalmente constituído, em face de Superintendência Municipal de Transportes e Trânsito - SMTT Maceió, igualmente qualificada. Argumenta a parte autora que fora notificado pela parte ré, através do Auto de Infração nº G000554755, por ter praticado infração de trânsito consistente em transitar com passageiro sem usar o cinto de segurança, na Av. Fernandes Lima, às 08:21, no dia 01/09/2010. Afirma também que é policial militar lotado no Batalhão de Polícia de Eventos e que, nessa data e nesse horário, estava em seu serviço, embarcado em viatura, em turno de 12 (doze) horas, desde as 07:00, sendo impossível estar dirigindo seu próprio veículo durante o momento citado na autuação. Aduz ainda que é mero permissionário da Carteira Nacional de Habilitação, e que recorreu administrativamente, todavia, tendo seu pleito indeferido pela parte ré, não podendo obter licença de habilitação para dirigir. Por essas razões, requereu liminarmente a suspensão do Auto de Infração, o que foi deferido, e requereu a declaração de nulidade do Auto, além da condenação da parte ré nos danos morais que alega ter suportado, devido a todo o tempo o qual o autor se encontrou privado de utilizar o seu bem, lapso temporal este que foi resultado da falta de interessa da administração do réu. Às fls. 64/66, a parte ré informou que a suspensão da Notificação do Auto de Infração foi devidamente procedida, como também todas as demais providências que garantiriam a renovação da CNH foram tomadas. Na fl. 68 é certificado que não houve apresentação de contestação pela parte ré É o relatório. Fundamento e decido. Trata-se de Ação na qual o autor pretende a anulação do auto de infração de nº G000510830, observando que o mesmo se encontrava prestando serviço no exato momento da autuação, o que tornaria impossível ter sido multado como descrito no Auto de Infração. Ainda, pretende anular definitivamente este auto de infração com base na incompetência de guarda municipal para exercer a fiscalização do trânsito, como também almeja a devida reparação por danos sofridos no decorrer do processo administrativo e na falta de interesse apresentada pela ré na para se chegar a uma resolução desta situação . Primeiramente, tecerei considerações acerca da afirmação que o simples fato de que o autor se encontrava em serviço motorizado no momento da infração, supostamente comprovaria a impossibilidade de tal ato administrativo. Ao compulsar os autos, de fato, pode-se constatar que o autor logrou êxito em comprovar que estava de serviço (motorizado) no momento em que foi autuado, no entanto, nada foi juntado aos autos comprovando que o veículo do autor se encontrava estacionado no respectivo Batalhão, ora, afirmar que apenas a posse comprovada de determinado veículo (documento do automóvel) é suficiente para se excluir a possibilidade de outra pessoa dirigi-lo não me parece razoável. Sim, o autor se encontrava no estabelecimento descrito, mas, e seu veículo? Nenhum documento probatório (ticket de estacionamento, ponto de estacionamento, foto, etc.) foi juntado, deixando de restar comprovado que aquele mesmo veículo passou o restante do respectivo dia estacionado. Assim, rejeito a alegação apresentada pelo autor, no tocante à impossibilidade de seu veículo ter sido multado em virtude de o mesmo estar trabalhando, por falta de arcabouço probatório minimamente suficiente para comprovar o que foi sugerido. Ademais, o caso sob comento versa tamébm sobre a controvérsia que envolve a competência do guarda municipal para atuar como agente da autoridade de trânsito. Isto ocorre tendo em vista a divergência de interpretação dada aos dispositivos constitucionais e ao Código de Trânsito Brasileiro. Assim, faz-se necessário o cotejo entre os dispositivos dos referidos diplomas legais, para que cheguemos a uma conclusão, em harmonia com o que pretende o sistema jurídico pátrio. O Código de Trânsito Brasileiro dispõe, em seu artigo 7º, que: Art. 7º - Compõem o Sistema Nacional de Trânsito os seguintes órgãos e entidades: [...] III - os órgãos e entidades executivos de trânsito da União, dos Estados, do Distrito Federal e dos Municípios; [] (grifo nosso) O dispositivo supra incute a idéia de que os Municípios possuem órgãos e entidades que executam as políticas de trânsito em sua respectiva área circunscrição, fazendo parte assim, em conjunto com a União, Estados e Distrito Federal do Sistema Nacional de Trânsito. Pois bem, ainda delimitando a área de atuação dos municípios dentro do Sistema Nacional de Trânsito, o CTB prescreve em seu artigo 8º: Art. 8º - Os Estados, o Distrito Federal e os Municípios organizarão os respectivos órgãos e entidades executivos de trânsito e executivos rodoviários, estabelecendo os limites circunscricionais de suas atuações. (grifo nosso). O artigo 24 elenca o rol da competência atribuída aos órgãos e entidades executivas de trânsito dos Municípios, entre elas: cumprir e fazer cumprir a legislação e as normas de trânsito, no âmbito de suas atribuições; estabelecer, em conjunto com os órgãos de polícia ostensiva de trânsito, as diretrizes para o policiamento ostensivo de trânsito; executar a fiscalização de trânsito, autuar e aplicar as medidas administrativas cabíveis, por infrações de circulação, estacionamento e parada previstas neste Código, no exercício regular do Poder de Polícia de Trânsito; aplicar as penalidades de advertência por escrito e multa, por infrações de circulação, estacionamento e parada previstas neste Código, notificando os infratores e arrecadando as multas que aplicar, etc. Por fim, o artigo 280, §4º prevê mais uma regra de competência: Art. 280. Ocorrendo infração prevista na legislação de trânsito, lavrar-se-á auto de infração, do qual constará: § 4º O agente da autoridade de trânsito competente para lavrar o auto de infração poderá ser servidor civil, estatutário ou celetista ou, ainda, policial militar designado pela autoridade de trânsito com jurisdição sobre a via no âmbito de sua competência. Assim, da leitura dos dispositivos supra aludidos não resta dúvida que o Município, por meio de seus órgãos e entidades executivas, possui competência para organizar o trânsito da sua circunscrição, devendo-se utilizar de servidor civil ou policial militar como agente da autoridade de trânsito. Ocorre que alguns pontos devem ser esclarecidos acerca desse assunto. Primeiramente deve-se entender a expressão "servidor civil" como sendo o agente de trânsito, ou seja, aquele servidor não militar que possui os conhecimentos técnicos exigíveis para manter a segurança no trânsito. Acontece que a aludida expressão vem sendo erroneamente interpretada como sinônimo de qualquer servidor público civil, sendo estendida, portanto até para os guardas municipais. O fundamento para esse posicionamento se encontra principalmente no princípio da interpretação conforme a constituição. Sobre o mesmo Alexandre de Moraes (in Direito Constitucional, 15º ed., p.47) ensina que: "A supremacia das normas constitucionais no ordenamento jurídico e a presunção de constitucionalidade das leis e atos normativos editados pelo poder público competente exigem que, na função hermenêutica de interpretação do ordenamento jurídico, seja sempre concedida preferência ao sentido da norma que seja adequado à Constituição Federal. Assim sendo, no caso de normas com várias significações possíveis, deverá ser encontrada a significação que apresente conformidade com as normas constitucionais[...]". Neste sentido, a Constituição Federal afastou qualquer margem de interpretação ao artigo 280, §4º do Código de Trânsito Brasileiro ao dispor em seu §8º do artigo 144 que: "Os Municípios poderão constituir guardas municipais destinadas à proteção de seus bens, serviços e instalações, conforme dispuser a lei.". Logo, pode-se concluir que a Carta Maior além de excluir a guarda municipal do rol dos órgãos integrantes da segurança pública, delimitou a área de atuação da mesma. Comentando sobre esse dispositivo constitucional Nelson Nery Costa e Geraldo Magela Alves (em Constituição Federal Anotada e Explicada, p. 344) aduzem que: "Podem ser incluídas em sua competência [a da guarda municipal] a segurança do seu patrimônio, como praças e ruas, bem como dos prédios próprios, em que se encontrem seus serviços, desde os administrativos e burocráticos, como também os relativos à saúde e à educação.". Frise-se que apesar de ser possível aos órgãos e entidades executivos do Sistema Nacional de Trânsito celebrar convênio delegando as atividades previstas neste Código, com vistas à maior eficiência e à segurança para os usuários da via, conforme prevê o artigo 25 do CTB, o mesmo não deve ser celebrado com a guarda municipal pelo motivo acima exposto, bem como porque, como o próprio dispositivo aduz, deve-se buscar a maior eficiência e segurança para os indivíduos, mostrando ser imperiosa a existência do cargo específico de agente de trânsito ou até mesmo seu exercício por militares. Destarte, não resta dúvida que estamos diante de um caso de vício de competência do ato administrativo em sua modalidade desvio de função. Isso ocorre, pois todo auto de infração de trânsito emanado do guarda municipal vai de encontro a um dispositivo constitucional que fixa a competência, um dos elementos do ato administrativo. Sobre o tema, merece destaque os ensinamentos de Maria Sylvia Zanella di Pietro (Direito Administrativo, 12ª ed., p. 220): "Visto que a competência vem sempre definida em lei, o que constitui garantia para o administrado, será ilegal o ato praticado por quem não seja detentor das atribuições fixadas na lei e também quando o sujeito o pratica exorbitando de suas atribuições." É cediço que a administração possui autonomia para editar seus atos sem a interferência dos demais poderes. Ocorre que por ser elemento vinculado, a competência decorre da lei e deve ser observada sempre, sob pena daquele ato se tornar nulo, passível, desta feita, de controle pelo Poder Judiciário. Nesse sentido, Maria Sylvia Zanella Di Pietro ( Direito administrativo, 14. ed., São Paulo: Atlas, 2002, p. 209) ensina que: "A distinção entre atos discricionários e atos vinculados tem importância fundamental no que diz respeito ao controle que o Poder Judiciário sobre eles exerce. Com relação aos atos vinculados, não existe restrição, pois sendo todos os elementos definidos em lei, caberá ao Judiciário examinar, em todos os seus aspectos, a conformidade do ato com a lei, para decretar a sua nulidade se reconhecer que essa conformidade inexistiu." Assim, resta necessária a intervenção do Judiciário para anular os atos descritos pelos autores. Ademais, os tribunais pátrios vêm fixando entendimento neste sentido, senão vejamos: "As Guardas Municipais só podem existir se destinadas à proteção dos bens, serviços e instalações do Município. Não lhes cabem, portanto, os serviços de polícia ostensiva, de preservação da ordem pública, de polícia judiciária e de apuração das infrações penais. Aliás, essas competências foram essencialmente atribuídas à polícia militar e à polícia civil." (TJSP - Acr 288.556-3 - Rel. Des. Celso Limongi). Frise-se que com relação ao ponto acima tocado, este Município já possui agentes de trânsito devidamente investidos em seus cargos, atendendo às especificações legais que determinam como o respectivo concurso público deve ser realizado para a admissão dos novos profissionais. Quanto ao pedido relativo à indenização por danos morais, inicialmente vale destacar que a responsabilidade civil do Estado - preconizada no art. 37, § 6° da CF - é, em regra, objetiva, pelos danos que os seus agentes, nesta qualidade, causarem a terceiros. Conforme a doutrina, esta responsabilidade é regulada pela chamada "Teoria do risco administrativo", segundo a qual: "surge a obrigação econômica de reparar o dano sofrido injustamente pelo particular, independentemente da existência de falta de serviço e muito menos de culpa do agente público. (...). Resumidamente, existindo o fato do serviço e o nexo de causalidade entre o fato e o dano ocorrido [sem que para ele tenha concorrido o particular], presume-se a culpa da Administração". Assim, para a caracterização da responsabilidade objetiva na modalidade risco administrativo, apenas se exige a demonstração dos elementos: conduta, dano, e nexo causal a relacionar ambos, dispensando-se, pois, a demonstração de culpa. Todavia, quando os danos ocasionados à esfera do particular decorrem da omissão do Estado, o dever de indenizar é regulado pela "Teoria da Culpa Administrativa", segundo a qual somente surge o dever de indenizar o dano se o particular comprovar a existência de falta do serviço (i. é., a culpa do Estado) que pode se consubstanciar: na inexistência do serviço, no seu mau funcionamento, ou no seu retardamento. Creio ser este o tipo de responsabilidade (subjetiva) a se aferir na espécie, sendo necessária a comprovação da conduta, do dano, do nexo causal entre ambos e da culpa do Poder Público para a caracterização do dever de indenizar. É que no caso dos autos, a pretensão do autor fundamenta-se na alegada negativa (ou inércia, omissão) do Poder Público em proceder com as devidas diligências internas para que fosse dado andamento satisfatório ao seu processo administrativo. Portanto, o dano alegado não se originou de uma conduta positiva (ou comissiva do Estado), mas de sua omissão quando se esperava que agisse com mais zelo. De fato, a demora ou retardamento na resolução do processo administrativo do qual dependia o autor parece ser evidente no caso. Basta se considerar que, às fls. 26 dos autos, consta um comprovante de protocolo, datado de 14/01/2010, direcionado à Junta Administrativa de Recursos de Infrações - JARI, comprovando a interposição de recurso administrativo por parte do autor e que, até a data de ajuizamento desta ação judicial (por volta de 04 meses), permaneceu sem resposta da administração. Não obstante o atendimento tardio e vagaroso prestado ao autor, a questão crucial que se coloca para se aferir a obrigação de indenizar do Município é: verifica-se culpa na omissão? Ou, de outro modo, houve dolo ou má-fé do ente público? A demora foi justificável? Como se vem amplamente debatendo em doutrina e jurisprudência, há pretensões fundadas em direitos subjetivos que demandam a disponibilização de meios materiais para a sua efetividade. Estes meios materiais são finitos, escassos, ou seja: não há o suficiente para satisfazer a todos, ou, há menos recursos que o necessário para atender a todas as demandas. E a escassez não é só de recursos financeiros, mas de pessoal especializado, de equipamentos, etc., etc. Esta é a realidade, nua e crua, com a qual nos deparamos e para a qual devemos incansavelmente lutar em busca de soluções e melhorias em determinados setores públicos. Mas fingir que estas dificuldades não existem, negando que a limitação dos recursos públicos seja uma realidade é uma posição que não se sustenta, muito menos resolve o problema. Acresçamos à isto a enorme quantidade de processos administrativos que são gerados e que, por conseguinte, resultam em outra quantidade praticamente igual de recursos, estamos diante de uma situação que abarrota os serviços públicos que, em tese, deveriam ser prestados com maior dedicação por parte da administração pública, mas que, infelizmente, a falta de recursos acima mencionada impede a devida e eficiente resposta ao particular. Face aos argumentos supra, no caso específico dos autos, a situação de descaso vivenciada pelo autor - fato que certamente lhe causou angústia e aborrecimento - entendo não restarem caracterizados todos os requisitos necessários à configuração do dever de indenizar, notadamente do elemento subjetivo da responsabilidade (a culpa). A demora na prestação da assistência merece, neste caso concreto, temperamentos e ponderação; respondendo à pergunta feita em linhas anteriores, não verifico culpa, má-fé ou dolo por parte do ente público, sendo justificável, ainda que minimamente, o retardamento na prestação do serviço. Ex positis, JULGO PROCEDENTE EM PARTE o pedido do autor, declarando a insubsistência do Auto de Infração nº G000554755, unicamente devido a incompetência da Guarda Municipal em aplicar Infrações de Trânsito, ao passo que determino a exclusão definitiva do referido Auto de Infração dos registros dos competentes órgãos (SMTT e DETRAN) que envolvam a Carteira/Permissão Nacional de Habilitação do autor, contudo, JULGO IMPROCEDENTE o pedido do autor referente à indenização por danos morais, por não restarem presentes todos os requisitos caracterizadores da responsabilidade civil do ente público municipal, o que faço arrimado no art. 37, § 6° da CF., e no art. 333, inc. I do CPC. Sem custas, nem honorários, por ser o autor beneficiário da Justiça Gratuita. Publique-se. Registre-se. Intimem-se. Maceió,04 de agosto de 2014. Claudio José Gomes Lopes Juiz de Direito
+Advogados(s): Procurador Geral do Município de Maceió (OAB /PG), Bel. Aryelison Barbosa de Aquino (OAB 10073/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/08/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Expedição de Documentos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/08/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-12648293" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=12648293&amp;nmRecursoAcessado=Julgado+procedente+em+parte+do+pedido" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-12648293" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=12648293&amp;nmRecursoAcessado=Julgado+procedente+em+parte+do+pedido" target="_blank"> Julgado procedente em parte do pedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0026744-18.2011.8.02.0001 Ação: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió SENTENÇA Trata-se de Procedimento Ordinário com pedido de antecipação de tutela demandada por Aecyo Vinicius Barbosa de Aquino, devidamente qualificado e por intermédio de seu Advogado legalmente constituído, em face de Superintendência Municipal de Transportes e Trânsito - SMTT Maceió, igualmente qualificada. Argumenta a parte autora que fora notificado pela parte ré, através do Auto de Infração nº G000554755, por ter praticado infração de trânsito consistente em transitar com passageiro sem usar o cinto de segurança, na Av. Fernandes Lima, às 08:21, no dia 01/09/2010. Afirma também que é policial militar lotado no Batalhão de Polícia de Eventos e que, nessa data e nesse horário, estava em seu serviço, embarcado em viatura, em turno de 12 (doze) horas, desde as 07:00, sendo impossível estar dirigindo seu próprio veículo durante o momento citado na autuação. Aduz ainda que é mero permissionário da Carteira Nacional de Habilitação, e que recorreu administrativamente, todavia, tendo seu pleito indeferido pela parte ré, não podendo obter licença de habilitação para dirigir. Por essas razões, requereu liminarmente a suspensão do Auto de Infração, o que foi deferido, e requereu a declaração de nulidade do Auto, além da condenação da parte ré nos danos morais que alega ter suportado, devido a todo o tempo o qual o autor se encontrou privado de utilizar o seu bem, lapso temporal este que foi resultado da falta de interessa da administração do réu. Às fls. 64/66, a parte ré informou que a suspensão da Notificação do Auto de Infração foi devidamente procedida, como também todas as demais providências que garantiriam a renovação da CNH foram tomadas. Na fl. 68 é certificado que não houve apresentação de contestação pela parte ré É o relatório. Fundamento e decido. Trata-se de Ação na qual o autor pretende a anulação do auto de infração de nº G000510830, observando que o mesmo se encontrava prestando serviço no exato momento da autuação, o que tornaria impossível ter sido multado como descrito no Auto de Infração. Ainda, pretende anular definitivamente este auto de infração com base na incompetência de guarda municipal para exercer a fiscalização do trânsito, como também almeja a devida reparação por danos sofridos no decorrer do processo administrativo e na falta de interesse apresentada pela ré na para se chegar a uma resolução desta situação . Primeiramente, tecerei considerações acerca da afirmação que o simples fato de que o autor se encontrava em serviço motorizado no momento da infração, supostamente comprovaria a impossibilidade de tal ato administrativo. Ao compulsar os autos, de fato, pode-se constatar que o autor logrou êxito em comprovar que estava de serviço (motorizado) no momento em que foi autuado, no entanto, nada foi juntado aos autos comprovando que o veículo do autor se encontrava estacionado no respectivo Batalhão, ora, afirmar que apenas a posse comprovada de determinado veículo (documento do automóvel) é suficiente para se excluir a possibilidade de outra pessoa dirigi-lo não me parece razoável. Sim, o autor se encontrava no estabelecimento descrito, mas, e seu veículo? Nenhum documento probatório (ticket de estacionamento, ponto de estacionamento, foto, etc.) foi juntado, deixando de restar comprovado que aquele mesmo veículo passou o restante do respectivo dia estacionado. Assim, rejeito a alegação apresentada pelo autor, no tocante à impossibilidade de seu veículo ter sido multado em virtude de o mesmo estar trabalhando, por falta de arcabouço probatório minimamente suficiente para comprovar o que foi sugerido. Ademais, o caso sob comento versa tamébm sobre a controvérsia que envolve a competência do guarda municipal para atuar como agente da autoridade de trânsito. Isto ocorre tendo em vista a divergência de interpretação dada aos dispositivos constitucionais e ao Código de Trânsito Brasileiro. Assim, faz-se necessário o cotejo entre os dispositivos dos referidos diplomas legais, para que cheguemos a uma conclusão, em harmonia com o que pretende o sistema jurídico pátrio. O Código de Trânsito Brasileiro dispõe, em seu artigo 7º, que: Art. 7º - Compõem o Sistema Nacional de Trânsito os seguintes órgãos e entidades: [...] III - os órgãos e entidades executivos de trânsito da União, dos Estados, do Distrito Federal e dos Municípios; [] (grifo nosso) O dispositivo supra incute a idéia de que os Municípios possuem órgãos e entidades que executam as políticas de trânsito em sua respectiva área circunscrição, fazendo parte assim, em conjunto com a União, Estados e Distrito Federal do Sistema Nacional de Trânsito. Pois bem, ainda delimitando a área de atuação dos municípios dentro do Sistema Nacional de Trânsito, o CTB prescreve em seu artigo 8º: Art. 8º - Os Estados, o Distrito Federal e os Municípios organizarão os respectivos órgãos e entidades executivos de trânsito e executivos rodoviários, estabelecendo os limites circunscricionais de suas atuações. (grifo nosso). O artigo 24 elenca o rol da competência atribuída aos órgãos e entidades executivas de trânsito dos Municípios, entre elas: cumprir e fazer cumprir a legislação e as normas de trânsito, no âmbito de suas atribuições; estabelecer, em conjunto com os órgãos de polícia ostensiva de trânsito, as diretrizes para o policiamento ostensivo de trânsito; executar a fiscalização de trânsito, autuar e aplicar as medidas administrativas cabíveis, por infrações de circulação, estacionamento e parada previstas neste Código, no exercício regular do Poder de Polícia de Trânsito; aplicar as penalidades de advertência por escrito e multa, por infrações de circulação, estacionamento e parada previstas neste Código, notificando os infratores e arrecadando as multas que aplicar, etc. Por fim, o artigo 280, §4º prevê mais uma regra de competência: Art. 280. Ocorrendo infração prevista na legislação de trânsito, lavrar-se-á auto de infração, do qual constará: § 4º O agente da autoridade de trânsito competente para lavrar o auto de infração poderá ser servidor civil, estatutário ou celetista ou, ainda, policial militar designado pela autoridade de trânsito com jurisdição sobre a via no âmbito de sua competência. Assim, da leitura dos dispositivos supra aludidos não resta dúvida que o Município, por meio de seus órgãos e entidades executivas, possui competência para organizar o trânsito da sua circunscrição, devendo-se utilizar de servidor civil ou policial militar como agente da autoridade de trânsito. Ocorre que alguns pontos devem ser esclarecidos acerca desse assunto. Primeiramente deve-se entender a expressão "servidor civil" como sendo o agente de trânsito, ou seja, aquele servidor não militar que possui os conhecimentos técnicos exigíveis para manter a segurança no trânsito. Acontece que a aludida expressão vem sendo erroneamente interpretada como sinônimo de qualquer servidor público civil, sendo estendida, portanto até para os guardas municipais. O fundamento para esse posicionamento se encontra principalmente no princípio da interpretação conforme a constituição. Sobre o mesmo Alexandre de Moraes (in Direito Constitucional, 15º ed., p.47) ensina que: "A supremacia das normas constitucionais no ordenamento jurídico e a presunção de constitucionalidade das leis e atos normativos editados pelo poder público competente exigem que, na função hermenêutica de interpretação do ordenamento jurídico, seja sempre concedida preferência ao sentido da norma que seja adequado à Constituição Federal. Assim sendo, no caso de normas com várias significações possíveis, deverá ser encontrada a significação que apresente conformidade com as normas constitucionais[...]". Neste sentido, a Constituição Federal afastou qualquer margem de interpretação ao artigo 280, §4º do Código de Trânsito Brasileiro ao dispor em seu §8º do artigo 144 que: "Os Municípios poderão constituir guardas municipais destinadas à proteção de seus bens, serviços e instalações, conforme dispuser a lei.". Logo, pode-se concluir que a Carta Maior além de excluir a guarda municipal do rol dos órgãos integrantes da segurança pública, delimitou a área de atuação da mesma. Comentando sobre esse dispositivo constitucional Nelson Nery Costa e Geraldo Magela Alves (em Constituição Federal Anotada e Explicada, p. 344) aduzem que: "Podem ser incluídas em sua competência [a da guarda municipal] a segurança do seu patrimônio, como praças e ruas, bem como dos prédios próprios, em que se encontrem seus serviços, desde os administrativos e burocráticos, como também os relativos à saúde e à educação.". Frise-se que apesar de ser possível aos órgãos e entidades executivos do Sistema Nacional de Trânsito celebrar convênio delegando as atividades previstas neste Código, com vistas à maior eficiência e à segurança para os usuários da via, conforme prevê o artigo 25 do CTB, o mesmo não deve ser celebrado com a guarda municipal pelo motivo acima exposto, bem como porque, como o próprio dispositivo aduz, deve-se buscar a maior eficiência e segurança para os indivíduos, mostrando ser imperiosa a existência do cargo específico de agente de trânsito ou até mesmo seu exercício por militares. Destarte, não resta dúvida que estamos diante de um caso de vício de competência do ato administrativo em sua modalidade desvio de função. Isso ocorre, pois todo auto de infração de trânsito emanado do guarda municipal vai de encontro a um dispositivo constitucional que fixa a competência, um dos elementos do ato administrativo. Sobre o tema, merece destaque os ensinamentos de Maria Sylvia Zanella di Pietro (Direito Administrativo, 12ª ed., p. 220): "Visto que a competência vem sempre definida em lei, o que constitui garantia para o administrado, será ilegal o ato praticado por quem não seja detentor das atribuições fixadas na lei e também quando o sujeito o pratica exorbitando de suas atribuições." É cediço que a administração possui autonomia para editar seus atos sem a interferência dos demais poderes. Ocorre que por ser elemento vinculado, a competência decorre da lei e deve ser observada sempre, sob pena daquele ato se tornar nulo, passível, desta feita, de controle pelo Poder Judiciário. Nesse sentido, Maria Sylvia Zanella Di Pietro ( Direito administrativo, 14. ed., São Paulo: Atlas, 2002, p. 209) ensina que: "A distinção entre atos discricionários e atos vinculados tem importância fundamental no que diz respeito ao controle que o Poder Judiciário sobre eles exerce. Com relação aos atos vinculados, não existe restrição, pois sendo todos os elementos definidos em lei, caberá ao Judiciário examinar, em todos os seus aspectos, a conformidade do ato com a lei, para decretar a sua nulidade se reconhecer que essa conformidade inexistiu." Assim, resta necessária a intervenção do Judiciário para anular os atos descritos pelos autores. Ademais, os tribunais pátrios vêm fixando entendimento neste sentido, senão vejamos: "As Guardas Municipais só podem existir se destinadas à proteção dos bens, serviços e instalações do Município. Não lhes cabem, portanto, os serviços de polícia ostensiva, de preservação da ordem pública, de polícia judiciária e de apuração das infrações penais. Aliás, essas competências foram essencialmente atribuídas à polícia militar e à polícia civil." (TJSP - Acr 288.556-3 - Rel. Des. Celso Limongi). Frise-se que com relação ao ponto acima tocado, este Município já possui agentes de trânsito devidamente investidos em seus cargos, atendendo às especificações legais que determinam como o respectivo concurso público deve ser realizado para a admissão dos novos profissionais. Quanto ao pedido relativo à indenização por danos morais, inicialmente vale destacar que a responsabilidade civil do Estado - preconizada no art. 37, § 6° da CF - é, em regra, objetiva, pelos danos que os seus agentes, nesta qualidade, causarem a terceiros. Conforme a doutrina, esta responsabilidade é regulada pela chamada "Teoria do risco administrativo", segundo a qual: "surge a obrigação econômica de reparar o dano sofrido injustamente pelo particular, independentemente da existência de falta de serviço e muito menos de culpa do agente público. (...). Resumidamente, existindo o fato do serviço e o nexo de causalidade entre o fato e o dano ocorrido [sem que para ele tenha concorrido o particular], presume-se a culpa da Administração". Assim, para a caracterização da responsabilidade objetiva na modalidade risco administrativo, apenas se exige a demonstração dos elementos: conduta, dano, e nexo causal a relacionar ambos, dispensando-se, pois, a demonstração de culpa. Todavia, quando os danos ocasionados à esfera do particular decorrem da omissão do Estado, o dever de indenizar é regulado pela "Teoria da Culpa Administrativa", segundo a qual somente surge o dever de indenizar o dano se o particular comprovar a existência de falta do serviço (i. é., a culpa do Estado) que pode se consubstanciar: na inexistência do serviço, no seu mau funcionamento, ou no seu retardamento. Creio ser este o tipo de responsabilidade (subjetiva) a se aferir na espécie, sendo necessária a comprovação da conduta, do dano, do nexo causal entre ambos e da culpa do Poder Público para a caracterização do dever de indenizar. É que no caso dos autos, a pretensão do autor fundamenta-se na alegada negativa (ou inércia, omissão) do Poder Público em proceder com as devidas diligências internas para que fosse dado andamento satisfatório ao seu processo administrativo. Portanto, o dano alegado não se originou de uma conduta positiva (ou comissiva do Estado), mas de sua omissão quando se esperava que agisse com mais zelo. De fato, a demora ou retardamento na resolução do processo administrativo do qual dependia o autor parece ser evidente no caso. Basta se considerar que, às fls. 26 dos autos, consta um comprovante de protocolo, datado de 14/01/2010, direcionado à Junta Administrativa de Recursos de Infrações - JARI, comprovando a interposição de recurso administrativo por parte do autor e que, até a data de ajuizamento desta ação judicial (por volta de 04 meses), permaneceu sem resposta da administração. Não obstante o atendimento tardio e vagaroso prestado ao autor, a questão crucial que se coloca para se aferir a obrigação de indenizar do Município é: verifica-se culpa na omissão? Ou, de outro modo, houve dolo ou má-fé do ente público? A demora foi justificável? Como se vem amplamente debatendo em doutrina e jurisprudência, há pretensões fundadas em direitos subjetivos que demandam a disponibilização de meios materiais para a sua efetividade. Estes meios materiais são finitos, escassos, ou seja: não há o suficiente para satisfazer a todos, ou, há menos recursos que o necessário para atender a todas as demandas. E a escassez não é só de recursos financeiros, mas de pessoal especializado, de equipamentos, etc., etc. Esta é a realidade, nua e crua, com a qual nos deparamos e para a qual devemos incansavelmente lutar em busca de soluções e melhorias em determinados setores públicos. Mas fingir que estas dificuldades não existem, negando que a limitação dos recursos públicos seja uma realidade é uma posição que não se sustenta, muito menos resolve o problema. Acresçamos à isto a enorme quantidade de processos administrativos que são gerados e que, por conseguinte, resultam em outra quantidade praticamente igual de recursos, estamos diante de uma situação que abarrota os serviços públicos que, em tese, deveriam ser prestados com maior dedicação por parte da administração pública, mas que, infelizmente, a falta de recursos acima mencionada impede a devida e eficiente resposta ao particular. Face aos argumentos supra, no caso específico dos autos, a situação de descaso vivenciada pelo autor - fato que certamente lhe causou angústia e aborrecimento - entendo não restarem caracterizados todos os requisitos necessários à configuração do dever de indenizar, notadamente do elemento subjetivo da responsabilidade (a culpa). A demora na prestação da assistência merece, neste caso concreto, temperamentos e ponderação; respondendo à pergunta feita em linhas anteriores, não verifico culpa, má-fé ou dolo por parte do ente público, sendo justificável, ainda que minimamente, o retardamento na prestação do serviço. Ex positis, JULGO PROCEDENTE EM PARTE o pedido do autor, declarando a insubsistência do Auto de Infração nº G000554755, unicamente devido a incompetência da Guarda Municipal em aplicar Infrações de Trânsito, ao passo que determino a exclusão definitiva do referido Auto de Infração dos registros dos competentes órgãos (SMTT e DETRAN) que envolvam a Carteira/Permissão Nacional de Habilitação do autor, contudo, JULGO IMPROCEDENTE o pedido do autor referente à indenização por danos morais, por não restarem presentes todos os requisitos caracterizadores da responsabilidade civil do ente público municipal, o que faço arrimado no art. 37, § 6° da CF., e no art. 333, inc. I do CPC. Sem custas, nem honorários, por ser o autor beneficiário da Justiça Gratuita. Publique-se. Registre-se. Intimem-se. Maceió,04 de agosto de 2014. Claudio José Gomes Lopes Juiz de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/09/2013
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-10598935" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=10598935&amp;nmRecursoAcessado=Visto+em+correi%C3%A7%C3%A3o" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-10598935" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=10598935&amp;nmRecursoAcessado=Visto+em+correi%C3%A7%C3%A3o" target="_blank"> Visto em correição
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DESPACHO VISTO EM CORREIÇÃO
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/11/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-8720456" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=8720456&amp;nmRecursoAcessado=Despacho" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-8720456" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=8720456&amp;nmRecursoAcessado=Despacho" target="_blank"> Despacho
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DESPACHO - VISTO EM CORREIÇÃO - Provimento nº 19/2011 1. ( ) PROCESSO EM ORDEM, NADA A PROVER. 2. À CONCLUSÃO PARA: 2.1. ( X ) DESPACHO 2.2. ( ) DECISÃO 2.3. ( ) SENTENÇA 3. COBRE-SE: 3.1. ( ) A DEVOLUÇÃO DE PRECATÓRIA 3.2. ( ) A DEVOLUÇÃO DE MANDADO 4. ( ) CUMPRA-SE O DESPACHO DE FLS. 5. ( ) REITERE-SE O DESPACHO DE FLS. 6. ( ) MANTENHA-SE O FEITO SOBRESTADO. 7. ( ) ARQUIVE-SE, APÓS BAIXA NA DISTRIBUIÇÃO. 8. ( ) AUTUE-SE. 9. REMETA-SE 9.1. ( ) AO TRIBUNAL DE JUSTIÇA 9.2. ( ) À CONTADORIA 9.3. ( ) À DISTRIBUIÇÃO 10. ( ) EXPEÇA-SE CERTIDÃO AO FUNJURIS 11. COLOQUE-SE NA PAUTA DE AUDIÊNCIA: 11.1. ( ) CONCILIAÇÃO 11.2. ( ) INSTRUÇÃO 11.3. ( ) OUTRA 12. ABRA-SE VISTA AO ADVOGADO: 12.1. ( ) DO AUTOR 12.2. ( ) DO RÉU 12.3. ( ) DAS PARTES 13. ( ) ABRA-SE VISTA AO DEFENSOR PÚBLICO 14. ( ) ABRA-SE VISTA AO MINISTÉRIO PÚBLICO 15. ( ) JUNTE-SE PETIÇÃO 16. ( ) CUMPRA-SE O ATO PROCESSUAL DETERMINADO 17. ( ) REITERE-SE OFÍCIO 18. EXPEÇA-SE: 18.1. ( ) ATO ORDINATÓRIO 18.2. ( ) EDITAL 18.3. ( ) PRECATÓRIA 18.4. ( ) OFÍCIO 18.5. ( ) MANDADO 18.4. ( ) OFÍCIO 18.5. ( ) MANDADO 18.6. ( ) CARTA 18.7. ( ) ALVARÁ 19. PUBLIQUE-SE: 19.1. ( ) ATO ORDINATÓRIO 19.2. ( ) DESPACHO 19.3. ( ) DECISÃO 19.4. ( ) SENTENÇA 20. ( ) CERTIFIQUE-SE O DECURSO DO PRAZO 21. ( ) DEVOLVA-SE CARTA PRECATÓRIA 22. ( ) RETORNEM OS AUTOS AO ARQUIVO 23. ( ) AGUARDE-SE O PRAZO DE SUSPENSÃO 24. ( ) OUTROS: Maceió(AL), 20 de novembro de 2012. Ygor Vieira de Figueirêdo Juiz(a) de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/04/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/04/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certifico que até a presente data a parte ré não apresentou sua contestação. O referido é verdade, dou fé. Maceió, 17 de abril de 2011.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/04/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-7387306" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=7387306&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-7387306" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=7387306&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DESPACHO DCertifique a secretária se foi oferecida contestação.
+Se a resposta for positiva, intime-se a parte autora para se manifestar sobre a resposta do demandado, caso contrário, volte-me concluso para sentença.. Maceió(AL), 16 de abril de 2012. Ygor Vieira de Figueirêdo Juiz(a) de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/03/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/02/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Ofício
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				cumprimento da decisão
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/02/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Decurso de Prazo
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/02/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/02/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0003/2012
+Data da Disponibilização: 10/02/2012
+Data da Publicação: 13/02/2012
+Número do Diário: 633
+Página: 17
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/02/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0003/2012
+Teor do ato: Processo nº: 0026744-18.2011.8.02.0001 Autor:Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió DECISÃO Trata-se de requerimento pelo qual o autor informa o reiterado descumprimento da decisão que concedeu a antecipação dos efeitos da tutela, requerendo a majoração da multa cominada anteriormente. Ao compulsar os autos, verifiquei que a decisão que concedeu a antecipação dos efeitos da tutela, constante às fls.29/30, determinou a suspensão dos efeitos do Auto de Infração n.º G000554755, bem como das penalidades aplicadas ao autor, determinando, ainda, que a ré oficie aos demais órgãos de trânsito para que excluam de seus registros qualquer informação de penalidade decorrente do ato atacado. Pois bem. Os documentos acostados pelo autor às fls.54/57 evidenciam que, de fato, o auto de infração, juntamente com a penalidade aplicada, fora suspenso. Todavia, isto não foi suficiente para permitir ao autor a renovação de sua CNH, o que vem lhe trazendo diversos transtornos, como relatado. Diante disto, determino a INTIMAÇÃO da ré para que, no prazo de 05 (cinco) dias, proceda com todas as medidas necessárias para a renovação da CNH do autor, inclusive mediante comunicação a outros órgãos de trânsito, se preciso, sob pena de multa diária no valor de R$2.000,00 (dois mil reais), a incidir após o transcurso do prazo acima assinalado. Por oportuno, verifiquei que a citação da Ré, Superintendência Municipal de Transporte e Trânsito, deu-se na pessoa de sua Coordenadora de Secretaria, consoante se observa às fls.31/33, sem que se tenha demonstrado a sua capacidade para o recebimento de tal ato. Sendo assim, e com a finalidade de se evitar qualquer eventual nulidade, determino a RENOVAÇÃO DA CITAÇÃO da Ré, desta feita na pessoa de seu representante legal, ou quem tenha comprovadamente poderes para representá-la. Maceió(AL), 10 de janeiro de 2012 Claudemiro Avelino de Souza Juiz de Direito
+Advogados(s): Procurador Geral do Município de Maceió (OAB /PG), Bel. Aryelison Barbosa de Aquino (OAB 10073/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			27/01/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remessa de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/01/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6956502" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6956502" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Mandado Expedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Mandado nº: 001.2012/006137-7 
+Situação: Cumprido - Ato positivo em 10/02/2012 
+Local: 14º Cartório Cível da Capital / Fazenda Municipal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/01/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Expedição de Documentos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/01/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebidos os autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/01/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/01/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6868699" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=6868699&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6868699" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=6868699&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Processo nº: 0026744-18.2011.8.02.0001 Autor:Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió DECISÃO Trata-se de requerimento pelo qual o autor informa o reiterado descumprimento da decisão que concedeu a antecipação dos efeitos da tutela, requerendo a majoração da multa cominada anteriormente. Ao compulsar os autos, verifiquei que a decisão que concedeu a antecipação dos efeitos da tutela, constante às fls.29/30, determinou a suspensão dos efeitos do Auto de Infração n.º G000554755, bem como das penalidades aplicadas ao autor, determinando, ainda, que a ré oficie aos demais órgãos de trânsito para que excluam de seus registros qualquer informação de penalidade decorrente do ato atacado. Pois bem. Os documentos acostados pelo autor às fls.54/57 evidenciam que, de fato, o auto de infração, juntamente com a penalidade aplicada, fora suspenso. Todavia, isto não foi suficiente para permitir ao autor a renovação de sua CNH, o que vem lhe trazendo diversos transtornos, como relatado. Diante disto, determino a INTIMAÇÃO da ré para que, no prazo de 05 (cinco) dias, proceda com todas as medidas necessárias para a renovação da CNH do autor, inclusive mediante comunicação a outros órgãos de trânsito, se preciso, sob pena de multa diária no valor de R$2.000,00 (dois mil reais), a incidir após o transcurso do prazo acima assinalado. Por oportuno, verifiquei que a citação da Ré, Superintendência Municipal de Transporte e Trânsito, deu-se na pessoa de sua Coordenadora de Secretaria, consoante se observa às fls.31/33, sem que se tenha demonstrado a sua capacidade para o recebimento de tal ato. Sendo assim, e com a finalidade de se evitar qualquer eventual nulidade, determino a RENOVAÇÃO DA CITAÇÃO da Ré, desta feita na pessoa de seu representante legal, ou quem tenha comprovadamente poderes para representá-la. Maceió(AL), 10 de janeiro de 2012 Claudemiro Avelino de Souza Juiz de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/12/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Visto em correição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Concluso para despacho
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			30/11/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			30/11/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Visto em correição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Concluso
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			30/11/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Juntada a petição diversa - Tipo: Manifestação do Autor em Procedimento Ordinário - Número: 80001 - Protocolo: CPMA11000999792
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/11/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				intimação 05 dias
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/11/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0047/2011
+Data da Disponibilização: 04/11/2011
+Data da Publicação: 07/11/2011
+Número do Diário: 574
+Página: 26
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0047/2011
+Teor do ato: Processo nº: 0026744-18.2011.8.02.0001 Classe do Processo: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió DECISÃO Chamo o feito à ordem para declarar nula a decisão de fls. retro, em razão de vício quanto ao destinatário da determinação lá contida. Dispõe o Código de Processo Civil que, sendo relevante o fundamento da demanda e havendo justificado receio de ineficácia do provimento final, é lícito ao juiz conceder a tutela liminarmente ou mediante justificação prévia, citado o réu (art. 461, §3º, CPC). Nessa hipótese, ainda, o Código faculta ao Juiz impor ex officio multa diária, ou providência diversa, que assegure o cumprimento do decisum ou a obtenção de resultado prático equivalente, para que o destinatário do comando cumpra fielmente com a obrigação judicial que lhe fora imposta (art. 461, §§4º e 5º, CPC). No caso em tela, muito embora deferida a medida liminar de antecipação dos efeitos da tutela suspendendo o Auto de Infração atacado, a parte ré até o presente momento não cumpriu a decisão, apesar dedevidamente intimada há mais de um mês. Verificado, portanto, o descumprimento da ordem judicial, intime-se o Sr.Superintendente da SMTT, por mandado, para que cumpra fielmente a decisão que antecipou os efeitos da tutela no prazo de 05 (cinco) dias, sob pena de multa diária no valor de R$ 1.000,00 (hum mil reais), a incidir após o transcurso do prazo acima referido, ressalvando-se, ainda, a prática do Crime de Desobediência. Publique-se. Intime-se. Maceió, 03 de outubro de 2011 José Eduardo Nobre Carlos Juiz de Direito Substituto Diogo de Mendonça Furtado Juiz de Direito Substituto
+Advogados(s): Procurador Geral do Município de Maceió (OAB /PG), Bel. Aryelison Barbosa de Aquino (OAB 10073/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0046/2011
+Data da Disponibilização: 28/10/2011
+Data da Publicação: 31/10/2011
+Número do Diário: 572
+Página: 40
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0046/2011
+Teor do ato: Processo nº: 0026744-18.2011.8.02.0001 Classe do Processo: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió DECISÃO Dispõe o Código de Processo Civil que, sendo relevante o fundamento da demanda e havendo justificado receio de ineficácia do provimento final, é lícito ao juiz conceder a tutela liminarmente ou mediante justificação prévia, citado o réu (art. 461, §3º, CPC). Nessa hipótese, ainda, o Código faculta ao Juiz impor ex officio multa diária, ou providência diversa, que assegure o cumprimento do decisum ou a obtenção de resultado prático equivalente, para que o destinatário do comando cumpra fielmente com a obrigação judicial que lhe fora imposta (art. 461, §§4º e 5º, CPC). No caso em tela, muito embora deferida a medida liminar de antecipação dos efeitos da tutela suspendendo o Auto de infração atacado, a parte ré até o presente momento não cumpriu com a decisão, apesar de devidamente intimada há mais de um mês. Verificado, portanto, o descumprimento da ordem judicial, intime-se o Sr. Superintendente da SMCCU, por mandado, para que cumpra fielmente a decisão que antecipou os efeitos da tutela, no prazo de 05 (cinco) dias, sob pena de multa diária no valor de R$ 1.000,00 (hum mil reais), a incidir após o transcurso do prazo acima referido, ressalvando-se, ainda, a prática do Crime de Desobediência. Publique-se. Intime-se. Maceió, 26 de setembro de 2011 José Eduardo Nobre Carlos Juiz de Direito Substituto Diogo de Mendonça Furtado Juiz de Direito Substituto
+Advogados(s): Procurador Geral do Município de Maceió (OAB /PG), Bel. Aryelison Barbosa de Aquino (OAB 10073/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remessa de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6449882" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6449882" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Mandado Expedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Mandado nº: 001.2011/066209-2 
+Situação: Cumprido - Ato positivo em 09/11/2017 
+Local: 14º Cartório Cível da Capital / Fazenda Municipal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Expedição de Documentos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6330398" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=6330398&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6330398" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=6330398&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Processo nº: 0026744-18.2011.8.02.0001 Classe do Processo: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió DECISÃO Chamo o feito à ordem para declarar nula a decisão de fls. retro, em razão de vício quanto ao destinatário da determinação lá contida. Dispõe o Código de Processo Civil que, sendo relevante o fundamento da demanda e havendo justificado receio de ineficácia do provimento final, é lícito ao juiz conceder a tutela liminarmente ou mediante justificação prévia, citado o réu (art. 461, §3º, CPC). Nessa hipótese, ainda, o Código faculta ao Juiz impor ex officio multa diária, ou providência diversa, que assegure o cumprimento do decisum ou a obtenção de resultado prático equivalente, para que o destinatário do comando cumpra fielmente com a obrigação judicial que lhe fora imposta (art. 461, §§4º e 5º, CPC). No caso em tela, muito embora deferida a medida liminar de antecipação dos efeitos da tutela suspendendo o Auto de Infração atacado, a parte ré até o presente momento não cumpriu a decisão, apesar dedevidamente intimada há mais de um mês. Verificado, portanto, o descumprimento da ordem judicial, intime-se o Sr.Superintendente da SMTT, por mandado, para que cumpra fielmente a decisão que antecipou os efeitos da tutela no prazo de 05 (cinco) dias, sob pena de multa diária no valor de R$ 1.000,00 (hum mil reais), a incidir após o transcurso do prazo acima referido, ressalvando-se, ainda, a prática do Crime de Desobediência. Publique-se. Intime-se. Maceió, 03 de outubro de 2011 José Eduardo Nobre Carlos Juiz de Direito Substituto Diogo de Mendonça Furtado Juiz de Direito Substituto
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			30/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Expedição de Documentos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6288356" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=6288356&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6288356" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=6288356&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Processo nº: 0026744-18.2011.8.02.0001 Classe do Processo: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió DECISÃO Dispõe o Código de Processo Civil que, sendo relevante o fundamento da demanda e havendo justificado receio de ineficácia do provimento final, é lícito ao juiz conceder a tutela liminarmente ou mediante justificação prévia, citado o réu (art. 461, §3º, CPC). Nessa hipótese, ainda, o Código faculta ao Juiz impor ex officio multa diária, ou providência diversa, que assegure o cumprimento do decisum ou a obtenção de resultado prático equivalente, para que o destinatário do comando cumpra fielmente com a obrigação judicial que lhe fora imposta (art. 461, §§4º e 5º, CPC). No caso em tela, muito embora deferida a medida liminar de antecipação dos efeitos da tutela suspendendo o Auto de infração atacado, a parte ré até o presente momento não cumpriu com a decisão, apesar de devidamente intimada há mais de um mês. Verificado, portanto, o descumprimento da ordem judicial, intime-se o Sr. Superintendente da SMCCU, por mandado, para que cumpra fielmente a decisão que antecipou os efeitos da tutela, no prazo de 05 (cinco) dias, sob pena de multa diária no valor de R$ 1.000,00 (hum mil reais), a incidir após o transcurso do prazo acima referido, ressalvando-se, ainda, a prática do Crime de Desobediência. Publique-se. Intime-se. Maceió, 26 de setembro de 2011 José Eduardo Nobre Carlos Juiz de Direito Substituto Diogo de Mendonça Furtado Juiz de Direito Substituto
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Juntada a petição diversa - Tipo: Manifestação do Autor em Procedimento Ordinário - Número: 80000 - Protocolo: CPMA11000746764
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Decurso de Prazo
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			30/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0035/2011
+Data da Disponibilização: 30/08/2011
+Data da Publicação: 31/08/2011
+Número do Diário: 
+Página: 
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			29/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0035/2011
+Teor do ato: Processo nº: 0026744-18.2011.8.02.0001 Classe do Processo: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió DECISÃO I Trata-se de Procedimento Ordinário com pedido de antecipação de tutela demandada por Aecyo Vinicius Barbosa de Aquino, devidamente qualificado(a) e por intermédio de Advogado(a) legalmente constituído(a), em face de Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió, igualmente qualificado(a). Argumenta a parte autora que fora notificado pela parte ré, através do Auto de Infração nº G000554755, por ter praticado infração de trânsito consistente em transitar com passageiro sem usar o cinto de segurança, na Av. Fernandes Lima, às 08:21, no dia 01/09/2010. Afirma também que é policial militar lotado no Batalhão Polícia de Eventos e que, nessa data e nesse horário, estava em seu serviço, embarcado em viatura, em turno de 12 (doze) horas, desde as 07:00, sendo impossível estar dirigindo seu próprio veículo durante o momento citado na autuação. Aduz ainda que é mero permissionário da Carteira Nacional de Habilitação, e que recorreu administrativamente, todavia tendo seu pleito indeferido pela parte ré, não podendo obter a licença de habilitação para dirigir. Por essas razões, requer a declaração de nulidade do Auto de Infração aludido, além da condenação da parte ré nos danos morais que alega ter suportado. Requer, ainda, a concessão da antecipação dos efeitos da tutela, por entender preenchidos os requisitos do art. 273, do Código de Processo Civil. II Para a concessão da antecipação de tutela, se faz necessária a verificação da presença, no presente feito, de alguns requisitos peculiares, a saber: existência de prova inequívoca; verossimilhança das alegações; fundado receio de dano irreparável ou de difícil reparação (art. 273, I, do CPC) ou a caracterização do abuso de direito de defesa ou o manifesto propósito protelatório do réu (art. 273, inciso II, do CPC). Reza o mesmo artigo 273, em seu § 1º, que, na decisão que analisar a antecipação de tutela, o Juiz deve, de modo claro e preciso, explicitar os motivos que o levaram ao seu convencimento. Diante disto, tecerei doravante as oportunas e necessárias considerações. No que pertine à verossimilhança das alegações e à prova inequívoca, de fato me parece que assiste razão à parte autora, posto que no momento da infração supostamente cometida a mesma estava em serviço, segundo a documentação que acompanha a Exordial, presumindo-se logicamente impossível estar no local indicado no Auto de Infração atacado. Além disso, o fundado receio de dano irreparável ou de difícil reparação também me parece presente, em razão de que o autor é mero permissionário da Carteira Nacional de Habilitação, e que o cometimento de infração grave - tal qual a que lhe fora imputada - o impede de obter a licença da habilitação para dirigir, nos termos do que dispõe o Código Brasileiro de Trânsito. Frente tais argumentos, CONCEDO A ANTECIPAÇÃO DOS EFEITOS DA TUTELA, suspendendo os efeitos do Auto de Infração nº G000554755 e suas penalidades aplicadas à parte autora, e determinando à parte que oficie os demais órgãos de trânsito da presente situação, para que excluam de seus registros qualquer informação de penalidade decorrente do ato atacado. Cite-se a parte ré, por mandado, na pessoa do seu representante legal, para que, querendo, ofereça resposta à presente demanda, no prazo fixado pela Lei Processual Civil. Publique-se. Intime-se. Maceió, 18 de julho de 2011 Soraya Maranhão Silva Juiz(a) de Direito Substituta
+Advogados(s): Procurador Geral do Município de Maceió (OAB /PG), Bel. Aryelison Barbosa de Aquino (OAB 10073/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Decurso de Prazo
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				CITAÇÃO
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6101846" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6101846" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Mandado devolvido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão modelo
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remessa de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6029476" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6029476" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Mandado Expedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Mandado nº: 001.2011/048773-8 
+Situação: Cumprido - Ato positivo em 23/08/2011 
+Local: 14º Cartório Cível da Capital / Fazenda Municipal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/07/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-5921807" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=5921807&amp;nmRecursoAcessado=Concedida+a+Antecipa%C3%A7%C3%A3o+de+tutela" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-5921807" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D2NC0000&amp;cdDocumento=5921807&amp;nmRecursoAcessado=Concedida+a+Antecipa%C3%A7%C3%A3o+de+tutela" target="_blank"> Concedida a Antecipação de tutela
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Processo nº: 0026744-18.2011.8.02.0001 Classe do Processo: Procedimento Ordinário Autor: Aecyo Vinicius Barbosa de Aquino Réu: Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió DECISÃO I Trata-se de Procedimento Ordinário com pedido de antecipação de tutela demandada por Aecyo Vinicius Barbosa de Aquino, devidamente qualificado(a) e por intermédio de Advogado(a) legalmente constituído(a), em face de Superintendência Municipal de Transportes e Trânsito - SMTT de Maceió, igualmente qualificado(a). Argumenta a parte autora que fora notificado pela parte ré, através do Auto de Infração nº G000554755, por ter praticado infração de trânsito consistente em transitar com passageiro sem usar o cinto de segurança, na Av. Fernandes Lima, às 08:21, no dia 01/09/2010. Afirma também que é policial militar lotado no Batalhão Polícia de Eventos e que, nessa data e nesse horário, estava em seu serviço, embarcado em viatura, em turno de 12 (doze) horas, desde as 07:00, sendo impossível estar dirigindo seu próprio veículo durante o momento citado na autuação. Aduz ainda que é mero permissionário da Carteira Nacional de Habilitação, e que recorreu administrativamente, todavia tendo seu pleito indeferido pela parte ré, não podendo obter a licença de habilitação para dirigir. Por essas razões, requer a declaração de nulidade do Auto de Infração aludido, além da condenação da parte ré nos danos morais que alega ter suportado. Requer, ainda, a concessão da antecipação dos efeitos da tutela, por entender preenchidos os requisitos do art. 273, do Código de Processo Civil. II Para a concessão da antecipação de tutela, se faz necessária a verificação da presença, no presente feito, de alguns requisitos peculiares, a saber: existência de prova inequívoca; verossimilhança das alegações; fundado receio de dano irreparável ou de difícil reparação (art. 273, I, do CPC) ou a caracterização do abuso de direito de defesa ou o manifesto propósito protelatório do réu (art. 273, inciso II, do CPC). Reza o mesmo artigo 273, em seu § 1º, que, na decisão que analisar a antecipação de tutela, o Juiz deve, de modo claro e preciso, explicitar os motivos que o levaram ao seu convencimento. Diante disto, tecerei doravante as oportunas e necessárias considerações. No que pertine à verossimilhança das alegações e à prova inequívoca, de fato me parece que assiste razão à parte autora, posto que no momento da infração supostamente cometida a mesma estava em serviço, segundo a documentação que acompanha a Exordial, presumindo-se logicamente impossível estar no local indicado no Auto de Infração atacado. Além disso, o fundado receio de dano irreparável ou de difícil reparação também me parece presente, em razão de que o autor é mero permissionário da Carteira Nacional de Habilitação, e que o cometimento de infração grave - tal qual a que lhe fora imputada - o impede de obter a licença da habilitação para dirigir, nos termos do que dispõe o Código Brasileiro de Trânsito. Frente tais argumentos, CONCEDO A ANTECIPAÇÃO DOS EFEITOS DA TUTELA, suspendendo os efeitos do Auto de Infração nº G000554755 e suas penalidades aplicadas à parte autora, e determinando à parte que oficie os demais órgãos de trânsito da presente situação, para que excluam de seus registros qualquer informação de penalidade decorrente do ato atacado. Cite-se a parte ré, por mandado, na pessoa do seu representante legal, para que, querendo, ofereça resposta à presente demanda, no prazo fixado pela Lei Processual Civil. Publique-se. Intime-se. Maceió, 18 de julho de 2011 Soraya Maranhão Silva Juiz(a) de Direito Substituta
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/06/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/05/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebidos os autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/05/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetidos os Autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/05/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Distribuído por Sorteio
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+
+		
+		
+	
+</table>
+
+	<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value="
+
+">
+
+    <input id="linkNaoExibidomovimentacoes" type="hidden" value="
+        &lt;span id=&quot;setasDireitamovimentacoes&quot; class=&quot;setasDireita&quot;&gt;
+            &lt;i class=&quot;unj-link-collapse__icon glyph glyph-chevron-down&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        Mais
+    ">
+
+<span id="mensagensExibindomovimentacoes" class="mensagemExibindo"></span> &nbsp;
+
+    <a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse"><span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>Recolher</a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+
+	</div>
+
+		
+
+	
+
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Petições diversas</h2>
+		
+	
+</div>
+
+<!-- Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+	
+		
+			<thead>
+			    <tr class="label">
+			      <th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+			    <tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								08/09/2011
+							</td>
+							<td width="*">
+								Manifestação do Autor <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								28/11/2011
+							</td>
+							<td width="*">
+								Manifestação do Autor <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								29/08/2014
+							</td>
+							<td width="*">
+								Recurso de Apelação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								14/07/2016
+							</td>
+							<td width="*">
+								Contra-razões de Apelação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								14/07/2016
+							</td>
+							<td width="*">
+								Recurso de Apelação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								30/09/2017
+							</td>
+							<td width="*">
+								Ciência da Decisão <br>
+								
+							</td>
+						</tr>
+					
+				
+			</tbody>
+		
+		
+	
+</table>
+<!--  Tabela de petições diversas -->
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+			if(!captcha){
+				return;
+			}
+			$('.incidente a').each(function(){
+				var $incidente = $(this);
+				var url = $incidente.attr('href');
+				$incidente.attr('href', url+'&uuidCaptcha='+captcha);
+			});
+		})
+	})(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+
+	
+	
+		<tbody><tr>
+		  <td id="processoSemIncidentes" colspan="3" align="left">
+		 	
+ 				
+ 				
+ 					Não há incidentes, ações incidentais, recursos ou execuções de sentenças vinculados a este processo.
+ 				
+ 			
+		  </td> 
+	    </tr>
+	
+
+</tbody></table>
+<!--  Incidentes -->
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if(!captcha){
+                return;
+            }
+            $.each($('.processoApensado'), function (i, value) {
+                var $link = $(value);
+                $link.attr('href', $link.attr('href') + '&uuidCaptcha=' + captcha);
+            })
+
+        })
+    })(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Apensos, Entranhados e Unificados</h2>
+		
+	
+</div>
+
+
+
+    
+        <table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+            <tbody id="dadosApensosNaoDisponiveis">
+            <tr>
+                <td colspan="3" align="left">Não há processos apensados, entranhados e unificados a este processo.</td>
+            </tr>
+            </tbody>
+        </table>
+
+    
+    
+
+
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Audiências</h2>
+		
+	
+</div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+            
+            
+        
+    
+    
+
+<a name="audienciasPlaceHolder"></a>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+    
+        
+        
+            <tbody><tr>
+                <td id="processoSemAudiencias" colspan="3" align="left">
+                    
+                        
+                        
+                            Não há Audiências futuras vinculadas a este processo.
+                        
+                    
+                </td>
+            </tr>
+        
+    
+</tbody></table>
+
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="popupCdas" style="display: none;">
+	<!--  dados da lista (CDAs) -->
+	<div style="height:210px; overflow: auto;">
+		<table id="tableCdasPrincipais" style="margin-left:10px; margin-top:1px; width: 98%;">
+			<thead>
+				<tr class="fundoClaro">
+					<th style="text-align:left;">Número CDA</th>
+					<th style="text-align:left;">Valor</th>
+					<th style="text-align:left;">Dt. CDA</th>
+					<th style="text-align:left;">Valor atualizado</th>
+					<th style="text-align:left;">Dt. atualização</th>
+					<th style="text-align:left;">Situação</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td colspan="6">
+				</td></tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+</form>
+
+	                
+	                
+	                
+	                
+	            
+	        
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<form action="/cpopg/show.do?processo.codigo=01000D2NC0000&amp;processo.foro=1&amp;processo.numero=0026744-18.2011.8.02.0001" id="popupSenha" style="display: none;" method="POST">
+		<input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+		
+		<table role="document">
+			<tbody><tr>
+				<td colspan="2" style="padding-bottom:20px">Atendendo a resolução 121 do CNJ.</td>
+			</tr>
+			
+				<tr>
+					<td colspan="2" style="padding-bottom:20px">Se for advogado(a) nesse processo, é necessário <span id="identificacao"><strong><a href="https://www2.tjal.jus.br/esaj/identificacao.do?retorno=https%3A//www2.tjal.jus.br/cpopg/show.do%3Fprocesso.codigo%3D01000D2NC0000%26processo.foro%3D1%26processo.numero%3D0026744-18.2011.8.02.0001">Identificar-se</a></strong></span></td>
+					
+						
+						
+							<script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/conteudoIdentificacao?script=1764429819479"></script>
+						
+					
+				</tr>
+			
+			<tr align="center">
+				<td align="left" colspan="2" style="padding-bottom:20px">
+					<div style="float:left; line-height:30px;">Se for uma parte ou interessado, digite a senha do processo</div>
+					<div style="float:left;width: 140px; padding-left:15px">
+						<input type="password" name="senhaProcesso" maxlength="12" value="" rotulo="" class="form-control" id="senhaProcesso">
+						<input type="hidden" name="idRecursoQueProvocouLiberacaoPorSenha" value="">
+					</div>
+					<div class="unj-form-control-group__icon">
+						<div class="dropdown show">
+							<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyph glyph-info" aria-hidden="true"></span>
+							</a>
+							<div class="dropdown-menu tooltip-campos" aria-labelledby="dropdownMenuLink">
+								
+									É necessário informar uma senha para acessar processo em segredo de justiça, bem como para acessar autos dos demais processos.<br><br>
+									Se for parte do processo e ainda não possua uma senha, <b>solicite-a no cartório</b>.<br><br>
+								
+								
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	    
+	<input type="button" name="btFechar" value="Cancelar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotao " id="botaoFecharPopupSenha">
+
+
+					
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	<input type="submit" name="btEnviarSenha" value="Continuar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotaoDefault btn-space" id="btEnviarSenha">
+
+
+						
+					
+				</td>
+			</tr>
+		</tbody></table>
+	</form>
+
+
+
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer>
+    <nav class="navbar__footer">
+        <div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-saj.png" alt="SAJ">
+                    </a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-softplan.png" alt="Softplan">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar__footer__list-actions">
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+	
+
+
+
+
+
+
+</body></html>

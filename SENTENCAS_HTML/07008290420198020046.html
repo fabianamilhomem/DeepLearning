@@ -1,0 +1,5121 @@
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+	
+
+
+
+
+
+
+
+
+    <script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/verificarLogin.js?script=1764436459481"></script>
+
+    <script language="javascript">
+        if (window.sajcas && window.sajcas.usuarioLogadoNoCasServer) {
+            var GATEWAY_TRUE = 'gateway=true', GATEWAY_FALSE = 'gateway=false';
+            var urlRetornoSistema = '';
+            if (urlRetornoSistema === '') {
+                urlRetornoSistema = window.location.href;
+            }
+
+            if (urlRetornoSistema.indexOf(GATEWAY_FALSE) !== -1) {
+                urlRetornoSistema = urlRetornoSistema.replace(GATEWAY_FALSE, GATEWAY_TRUE);
+            } else {
+                urlRetornoSistema.lastIndexOf('?') !== -1 ? urlRetornoSistema += '&' : urlRetornoSistema += '?';
+                urlRetornoSistema += GATEWAY_TRUE;
+            }
+
+            window.location.href = urlRetornoSistema;
+        }
+    </script>
+
+
+	<title>Portal de Serviços e-SAJ</title>
+
+	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/cpopg/softheme/src/css/app.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/softheme/src/fonts/saj/styles.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/css/formulario.css?v=2.8.34-30" type="text/css">
+	
+
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2-bootstrap.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/css/saj/select2/saj-select2.css">
+
+	
+ 
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cpopg';
+	window.saj.env.css = '/cpopg/css';
+	window.saj.env.js = '/cpopg/js';
+	window.saj.env.imagens = '/cpopg/imagens';
+	window.saj.env.queryString = 'processo.codigo=1A00014QG0000&processo.foro=46&processo.numero=0700829-04.2019.8.02.0046';	
+
+	window.saj.cpo = window.saj.cpo || {};
+
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+</script>
+
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.min.js?n=1620728708"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.func_toggle.js?n=e83d5f02-da83-4d63-9e1c-028656c6e0a3"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.blockUI.min.js?n=d9105760-8182-4c35-8c9b-ca307f219e51"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.browser.min.js?n=cd84d821-9807-4510-8a0c-550d906e46da"></script>
+
+	<script language="javascript" type="text/javascript" src="/cpopg/webjars/lodash/4.17.21/lodash.js?n=6e84eefe-af50-4a93-b699-5146183901b6"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/select2/select2.js?n=7f62b0a4-f1ea-4234-a606-842fb2683766"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/webjars/select2/3.5.4/select2_locale_pt-BR.js?n=1781cdbd-4a5b-45b4-9e94-44c8a6ecc22b"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-select2.js?n=5a1b788d-8d25-4df4-9b56-8b99deb7fe6d"></script>
+
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-web-2.2.41-4.js?n=fc1c2d21-aa0a-411e-bf0e-9c3cc5e96ab0"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-tooltip.js?n=246c5ee0-8c94-4be5-82b2-a33d36ea8114"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-popup-modal-1.0.0-1.js?n=3c390c44-6390-4136-bd46-1f26c02bf2ab"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-browser.js?n=79b1f9f8-f10e-43b1-a4c4-2f95099d8953"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-mascara-input.js?n=345bac87-71d5-4dc9-851c-5cd5aa2451b7"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-numeroProcesso.js?n=2ef0473d-d6d9-4591-b77c-4055570ccd19"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj-cpo-cbpesquisa.js?n=295666404"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/acessibilidade/acessibilidade.js?n=5d0c3f37-c697-4936-ba14-85c20019acfe"></script>
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/softheme/src/js/app.js?n=789536343"></script>   
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js?n=21126482-c82f-444d-aa6d-7c68dde067d2" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js?n=1791337263" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	
+
+
+
+
+<script>
+	(function($){
+		$(function(){
+			var intervalo = 1795000;
+			$.saj.manterSessao('/cpopg/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script>
+
+
+
+
+	
+    <script language="javascript" type="text/JavaScript">
+        $.saj = $.saj || {};
+        $.saj.acessoRecurso = {
+            abrirPastaDigitalEmPopup: 'true' == 'true',
+            idRecursoQueProvocouLiberacaoPorSenha: '',
+            limitaAcessoPastaDigital: 'false',
+            popupSenha: {
+                mostrar: 'false' == 'true',
+                titulo: 'Senha do processo',
+                altura: 220 + Number("10"),
+                alturaAdicionalParaMensagemValidacao: Number("0"),
+                largura: 580
+            },
+            popupMensagem: {
+                titulo: 'Aviso:',
+                texto: 'Você atingiu o limite diário de acessos Ã  pasta digital em processos que não está vinculado.'
+            }
+        };
+
+        $.saj.getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+    </script>
+    <script language="javascript" type="text/JavaScript" src="/cpopg/jsp/show-2.8.33-0.js?n=856054158"></script>
+
+	<script type="text/javascript">
+		(function($) {
+			$(function(){
+				// Correção temporária do alinhamento do divisor de seção de formulário do SPW 
+				$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top');
+				
+			})
+		})(jQuery);
+	</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if (!captcha) {
+                return;
+            }
+
+            if(!captcha){
+                return;
+            }
+            var $processoPrinc = $('.processoPrinc');
+            $processoPrinc.attr('href', $processoPrinc.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            $('.incidente').each(function () {
+                var $incidente = $(this);
+                var url = $incidente.attr('href');
+                $incidente.attr('href', url + '&uuidCaptcha=' + captcha);
+            });
+
+        })
+    })(jQuery);
+</script>
+
+<!-- HEADER-->
+<div class="unj-entity-header">
+    
+
+
+
+
+<div class="unj-entity-header__actions">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i id="setaVoltar" class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+                <!-- CDAS -->
+                
+                <!-- Custas -->
+                
+                <!-- Pasta digital -->
+                
+                    
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                        
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPasta" aria-hidden="true" title="Pasta digital" href="#liberarAutoPorSenha">
+                                Visualizar autos
+                            </a>
+                            <!-- link da pasta digital exibido somente para leitores de tela (deficientes visuais), neste caso o link anterior é ignorado pelo leitor
+                            Obs: necessário manter a table devido aos atributos de acessibilidade se comportarem adequadamente com a tabela, comportamento que não é possível colocando
+                            os atributos somente na tag do link-->
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPastaAcessibilidade" style="font-size:0;height:0;width:0;padding:0;margin:0;border:none" href="#liberarAutoPorSenha&amp;acessibilidade=true">
+                                Visualizar autos
+                            </a>
+                        
+                    
+                
+                
+                    
+                    
+                    
+                    
+                        <!-- Peticionar -->
+                        
+                        
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="unj-entity-header__summary">
+    <div id="containerDadosPrincipaisProcesso" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-13">
+                <!--principal -->
+                
+                    <span id="numeroProcesso" class="unj-larger-1">
+                        0700829-04.2019.8.02.0046
+                    </span>
+                    
+                    
+                        <span id="labelSituacaoProcesso" class="unj-tag">Baixado</span>
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+                
+            </div>
+
+        </div>
+        <div class="row">
+            <input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+            
+                <div class="col-lg-3 col-xl-3 mb-3">
+                    <span id="labelClasseProcesso" class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2"><span id="classeProcesso" title="Procedimento Comum Cível">Procedimento Comum Cível</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-3 mb-3">
+                    <span id="labelAssuntoProcesso" class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="assuntoProcesso" title="Indenização por Dano Moral">Indenização por Dano Moral</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-2 mb-2">
+                    <span id="labelForoProcesso" class="unj-label">
+                        Foro
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="foroProcesso" title="Foro de Palmeira dos Índios">Foro de Palmeira dos Índios</span></div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-xl-2 mb-2">
+                    <span id="labelVaraProcesso" class="unj-label">
+                        Vara
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"><span id="varaProcesso" title="1ª Vara Palmeira dos Indios / Cível e Inf. e Juv.">1ª Vara Palmeira dos Indios / Cível e Inf. e Juv.</span></div>
+                </div>
+            
+
+            
+                <div class="col-lg-3 mb-2">
+                    <span id="labelJuizProcesso" class="unj-label">Juiz</span>
+                    <div class="line-clamp__2"> <span id="juizProcesso" title="Ewerton Luiz Chaves Carminati">Ewerton Luiz Chaves Carminati</span> </div>
+                </div>
+            
+
+            <!-- Processo principal -->
+            
+
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="unj-entity-header__details">
+    <div class="container">
+        <div class="unj-ta-r">
+            
+                <a href="#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                    <span class="unj-link-collapse__show">
+                        <i id="botaoExpandirDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                        Mais
+                    </span>
+                    <span class="unj-link-collapse__hide">
+                        <i id="botaoRecolherDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                        Recolher
+                    </span>
+                </a>
+            
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelDistribuicaoProcesso" class="unj-label">Distribuição </span>
+                        <div id="dataHoraDistribuicaoProcesso">18/06/2019 às 15:25 - Sorteio</div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelControleProcesso" class="unj-label">Controle</span>
+                        <div id="numeroControleProcesso">2019/000312</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 col-xl-2 mb-2">
+                        <span id="labelAreaProcesso" class="unj-label">Área</span>
+                        <div id="areaProcesso" class="lh-1-1 line-clamp__2"> <span title="Cível">Cível</span></div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span id="lavelValorAcaoProcesso" class="unj-label">Valor da ação</span>
+                        <div id="valorAcaoProcesso">R$         11.529,90</div>
+                    </div>
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+
+<div class="div-conteudo container mb-90">
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left ">
+    <div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--light.png" alt="">
+            </a>
+        </header>
+        <nav class="aside-nav__main-menu">
+            <ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Consultas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cpopg/open.do" class="aside-nav__main-menu__list__item__link">Processos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Ordem de Processos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeAtoPg.do" class="aside-nav__main-menu__list__item__link">Publicação e Cumprimento de Atos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeJulgamentoPg.do" class="aside-nav__main-menu__list__item__link">Julgamento do 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cposg5/open.do" class="aside-nav__main-menu__list__item__link">Processos de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento-virtual" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento Virtual do Segundo Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Recolhimento de Custas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustas.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=1&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690003" class="aside-nav__main-menu__list__item__link">Custas Iniciais de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=15&amp;flTipoCusta=5&amp;cdServicoCalculoCusta=690004" class="aside-nav__main-menu__list__item__link">Atos Avulsos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=10&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690005" class="aside-nav__main-menu__list__item__link">Custas de Preparo de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=14&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690006" class="aside-nav__main-menu__list__item__link">Custas Juizado Especial - Recurso Inominado</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=3&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690009" class="aside-nav__main-menu__list__item__link">Custas Intermediárias de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustasSg.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690205&amp;flTipoCusta=0&amp;cdTipoCusta=1" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690206&amp;flTipoCusta=5&amp;cdTipoCusta=4" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690207&amp;flTipoCusta=1&amp;cdTipoCusta=3" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Jurisprudência</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaSimples.do" class="aside-nav__main-menu__list__item__link">Simples</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaCompleta.do" class="aside-nav__main-menu__list__item__link">Completa</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cdje" class="aside-nav__main-menu__list__item__link">Diário da Justiça Eletrônico</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Push</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushpg" class="aside-nav__main-menu__list__item__link">1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushsg5" class="aside-nav__main-menu__list__item__link">2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento/consulta" class="aside-nav__main-menu__list__item__link">Consulta da Pauta de Julgamento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões de 1º grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirCadastro.do" class="aside-nav__main-menu__list__item__link">Pedido de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirConferencia.do" class="aside-nav__main-menu__list__item__link">Conferência de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirDownload.do" class="aside-nav__main-menu__list__item__link">Baixar Certidão de 1º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Conferência de Documentos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/pg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/sg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Intimação e Citação Eletrônica</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosRecebidos.do" class="aside-nav__main-menu__list__item__link">Consulta de Recebidas</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosNaoRecebidos.do" class="aside-nav__main-menu__list__item__link">Recebimento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoInicial.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoIntermediaria.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoInicial.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoIntermediaria.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de Turmas Recursais / Plantão (2º Grau)/ Precatórios</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoInicial.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoIntermediaria.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições - TR/ Plantão TJ/ Precat.</a>
+</li>
+</ul></li>
+</ul></li></ul>
+        </nav>
+        <div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside>
+<aside class="aside-nav aside-nav--right aside-nav__user ">
+    <div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="https://www2.tjal.jus.br/esaj/img/aside/brasoes/br-tjal.jpg" alt="">
+            </div>
+            <ul class="aside-nav__user__sign__list">
+                <li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado de Alagoas</span></li>
+            </ul>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--dark.png" alt="">
+            </a>
+        </div>
+        <hr>
+        <div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+            <ul class="aside-nav__user__info__list-access">
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<header>
+    <link rel="shortcut icon" href="https://www2.tjal.jus.br/esaj/tema/padrao/clientes/AL/imagens/favicon.ico" type="image/x-icon">
+    <link href="https://www2.tjal.jus.br/esaj/app.css" rel="stylesheet" type="text/css">
+    <nav class="header__navbar--normal">
+        
+        <a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href=""><a class="linkLogo" href="https://www2.tjal.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos de 1º Grau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+            <li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="http://www.tjal.jus.br"> TJAL </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text">Identificar-se </span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script>
+
+
+
+<script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://www2.tjal.jus.br/esaj/menuPortalV2Html.do?servico=190101';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://www2.tjal.jus.br/sajcas/conteudoIdentificacaoJson?script=1764399748930&retorno=' + encodeURIComponent(location.href);
+</script>
+<script src="https://www2.tjal.jus.br/esaj/js/portalV2-bundle.js?n=806192629"></script>
+
+<script src="https://www2.tjal.jus.br/sajcas/seletorVersaoBeta.js?n=f4741b53-5491-43cc-ad66-7b5c4f6d6477&amp;versao=2"></script>
+<script>
+    function exibirLibras() {
+        document.getElementById("gifLibras").style.display = 'block';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'static');
+        mudarPosicao(cel2, 'static');
+    }
+    function ocultarLibras() {
+        document.getElementById("gifLibras").style.display = 'none';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'relative');
+        mudarPosicao(cel2, 'relative');
+    }
+
+    function mudarPosicao(coll, posicao) {
+        if (!coll) {
+            return;
+        }
+        for (var i = 0, len = coll.length; i < len; i++) {
+            coll[i].style["position"] = posicao;
+        }
+    }
+</script>
+
+	
+
+
+
+
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Partes do processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+
+
+
+
+
+
+
+
+
+<tbody><tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Autora&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Maria Adrelina Saturnino
+				
+			
+
+			
+		 
+		
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Fernando Henrique Souza Valeriano
+					
+				&nbsp;
+				
+			
+		
+		
+	</td>
+</tr>
+
+	
+		
+
+
+
+
+
+
+
+
+
+<tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Réu&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Banco BMG S/A
+				
+			
+
+			
+		 
+		
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Flávia Almeida Moura Di Latella
+					
+				&nbsp;
+				
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Marcelo Tostes de Castro Maia
+					
+				&nbsp;
+				
+			
+		
+		
+	</td>
+</tr>
+
+	
+</tbody></table>
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Movimentações</h2>
+		
+	
+</div>
+
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+			<thead>
+				<tr>
+				  <th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true">&nbsp;</th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+
+			
+			<tbody id="tabelaUltimasMovimentacoes" style="display: none;">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Arquivado Definitivamente
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-36135448" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-36135448" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão de Arquivamento Com Custas Pendentes
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Arquivamento Com Custas Pendentes
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-36135419" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-36135419" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão FUNJURIS - Justiça Gratuíta
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão FUNJURIS - Justiça Gratuíta
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-36135385" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-36135385" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão Trânsito em Julgado
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-36121643" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-36121643" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Devolvido CJU - Cálculo de Custas Finais Realizado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Devolvido CJU - Cálculo de Custas Finais Realizado
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+			
+			
+			<tbody style="" id="tabelaTodasMovimentacoes">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Arquivado Definitivamente
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-36135448" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-36135448" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão de Arquivamento Com Custas Pendentes
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Arquivamento Com Custas Pendentes
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-36135419" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-36135419" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão FUNJURIS - Justiça Gratuíta
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão FUNJURIS - Justiça Gratuíta
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-36135385" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-36135385" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão Trânsito em Julgado
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-36121643" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-36121643" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Devolvido CJU - Cálculo de Custas Finais Realizado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Devolvido CJU - Cálculo de Custas Finais Realizado
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/12/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Realizado cálculo de custas
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebido pela Contadoria UNIFICADA
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0178/2020
+Data da Publicação: 21/07/2020
+Número do Diário: 2628
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0178/2020
+Teor do ato: É o relatório. Fundamento e decido. II. DA FUNDAMENTAÇÃO Da aplicabilidade do Código de Defesa do Consumidor. A matéria em discussão é somente de direito e de fato que dispensa outras provas além das que estão acostadas aos autos. Assim, com fundamento no artigo 355, I, do Código de Processo Civil, passo a proferir sentença. Considerando a inexistência de preliminares a serem apreciadas, passo à análise do mérito. II.I - DO MÉRITO Inicialmente, saliento que os juros aplicáveis ao contrato não são impugnados pela parte autora, a qual ataca simplesmente a consignação averbada no seu benefício, pugnando por sua exclusão. Portanto, não traduz objeto da lide a aferição de excesso nos lançamentos mensais junto às faturas. Em outras palavras, a lide se resume à legalidade da cobrança, não importando se a maior ou menor. O cerne da lide se resume em definir se os descontos efetuados na conta da demandante encontram amparo em relação jurídica válida e eficaz e, se o Banco BMG é responsável pelo ressarcimento perquirido e pelo dano moral alegado. A parte autora afirma ter sido surpreendida com a informação de que o contrato de empréstimo que havia realizado na verdade se tratava de cartão de crédito, sob o título de reserva de margem consignável (RMC) advindas do banco BMG. No entanto, nega ter celebrado contrato dessa natureza, afirmando ter realizado apenas contrato de empréstimo consignado e que as cobranças não são devidas, sendo o contrato nulo. A demandante declara que os descontos no valor mínimo que estão sendo debitados de sua conta não abatem o valor da dívida, cobrindo apenas os juros e encargos. Em sede de contestação, a parte ré defende que a autora efetuou operação junto ao banco e obteve cartão de crédito com reserva de margem consignável e autorização de descontos em folha, conforme termo de adesão acostado. Aduz, ainda, que o referido instrumento comprova a adesão da autora ao cartão e às cláusulas que vinculam a relação jurídica objurgada, bem como revela sua autorização para os descontos. Quanto à suposta ausência de comprovação contratual suscitada pela demandante em sede de impugnação à contestação, entendo que não lhe assiste razão, uma vez que a contratação objeto de litígio nos presentes autos trata-se tão somente da contratação referente ao cartão de crédito consignado, mormente porque a demandante assume que realizou empréstimo junto ao demandado e somente busca ver declarada a inexistência do contrato de cartão de crédito consignado. Vislumbra-se a existência de indícios de que o termo de adesão ao cartão consignado acostado aos autos pelo demandado, originou-se de contrato de empréstimo consignado, razão pela qual não há falar em divergência, verifica-se nitidamente que o cerne da questão visa atacar a validade do contrato em razão da condição de analfabeta da parte autora. Por oportuno, quanto ao contrato de cartão de crédito consignado objeto de análise nos autos, faço entender que a vinculação do mútuo à "cartão de crédito consignado" tomou corpo como produto corrente e usual no mercado financeiro em razão do aumento do endividamento familiar. Aos consumidores que não dispunham de ampla margem consignável por conta de outros empréstimos já atrelados ao seu benefício previdenciário, as instituições financeiras passaram a oferecer o produto aqui descrito, com taxas de juros muito inferiores às aplicadas pelos cartões de crédito e pouco superiores ou similares às utilizadas em empréstimos em consignação, variando de acordo com o perfil econômico do contratante. Por tal via contratual, o crédito é disponibilizado ao consumidor e as parcelas referentes ao prêmio são lançadas mensalmente na fatura do cartão, sem que tenham sido previamente fixadas, buscando-se, sempre, atingir o máximo de desconto dentro da margem consignável. Dessa forma, as parcelas mensais podem, por estipulação contratual, ser majoradas de acordo com o aumento daquela margem. A grave crítica à tal modalidade contratual reside na imprevisibilidade das parcelas e na excessiva onerosidade, teoricamente, advinda da sobreposição de juros, vez que os juros das parcelas seguintes incidem sobre o saldo devedor que já sofreu acréscimo de juros devidos no mês anterior. Em outras palavras, a operação de juros sobre juros importaria no abatimento exclusivo destes, impossibilitando a amortização do capital (valor principal), provocando a extensão do saldo por período indeterminado de tempo. Soa por oportuno destacar, ademais, que o art. 15, I da Instrução Normativa nº 28/2015, do Instituto Nacional do Seguro Social (INSS), que no momento será utilizada de forma analógica, autoriza aos titulares de aposentadoria pagos pela Previdência Social a constituição Reserva de Margem Consignada - RMC para utilização de cartão de crédito mediante solicitação formal firmada pelo titular do benefício, por escrito ou por meio eletrônico. Portanto, verifico que o banco réu agiu de forma lícita, vez que cumpriu com o requisito exigido pela norma acima citada, conforme se extrai do termo de adesão que consta dos autos, em que a parte demandante autoriza a emissão do cartão de crédito com autorização para saque. Dessarte, saliento que a RMC não traduz um produto apartado do mútuo, mas sim a forma de pagamento das parcelas devidas por força da contratação anterior, qual seja, o empréstimo consignado. A conclusão que se tem é a de que a RMC é o meio através do qual a demandada efetiva o empréstimo consignado, o qual, segundo a mesma afirma categoricamente, foi espontaneamente realizado por ela. Neste ponto, saliento que o art. 4ºda Lei nº 10.820/2003 confere, em respeito ao princípio da autonomia da vontade, liberdade para as partes contratarem empréstimo, financiamento, cartão de crédito ou arrendamento mercantil segundo critério da instituição consignatária, sendo os valores e as demais condições objeto de livre negociação entre ela e o mutuário. Ora. O próprio autor reconhece ter recebido um valor. Portanto, não restam dúvidas de que percebeu o crédito liberado por meio do contrato de mútuo objurgado. Não obstante a preocupação retro analisada, o objeto da lide não abrange a discussão sobre os juros incidentes e sobre o quantum variável do prêmio, limitando-se a impugnar não somente a legalidade do instrumento que ensejou na referida cobrança. É que, conforme pontuado pela demandante em sede de impugnação, o ponto objeto de discussão da demanda diz respeito à ausência de instrumento público e procuração realizada em cartório de registro civil. Quanto à alegada nulidade em virtude da ausência de instrumento público para celebração de contrato e suposta falta de conhecimento técnico da demandante por se tratar de pessoa analfabeta, entendo que não merece prosperar pelas razões que passo a expor. Evidente que o analfabetismo, não constitui, por si só, causa de invalidade do negócio jurídico. Todavia, considerando a presumida vulnerabilidade da contratante, sendo analfabeta, o pacto deve atender aos requisitos insertos no artigo 595 do CC, a saber, verbis: Art. 595, No contrato de prestação de serviço, quando qualquer das partes não souber ler, nem escrever, o instrumento poderá ser assinado a rogo e subscrito por duas testemunhas. (grifei) Embora o atual art. 595 do CC exija assinatura de duas testemunhas, a garantia e a segurança da contratação depende, ainda, da presença imprescindível delas. Lógico que a circunstância de ser a pessoa analfabeta, não lhe retira a capacidade para os atos negociais. Mas se o requisito de validade do ato jurídico (capacidade das partes) estiver presente, restará inadimplido o da "forma prescrita em lei" (CC, art. 166, IV). É sabido que existe um grande assédio das instituições financeiras no sentido de realizar contratos de empréstimos com idosos aposentados e pensionistas do INSS, contratando pessoas, inclusive, para abordarem pessoas vulneráveis, tais como, analfabetos e idosos, fora da instituição financeira. Contudo, em que pese tal prática seja recorrente, não cabe ao judiciário permanecer engessado nesta infeliz realidade. Pelo contrário, caberá ao judiciário, à luz de todo contexto fático e probatório, a aplicação do que for cabível ao caso concreto. In casu, diante de toda documentação acostada aos autos, constata-se que o contrato de empréstimo consignado se encontra devidamente assinado por duas testemunhas e com assinatura à rogo. Cumpre destacar que a pessoa que assinou à rogo da demandante é seu filho, conforme se extrai do documento de fl. 147 (RG do assinante, que comprova a filiação). No caso dos autos, muito embora a parte autora seja analfabeta, a mesma afirma categoricamente que realizou o empréstimo consignado de forma espontânea. Some-se a isto o fato de que o seu próprio filho foi quem assinou à seu rogo. Portanto, muito embora venha aos autos contestar a validade do termo de adesão de fl. 141/144, em razão da assinatura à rogo, entendo que esta não merece prosperar. Compulsando o contrato anexado aos autos e objeto da presente lide (fls. 141/144), é possível observar a oposição da digital atribuída à demandante, devidamente acompanhada de uma assinatura à rogo plenamente identificada (inclusive, a pessoa que assinou à seu rogo foi seu filho), verifica-se, ainda, a presença da assinatura de duas testemunhas (fl. 144), tudo conforme exige as normas em vigor. Entendo, portanto, demonstrada a regularidade da contratação. Analisando todo o conjunto probatório, percebo que a autora tinha plena ciência da existência do cartão de crédito, sobretudo considerando a validade de sua assinatura no contrato colacionado, uma vez que o referido contrato foi assinado à rogo por seu próprio filho, com assinatura de duas testemunhas (fl.144). Em outras palavras, o contrato firmado nos autos encontra-se em consonância com o que dispõe o art. 595 do Código Civil e, não há nos autos qualquer indício de que a demandante foi ludibriada ao assinar o referido termo de adesão ao cartão de crédito consignado. A parte autora não comprovou que foi induzida a erro ou que houve falha na prestação do serviço, ônus que lhe incumbia, não obstante a incidência das normas consumeristas, em especial, pela utilização do valor que lhe foi disponibilizado. Em suma, a relação jurídica está comprovada, razão pela qual, inexiste ilícito a ser indenizado ou quantia a ser restituída, de modo que a inaplicabilidade do art. 42, parágrafo único do CDC é medida de que impõe. Convém mencionar que este magistrado não está querendo dizer, com isso, que o contrato objeto dos autos se encontra dotado de legalidade quanto às suas cláusulas, apenas se está dizendo que as referidas cláusulas não foram objeto de mérito na presente demanda e que, se o demandante não concorda com os valores que estão sendo descontados mensalmente em seu benefício, deverá o mesmo se valer de demanda revisional para tanto. Repise-se, a parte demandante em nenhum momento suscitou a abusividade das clausulas contratuais que norteiam o contrato ensejador dos descontos mensalmente realizados em seu benefício, ao contrário, limitou-se tão somente a suscitar a inexistência do contrato, sustentando que nunca contratou o cartão de crédito consignado. Se a parte demandante pretende discutir a abusividade dos descontos realizados em seu benefício, deverá se valer da competente ação de revisão contratual, apontando todas as clausulas que entender abusivas e cobranças que entender excessivas, tudo conforme dispõe o CPC/15 acerca do tema, a fim de que sejam objetos de apreciação judicial, eis que nos presentes autos a demandante limitou-se tão somente a suscitar a inexistência do contrato, sob alegação de que nunca havia firmado o mesmo, o que, deveras, se encontra totalmente rechaçado sobretudo considerando a cópia do termo de adesão acostado aos autos. Dos danos Morais Assim, comprovado que o contrato foi realizado com a anuência da parte autora; verifica-se que não há nexo de causalidade entre os atos praticados pelo réu e eventual abalo psicológico que o autor alega ter sofrido. Portanto, não restam evidenciados os elementos típicos do dano moral indenizável, visto que, o banco agiu em exercício regular de seu direito enquanto credor, apresentando comportamento amparado pela legislação. Vejamos: RECURSO INOMINADO. CONSUMIDOR. CONTRATO DE CARTÃO DE CRÉDITO CONSIGNADO EM BENEFICIO PREVIDENCIÁRIO. RESERVA DE MARGEM CONSIGNÁVEL - RMC. DESCONTOS LEGITIMOS. AUSENCIA DE AGIR ILICITO. DANOS MORAIS INOCORRENTES. O banco réu forneceu ao autor cartão de crédito, com descontos em folha, observada a margem consignada - RMC. Comprovou que o demandante efetivamente solicitou o cartão de crédito (nº.525922082645115). O autor negou a contratação, contudo, restou demonstrado nos autos a contratação do cartão de crédito consignado nos termos do contrato de fls. 76/86. Neste contexto, tem-se que a parte ré se desincumbiu do ônus probatório, a teor do art. 373, II do CPC, restando demonstrado nos autos a contratação, legítimo, pois, os descontos no benefício previdênciário do autor. Em razão da legitimidade dos descontos, não há falar em ressarcimento dos valores descontados, assim como em indenização por danos morais. SENTENÇA MANTIDA PELOS PRÓPRIOS FUNDAMENTOS. RECURSO DESPROVIDO. (Recurso Cível Nº 71007165921, Segunda Turma Recursal Cível, Turmas Recursais, Relator: Vivian Cristina Angonese Spengler, Julgado em 11/10/2017). (grifei) Portanto, verificada a ausência de ato ilícito imputável ao demandado, a narrativa do autor não encontra subsunção ao disposto nos arts. 186 e 927 do Código Civil, afastando, por consequência, os deveres de ressarcir e reparar. III. DISPOSITIVO Ante o exposto, na forma do art. 487, I, do CPC/15, julgo improcedentes os pedidos e extingo o feito com resolução do mérito. Condeno a parte autora ao pagamento das custas processuais e honorários advocatícios, que ora fixo em 10% (dez por cento) sobre o valor da causa, nos termos do art. 85, §2º do CPC/15, mas suspendo sua exigibilidade pelo prazo de cinco anos, tendo em vista tratar-se de parte beneficiária da justiça gratuita. P.R.I. Certificado o trânsito em julgado, arquivem-se os autos, observadas as formalidades legais.
+Advogados(s): Marcelo Tostes de Castro Maia (OAB 63440/MG), Flávia Almeida Moura Di Latella (OAB 109730/MG), Fernando Henrique Souza Valeriano (OAB 16071/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34358660" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34358660" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Registro de Sentença
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34348914" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=34348914&amp;nmRecursoAcessado=Julgado+improcedente+o+pedido" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34348914" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=34348914&amp;nmRecursoAcessado=Julgado+improcedente+o+pedido" target="_blank"> Julgado improcedente o pedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				É o relatório. Fundamento e decido. II. DA FUNDAMENTAÇÃO Da aplicabilidade do Código de Defesa do Consumidor. A matéria em discussão é somente de direito e de fato que dispensa outras provas além das que estão acostadas aos autos. Assim, com fundamento no artigo 355, I, do Código de Processo Civil, passo a proferir sentença. Considerando a inexistência de preliminares a serem apreciadas, passo à análise do mérito. II.I - DO MÉRITO Inicialmente, saliento que os juros aplicáveis ao contrato não são impugnados pela parte autora, a qual ataca simplesmente a consignação averbada no seu benefício, pugnando por sua exclusão. Portanto, não traduz objeto da lide a aferição de excesso nos lançamentos mensais junto às faturas. Em outras palavras, a lide se resume à legalidade da cobrança, não importando se a maior ou menor. O cerne da lide se resume em definir se os descontos efetuados na conta da demandante encontram amparo em relação jurídica válida e eficaz e, se o Banco BMG é responsável pelo ressarcimento perquirido e pelo dano moral alegado. A parte autora afirma ter sido surpreendida com a informação de que o contrato de empréstimo que havia realizado na verdade se tratava de cartão de crédito, sob o título de reserva de margem consignável (RMC) advindas do banco BMG. No entanto, nega ter celebrado contrato dessa natureza, afirmando ter realizado apenas contrato de empréstimo consignado e que as cobranças não são devidas, sendo o contrato nulo. A demandante declara que os descontos no valor mínimo que estão sendo debitados de sua conta não abatem o valor da dívida, cobrindo apenas os juros e encargos. Em sede de contestação, a parte ré defende que a autora efetuou operação junto ao banco e obteve cartão de crédito com reserva de margem consignável e autorização de descontos em folha, conforme termo de adesão acostado. Aduz, ainda, que o referido instrumento comprova a adesão da autora ao cartão e às cláusulas que vinculam a relação jurídica objurgada, bem como revela sua autorização para os descontos. Quanto à suposta ausência de comprovação contratual suscitada pela demandante em sede de impugnação à contestação, entendo que não lhe assiste razão, uma vez que a contratação objeto de litígio nos presentes autos trata-se tão somente da contratação referente ao cartão de crédito consignado, mormente porque a demandante assume que realizou empréstimo junto ao demandado e somente busca ver declarada a inexistência do contrato de cartão de crédito consignado. Vislumbra-se a existência de indícios de que o termo de adesão ao cartão consignado acostado aos autos pelo demandado, originou-se de contrato de empréstimo consignado, razão pela qual não há falar em divergência, verifica-se nitidamente que o cerne da questão visa atacar a validade do contrato em razão da condição de analfabeta da parte autora. Por oportuno, quanto ao contrato de cartão de crédito consignado objeto de análise nos autos, faço entender que a vinculação do mútuo à "cartão de crédito consignado" tomou corpo como produto corrente e usual no mercado financeiro em razão do aumento do endividamento familiar. Aos consumidores que não dispunham de ampla margem consignável por conta de outros empréstimos já atrelados ao seu benefício previdenciário, as instituições financeiras passaram a oferecer o produto aqui descrito, com taxas de juros muito inferiores às aplicadas pelos cartões de crédito e pouco superiores ou similares às utilizadas em empréstimos em consignação, variando de acordo com o perfil econômico do contratante. Por tal via contratual, o crédito é disponibilizado ao consumidor e as parcelas referentes ao prêmio são lançadas mensalmente na fatura do cartão, sem que tenham sido previamente fixadas, buscando-se, sempre, atingir o máximo de desconto dentro da margem consignável. Dessa forma, as parcelas mensais podem, por estipulação contratual, ser majoradas de acordo com o aumento daquela margem. A grave crítica à tal modalidade contratual reside na imprevisibilidade das parcelas e na excessiva onerosidade, teoricamente, advinda da sobreposição de juros, vez que os juros das parcelas seguintes incidem sobre o saldo devedor que já sofreu acréscimo de juros devidos no mês anterior. Em outras palavras, a operação de juros sobre juros importaria no abatimento exclusivo destes, impossibilitando a amortização do capital (valor principal), provocando a extensão do saldo por período indeterminado de tempo. Soa por oportuno destacar, ademais, que o art. 15, I da Instrução Normativa nº 28/2015, do Instituto Nacional do Seguro Social (INSS), que no momento será utilizada de forma analógica, autoriza aos titulares de aposentadoria pagos pela Previdência Social a constituição Reserva de Margem Consignada - RMC para utilização de cartão de crédito mediante solicitação formal firmada pelo titular do benefício, por escrito ou por meio eletrônico. Portanto, verifico que o banco réu agiu de forma lícita, vez que cumpriu com o requisito exigido pela norma acima citada, conforme se extrai do termo de adesão que consta dos autos, em que a parte demandante autoriza a emissão do cartão de crédito com autorização para saque. Dessarte, saliento que a RMC não traduz um produto apartado do mútuo, mas sim a forma de pagamento das parcelas devidas por força da contratação anterior, qual seja, o empréstimo consignado. A conclusão que se tem é a de que a RMC é o meio através do qual a demandada efetiva o empréstimo consignado, o qual, segundo a mesma afirma categoricamente, foi espontaneamente realizado por ela. Neste ponto, saliento que o art. 4ºda Lei nº 10.820/2003 confere, em respeito ao princípio da autonomia da vontade, liberdade para as partes contratarem empréstimo, financiamento, cartão de crédito ou arrendamento mercantil segundo critério da instituição consignatária, sendo os valores e as demais condições objeto de livre negociação entre ela e o mutuário. Ora. O próprio autor reconhece ter recebido um valor. Portanto, não restam dúvidas de que percebeu o crédito liberado por meio do contrato de mútuo objurgado. Não obstante a preocupação retro analisada, o objeto da lide não abrange a discussão sobre os juros incidentes e sobre o quantum variável do prêmio, limitando-se a impugnar não somente a legalidade do instrumento que ensejou na referida cobrança. É que, conforme pontuado pela demandante em sede de impugnação, o ponto objeto de discussão da demanda diz respeito à ausência de instrumento público e procuração realizada em cartório de registro civil. Quanto à alegada nulidade em virtude da ausência de instrumento público para celebração de contrato e suposta falta de conhecimento técnico da demandante por se tratar de pessoa analfabeta, entendo que não merece prosperar pelas razões que passo a expor. Evidente que o analfabetismo, não constitui, por si só, causa de invalidade do negócio jurídico. Todavia, considerando a presumida vulnerabilidade da contratante, sendo analfabeta, o pacto deve atender aos requisitos insertos no artigo 595 do CC, a saber, verbis: Art. 595, No contrato de prestação de serviço, quando qualquer das partes não souber ler, nem escrever, o instrumento poderá ser assinado a rogo e subscrito por duas testemunhas. (grifei) Embora o atual art. 595 do CC exija assinatura de duas testemunhas, a garantia e a segurança da contratação depende, ainda, da presença imprescindível delas. Lógico que a circunstância de ser a pessoa analfabeta, não lhe retira a capacidade para os atos negociais. Mas se o requisito de validade do ato jurídico (capacidade das partes) estiver presente, restará inadimplido o da "forma prescrita em lei" (CC, art. 166, IV). É sabido que existe um grande assédio das instituições financeiras no sentido de realizar contratos de empréstimos com idosos aposentados e pensionistas do INSS, contratando pessoas, inclusive, para abordarem pessoas vulneráveis, tais como, analfabetos e idosos, fora da instituição financeira. Contudo, em que pese tal prática seja recorrente, não cabe ao judiciário permanecer engessado nesta infeliz realidade. Pelo contrário, caberá ao judiciário, à luz de todo contexto fático e probatório, a aplicação do que for cabível ao caso concreto. In casu, diante de toda documentação acostada aos autos, constata-se que o contrato de empréstimo consignado se encontra devidamente assinado por duas testemunhas e com assinatura à rogo. Cumpre destacar que a pessoa que assinou à rogo da demandante é seu filho, conforme se extrai do documento de fl. 147 (RG do assinante, que comprova a filiação). No caso dos autos, muito embora a parte autora seja analfabeta, a mesma afirma categoricamente que realizou o empréstimo consignado de forma espontânea. Some-se a isto o fato de que o seu próprio filho foi quem assinou à seu rogo. Portanto, muito embora venha aos autos contestar a validade do termo de adesão de fl. 141/144, em razão da assinatura à rogo, entendo que esta não merece prosperar. Compulsando o contrato anexado aos autos e objeto da presente lide (fls. 141/144), é possível observar a oposição da digital atribuída à demandante, devidamente acompanhada de uma assinatura à rogo plenamente identificada (inclusive, a pessoa que assinou à seu rogo foi seu filho), verifica-se, ainda, a presença da assinatura de duas testemunhas (fl. 144), tudo conforme exige as normas em vigor. Entendo, portanto, demonstrada a regularidade da contratação. Analisando todo o conjunto probatório, percebo que a autora tinha plena ciência da existência do cartão de crédito, sobretudo considerando a validade de sua assinatura no contrato colacionado, uma vez que o referido contrato foi assinado à rogo por seu próprio filho, com assinatura de duas testemunhas (fl.144). Em outras palavras, o contrato firmado nos autos encontra-se em consonância com o que dispõe o art. 595 do Código Civil e, não há nos autos qualquer indício de que a demandante foi ludibriada ao assinar o referido termo de adesão ao cartão de crédito consignado. A parte autora não comprovou que foi induzida a erro ou que houve falha na prestação do serviço, ônus que lhe incumbia, não obstante a incidência das normas consumeristas, em especial, pela utilização do valor que lhe foi disponibilizado. Em suma, a relação jurídica está comprovada, razão pela qual, inexiste ilícito a ser indenizado ou quantia a ser restituída, de modo que a inaplicabilidade do art. 42, parágrafo único do CDC é medida de que impõe. Convém mencionar que este magistrado não está querendo dizer, com isso, que o contrato objeto dos autos se encontra dotado de legalidade quanto às suas cláusulas, apenas se está dizendo que as referidas cláusulas não foram objeto de mérito na presente demanda e que, se o demandante não concorda com os valores que estão sendo descontados mensalmente em seu benefício, deverá o mesmo se valer de demanda revisional para tanto. Repise-se, a parte demandante em nenhum momento suscitou a abusividade das clausulas contratuais que norteiam o contrato ensejador dos descontos mensalmente realizados em seu benefício, ao contrário, limitou-se tão somente a suscitar a inexistência do contrato, sustentando que nunca contratou o cartão de crédito consignado. Se a parte demandante pretende discutir a abusividade dos descontos realizados em seu benefício, deverá se valer da competente ação de revisão contratual, apontando todas as clausulas que entender abusivas e cobranças que entender excessivas, tudo conforme dispõe o CPC/15 acerca do tema, a fim de que sejam objetos de apreciação judicial, eis que nos presentes autos a demandante limitou-se tão somente a suscitar a inexistência do contrato, sob alegação de que nunca havia firmado o mesmo, o que, deveras, se encontra totalmente rechaçado sobretudo considerando a cópia do termo de adesão acostado aos autos. Dos danos Morais Assim, comprovado que o contrato foi realizado com a anuência da parte autora; verifica-se que não há nexo de causalidade entre os atos praticados pelo réu e eventual abalo psicológico que o autor alega ter sofrido. Portanto, não restam evidenciados os elementos típicos do dano moral indenizável, visto que, o banco agiu em exercício regular de seu direito enquanto credor, apresentando comportamento amparado pela legislação. Vejamos: RECURSO INOMINADO. CONSUMIDOR. CONTRATO DE CARTÃO DE CRÉDITO CONSIGNADO EM BENEFICIO PREVIDENCIÁRIO. RESERVA DE MARGEM CONSIGNÁVEL - RMC. DESCONTOS LEGITIMOS. AUSENCIA DE AGIR ILICITO. DANOS MORAIS INOCORRENTES. O banco réu forneceu ao autor cartão de crédito, com descontos em folha, observada a margem consignada - RMC. Comprovou que o demandante efetivamente solicitou o cartão de crédito (nº.525922082645115). O autor negou a contratação, contudo, restou demonstrado nos autos a contratação do cartão de crédito consignado nos termos do contrato de fls. 76/86. Neste contexto, tem-se que a parte ré se desincumbiu do ônus probatório, a teor do art. 373, II do CPC, restando demonstrado nos autos a contratação, legítimo, pois, os descontos no benefício previdênciário do autor. Em razão da legitimidade dos descontos, não há falar em ressarcimento dos valores descontados, assim como em indenização por danos morais. SENTENÇA MANTIDA PELOS PRÓPRIOS FUNDAMENTOS. RECURSO DESPROVIDO. (Recurso Cível Nº 71007165921, Segunda Turma Recursal Cível, Turmas Recursais, Relator: Vivian Cristina Angonese Spengler, Julgado em 11/10/2017). (grifei) Portanto, verificada a ausência de ato ilícito imputável ao demandado, a narrativa do autor não encontra subsunção ao disposto nos arts. 186 e 927 do Código Civil, afastando, por consequência, os deveres de ressarcir e reparar. III. DISPOSITIVO Ante o exposto, na forma do art. 487, I, do CPC/15, julgo improcedentes os pedidos e extingo o feito com resolução do mérito. Condeno a parte autora ao pagamento das custas processuais e honorários advocatícios, que ora fixo em 10% (dez por cento) sobre o valor da causa, nos termos do art. 85, §2º do CPC/15, mas suspendo sua exigibilidade pelo prazo de cinco anos, tendo em vista tratar-se de parte beneficiária da justiça gratuita. P.R.I. Certificado o trânsito em julgado, arquivem-se os autos, observadas as formalidades legais.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34085195" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=34085195&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34085195" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=34085195&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Despacho Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34083993" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34083993" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0130/2020
+Data da Publicação: 18/05/2020
+Número do Diário: 2586
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0130/2020
+Teor do ato: DECISÃO
+
+		Dezenas de processos estão esperando a realização de audiência, causando prejuízos para as partes.
+		Posto isso, iniciando pelos processos que possuem apenas uma parte demandada, determino a intimação das partes, para que no prazo comum de 10 dias, informem se possuem alguma prova a produzir, inclusive em audiência, ressaltando que o silêncio será interpretado com ausência de interesse na produção.
+		Após  o prazo , venham-me os autos conclusos, ressaltando que a designação , ou não , de audiência, será por mim decidida, pois o juiz é o destinatário da prova.
+		Cumpra-se.
+
+
+
+		Palmeira dos Índios , 13 de maio de 2020.
+
+
+
+José Miranda Santos Junior
+ Juiz de Direito
+Advogados(s): Marcelo Tostes de Castro Maia (OAB 63440/MG), Flávia Almeida Moura Di Latella (OAB 109730/MG), Fernando Henrique Souza Valeriano (OAB 16071/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33662631" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=33662631&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33662631" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=33662631&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DECISÃO
+
+		Dezenas de processos estão esperando a realização de audiência, causando prejuízos para as partes.
+		Posto isso, iniciando pelos processos que possuem apenas uma parte demandada, determino a intimação das partes, para que no prazo comum de 10 dias, informem se possuem alguma prova a produzir, inclusive em audiência, ressaltando que o silêncio será interpretado com ausência de interesse na produção.
+		Após  o prazo , venham-me os autos conclusos, ressaltando que a designação , ou não , de audiência, será por mim decidida, pois o juiz é o destinatário da prova.
+		Cumpra-se.
+
+
+
+		Palmeira dos Índios , 13 de maio de 2020.
+
+
+
+José Miranda Santos Junior
+ Juiz de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33637960" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33637960" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33636722" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33636722" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33402634" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33402634" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/03/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WPAL.20.70003094-8
+Tipo da Petição: Petição
+Data: 23/03/2020 17:47
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/03/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0077/2020
+Data da Publicação: 23/03/2020
+Número do Diário: 2551
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/03/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0077/2020
+Teor do ato: ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 354, do Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada audiência de Instrução, para o dia 26 de maio de 2020, às 10 horas e 1 minuto, a seguir, passo a intimar o autor. Palmeira dos Índios, 19 de março de 2020 Valdemir Ferreira Rocha Técnico Judiciário
+Advogados(s): Marcelo Tostes de Castro Maia (OAB 63440/MG), Flávia Almeida Moura Di Latella (OAB 109730/MG), Fernando Henrique Souza Valeriano (OAB 16071/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/03/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-32816231" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-32816231" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 354, do Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada audiência de Instrução, para o dia 26 de maio de 2020, às 10 horas e 1 minuto, a seguir, passo a intimar o autor. Palmeira dos Índios, 19 de março de 2020 Valdemir Ferreira Rocha Técnico Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/03/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Audiência Designada
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Instrução
+Data: 26/05/2020 Hora 10:01
+Local: Sala de audiência
+Situacão: Suspensa
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/03/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/03/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-32763125" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-32763125" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Audiência Realizada
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Assentada - Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/03/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/03/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-32742249" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-32742249" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Mandado devolvido cumprido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Juízo de Direito da 1ª Vara Palmeira dos Indios / Cível e Inf. e Juv. Rua Dep. Jota Duarte, 23, Jucá Sampaio - CEP 57600-970, Fone: 3421-4511, Palmeira Dos Índios-AL - E-mail: vara1palmeira@tjal.jus.br CERTIDÃO Autos n° 0700829-04.2019.8.02.0046 Mandado nº 046.2020/000872-7 Ação: Procedimento Ordinário Autor: Maria Adrelina Saturnino Réu: Banco BMG S/A Certifico eu, Márcio Viana de Almeida, Oficial de Justiça, que em cumprimento ao Mandado de Ordem do MM. Juiz de Direito da 1ª Vara Palmeira dos Indios / Cível e Inf. e Juv., Dr. José Miranda Santos Junior, e extraído dos Autos da Ação de Procedimento Ordinário, processo nº. 0700829-04.2019.8.02.0046, em que figura como Autor o(a) Sr(a). Maria Adrelina Saturnino e Réu o(a) Sr(a). Banco BMG S/A, dirigi-me ao endereço constante no Mandado (Rua Adelaide C. Nascimento, nº. 150, Xucurus No Loteamneto Pe. Ludugero), nesta Comarca e nesta data, e aí sendo, procedi a INTIMAÇÃO da Srª. Maria Adrelina Saturnino "Dona Mocinha", o(a) qual após ouvir a leitura do Mandado, ficou ciente de tudo o que lhe foi lido, colocou sua digital no rosto do presente e aceitou a contrafé que lhe ofereci. O referido é verdade e dou fé. Palmeira dos Índios (AL), 13 de março de 2020 Márcio Viana de Almeida (682) Oficial de Justiça M895210
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/02/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de AR - Cumprido
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Em 21  de  fevereiro  de  2020 é juntado a estes autos o aviso de recebimento (AR145836269TJ - Cumprido), referente  ao  ofício  n. 0700829-04.2019.8.02.0046-000002, emitido para Banco BMG S/A. Usuário: 
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/02/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0030/2020
+Data da Publicação: 07/02/2020
+Número do Diário: 2523
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0030/2020
+Teor do ato: Em cumprimento ao disposto no artigo 2.º, XLIV, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada audiência de Instrução, para o dia 17 de março de 2020, às 9 horas e 30 minutos, a seguir, passo a expedir os atos necessários à realização da mesma.
+Advogados(s): Marcelo Tostes de Castro Maia (OAB 63440/MG), Flávia Almeida Moura Di Latella (OAB 109730/MG), Fernando Henrique Souza Valeriano (OAB 16071/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-32256082" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-32256082" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				AR DIGITAL - Intimação do Autor - Audiência de Instrução e Julgamento - Juizado
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-32255962" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-32255962" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Mandado Expedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Mandado nº: 046.2020/000872-7 
+Situação: Cumprido - Ato positivo em 16/03/2020 
+Local: 1º Cartório Cível de Palmeira dos Índios /Infância
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-32255762" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-32255762" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Em cumprimento ao disposto no artigo 2.º, XLIV, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada audiência de Instrução, para o dia 17 de março de 2020, às 9 horas e 30 minutos, a seguir, passo a expedir os atos necessários à realização da mesma.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/12/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Audiência Designada
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Instrução
+Data: 17/03/2020 Hora 09:30
+Local: Sala de audiência
+Situacão: Realizada
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			27/11/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-31318062" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-31318062" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/10/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-30907633" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=30907633&amp;nmRecursoAcessado=Proferido+despacho+de+mero+expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-30907633" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=30907633&amp;nmRecursoAcessado=Proferido+despacho+de+mero+expediente" target="_blank"> Proferido despacho de mero expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DESPACHO Inclua-se o feito em pauta para audiência de instrução, a fim de proceder à oitiva da autora. Proceda-se às intimações necessárias. Cumpra-se.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/10/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/10/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WPAL.19.70011646-8
+Tipo da Petição: Impugnação à Contestação
+Data: 25/10/2019 10:30
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/09/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/09/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-30476274" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-30476274" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Audiência Realizada
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Modelo - Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/09/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documentos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WPAL.19.70010012-0
+Tipo da Petição: Contestação
+Data: 23/09/2019 14:52
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de AR - Cumprido
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Em 15  de  agosto  de  2019 é juntado a estes autos o aviso de recebimento (AR061696823TJ - Cumprido), referente  ao  ofício  n. 0700829-04.2019.8.02.0046-0001, emitido para Banco BMG S/A. Usuário: 
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0141/2019
+Data da Publicação: 08/08/2019
+Número do Diário: 2400
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0141/2019
+Teor do ato: ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 2.º, XLIV, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada audiência de Conciliação, para o dia 26 de setembro de 2019, às 10 horas, a seguir, passo a expedir os atos necessários à realização da mesma. Palmeira dos Índios, 06 de agosto de 2019 Valdemir Ferreira Rocha Técnico Judiciário
+Advogados(s): Fernando Henrique Souza Valeriano (OAB 16071/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-29779918" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-29779918" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				AR DIGITAL - Intimação - Comparecimento à Audiência
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-29779686" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-29779686" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 2.º, XLIV, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada audiência de Conciliação, para o dia 26 de setembro de 2019, às 10 horas, a seguir, passo a expedir os atos necessários à realização da mesma. Palmeira dos Índios, 06 de agosto de 2019 Valdemir Ferreira Rocha Técnico Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Audiência Designada
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Conciliação
+Data: 26/09/2019 Hora 10:00
+Local: Sala de audiência
+Situacão: Realizada
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/07/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-29317191" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=29317191&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-29317191" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=29317191&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DECISÃO Entendo por bem reconsiderar o despacho proferido às fls. 24 para deferir os benefícios da justiça gratuita à requerente, tendo em vista que a parte não dispõe de meios econômicos suficientes para arcar com as despesas processuais, conforme documentos acostados às fls. 17 e 22/23, com fundamento no art. 98 e seguintes do CPC. Ademais, tendo em vista que o&nbsp;Juiz deve, a todo tempo,&nbsp;tentar&nbsp;a conciliação das&nbsp;partes, à luz do art. 3º, §3º, do CPC, assim como considerando que a audiência de conciliação só não será realizada se o direito em debate não admitir autocomposição, ou se ambas as partes, expressamente, declinarem desinteresse, na forma do art. 334, § 4º, CPC, determino a inclusão do feito em pauta de audiência de conciliação. Cite-se a parte requerida, com antecedência mínima de 20 (vinte) dias, para comparecer a audiência designada, iniciando o prazo para apresentar resposta da referida audiência, caso não haja composição. Outrossim, intime-se a parte autora, na pessoa de seu advogado, para comparecer a aludida audiência (§ 3º, art. 334, do CPC). Saliente-se que o não comparecimento injustificado do autor ou do réu à audiência de conciliação será considerado ato atentatório a dignidade da justiça e será cabível sanção (§ 8º, art. 334, do CPC). No mais, a parte ré poderá manifestar o desinteresse na autocomposição, por meio de petição apresentada em até 10 (dez) dias de antecedência (§ 5º, art. 334, do CPC). Por fim, defiro o pedido de inversão do ônus da prova em favor da parte autora, com fulcro no art. 6º, inciso VIII, do CDC. Demais providências necessárias. Cumpra-se.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/07/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0114/2019
+Data da Publicação: 02/07/2019
+Número do Diário: 2373
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/07/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/06/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WPAL.19.70006689-4
+Tipo da Petição: Pedido de Reconsideração de Despacho
+Data: 21/06/2019 09:42
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/06/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0114/2019
+Teor do ato: DESPACHO Intime-se a parte autora para efetuar o pagamento das custas processuais, sob pena de cancelamento da distribuição e consequente extinção do processo, sem resolução de mérito, com fulcro no art. 290 c/c art. 485, inciso X, ambos do CPC. Diligências necessárias. Cumpra-se.
+Advogados(s): Fernando Henrique Souza Valeriano (OAB 16071/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/06/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-29265602" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=29265602&amp;nmRecursoAcessado=Proferido+despacho+de+mero+expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-29265602" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1A00014QG0000&amp;cdDocumento=29265602&amp;nmRecursoAcessado=Proferido+despacho+de+mero+expediente" target="_blank"> Proferido despacho de mero expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DESPACHO Intime-se a parte autora para efetuar o pagamento das custas processuais, sob pena de cancelamento da distribuição e consequente extinção do processo, sem resolução de mérito, com fulcro no art. 290 c/c art. 485, inciso X, ambos do CPC. Diligências necessárias. Cumpra-se.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/06/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/06/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Distribuído por Sorteio
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+
+		
+		
+	
+</table>
+
+	<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value="
+
+">
+
+    <input id="linkNaoExibidomovimentacoes" type="hidden" value="
+        &lt;span id=&quot;setasDireitamovimentacoes&quot; class=&quot;setasDireita&quot;&gt;
+            &lt;i class=&quot;unj-link-collapse__icon glyph glyph-chevron-down&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        Mais
+    ">
+
+<span id="mensagensExibindomovimentacoes" class="mensagemExibindo"></span> &nbsp;
+
+    <a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse"><span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>Recolher</a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+
+	</div>
+
+		
+
+	
+
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Petições diversas</h2>
+		
+	
+</div>
+
+<!-- Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+	
+		
+			<thead>
+			    <tr class="label">
+			      <th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+			    <tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								21/06/2019
+							</td>
+							<td width="*">
+								Pedido de Reconsideração de Despacho <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								23/09/2019
+							</td>
+							<td width="*">
+								Contestação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								25/10/2019
+							</td>
+							<td width="*">
+								Impugnação à Contestação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								23/03/2020
+							</td>
+							<td width="*">
+								Petição <br>
+								
+							</td>
+						</tr>
+					
+				
+			</tbody>
+		
+		
+	
+</table>
+<!--  Tabela de petições diversas -->
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+			if(!captcha){
+				return;
+			}
+			$('.incidente a').each(function(){
+				var $incidente = $(this);
+				var url = $incidente.attr('href');
+				$incidente.attr('href', url+'&uuidCaptcha='+captcha);
+			});
+		})
+	})(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+
+	
+	
+		<tbody><tr>
+		  <td id="processoSemIncidentes" colspan="3" align="left">
+		 	
+ 				
+ 				
+ 					Não há incidentes, ações incidentais, recursos ou execuções de sentenças vinculados a este processo.
+ 				
+ 			
+		  </td> 
+	    </tr>
+	
+
+</tbody></table>
+<!--  Incidentes -->
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if(!captcha){
+                return;
+            }
+            $.each($('.processoApensado'), function (i, value) {
+                var $link = $(value);
+                $link.attr('href', $link.attr('href') + '&uuidCaptcha=' + captcha);
+            })
+
+        })
+    })(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Apensos, Entranhados e Unificados</h2>
+		
+	
+</div>
+
+
+
+    
+        <table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+            <tbody id="dadosApensosNaoDisponiveis">
+            <tr>
+                <td colspan="3" align="left">Não há processos apensados, entranhados e unificados a este processo.</td>
+            </tr>
+            </tbody>
+        </table>
+
+    
+    
+
+
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Audiências</h2>
+		
+	
+</div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+            
+            
+        
+    
+    
+
+<a name="audienciasPlaceHolder"></a>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+    
+        
+            <tbody><tr class="label">
+                <th align="left" valign="top" width="140">Data</th>
+                <th align="left" valign="top" width="*">Audiência</th>
+                <th align="left" valign="top" width="100">Situação</th>
+                <th align="left" valign="top" width="100">Qt. Pessoas</th>
+            </tr>
+            <tr class="fundoEscuro" height="2" aria-hidden="true">
+                <td colspan="4"></td>
+            </tr>
+            
+                <tr class="fundoClaro">
+                    <td valign="top" align="left" width="140">
+                        26/09/2019
+                    </td>
+                    
+                        
+                        
+                            <td valign="top" align="left" width="*">
+                                Conciliação
+                            </td>
+                        
+                    
+
+                    <td align="left" valign="top" width="100">
+                        Realizada
+                    </td>
+                    <td align="left" valign="top" width="100">
+                        7
+                    </td>
+                </tr>
+            
+                <tr class="fundoEscuro">
+                    <td valign="top" align="left" width="140">
+                        17/03/2020
+                    </td>
+                    
+                        
+                        
+                            <td valign="top" align="left" width="*">
+                                Instrução
+                            </td>
+                        
+                    
+
+                    <td align="left" valign="top" width="100">
+                        Realizada
+                    </td>
+                    <td align="left" valign="top" width="100">
+                        2
+                    </td>
+                </tr>
+            
+                <tr class="fundoClaro">
+                    <td valign="top" align="left" width="140">
+                        26/05/2020
+                    </td>
+                    
+                        
+                        
+                            <td valign="top" align="left" width="*">
+                                Instrução
+                            </td>
+                        
+                    
+
+                    <td align="left" valign="top" width="100">
+                        Suspensa
+                    </td>
+                    <td align="left" valign="top" width="100">
+                        3
+                    </td>
+                </tr>
+            
+        
+        
+    
+</tbody></table>
+
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="popupCdas" style="display: none;">
+	<!--  dados da lista (CDAs) -->
+	<div style="height:210px; overflow: auto;">
+		<table id="tableCdasPrincipais" style="margin-left:10px; margin-top:1px; width: 98%;">
+			<thead>
+				<tr class="fundoClaro">
+					<th style="text-align:left;">Número CDA</th>
+					<th style="text-align:left;">Valor</th>
+					<th style="text-align:left;">Dt. CDA</th>
+					<th style="text-align:left;">Valor atualizado</th>
+					<th style="text-align:left;">Dt. atualização</th>
+					<th style="text-align:left;">Situação</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td colspan="6">
+				</td></tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+</form>
+
+	                
+	                
+	                
+	                
+	            
+	        
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<form action="/cpopg/show.do?processo.codigo=1A00014QG0000&amp;processo.foro=46&amp;processo.numero=0700829-04.2019.8.02.0046" id="popupSenha" style="display: none;" method="POST">
+		<input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+		
+		<table role="document">
+			<tbody><tr>
+				<td colspan="2" style="padding-bottom:20px">Atendendo a resolução 121 do CNJ.</td>
+			</tr>
+			
+				<tr>
+					<td colspan="2" style="padding-bottom:20px">Se for advogado(a) nesse processo, é necessário <span id="identificacao"><strong><a href="https://www2.tjal.jus.br/esaj/identificacao.do?retorno=https%3A//www2.tjal.jus.br/cpopg/show.do%3Fprocesso.codigo%3D1A00014QG0000%26processo.foro%3D46%26processo.numero%3D0700829-04.2019.8.02.0046">Identificar-se</a></strong></span></td>
+					
+						
+						
+							<script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/conteudoIdentificacao?script=1764436459485"></script>
+						
+					
+				</tr>
+			
+			<tr align="center">
+				<td align="left" colspan="2" style="padding-bottom:20px">
+					<div style="float:left; line-height:30px;">Se for uma parte ou interessado, digite a senha do processo</div>
+					<div style="float:left;width: 140px; padding-left:15px">
+						<input type="password" name="senhaProcesso" maxlength="12" value="" rotulo="" class="form-control" id="senhaProcesso">
+						<input type="hidden" name="idRecursoQueProvocouLiberacaoPorSenha" value="">
+					</div>
+					<div class="unj-form-control-group__icon">
+						<div class="dropdown show">
+							<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyph glyph-info" aria-hidden="true"></span>
+							</a>
+							<div class="dropdown-menu tooltip-campos" aria-labelledby="dropdownMenuLink">
+								
+									É necessário informar uma senha para acessar processo em segredo de justiça, bem como para acessar autos dos demais processos.<br><br>
+									Se for parte do processo e ainda não possua uma senha, <b>solicite-a no cartório</b>.<br><br>
+								
+								
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	    
+	<input type="button" name="btFechar" value="Cancelar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotao " id="botaoFecharPopupSenha">
+
+
+					
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	<input type="submit" name="btEnviarSenha" value="Continuar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotaoDefault btn-space" id="btEnviarSenha">
+
+
+						
+					
+				</td>
+			</tr>
+		</tbody></table>
+	</form>
+
+
+
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer>
+    <nav class="navbar__footer">
+        <div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-saj.png" alt="SAJ">
+                    </a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-softplan.png" alt="Softplan">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar__footer__list-actions">
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+	
+
+
+
+
+
+
+</body></html>

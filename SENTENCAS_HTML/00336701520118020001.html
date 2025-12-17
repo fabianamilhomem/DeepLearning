@@ -1,0 +1,6950 @@
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+	
+
+
+
+
+
+
+
+
+    <script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/verificarLogin.js?script=1764429947170"></script>
+
+    <script language="javascript">
+        if (window.sajcas && window.sajcas.usuarioLogadoNoCasServer) {
+            var GATEWAY_TRUE = 'gateway=true', GATEWAY_FALSE = 'gateway=false';
+            var urlRetornoSistema = '';
+            if (urlRetornoSistema === '') {
+                urlRetornoSistema = window.location.href;
+            }
+
+            if (urlRetornoSistema.indexOf(GATEWAY_FALSE) !== -1) {
+                urlRetornoSistema = urlRetornoSistema.replace(GATEWAY_FALSE, GATEWAY_TRUE);
+            } else {
+                urlRetornoSistema.lastIndexOf('?') !== -1 ? urlRetornoSistema += '&' : urlRetornoSistema += '?';
+                urlRetornoSistema += GATEWAY_TRUE;
+            }
+
+            window.location.href = urlRetornoSistema;
+        }
+    </script>
+
+
+	<title>Portal de Serviços e-SAJ</title>
+
+	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/cpopg/softheme/src/css/app.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/softheme/src/fonts/saj/styles.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/css/formulario.css?v=2.8.34-30" type="text/css">
+	
+
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2-bootstrap.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/css/saj/select2/saj-select2.css">
+
+	
+ 
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cpopg';
+	window.saj.env.css = '/cpopg/css';
+	window.saj.env.js = '/cpopg/js';
+	window.saj.env.imagens = '/cpopg/imagens';
+	window.saj.env.queryString = 'processo.codigo=01000D7YL0000&processo.foro=1&processo.numero=0033670-15.2011.8.02.0001';	
+
+	window.saj.cpo = window.saj.cpo || {};
+
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+</script>
+
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.min.js?n=1620728708"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.func_toggle.js?n=e83d5f02-da83-4d63-9e1c-028656c6e0a3"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.blockUI.min.js?n=d9105760-8182-4c35-8c9b-ca307f219e51"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.browser.min.js?n=cd84d821-9807-4510-8a0c-550d906e46da"></script>
+
+	<script language="javascript" type="text/javascript" src="/cpopg/webjars/lodash/4.17.21/lodash.js?n=6e84eefe-af50-4a93-b699-5146183901b6"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/select2/select2.js?n=7f62b0a4-f1ea-4234-a606-842fb2683766"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/webjars/select2/3.5.4/select2_locale_pt-BR.js?n=1781cdbd-4a5b-45b4-9e94-44c8a6ecc22b"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-select2.js?n=5a1b788d-8d25-4df4-9b56-8b99deb7fe6d"></script>
+
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-web-2.2.41-4.js?n=fc1c2d21-aa0a-411e-bf0e-9c3cc5e96ab0"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-tooltip.js?n=246c5ee0-8c94-4be5-82b2-a33d36ea8114"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-popup-modal-1.0.0-1.js?n=3c390c44-6390-4136-bd46-1f26c02bf2ab"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-browser.js?n=79b1f9f8-f10e-43b1-a4c4-2f95099d8953"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-mascara-input.js?n=345bac87-71d5-4dc9-851c-5cd5aa2451b7"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-numeroProcesso.js?n=2ef0473d-d6d9-4591-b77c-4055570ccd19"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj-cpo-cbpesquisa.js?n=295666404"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/acessibilidade/acessibilidade.js?n=5d0c3f37-c697-4936-ba14-85c20019acfe"></script>
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/softheme/src/js/app.js?n=789536343"></script>   
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js?n=21126482-c82f-444d-aa6d-7c68dde067d2" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js?n=1791337263" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	
+
+
+
+
+<script>
+	(function($){
+		$(function(){
+			var intervalo = 1795000;
+			$.saj.manterSessao('/cpopg/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script>
+
+
+
+
+	
+    <script language="javascript" type="text/JavaScript">
+        $.saj = $.saj || {};
+        $.saj.acessoRecurso = {
+            abrirPastaDigitalEmPopup: 'true' == 'true',
+            idRecursoQueProvocouLiberacaoPorSenha: '',
+            limitaAcessoPastaDigital: 'false',
+            popupSenha: {
+                mostrar: 'false' == 'true',
+                titulo: 'Senha do processo',
+                altura: 220 + Number("10"),
+                alturaAdicionalParaMensagemValidacao: Number("0"),
+                largura: 580
+            },
+            popupMensagem: {
+                titulo: 'Aviso:',
+                texto: 'Você atingiu o limite diário de acessos Ã  pasta digital em processos que não está vinculado.'
+            }
+        };
+
+        $.saj.getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+    </script>
+    <script language="javascript" type="text/JavaScript" src="/cpopg/jsp/show-2.8.33-0.js?n=856054158"></script>
+
+	<script type="text/javascript">
+		(function($) {
+			$(function(){
+				// Correção temporária do alinhamento do divisor de seção de formulário do SPW 
+				$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top');
+				
+			})
+		})(jQuery);
+	</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if (!captcha) {
+                return;
+            }
+
+            if(!captcha){
+                return;
+            }
+            var $processoPrinc = $('.processoPrinc');
+            $processoPrinc.attr('href', $processoPrinc.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            $('.incidente').each(function () {
+                var $incidente = $(this);
+                var url = $incidente.attr('href');
+                $incidente.attr('href', url + '&uuidCaptcha=' + captcha);
+            });
+
+        })
+    })(jQuery);
+</script>
+
+<!-- HEADER-->
+<div class="unj-entity-header">
+    
+
+
+
+
+<div class="unj-entity-header__actions">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i id="setaVoltar" class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+                <!-- CDAS -->
+                
+                <!-- Custas -->
+                
+                    <button class="btn btn-secondary btn-space linkConsultaSG" onclick="location.href = 'https://www2.tjal.jus.br/ccpweb/abrirConsultaCustas.do?cdProcesso=01000D7YL0000&amp;nuProcesso=0033670-15.2011.8.02.0001', '_blank', 'toolbar=0,location=0,menubar=0'">
+                        Visualizar custas
+                    </button>
+                
+                <!-- Pasta digital -->
+                
+                    
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                        
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPasta" aria-hidden="true" title="Pasta digital" href="#liberarAutoPorSenha">
+                                Visualizar autos
+                            </a>
+                            <!-- link da pasta digital exibido somente para leitores de tela (deficientes visuais), neste caso o link anterior é ignorado pelo leitor
+                            Obs: necessário manter a table devido aos atributos de acessibilidade se comportarem adequadamente com a tabela, comportamento que não é possível colocando
+                            os atributos somente na tag do link-->
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPastaAcessibilidade" style="font-size:0;height:0;width:0;padding:0;margin:0;border:none" href="#liberarAutoPorSenha&amp;acessibilidade=true">
+                                Visualizar autos
+                            </a>
+                        
+                    
+                
+                
+                    
+                    
+                    
+                    
+                        <!-- Peticionar -->
+                        
+                        
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="unj-entity-header__summary">
+    <div id="containerDadosPrincipaisProcesso" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-13">
+                <!--principal -->
+                
+                    <span id="numeroProcesso" class="unj-larger-1">
+                        0033670-15.2011.8.02.0001
+                    </span>
+                    
+                    
+                        <span id="labelSituacaoProcesso" class="unj-tag">Baixado</span>
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+                
+                    <span class="unj-tag">Há custas pendentes</span>
+                
+            </div>
+
+        </div>
+        <div class="row">
+            <input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+            
+                <div class="col-lg-3 col-xl-3 mb-3">
+                    <span id="labelClasseProcesso" class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2"><span id="classeProcesso" title="Procedimento Comum Cível">Procedimento Comum Cível</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-3 mb-3">
+                    <span id="labelAssuntoProcesso" class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="assuntoProcesso" title="Indenização por Dano Moral">Indenização por Dano Moral</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-2 mb-2">
+                    <span id="labelForoProcesso" class="unj-label">
+                        Foro
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="foroProcesso" title="Foro de Maceió">Foro de Maceió</span></div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-xl-2 mb-2">
+                    <span id="labelVaraProcesso" class="unj-label">
+                        Vara
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"><span id="varaProcesso" title="14ª Vara Cível da Capital / Fazenda Municipal">14ª Vara Cível da Capital / Fazenda Municipal</span></div>
+                </div>
+            
+
+            
+                <div class="col-lg-3 mb-2">
+                    <span id="labelJuizProcesso" class="unj-label">Juiz</span>
+                    <div class="line-clamp__2"> <span id="juizProcesso" title="Antonio Emanuel Dória Ferreira">Antonio Emanuel Dória Ferreira</span> </div>
+                </div>
+            
+
+            <!-- Processo principal -->
+            
+
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="unj-entity-header__details">
+    <div class="container">
+        <div class="unj-ta-r">
+            
+                <a href="#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                    <span class="unj-link-collapse__show">
+                        <i id="botaoExpandirDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                        Mais
+                    </span>
+                    <span class="unj-link-collapse__hide">
+                        <i id="botaoRecolherDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                        Recolher
+                    </span>
+                </a>
+            
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelDistribuicaoProcesso" class="unj-label">Distribuição </span>
+                        <div id="dataHoraDistribuicaoProcesso">20/07/2011 às 11:19 - Sorteio</div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelControleProcesso" class="unj-label">Controle</span>
+                        <div id="numeroControleProcesso">2011/000618</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 col-xl-2 mb-2">
+                        <span id="labelAreaProcesso" class="unj-label">Área</span>
+                        <div id="areaProcesso" class="lh-1-1 line-clamp__2"> <span title="Cível">Cível</span></div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span id="lavelValorAcaoProcesso" class="unj-label">Valor da ação</span>
+                        <div id="valorAcaoProcesso">R$         2.938,37</div>
+                    </div>
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+
+<div class="div-conteudo container mb-90">
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left ">
+    <div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--light.png" alt="">
+            </a>
+        </header>
+        <nav class="aside-nav__main-menu">
+            <ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Consultas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cpopg/open.do" class="aside-nav__main-menu__list__item__link">Processos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Ordem de Processos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeAtoPg.do" class="aside-nav__main-menu__list__item__link">Publicação e Cumprimento de Atos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeJulgamentoPg.do" class="aside-nav__main-menu__list__item__link">Julgamento do 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cposg5/open.do" class="aside-nav__main-menu__list__item__link">Processos de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento-virtual" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento Virtual do Segundo Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Recolhimento de Custas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustas.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=1&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690003" class="aside-nav__main-menu__list__item__link">Custas Iniciais de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=15&amp;flTipoCusta=5&amp;cdServicoCalculoCusta=690004" class="aside-nav__main-menu__list__item__link">Atos Avulsos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=10&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690005" class="aside-nav__main-menu__list__item__link">Custas de Preparo de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=14&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690006" class="aside-nav__main-menu__list__item__link">Custas Juizado Especial - Recurso Inominado</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=3&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690009" class="aside-nav__main-menu__list__item__link">Custas Intermediárias de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustasSg.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690205&amp;flTipoCusta=0&amp;cdTipoCusta=1" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690206&amp;flTipoCusta=5&amp;cdTipoCusta=4" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690207&amp;flTipoCusta=1&amp;cdTipoCusta=3" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Jurisprudência</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaSimples.do" class="aside-nav__main-menu__list__item__link">Simples</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaCompleta.do" class="aside-nav__main-menu__list__item__link">Completa</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cdje" class="aside-nav__main-menu__list__item__link">Diário da Justiça Eletrônico</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Push</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushpg" class="aside-nav__main-menu__list__item__link">1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushsg5" class="aside-nav__main-menu__list__item__link">2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento/consulta" class="aside-nav__main-menu__list__item__link">Consulta da Pauta de Julgamento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões de 1º grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirCadastro.do" class="aside-nav__main-menu__list__item__link">Pedido de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirConferencia.do" class="aside-nav__main-menu__list__item__link">Conferência de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirDownload.do" class="aside-nav__main-menu__list__item__link">Baixar Certidão de 1º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Conferência de Documentos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/pg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/sg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Intimação e Citação Eletrônica</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosRecebidos.do" class="aside-nav__main-menu__list__item__link">Consulta de Recebidas</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosNaoRecebidos.do" class="aside-nav__main-menu__list__item__link">Recebimento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoInicial.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoIntermediaria.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoInicial.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoIntermediaria.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de Turmas Recursais / Plantão (2º Grau)/ Precatórios</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoInicial.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoIntermediaria.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições - TR/ Plantão TJ/ Precat.</a>
+</li>
+</ul></li>
+</ul></li></ul>
+        </nav>
+        <div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside>
+<aside class="aside-nav aside-nav--right aside-nav__user ">
+    <div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="https://www2.tjal.jus.br/esaj/img/aside/brasoes/br-tjal.jpg" alt="">
+            </div>
+            <ul class="aside-nav__user__sign__list">
+                <li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado de Alagoas</span></li>
+            </ul>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--dark.png" alt="">
+            </a>
+        </div>
+        <hr>
+        <div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+            <ul class="aside-nav__user__info__list-access">
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<header>
+    <link rel="shortcut icon" href="https://www2.tjal.jus.br/esaj/tema/padrao/clientes/AL/imagens/favicon.ico" type="image/x-icon">
+    <link href="https://www2.tjal.jus.br/esaj/app.css" rel="stylesheet" type="text/css">
+    <nav class="header__navbar--normal">
+        
+        <a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href=""><a class="linkLogo" href="https://www2.tjal.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos de 1º Grau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+            <li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="http://www.tjal.jus.br"> TJAL </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text">Identificar-se </span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script>
+
+
+
+<script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://www2.tjal.jus.br/esaj/menuPortalV2Html.do?servico=190101';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://www2.tjal.jus.br/sajcas/conteudoIdentificacaoJson?script=1764399748930&retorno=' + encodeURIComponent(location.href);
+</script>
+<script src="https://www2.tjal.jus.br/esaj/js/portalV2-bundle.js?n=806192629"></script>
+
+<script src="https://www2.tjal.jus.br/sajcas/seletorVersaoBeta.js?n=f4741b53-5491-43cc-ad66-7b5c4f6d6477&amp;versao=2"></script>
+<script>
+    function exibirLibras() {
+        document.getElementById("gifLibras").style.display = 'block';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'static');
+        mudarPosicao(cel2, 'static');
+    }
+    function ocultarLibras() {
+        document.getElementById("gifLibras").style.display = 'none';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'relative');
+        mudarPosicao(cel2, 'relative');
+    }
+
+    function mudarPosicao(coll, posicao) {
+        if (!coll) {
+            return;
+        }
+        for (var i = 0, len = coll.length; i < len; i++) {
+            coll[i].style["position"] = posicao;
+        }
+    }
+</script>
+
+	
+
+
+
+
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Partes do processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+
+
+
+
+
+
+
+
+
+<tbody><tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Requerente&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Maria Antonieta Guerra Ferreira Neri
+				
+			
+
+			
+		 
+		
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Vitor Antônio teixeira Gaia
+					
+				&nbsp;
+				
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Rodolfo de Alcântara França
+					
+				&nbsp;
+				
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Willbert Bismark Zacarias Galvão Barros
+					
+				&nbsp;
+				
+			
+		
+		
+	</td>
+</tr>
+
+	
+		
+
+
+
+
+
+
+
+
+
+<tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Requerido&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					PREFEITURA MUNICIPAL DE MACEIO
+				
+			
+
+			
+		 
+		
+			
+				<br>
+				<span class="mensagemExibindo">Procurador:&nbsp;</span>
+				
+					
+					
+						Procurador Geral do Município de Maceió
+					
+				&nbsp;
+				
+			
+				<br>
+				<span class="mensagemExibindo">Procurador:&nbsp;</span>
+				
+					
+					
+						Sandro Soares Lima
+					
+				&nbsp;
+				
+			
+		
+		
+	</td>
+</tr>
+
+	
+</tbody></table>
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Movimentações</h2>
+		
+	
+</div>
+
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+			<thead>
+				<tr>
+				  <th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true">&nbsp;</th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+
+			
+			<tbody id="tabelaUltimasMovimentacoes" style="display: none;">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/07/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0471/2023
+Data da Publicação: 03/07/2023
+Número do Diário: 3331
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/06/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0471/2023
+Teor do ato: Autos nº: 0033670-15.2011.8.02.0001 Ação: Procedimento Comum Cível Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 3.º, V, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas, considerando o trânsito em julgado da sentença, inexistindo necessidade de despacho com conteúdo decisório, passo a arquivar os autos do presente processo, eventual cumprimento de sentença deverá ser protocolado em autos dependentes de sequenciais. Maceió, 22 de junho de 2023 Glauquia Heires Rocha e Passos Analista Judiciário
+Advogados(s): Rodolfo de Alcântara França (OAB 9276/AL), Vitor Antônio teixeira Gaia (OAB 8879/AL), Willbert Bismark Zacarias Galvão Barros (OAB 10567/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/06/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Baixa Definitiva
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/06/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-49130825" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-49130825" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos nº: 0033670-15.2011.8.02.0001 Ação: Procedimento Comum Cível Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 3.º, V, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas, considerando o trânsito em julgado da sentença, inexistindo necessidade de despacho com conteúdo decisório, passo a arquivar os autos do presente processo, eventual cumprimento de sentença deverá ser protocolado em autos dependentes de sequenciais. Maceió, 22 de junho de 2023 Glauquia Heires Rocha e Passos Analista Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/06/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-49120120" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-49120120" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Devolvido CJU - Sem Custas a Recolher
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Devolvido CJU - Sem Custas a Recolher
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+			
+			
+			<tbody style="" id="tabelaTodasMovimentacoes">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/07/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0471/2023
+Data da Publicação: 03/07/2023
+Número do Diário: 3331
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/06/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0471/2023
+Teor do ato: Autos nº: 0033670-15.2011.8.02.0001 Ação: Procedimento Comum Cível Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 3.º, V, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas, considerando o trânsito em julgado da sentença, inexistindo necessidade de despacho com conteúdo decisório, passo a arquivar os autos do presente processo, eventual cumprimento de sentença deverá ser protocolado em autos dependentes de sequenciais. Maceió, 22 de junho de 2023 Glauquia Heires Rocha e Passos Analista Judiciário
+Advogados(s): Rodolfo de Alcântara França (OAB 9276/AL), Vitor Antônio teixeira Gaia (OAB 8879/AL), Willbert Bismark Zacarias Galvão Barros (OAB 10567/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/06/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Baixa Definitiva
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/06/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-49130825" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-49130825" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos nº: 0033670-15.2011.8.02.0001 Ação: Procedimento Comum Cível Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 3.º, V, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas, considerando o trânsito em julgado da sentença, inexistindo necessidade de despacho com conteúdo decisório, passo a arquivar os autos do presente processo, eventual cumprimento de sentença deverá ser protocolado em autos dependentes de sequenciais. Maceió, 22 de junho de 2023 Glauquia Heires Rocha e Passos Analista Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/06/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-49120120" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-49120120" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Devolvido CJU - Sem Custas a Recolher
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Devolvido CJU - Sem Custas a Recolher
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/04/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebido pela Contadoria UNIFICADA
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0015/2023
+Data da Publicação: 23/01/2023
+Número do Diário: 3220
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0015/2023
+Teor do ato: Autos n° 0033670-15.2011.8.02.0001 Ação: Procedimento Comum Cível Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO Ato Ordinatório Em cumprimento ao disposto no Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas, faço remessa destes autos à contadoria, para cálculo de custas finais, se houver. Maceió, 09 de janeiro de 2023. Glauquia Heires Rocha e Passos Analista Judiciário
+Advogados(s): Rodolfo de Alcântara França (OAB 9276/AL), Vitor Antônio teixeira Gaia (OAB 8879/AL), Willbert Bismark Zacarias Galvão Barros (OAB 10567/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebido pela Contadoria UNIFICADA
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-46665794" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-46665794" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato Ordinatório - Artigo 162, §4º, CPC
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0033670-15.2011.8.02.0001 Ação: Procedimento Comum Cível Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO Ato Ordinatório Em cumprimento ao disposto no Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas, faço remessa destes autos à contadoria, para cálculo de custas finais, se houver. Maceió, 09 de janeiro de 2023. Glauquia Heires Rocha e Passos Analista Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-46665765" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-46665765" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Transitado em Julgado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos nº 0033670-15.2011.8.02.0001 Ação: Procedimento Comum Cível Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO CERTIDÃO Trânsito em Julgado CERTIFICO que, até esta data, não consta pendência de petição intermediária para estes autos. Certifico, portanto, que o dispositivo da sentença de fls. 111/119 e da sentença de fls. 138/140 transitaram em julgado. Nada mais a certificar. Maceió, 09 de janeiro de 2023. Glauquia Heires Rocha e Passos Analista Judiciário OBSERVAÇÃO: A presente certidão é emitida obedecendo o que dispõe o art. 355 do Provimento nº 15/2019, Código de Normas do Tribunal de Justiça do Estado de Alagoas.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/11/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-45784245" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-45784245" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Citação e Intimação - Portal - Procuradoria do Município de Maceió - PGM-Maceió
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Vista à PGM - Portal Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-45609165" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-45609165" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Remessa de Citação e Intimação para o Portal - Procuradoria do Município de Maceió - PGM-Maceió
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Vista à Procuradoria
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0564/2022
+Data da Publicação: 19/10/2022
+Número do Diário: 3165
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0564/2022
+Teor do ato: Do exposto, com fulcro no artigo 1.022 do NCPC, recebo os presentes embargos, entretanto DEIXO DE ACOLHÊ-LOS. Publico. Maceió,14 de outubro de 2022. Isabelle Coutinho Dantas Sampaio Juíza de Direito
+Advogados(s): Procurador Geral do Município de Maceió (OAB /PG), Vitor Antônio teixeira Gaia (OAB 8879/AL), Sandro Soares Lima (OAB 5801/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-45475550" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=45475550&amp;nmRecursoAcessado=Embargos+de+Declara%C3%A7%C3%A3o+N%C3%A3o-acolhidos" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-45475550" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=45475550&amp;nmRecursoAcessado=Embargos+de+Declara%C3%A7%C3%A3o+N%C3%A3o-acolhidos" target="_blank"> Embargos de Declaração Não-acolhidos
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Do exposto, com fulcro no artigo 1.022 do NCPC, recebo os presentes embargos, entretanto DEIXO DE ACOLHÊ-LOS. Publico. Maceió,14 de outubro de 2022. Isabelle Coutinho Dantas Sampaio Juíza de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/11/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/11/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-22452953" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-22452953" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Citação e Intimação - Portal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/11/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.17.70175600-0
+Tipo da Petição: Contrarrazões
+Data: 23/11/2017 15:56
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/11/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-22283810" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-22283810" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Remessa de Citação e Intimação para o Portal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/11/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-22283771" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-22283771" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Processo n°: 0033670-15.2011.8.02.0001 Ação: Procedimento Ordinário Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIOATO ORDINATÓRIOVista a parte Embargada para, querendo, oferecer impugnação aos Embargos de Declaração.Maceió, 09 de novembro de 2017Glauquia Heires Rocha e PassosAnalista Judiciário
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/07/2017
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documentos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/02/2015
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Tornado Processo Digital
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				3 H   SALA DE AUDIÊNCIA
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/12/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-13611645" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=13611645&amp;nmRecursoAcessado=Visto+em+correi%C3%A7%C3%A3o" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-13611645" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=13611645&amp;nmRecursoAcessado=Visto+em+correi%C3%A7%C3%A3o" target="_blank"> Visto em correição
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0033670-15.2011.8.02.0001 Ação: Procedimento Ordinário Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO DESPACHO - VISTO EM CORREIÇÃO - Provimento nº 19/2011 1. ( ) PROCESSO EM ORDEM, NADA A PROVER. 2. À CONCLUSÃO PARA: 2.1. ( x ) DESPACHO 2.2. ( ) DECISÃO 2.3. ( ) SENTENÇA 3. COBRE-SE: 3.1. ( ) A DEVOLUÇÃO DE PRECATÓRIA 3.2. ( ) A DEVOLUÇÃO DE MANDADO 4. ( ) CUMPRA-SE O DESPACHO DE FLS. 5. ( ) REITERE-SE O DESPACHO DE FLS. 6. ( ) MANTENHA-SE O FEITO SOBRESTADO. 7. ( ) ARQUIVE-SE, APÓS BAIXA NA DISTRIBUIÇÃO. 8. ( ) AUTUE-SE. 9. REMETA-SE 9.1. ( ) AO TRIBUNAL DE JUSTIÇA 9.2. ( ) À CONTADORIA 9.3. ( ) À DISTRIBUIÇÃO 10. ( ) EXPEÇA-SE CERTIDÃO AO FUNJURIS 11. COLOQUE-SE NA PAUTA DE AUDIÊNCIA: 11.1. ( ) CONCILIAÇÃO 11.2. ( ) INSTRUÇÃO 11.3. ( ) OUTRA 12. ABRA-SE VISTA AO ADVOGADO: 12.1. ( ) DO AUTOR 12.2. ( ) DO RÉU 12.3. ( ) DAS PARTES 13. ( ) ABRA-SE VISTA AO DEFENSOR PÚBLICO 14. ( ) ABRA-SE VISTA AO MINISTÉRIO PÚBLICO 15. ( ) JUNTE-SE PETIÇÃO 16. ( ) CUMPRA-SE O ATO PROCESSUAL DETERMINADO 17. ( ) REITERE-SE OFÍCIO 18. EXPEÇA-SE: 18.1. ( ) ATO ORDINATÓRIO 18.2. ( ) EDITAL 18.3. ( ) PRECATÓRIA 18.4. ( ) OFÍCIO 18.5. ( ) MANDADO 18.4. ( ) OFÍCIO 18.5. ( ) MANDADO 18.6. ( ) CARTA 18.7. ( ) ALVARÁ 19. PUBLIQUE-SE: 19.1. ( ) ATO ORDINATÓRIO 19.2. ( ) DESPACHO 19.3. ( ) DECISÃO 19.4. ( ) SENTENÇA 20. ( ) CERTIFIQUE-SE O DECURSO DO PRAZO 21. ( ) DEVOLVA-SE CARTA PRECATÓRIA 22. ( ) RETORNEM OS AUTOS AO ARQUIVO 23. ( ) AGUARDE-SE O PRAZO DE SUSPENSÃO 24. ( ) OUTROS: Maceió(AL), 01 de dezembro de 2014 Claudio José Gomes Lopes Juiz de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/09/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				3 H
+Tipo de local de destino: Juiz(a) de Direito
+Especificação do local de destino: Claudio José Gomes Lopes
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/09/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Juntada a petição diversa - Tipo: Manifestação do Autor em Procedimento Ordinário - Número: 80003 - Protocolo: CPMA14000288886
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/07/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0023/2014
+Data da Disponibilização: 04/07/2014
+Data da Publicação: 07/07/2014
+Número do Diário: 1187
+Página: 26
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/07/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0023/2014
+Teor do ato: Autos n° 0033670-15.2011.8.02.0001 Ação: Procedimento Ordinário Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO SENTENÇA MARIA ANTONIETA GUERRA FERREIRA NERI, representada por advogado legalmente constituído, ajuizou a presente Ação de Indenização por Danos Morais em face do município de Maceió, ambos devidamente qualificados, postulando a reparação pelos danos morais suportados em razão de ter seu nome indevidamente figurado no polo passivo de uma Ação de Execução Fiscal. Afirma a demandante que em meados de abril de 2011 recebeu uma carta de citação expedida pelo Juízo da 15ª Vara Cível da Capital/Fazenda Pública Municipal, referente à cobrança judicial dos débitos fiscais correspondentes ao exercício de 2003 a 2006. Argumenta que, muito embora os impostos cobrados já tivessem sido devidamente quitados desde o dia 26 de julho de 2010, desagradavelmente, teve seu nome incluso na dívida ativa, no rol dos maus pagadores, passando pelo constrangimento de ter sido indevidamente citada pelo Juízo da Fazenda Pública Municipal em Ação de Execução Fiscal no ano de 2010, na qual contava um débito fiscal de IPTU no valor de R$2.938,37 (dois mil novecentos e trinta e oito reais e trinta e sete centavos). Destarte, traz à baila o preceituado na Constituição Federal, doutrina e jurisprudência pátria, buscando provimento jurisdicional que lhe assegure a reparação do dano moral que alega ter sofrido. Com a inicial vieram os documentos às fls. 10 /74. Devidamente citado, o município de Maceió ofertou contestação, por meio da qual sustenta, em linhas gerais, que a postulação da demandante não deve prosperar em razão dos frágeis argumentos apresentados e da ausência de comprovação dos danos de ordem moral causados. Demais disso, alega que a execução não foi indevida, posto que o débito, o qual autora alega ter sido quitado, ainda estava em parcelamento. E que, ainda que a execução tivesse sido indevida, seria justificável em razão da exorbitante quantidade de processos fiscais em tramitação, invocando que o direito de executar débitos fiscais é uma prerrogativa conferida a todos os entes públicos federalizados e os exime de qualquer responsabilização de cunho moral. Pelo exposto, argumentou que a simples alegação de dano moral não é suficiente para que se comprove a sua ocorrência, razão pela qual, no mérito, pugna pela total improcedência da ação. Não juntou documentos. Intimada para apresentar réplica, a demandante reiterou os termos da inicial. Com vista, o representante do Parquet concluiu pela desnecessidade de intervenção no feito, haja vista que a causa não vislumbra interesse público primário a ser protegido. É o relatório. Fundamento e decido. Compulsando os autos, verifico que a presente lide versa, essencialmente, acerca da necessidade de se verificar a ocorrência, ou não, de danos morais à autora em face da inscrição de seu nome no rol da dívida ativa, bem como por ter suportado indevida execução judicial. Cumpre destacar que em razão dos elementos documentais probatórios existentes nos autos serem, por si, suficientes para a formação do meu convencimento, entendo ser cabível o julgamento conforme o estado do processo, com fulcro no artigo 330, I, do Código de Processo Civil. Destaque-se, por oportuno, que não tratam os presentes autos de relação de consumo, motivo pelo qual é incabível a aplicação do Código de Defesa do Consumidor no caso sob comento. Nesse sentido, sobre a Responsabilidade Civil, cabe trazer à baila o que predispõe o Código Civil brasileiro, mais precisamente seu artigo 927, senão vejamos: Art. 927. Aquele que, por ato ilícito (arts. 186 e 187), causar dano a outrem, fica obrigado a repará-lo. Como se vê, o referido dispositivo reza que a obrigação de indenizar surge de um ato ilícito causador de dano a outrem. Neste particular, o próprio Código Civil conceitua o ato ilícito da seguinte forma: Art. 186. Aquele que, por ação ou omissão voluntária, negligência ou imprudência, violar direito e causar dano a outrem, ainda que exclusivamente moral, comete ato ilícito. Em face dos dispositivos supra colacionados, percebe-se que a ilicitude decorre duma conduta - culposa ou dolosa, comissiva ou omissiva - do agente que, por consequência, viola um direito subjetivo e causa dano a outrem. Em se tratando de responsabilidade civil, ensina Maria Helena Diniz que não pode haver responsabilidade civil sem a existência de um dano a um bem jurídico, sendo imprescindível a prova real e concreta dessa lesão. Deveras, para que haja pagamento da indenização pleiteada é necessário comprovar a ocorrência de um dano patrimonial ou moral, fundados não na índole dos direitos subjetivos afetados, mas nos efeitos da lesão jurídica. O dano, portanto, é o requisito essencial para que haja a consequente indenização, como prevê o já mencionado artigo 927 do Código Civil. Ainda segundo a renomada Maria Helena Diniz, podemos conceituar o dano como sendo a lesão (diminuição ou destruição que, devido a um certo evento, sofre uma pessoa, contra sua vontade, em qualquer bem ou interesse jurídico, patrimonial ou moral). Contudo, para que haja a indenização pelos danos sofridos, é necessário que haja, por conseguinte, a efetiva comprovação da ocorrência desses danos. Quanto aos danos morais, este apresenta seu fundamento no sofrimento, na sensação de perda e no transtorno causado na vida da parte autora, nascendo a esta o direito a sua reparação. O ilustre José Afonso da Silva ensina que "a moral individual sintetiza a honra da pessoa, o bom nome, a boa fama, a reputação que integram a vida humana como dimensão imaterial. Ela e seus componentes são atributos sem os quais a pessoa fica reduzida a uma condição animal de pequena significação". Delineadas as linhas gerais sobre o tema, cumpre trazer as lições da responsabilidade civil para a seara da Administração Pública, já que o autor objetiva responsabilizar uma autarquia pela alegada existência de danos morais. Nesse sentido, sabe-se que no âmbito do direito privado, temos o acolhimento da teoria da responsabilidade subjetiva, tendo em vista que a responsabilidade advém da prática de um ato ilícito, de maneira dolosa ou culposa. De modo diferente, a responsabilidade civil do Estado, que pode ser conceituada como "a obrigação imposta ao erário de reparar os danos causados a terceiros pelos seus agentes públicos, no desempenho de suas funções ou a pretexto de exercê-las", adotou a teoria da responsabilidade objetiva, nos moldes do que dispõe o artigo 37, §6º da Constituição Federal, in verbis: Art. 37 - (...) §6º - As pessoas jurídicas de direito público [categoria na qual se inserem as autarquias] e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade em causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa. Nesse passo, a responsabilidade objetiva nada mais é que uma espécie de responsabilidade que independe da demonstração do elemento subjetivo (dolo ou culpa), tendo apenas relevância tal elemento em eventual ação de regresso. Assim, para que esteja presente a responsabilidade estatal, faz-se necessária a existência de três requisitos/pressupostos, quais sejam: a) ação ou omissão do estado; b) existência efetiva do dano material ou moral e c) nexo de causalidade. Sob essa perspectiva, faz-se necessário verificar se há, ou não, a presença dos elementos configuradores da responsabilidade civil no caso sob comento, sendo imprescindível concluir se a propositura de execução fiscal indevida constituiu atividade ilícita dos agentes administrativos para, então, analisar a presença do nexo de causalidade entre a ação danosa do Estado e o dano moral alegado. Pois bem. No caso sub judice, em que a autora foi alvo de execução fiscal indevida, observo que muito embora o ato de demandar por quantia já paga seja reprovável, como reclama a autora, não se pode presumir o dano de ordem moral em face da execução fiscal indevida. Para ensejar reparação por danos morais deve o autor trazer aos autos elementos que comprovem a intencionalidade de má-fe da Administração Pública e caracterizem o ilícito, como no caso de haver abuso de direito, reiteração de cobrança ou constrição dos bens. No entanto, vislumbro que a Administração Pública, tão logo tenha tomado conhecimento do equívoco, sem mais delongas desistiu da cobrança e solicitou a extinção da ação, que veio a ser homologada judicialmente em momento posterior, não configurando qualquer ato de má-fe que atingisse a moral da autora, mas tão somente o exercício de direito de ação. Nesse sentido, entendo que o exercício de direito de ação não gera, por si, dano moral para a parte acionada. Não fosse assim, qualquer ação julgada improcedente acarretaria obrigação de indenizar. O dano moral exige pressupostos outros. Não se pode configurar o ilícito em face do exercício de um direito, ainda que com insucesso da demanda. Nesse sentido vêm entendendo os tribunais pátrios. Vejamos: EMENTA:&nbsp; APELAÇÃO CÍVEL. DANO MORAL CAUSA DE PEDIR. INSCRIÇÃO DO AUTOR EM DÍVIDA ATIVA. CITAÇÃO EM PROCESSO JUDICIAL. DANO MORAL. INOCORRÊNCIA. Apenas devem constituir dano moral a dor, o vexame, o sofrimento ou a humilhação que, exorbitando a normalidade, afetem profundamente o comportamento psicológico do individuo, causando-lhe aflições, desequilíbrio e angústia, sendo que tais estados psicológicos são conseqüências e não causas do dano. No caso em comento, o fato de o réu ter sido indicado como parte em processo de execução, bem assim ter sido inscrito em dívida ativa, não configura ilícito capaz de gerar o dever de indenizar, porquanto inúmeras foram as oportunidades em que o demandante foi notificado para esclarecimento dos fatos, tanto na esfera administrativa quanto na judicial, nada manifestando. Ademais, o simples fato de ser citado para responder a processo judicial ou mesmo ser inscrito em dívida ativa não é motivo suficiente, a princípio, para gerar indenização por dano moral. Apelação desprovida. (Apelação Cível Nº 70011267945, Quinta Câmara Cível, Tribunal de Justiça do RS, Relator: Umberto Guaspari Sudbrack, Julgado em 22/09/2005) (grifos nossos) DANO MORAL. EXECUÇÃO EXTRAJUDICIAL DE DÍVIDA QUITADA. PAGAMENTO EM DOBRO DO VALOR COBRADO. 1. Não se pode pleitear danos morais baseado em pura indignação ou estado de ânimo alterado. O alegado prejuízo há que ser demonstrado, por exemplo, com a prova de grave constrangimento ou abalo de crédito. 2. O exercício de um direito, como a propositura de uma ação, ainda que de execução, ressalvada a hipótese de comprovada má-fé, não enseja indenização por não se tratar de conduta ilícita, não podendo por isso caracterizar ofensa à honra e dignidade das pessoas. 3. Se em toda ação de execução que se fosse impetrar houvesse risco de improcedência e a conseqüente ofensa à honra e dignidade das pessoas, inviabilizado restaria o instituto das execuções. 4.A cobrança de dívida já quitada enseja o pagamento do dobro cobrado, conforme o art. 1.531 do Código Civil. CONSTITUCIONAL. ADMINISTRATIVO. RESPONSABILIDADE CIVIL. AÇÃO INDENIZATÓRIA. INCLUSÃO INDEVIDA NO POLO PASSIVO DA AÇÃO DE EXECUÇÃO FISCAL. OFENSA À HONRA E À REPUTAÇÃO DO AUTOR. INEXISTÊNCIA DE PRESUNÇÃO. DANOS MORAIS. INOCORRÊNCIA. () 7. Com isso, não se está a descaracterizar qualquer possibilidade de consumação de danos morais em face de execução fiscal indevidamente proposta. Na realidade, o que se busca afastar é tão somente a presunção de que esse evento isolado configuraria causa de indenização, um prejuízo concreto a uma situação juridicamente tutelada. É preciso, portanto, desqualificar, antes, o exercício regular do direito ou o estrito cumprimento do dever legal, que acoberta a conduta fazendária, o que pode ser feito de um conjunto de circunstâncias como: a) demonstração do abuso do direito; b) a efetiva constrição de bens; e c) a inclusão do nome do suposto corresponsável pela dívida no cadin. 8. Do contrário, haveria uma indevida consagração da teoria da responsabilidade objetiva integral do estado, quando é cediço que o art. 37, § 6º, da crfb/88, admite excludentes e positiva a teoria do risco administrativo. 9. Sob essas perspectivas, investigou-se a documentação acostada pelo autor e verificou-se estar limitada a reproduzir algumas peças da execução fiscal, inclusive um pedido da própria união para que fossem excluídos todos os ex-sócios cujos poderes de gestão não fossem contemporâneos ao surgimento do fato gerador tributário. E esse reconhecimento, em resposta às exceções de pré-executividade (fls. 13/19), facilitou, inclusive, a pronta exclusão do sr. Expedito gondim rocha, sem que tenha sofrido a penhora de bens. Sequer precisou utilizar-se da via mais complexa das ações antiexacionais com dilação probatória. O conflito esmoreceu na exceção de pré-executividade. Bem assim, a fl. 18 atesta que já houve a necessária condenação em honorários advocatícios. 10. Não perfazimento dos requisitos da responsabilidade civil, porque elididos pela existência das excludentes de exercício regular do direito e estrito cumprimento do dever legal. Consectário inafastável disso é a reforma da sentença para suprimir a condenação da fazenda nacional em indenizar o particular. 11. Honorários advocatícios fixados em mil reais. Remessa obrigatória e apelação providas. (TRF 5ª R.; APELREEX 0001257-21.2011.4.05.8400; RN; Primeira Turma; Rel. Des. Fed. José Maria Lucena; Julg. 26/07/2012; DEJF 06/08/2012; Pág. 330) Assim, diante dos argumentos expostos, não há que se falar na responsabilidade do Estado por tal fato. Isso porque, em matéria de responsabilização do Estado, muito embora o direito pátrio, após oscilar entre as doutrinas subjetiva e objetiva, tenha adotado a teoria da responsabilidade objetiva, na modalidade do risco administrativo, segundo a qual o dever de indenizar independe da comprovação de culpa ou dolo por parte da administração, não se afasta, por sua vez, a necessidade de averiguação do dano e do nexo de causalidade, posto que, inexistindo quaisquer dos pressupostos necessários, deixará de existir o fundamento da responsabilidade da administração pública, como no caso em comento. Desse modo, mediante uma análise dos autos, pode-se constatar que o fato de a autora ter seu nome figurado no polo passivo de uma Ação de Execução Fiscal, mesmo que reconhecido o erro, por si, não se presume a configuração do dano moral, porquanto trata-se de exercício do direito de ação da Administração Pública, não subsistindo, portanto, o pedido de indenização por prejuízos morais. Ex positis, como não restaram comprovados os elementos essenciais à configuração da responsabilidade do réu, JULGO IMPROCEDENTE o pedido, condenando o autor ao pagamento das custas processuais e honorários advocatícios, os quais fixo em 20% (vinte por cento) sobre o valor da causa. Publique-se. Intime-se. Maceió,06 de maio de 2014. Claudio José Gomes Lopes Juiz de Direito IC
+Advogados(s): Sandro Soares Lima (OAB 5801/AL), Vitor Antônio teixeira Gaia (OAB 8879/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/06/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/06/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebidos os autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Tipo de local de destino: Cartório
+Especificação do local de destino: 14º Cartório Cível da Capital / Fazenda Municipal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/05/2014
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-12103744" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=12103744&amp;nmRecursoAcessado=Julgado+improcedente+o+pedido" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-12103744" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=12103744&amp;nmRecursoAcessado=Julgado+improcedente+o+pedido" target="_blank"> Julgado improcedente o pedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0033670-15.2011.8.02.0001 Ação: Procedimento Ordinário Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO SENTENÇA MARIA ANTONIETA GUERRA FERREIRA NERI, representada por advogado legalmente constituído, ajuizou a presente Ação de Indenização por Danos Morais em face do município de Maceió, ambos devidamente qualificados, postulando a reparação pelos danos morais suportados em razão de ter seu nome indevidamente figurado no polo passivo de uma Ação de Execução Fiscal. Afirma a demandante que em meados de abril de 2011 recebeu uma carta de citação expedida pelo Juízo da 15ª Vara Cível da Capital/Fazenda Pública Municipal, referente à cobrança judicial dos débitos fiscais correspondentes ao exercício de 2003 a 2006. Argumenta que, muito embora os impostos cobrados já tivessem sido devidamente quitados desde o dia 26 de julho de 2010, desagradavelmente, teve seu nome incluso na dívida ativa, no rol dos maus pagadores, passando pelo constrangimento de ter sido indevidamente citada pelo Juízo da Fazenda Pública Municipal em Ação de Execução Fiscal no ano de 2010, na qual contava um débito fiscal de IPTU no valor de R$2.938,37 (dois mil novecentos e trinta e oito reais e trinta e sete centavos). Destarte, traz à baila o preceituado na Constituição Federal, doutrina e jurisprudência pátria, buscando provimento jurisdicional que lhe assegure a reparação do dano moral que alega ter sofrido. Com a inicial vieram os documentos às fls. 10 /74. Devidamente citado, o município de Maceió ofertou contestação, por meio da qual sustenta, em linhas gerais, que a postulação da demandante não deve prosperar em razão dos frágeis argumentos apresentados e da ausência de comprovação dos danos de ordem moral causados. Demais disso, alega que a execução não foi indevida, posto que o débito, o qual autora alega ter sido quitado, ainda estava em parcelamento. E que, ainda que a execução tivesse sido indevida, seria justificável em razão da exorbitante quantidade de processos fiscais em tramitação, invocando que o direito de executar débitos fiscais é uma prerrogativa conferida a todos os entes públicos federalizados e os exime de qualquer responsabilização de cunho moral. Pelo exposto, argumentou que a simples alegação de dano moral não é suficiente para que se comprove a sua ocorrência, razão pela qual, no mérito, pugna pela total improcedência da ação. Não juntou documentos. Intimada para apresentar réplica, a demandante reiterou os termos da inicial. Com vista, o representante do Parquet concluiu pela desnecessidade de intervenção no feito, haja vista que a causa não vislumbra interesse público primário a ser protegido. É o relatório. Fundamento e decido. Compulsando os autos, verifico que a presente lide versa, essencialmente, acerca da necessidade de se verificar a ocorrência, ou não, de danos morais à autora em face da inscrição de seu nome no rol da dívida ativa, bem como por ter suportado indevida execução judicial. Cumpre destacar que em razão dos elementos documentais probatórios existentes nos autos serem, por si, suficientes para a formação do meu convencimento, entendo ser cabível o julgamento conforme o estado do processo, com fulcro no artigo 330, I, do Código de Processo Civil. Destaque-se, por oportuno, que não tratam os presentes autos de relação de consumo, motivo pelo qual é incabível a aplicação do Código de Defesa do Consumidor no caso sob comento. Nesse sentido, sobre a Responsabilidade Civil, cabe trazer à baila o que predispõe o Código Civil brasileiro, mais precisamente seu artigo 927, senão vejamos: Art. 927. Aquele que, por ato ilícito (arts. 186 e 187), causar dano a outrem, fica obrigado a repará-lo. Como se vê, o referido dispositivo reza que a obrigação de indenizar surge de um ato ilícito causador de dano a outrem. Neste particular, o próprio Código Civil conceitua o ato ilícito da seguinte forma: Art. 186. Aquele que, por ação ou omissão voluntária, negligência ou imprudência, violar direito e causar dano a outrem, ainda que exclusivamente moral, comete ato ilícito. Em face dos dispositivos supra colacionados, percebe-se que a ilicitude decorre duma conduta - culposa ou dolosa, comissiva ou omissiva - do agente que, por consequência, viola um direito subjetivo e causa dano a outrem. Em se tratando de responsabilidade civil, ensina Maria Helena Diniz que não pode haver responsabilidade civil sem a existência de um dano a um bem jurídico, sendo imprescindível a prova real e concreta dessa lesão. Deveras, para que haja pagamento da indenização pleiteada é necessário comprovar a ocorrência de um dano patrimonial ou moral, fundados não na índole dos direitos subjetivos afetados, mas nos efeitos da lesão jurídica. O dano, portanto, é o requisito essencial para que haja a consequente indenização, como prevê o já mencionado artigo 927 do Código Civil. Ainda segundo a renomada Maria Helena Diniz, podemos conceituar o dano como sendo a lesão (diminuição ou destruição que, devido a um certo evento, sofre uma pessoa, contra sua vontade, em qualquer bem ou interesse jurídico, patrimonial ou moral). Contudo, para que haja a indenização pelos danos sofridos, é necessário que haja, por conseguinte, a efetiva comprovação da ocorrência desses danos. Quanto aos danos morais, este apresenta seu fundamento no sofrimento, na sensação de perda e no transtorno causado na vida da parte autora, nascendo a esta o direito a sua reparação. O ilustre José Afonso da Silva ensina que "a moral individual sintetiza a honra da pessoa, o bom nome, a boa fama, a reputação que integram a vida humana como dimensão imaterial. Ela e seus componentes são atributos sem os quais a pessoa fica reduzida a uma condição animal de pequena significação". Delineadas as linhas gerais sobre o tema, cumpre trazer as lições da responsabilidade civil para a seara da Administração Pública, já que o autor objetiva responsabilizar uma autarquia pela alegada existência de danos morais. Nesse sentido, sabe-se que no âmbito do direito privado, temos o acolhimento da teoria da responsabilidade subjetiva, tendo em vista que a responsabilidade advém da prática de um ato ilícito, de maneira dolosa ou culposa. De modo diferente, a responsabilidade civil do Estado, que pode ser conceituada como "a obrigação imposta ao erário de reparar os danos causados a terceiros pelos seus agentes públicos, no desempenho de suas funções ou a pretexto de exercê-las", adotou a teoria da responsabilidade objetiva, nos moldes do que dispõe o artigo 37, §6º da Constituição Federal, in verbis: Art. 37 - (...) §6º - As pessoas jurídicas de direito público [categoria na qual se inserem as autarquias] e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade em causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa. Nesse passo, a responsabilidade objetiva nada mais é que uma espécie de responsabilidade que independe da demonstração do elemento subjetivo (dolo ou culpa), tendo apenas relevância tal elemento em eventual ação de regresso. Assim, para que esteja presente a responsabilidade estatal, faz-se necessária a existência de três requisitos/pressupostos, quais sejam: a) ação ou omissão do estado; b) existência efetiva do dano material ou moral e c) nexo de causalidade. Sob essa perspectiva, faz-se necessário verificar se há, ou não, a presença dos elementos configuradores da responsabilidade civil no caso sob comento, sendo imprescindível concluir se a propositura de execução fiscal indevida constituiu atividade ilícita dos agentes administrativos para, então, analisar a presença do nexo de causalidade entre a ação danosa do Estado e o dano moral alegado. Pois bem. No caso sub judice, em que a autora foi alvo de execução fiscal indevida, observo que muito embora o ato de demandar por quantia já paga seja reprovável, como reclama a autora, não se pode presumir o dano de ordem moral em face da execução fiscal indevida. Para ensejar reparação por danos morais deve o autor trazer aos autos elementos que comprovem a intencionalidade de má-fe da Administração Pública e caracterizem o ilícito, como no caso de haver abuso de direito, reiteração de cobrança ou constrição dos bens. No entanto, vislumbro que a Administração Pública, tão logo tenha tomado conhecimento do equívoco, sem mais delongas desistiu da cobrança e solicitou a extinção da ação, que veio a ser homologada judicialmente em momento posterior, não configurando qualquer ato de má-fe que atingisse a moral da autora, mas tão somente o exercício de direito de ação. Nesse sentido, entendo que o exercício de direito de ação não gera, por si, dano moral para a parte acionada. Não fosse assim, qualquer ação julgada improcedente acarretaria obrigação de indenizar. O dano moral exige pressupostos outros. Não se pode configurar o ilícito em face do exercício de um direito, ainda que com insucesso da demanda. Nesse sentido vêm entendendo os tribunais pátrios. Vejamos: EMENTA:&nbsp; APELAÇÃO CÍVEL. DANO MORAL CAUSA DE PEDIR. INSCRIÇÃO DO AUTOR EM DÍVIDA ATIVA. CITAÇÃO EM PROCESSO JUDICIAL. DANO MORAL. INOCORRÊNCIA. Apenas devem constituir dano moral a dor, o vexame, o sofrimento ou a humilhação que, exorbitando a normalidade, afetem profundamente o comportamento psicológico do individuo, causando-lhe aflições, desequilíbrio e angústia, sendo que tais estados psicológicos são conseqüências e não causas do dano. No caso em comento, o fato de o réu ter sido indicado como parte em processo de execução, bem assim ter sido inscrito em dívida ativa, não configura ilícito capaz de gerar o dever de indenizar, porquanto inúmeras foram as oportunidades em que o demandante foi notificado para esclarecimento dos fatos, tanto na esfera administrativa quanto na judicial, nada manifestando. Ademais, o simples fato de ser citado para responder a processo judicial ou mesmo ser inscrito em dívida ativa não é motivo suficiente, a princípio, para gerar indenização por dano moral. Apelação desprovida. (Apelação Cível Nº 70011267945, Quinta Câmara Cível, Tribunal de Justiça do RS, Relator: Umberto Guaspari Sudbrack, Julgado em 22/09/2005) (grifos nossos) DANO MORAL. EXECUÇÃO EXTRAJUDICIAL DE DÍVIDA QUITADA. PAGAMENTO EM DOBRO DO VALOR COBRADO. 1. Não se pode pleitear danos morais baseado em pura indignação ou estado de ânimo alterado. O alegado prejuízo há que ser demonstrado, por exemplo, com a prova de grave constrangimento ou abalo de crédito. 2. O exercício de um direito, como a propositura de uma ação, ainda que de execução, ressalvada a hipótese de comprovada má-fé, não enseja indenização por não se tratar de conduta ilícita, não podendo por isso caracterizar ofensa à honra e dignidade das pessoas. 3. Se em toda ação de execução que se fosse impetrar houvesse risco de improcedência e a conseqüente ofensa à honra e dignidade das pessoas, inviabilizado restaria o instituto das execuções. 4.A cobrança de dívida já quitada enseja o pagamento do dobro cobrado, conforme o art. 1.531 do Código Civil. CONSTITUCIONAL. ADMINISTRATIVO. RESPONSABILIDADE CIVIL. AÇÃO INDENIZATÓRIA. INCLUSÃO INDEVIDA NO POLO PASSIVO DA AÇÃO DE EXECUÇÃO FISCAL. OFENSA À HONRA E À REPUTAÇÃO DO AUTOR. INEXISTÊNCIA DE PRESUNÇÃO. DANOS MORAIS. INOCORRÊNCIA. () 7. Com isso, não se está a descaracterizar qualquer possibilidade de consumação de danos morais em face de execução fiscal indevidamente proposta. Na realidade, o que se busca afastar é tão somente a presunção de que esse evento isolado configuraria causa de indenização, um prejuízo concreto a uma situação juridicamente tutelada. É preciso, portanto, desqualificar, antes, o exercício regular do direito ou o estrito cumprimento do dever legal, que acoberta a conduta fazendária, o que pode ser feito de um conjunto de circunstâncias como: a) demonstração do abuso do direito; b) a efetiva constrição de bens; e c) a inclusão do nome do suposto corresponsável pela dívida no cadin. 8. Do contrário, haveria uma indevida consagração da teoria da responsabilidade objetiva integral do estado, quando é cediço que o art. 37, § 6º, da crfb/88, admite excludentes e positiva a teoria do risco administrativo. 9. Sob essas perspectivas, investigou-se a documentação acostada pelo autor e verificou-se estar limitada a reproduzir algumas peças da execução fiscal, inclusive um pedido da própria união para que fossem excluídos todos os ex-sócios cujos poderes de gestão não fossem contemporâneos ao surgimento do fato gerador tributário. E esse reconhecimento, em resposta às exceções de pré-executividade (fls. 13/19), facilitou, inclusive, a pronta exclusão do sr. Expedito gondim rocha, sem que tenha sofrido a penhora de bens. Sequer precisou utilizar-se da via mais complexa das ações antiexacionais com dilação probatória. O conflito esmoreceu na exceção de pré-executividade. Bem assim, a fl. 18 atesta que já houve a necessária condenação em honorários advocatícios. 10. Não perfazimento dos requisitos da responsabilidade civil, porque elididos pela existência das excludentes de exercício regular do direito e estrito cumprimento do dever legal. Consectário inafastável disso é a reforma da sentença para suprimir a condenação da fazenda nacional em indenizar o particular. 11. Honorários advocatícios fixados em mil reais. Remessa obrigatória e apelação providas. (TRF 5ª R.; APELREEX 0001257-21.2011.4.05.8400; RN; Primeira Turma; Rel. Des. Fed. José Maria Lucena; Julg. 26/07/2012; DEJF 06/08/2012; Pág. 330) Assim, diante dos argumentos expostos, não há que se falar na responsabilidade do Estado por tal fato. Isso porque, em matéria de responsabilização do Estado, muito embora o direito pátrio, após oscilar entre as doutrinas subjetiva e objetiva, tenha adotado a teoria da responsabilidade objetiva, na modalidade do risco administrativo, segundo a qual o dever de indenizar independe da comprovação de culpa ou dolo por parte da administração, não se afasta, por sua vez, a necessidade de averiguação do dano e do nexo de causalidade, posto que, inexistindo quaisquer dos pressupostos necessários, deixará de existir o fundamento da responsabilidade da administração pública, como no caso em comento. Desse modo, mediante uma análise dos autos, pode-se constatar que o fato de a autora ter seu nome figurado no polo passivo de uma Ação de Execução Fiscal, mesmo que reconhecido o erro, por si, não se presume a configuração do dano moral, porquanto trata-se de exercício do direito de ação da Administração Pública, não subsistindo, portanto, o pedido de indenização por prejuízos morais. Ex positis, como não restaram comprovados os elementos essenciais à configuração da responsabilidade do réu, JULGO IMPROCEDENTE o pedido, condenando o autor ao pagamento das custas processuais e honorários advocatícios, os quais fixo em 20% (vinte por cento) sobre o valor da causa. Publique-se. Intime-se. Maceió,06 de maio de 2014. Claudio José Gomes Lopes Juiz de Direito IC
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/09/2013
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-10587476" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=10587476&amp;nmRecursoAcessado=Visto+em+correi%C3%A7%C3%A3o" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-10587476" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=10587476&amp;nmRecursoAcessado=Visto+em+correi%C3%A7%C3%A3o" target="_blank"> Visto em correição
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DESPACHO VISTO EM CORREIÇÃO
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/11/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/11/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-8680166" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=8680166&amp;nmRecursoAcessado=Despacho" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-8680166" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=8680166&amp;nmRecursoAcessado=Despacho" target="_blank"> Despacho
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				VISTO EM CORREIÇÃO - 2012
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/11/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebidos os autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/09/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				3 E
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/08/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebidos os autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				VINDO DO M.P.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/08/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Autos entregues em carga
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				M P
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/07/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Decurso de Prazo
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/07/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				termino do prazo das partes
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/07/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Decurso de Prazo
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/07/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0022/2012
+Data da Disponibilização: 05/07/2012
+Data da Publicação: 06/07/2012
+Número do Diário: 724
+Página: 23
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/07/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0022/2012
+Teor do ato: Autos n° 0033670-15.2011.8.02.0001 Ação: Procedimento Ordinário Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO DESPACHO Intime-se as partes para que, em 10(dez) dias, informem se há a possibilidade de conciliação, assim como quais provas pretendem produzir em eventual audiência de instrução e julgamento, caso ainda entendam necessárias, especificando-as, inclusive, as respectivas finalidades, ou seja, com a indicação de qual(ais) afirmação(ões) de fato destina(m)-se sua(s) produção(ões). No caso de prova testemunhal, deve a parte que a requereu fazer a juntada do rol das testemunhas, no máximo, até 10 (dez) dias antes da data designada para a realização da audiência, com a qualificação completa das testemunhas arroladas, inclusive, fazendo constar a informação a respeito da necessidade de efetivação pelo cartório do procedimento de intimação, sob pena de restar inviabilizado o(s) depoimento(s) da(s) que restar(em) arrolada(s). Caso a resposta no sentido de produção de provas seja positiva, voltem-me os autos para a designação de eventual audiência. Se a resposta for negativa, ou as partes deixarem transcorrer o prazo para manifestação, vão os autos com vista ao Ministério Público. Publique-se. Maceió, 15 de maio de 2012 Ygor Vieira de Figueirêdo Juiz(a) de Direito
+Advogados(s): Sandro Soares Lima (OAB 5801/AL), Vitor Antônio teixeira Gaia (OAB 8879/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/05/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/05/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-7580868" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=7580868&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-7580868" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=7580868&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0033670-15.2011.8.02.0001 Ação: Procedimento Ordinário Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO DESPACHO Intime-se as partes para que, em 10(dez) dias, informem se há a possibilidade de conciliação, assim como quais provas pretendem produzir em eventual audiência de instrução e julgamento, caso ainda entendam necessárias, especificando-as, inclusive, as respectivas finalidades, ou seja, com a indicação de qual(ais) afirmação(ões) de fato destina(m)-se sua(s) produção(ões). No caso de prova testemunhal, deve a parte que a requereu fazer a juntada do rol das testemunhas, no máximo, até 10 (dez) dias antes da data designada para a realização da audiência, com a qualificação completa das testemunhas arroladas, inclusive, fazendo constar a informação a respeito da necessidade de efetivação pelo cartório do procedimento de intimação, sob pena de restar inviabilizado o(s) depoimento(s) da(s) que restar(em) arrolada(s). Caso a resposta no sentido de produção de provas seja positiva, voltem-me os autos para a designação de eventual audiência. Se a resposta for negativa, ou as partes deixarem transcorrer o prazo para manifestação, vão os autos com vista ao Ministério Público. Publique-se. Maceió, 15 de maio de 2012 Ygor Vieira de Figueirêdo Juiz(a) de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/04/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/04/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Juntada a petição diversa - Tipo: Contra-razões de Apelação em Procedimento Ordinário - Número: 80002 - Protocolo: CPMA12000220999
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/04/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebidos os autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/03/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Autos entregues em carga
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Ministério Público
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/03/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Decurso de Prazo
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				MINISTÉRIO PÚBLICO
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/03/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebidos os autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/03/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Autos entregues em carga
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Fone: 91368484
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/02/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/02/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato ordinatório praticado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Vista ao autor para, no prazo de 10 (dez) dias, se manifestar sobre a contestação.
+
+	Em seguida, havendo ou não réplica, dê-se vista ao Ministério Público.
+ 
+                                  
+                               Maceió, 09 de fevereiro de 2012.
+
+              
+Suely Silva Calheiros da Rosa
+Escrivã Judicial
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/01/2012
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Juntada a petição diversa - Tipo: Contestação em Procedimento Ordinário - Número: 80001 - Protocolo: CPMA12000067578
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/12/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Visto em correição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				1
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/11/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Decurso de Prazo
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/11/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				citação 60 dias
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/11/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0047/2011
+Data da Disponibilização: 04/11/2011
+Data da Publicação: 07/11/2011
+Número do Diário: 574
+Página: 26
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0047/2011
+Teor do ato: Processo nº: 0033670-15.2011.8.02.0001 Classe do Processo: Procedimento Ordinário Requerente:Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO DECISÃO Maria Antonieta Guerra Ferreira Neri, devidamente qualificada na inicial, requer o benefício da assistência gratuita, alegando que aufere pouca renda, suficiente apenas para o sustento próprio e da família. Inicialmente, cumpre ressaltar o que dispõe a Lei n.º 7.115, de 29 de agosto de 1983, que versa acerca da prova documental, in verbis: Art. 1º - A declaração destinada a fazer prova de vida, residência, pobreza, dependência econômica, homonímia ou bons antecedentes, quando firmada pelo próprio interesse ou por procurador bastante, e sob as penas da Lei, presume-se verdadeira. (grifo nosso) Neste mesmo sentido dispõe a Lei n.º 1060/50, que estabelece as normas para a concessão da assistência judiciária: Art. 4º A parte gozará dos benefícios da assistência judiciária, mediante simples afirmação, na própria petição inicial, de que não está em condições de pagar as custas do processo e os honorários de advogado, sem prejuízo próprio ou de sua família. (grifo nosso) Art.2º. (...) Parágrafo único. Considera-se necessitado, para os fins legais, todo aquele cuja situação econômica não lhe permita pagar as custas do processo e os honorários de advogado, sem prejuízo do sustento próprio ou da família. (grifo nosso) Vê-se, pois, que a lei é bastante clara ao dispor que a declaração de pobreza é presumidamente verdadeira. Além disso, não menciona qualquer vinculação às regras que delimitam a linha de pobreza a nível internacional. Pelo contrário, pobre, para a lei, e que portanto merece amparo mediante a assistência judiciária é aquele que comprova a impossibilidade de pagamento das custas processuais e honorários advocatícios sem prejuízo do próprio sustento ou da família. Vale destacar, nesse sentido, a orientação do FUNJURIS para que, na concessão do benefício em tela, sejam as demandas instruídas no sentido de a parte requerente comprovar efetivamente que não dispõe de condições financeiras para arcar com os custos do processo, notadamente porque a Declaração de Pobreza goza apenas de presunção relativa de veracidade. No caso dos autos, a parte autora não comprova sua condição de hipossuficiência, sua renda familiar, não junta aos autos a Declaração de Pobreza, além de já ter voluntariamente pago as custas iniciais, no valor de R$ 388,34 (trezentos e oitenta e oito reais e trinta e quatro centavos). Destarte, DEIXO DE CONCEDER O BENEFÍCIO DA JUSTIÇA GRATUITA à autora, por não verificar presentes os requisitos necessários para tanto, o que faço com fulcro nos arts. 2º, parágrafo único, e 4º da Lei n.º 1.060/50 e art.1º da Lei n.º 7115/83. Ato contínuo, CITE-SE o Município de Maceió, por mandado, na pessoa de seu representante legal, para, querendo, oferecer resposta à presente demanda, no prazo fixado na lei processual civil. Maceió(AL), 14 de outubro de 2011. José Eduardo Nobre Carlos Juiz de Direito Substituto Diogo de Mendonça Furtado Juiz de Direito Substituto
+Advogados(s): Vitor Antônio teixeira Gaia (OAB 8879/AL), Procurador Geral do Município de Maceió (OAB /PG)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remessa de Mandado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6460944" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6460944" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Mandado Expedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Mandado nº: 001.2011/066559-8 
+Situação: Cumprido - Ato positivo em 07/11/2011 
+Local: 14º Cartório Cível da Capital / Fazenda Municipal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Expedição de Documentos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/10/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6391262" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=6391262&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6391262" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=6391262&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Processo nº: 0033670-15.2011.8.02.0001 Classe do Processo: Procedimento Ordinário Requerente:Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO DECISÃO Maria Antonieta Guerra Ferreira Neri, devidamente qualificada na inicial, requer o benefício da assistência gratuita, alegando que aufere pouca renda, suficiente apenas para o sustento próprio e da família. Inicialmente, cumpre ressaltar o que dispõe a Lei n.º 7.115, de 29 de agosto de 1983, que versa acerca da prova documental, in verbis: Art. 1º - A declaração destinada a fazer prova de vida, residência, pobreza, dependência econômica, homonímia ou bons antecedentes, quando firmada pelo próprio interesse ou por procurador bastante, e sob as penas da Lei, presume-se verdadeira. (grifo nosso) Neste mesmo sentido dispõe a Lei n.º 1060/50, que estabelece as normas para a concessão da assistência judiciária: Art. 4º A parte gozará dos benefícios da assistência judiciária, mediante simples afirmação, na própria petição inicial, de que não está em condições de pagar as custas do processo e os honorários de advogado, sem prejuízo próprio ou de sua família. (grifo nosso) Art.2º. (...) Parágrafo único. Considera-se necessitado, para os fins legais, todo aquele cuja situação econômica não lhe permita pagar as custas do processo e os honorários de advogado, sem prejuízo do sustento próprio ou da família. (grifo nosso) Vê-se, pois, que a lei é bastante clara ao dispor que a declaração de pobreza é presumidamente verdadeira. Além disso, não menciona qualquer vinculação às regras que delimitam a linha de pobreza a nível internacional. Pelo contrário, pobre, para a lei, e que portanto merece amparo mediante a assistência judiciária é aquele que comprova a impossibilidade de pagamento das custas processuais e honorários advocatícios sem prejuízo do próprio sustento ou da família. Vale destacar, nesse sentido, a orientação do FUNJURIS para que, na concessão do benefício em tela, sejam as demandas instruídas no sentido de a parte requerente comprovar efetivamente que não dispõe de condições financeiras para arcar com os custos do processo, notadamente porque a Declaração de Pobreza goza apenas de presunção relativa de veracidade. No caso dos autos, a parte autora não comprova sua condição de hipossuficiência, sua renda familiar, não junta aos autos a Declaração de Pobreza, além de já ter voluntariamente pago as custas iniciais, no valor de R$ 388,34 (trezentos e oitenta e oito reais e trinta e quatro centavos). Destarte, DEIXO DE CONCEDER O BENEFÍCIO DA JUSTIÇA GRATUITA à autora, por não verificar presentes os requisitos necessários para tanto, o que faço com fulcro nos arts. 2º, parágrafo único, e 4º da Lei n.º 1.060/50 e art.1º da Lei n.º 7115/83. Ato contínuo, CITE-SE o Município de Maceió, por mandado, na pessoa de seu representante legal, para, querendo, oferecer resposta à presente demanda, no prazo fixado na lei processual civil. Maceió(AL), 14 de outubro de 2011. José Eduardo Nobre Carlos Juiz de Direito Substituto Diogo de Mendonça Furtado Juiz de Direito Substituto
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			29/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			29/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Juntada a petição diversa - Tipo: Emenda a Inicial em Procedimento Ordinário - Número: 80000 - Protocolo: CPMA11000792562
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			29/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebidos os autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Autos entregues em carga
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0038/2011
+Data da Disponibilização: 13/09/2011
+Data da Publicação: 14/09/2011
+Número do Diário: 
+Página: 
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/09/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0038/2011
+Teor do ato: Autos n° 0033670-15.2011.8.02.0001 Ação: Procedimento Ordinário Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO DESPACHO Ao compulsar os autos, verifiquei que a parte autora indicou a Prefeitura Municipal de Maceió para figurar no pólo passivo da demanda; entretanto, consoante é cediço, esta possui natureza jurídica de órgão da pessoa jurídica Município de Maceió, não possuindo, em razão disto, personalidade para figurar como réu em demandas judiciais. Em sendo assim, e com o fito de evitar qualquer eventual nulidade, determino a intimação da parte autora para que, no prazo de 10 (dez) dias, emende a Inicial, indicando corretamente o pólo passivo da demanda, sob pena de indeferimento da Exordial (art. 295, VI, CPC) e consequente extinção do feito sem resolução do mérito, conforme predisposto no art. 267, inciso I, do Código de Processo Civil. Maceió(AL), 08 de agosto de 2011. José Eduardo Nobre Carlos Juiz de Direito Substituto
+Advogados(s): Vitor Antônio teixeira Gaia (OAB 8879/AL), Procurador Geral do Município de Maceió (OAB /PG)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Encaminhado para Publicação
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/08/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-6024152" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=6024152&amp;nmRecursoAcessado=Despacho" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-6024152" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000D7YL0000&amp;cdDocumento=6024152&amp;nmRecursoAcessado=Despacho" target="_blank"> Despacho
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0033670-15.2011.8.02.0001 Ação: Procedimento Ordinário Requerente: Maria Antonieta Guerra Ferreira Neri Requerido: PREFEITURA MUNICIPAL DE MACEIO DESPACHO Ao compulsar os autos, verifiquei que a parte autora indicou a Prefeitura Municipal de Maceió para figurar no pólo passivo da demanda; entretanto, consoante é cediço, esta possui natureza jurídica de órgão da pessoa jurídica Município de Maceió, não possuindo, em razão disto, personalidade para figurar como réu em demandas judiciais. Em sendo assim, e com o fito de evitar qualquer eventual nulidade, determino a intimação da parte autora para que, no prazo de 10 (dez) dias, emende a Inicial, indicando corretamente o pólo passivo da demanda, sob pena de indeferimento da Exordial (art. 295, VI, CPC) e consequente extinção do feito sem resolução do mérito, conforme predisposto no art. 267, inciso I, do Código de Processo Civil. Maceió(AL), 08 de agosto de 2011. José Eduardo Nobre Carlos Juiz de Direito Substituto
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/07/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/07/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebidos os autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/07/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetidos os Autos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/07/2011
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Distribuído por Sorteio
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+
+		
+		
+	
+</table>
+
+	<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value="
+
+">
+
+    <input id="linkNaoExibidomovimentacoes" type="hidden" value="
+        &lt;span id=&quot;setasDireitamovimentacoes&quot; class=&quot;setasDireita&quot;&gt;
+            &lt;i class=&quot;unj-link-collapse__icon glyph glyph-chevron-down&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        Mais
+    ">
+
+<span id="mensagensExibindomovimentacoes" class="mensagemExibindo"></span> &nbsp;
+
+    <a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse"><span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>Recolher</a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+
+	</div>
+
+		
+
+	
+
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Petições diversas</h2>
+		
+	
+</div>
+
+<!-- Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+	
+		
+			<thead>
+			    <tr class="label">
+			      <th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+			    <tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								22/09/2011
+							</td>
+							<td width="*">
+								Emenda a Inicial <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								23/01/2012
+							</td>
+							<td width="*">
+								Contestação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								16/03/2012
+							</td>
+							<td width="*">
+								Contra-razões de Apelação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								14/07/2014
+							</td>
+							<td width="*">
+								Manifestação do Autor <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								23/11/2017
+							</td>
+							<td width="*">
+								Contrarrazões <br>
+								
+							</td>
+						</tr>
+					
+				
+			</tbody>
+		
+		
+	
+</table>
+<!--  Tabela de petições diversas -->
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+			if(!captcha){
+				return;
+			}
+			$('.incidente a').each(function(){
+				var $incidente = $(this);
+				var url = $incidente.attr('href');
+				$incidente.attr('href', url+'&uuidCaptcha='+captcha);
+			});
+		})
+	})(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+
+	
+	
+		<tbody><tr>
+		  <td id="processoSemIncidentes" colspan="3" align="left">
+		 	
+ 				
+ 				
+ 					Não há incidentes, ações incidentais, recursos ou execuções de sentenças vinculados a este processo.
+ 				
+ 			
+		  </td> 
+	    </tr>
+	
+
+</tbody></table>
+<!--  Incidentes -->
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if(!captcha){
+                return;
+            }
+            $.each($('.processoApensado'), function (i, value) {
+                var $link = $(value);
+                $link.attr('href', $link.attr('href') + '&uuidCaptcha=' + captcha);
+            })
+
+        })
+    })(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Apensos, Entranhados e Unificados</h2>
+		
+	
+</div>
+
+
+
+    
+        <table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+            <tbody id="dadosApensosNaoDisponiveis">
+            <tr>
+                <td colspan="3" align="left">Não há processos apensados, entranhados e unificados a este processo.</td>
+            </tr>
+            </tbody>
+        </table>
+
+    
+    
+
+
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Audiências</h2>
+		
+	
+</div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+            
+            
+        
+    
+    
+
+<a name="audienciasPlaceHolder"></a>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+    
+        
+        
+            <tbody><tr>
+                <td id="processoSemAudiencias" colspan="3" align="left">
+                    
+                        
+                        
+                            Não há Audiências futuras vinculadas a este processo.
+                        
+                    
+                </td>
+            </tr>
+        
+    
+</tbody></table>
+
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="popupCdas" style="display: none;">
+	<!--  dados da lista (CDAs) -->
+	<div style="height:210px; overflow: auto;">
+		<table id="tableCdasPrincipais" style="margin-left:10px; margin-top:1px; width: 98%;">
+			<thead>
+				<tr class="fundoClaro">
+					<th style="text-align:left;">Número CDA</th>
+					<th style="text-align:left;">Valor</th>
+					<th style="text-align:left;">Dt. CDA</th>
+					<th style="text-align:left;">Valor atualizado</th>
+					<th style="text-align:left;">Dt. atualização</th>
+					<th style="text-align:left;">Situação</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td colspan="6">
+				</td></tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+</form>
+
+	                
+	                
+	                
+	                
+	            
+	        
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<form action="/cpopg/show.do?processo.codigo=01000D7YL0000&amp;processo.foro=1&amp;processo.numero=0033670-15.2011.8.02.0001" id="popupSenha" style="display: none;" method="POST">
+		<input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+		
+		<table role="document">
+			<tbody><tr>
+				<td colspan="2" style="padding-bottom:20px">Atendendo a resolução 121 do CNJ.</td>
+			</tr>
+			
+				<tr>
+					<td colspan="2" style="padding-bottom:20px">Se for advogado(a) nesse processo, é necessário <span id="identificacao"><strong><a href="https://www2.tjal.jus.br/esaj/identificacao.do?retorno=https%3A//www2.tjal.jus.br/cpopg/show.do%3Fprocesso.codigo%3D01000D7YL0000%26processo.foro%3D1%26processo.numero%3D0033670-15.2011.8.02.0001">Identificar-se</a></strong></span></td>
+					
+						
+						
+							<script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/conteudoIdentificacao?script=1764429947176"></script>
+						
+					
+				</tr>
+			
+			<tr align="center">
+				<td align="left" colspan="2" style="padding-bottom:20px">
+					<div style="float:left; line-height:30px;">Se for uma parte ou interessado, digite a senha do processo</div>
+					<div style="float:left;width: 140px; padding-left:15px">
+						<input type="password" name="senhaProcesso" maxlength="12" value="" rotulo="" class="form-control" id="senhaProcesso">
+						<input type="hidden" name="idRecursoQueProvocouLiberacaoPorSenha" value="">
+					</div>
+					<div class="unj-form-control-group__icon">
+						<div class="dropdown show">
+							<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyph glyph-info" aria-hidden="true"></span>
+							</a>
+							<div class="dropdown-menu tooltip-campos" aria-labelledby="dropdownMenuLink">
+								
+									É necessário informar uma senha para acessar processo em segredo de justiça, bem como para acessar autos dos demais processos.<br><br>
+									Se for parte do processo e ainda não possua uma senha, <b>solicite-a no cartório</b>.<br><br>
+								
+								
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	    
+	<input type="button" name="btFechar" value="Cancelar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotao " id="botaoFecharPopupSenha">
+
+
+					
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	<input type="submit" name="btEnviarSenha" value="Continuar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotaoDefault btn-space" id="btEnviarSenha">
+
+
+						
+					
+				</td>
+			</tr>
+		</tbody></table>
+	</form>
+
+
+
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer>
+    <nav class="navbar__footer">
+        <div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-saj.png" alt="SAJ">
+                    </a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-softplan.png" alt="Softplan">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar__footer__list-actions">
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+	
+
+
+
+
+
+
+</body></html>

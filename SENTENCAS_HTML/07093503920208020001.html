@@ -1,0 +1,5812 @@
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+	
+
+
+
+
+
+
+
+
+    <script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/verificarLogin.js?script=1765484828778"></script>
+
+    <script language="javascript">
+        if (window.sajcas && window.sajcas.usuarioLogadoNoCasServer) {
+            var GATEWAY_TRUE = 'gateway=true', GATEWAY_FALSE = 'gateway=false';
+            var urlRetornoSistema = '';
+            if (urlRetornoSistema === '') {
+                urlRetornoSistema = window.location.href;
+            }
+
+            if (urlRetornoSistema.indexOf(GATEWAY_FALSE) !== -1) {
+                urlRetornoSistema = urlRetornoSistema.replace(GATEWAY_FALSE, GATEWAY_TRUE);
+            } else {
+                urlRetornoSistema.lastIndexOf('?') !== -1 ? urlRetornoSistema += '&' : urlRetornoSistema += '?';
+                urlRetornoSistema += GATEWAY_TRUE;
+            }
+
+            window.location.href = urlRetornoSistema;
+        }
+    </script>
+
+
+	<title>Portal de Serviços e-SAJ</title>
+
+	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/cpopg/softheme/src/css/app.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/softheme/src/fonts/saj/styles.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/css/formulario.css?v=2.8.34-30" type="text/css">
+	
+
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2-bootstrap.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/css/saj/select2/saj-select2.css">
+
+	
+ 
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cpopg';
+	window.saj.env.css = '/cpopg/css';
+	window.saj.env.js = '/cpopg/js';
+	window.saj.env.imagens = '/cpopg/imagens';
+	window.saj.env.queryString = 'processo.codigo=01000WL9E0000&processo.foro=1&processo.numero=0709350-39.2020.8.02.0001';	
+
+	window.saj.cpo = window.saj.cpo || {};
+
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+</script>
+
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.min.js?n=1620728708"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.func_toggle.js?n=e83d5f02-da83-4d63-9e1c-028656c6e0a3"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.blockUI.min.js?n=d9105760-8182-4c35-8c9b-ca307f219e51"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.browser.min.js?n=cd84d821-9807-4510-8a0c-550d906e46da"></script>
+
+	<script language="javascript" type="text/javascript" src="/cpopg/webjars/lodash/4.17.21/lodash.js?n=6e84eefe-af50-4a93-b699-5146183901b6"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/select2/select2.js?n=7f62b0a4-f1ea-4234-a606-842fb2683766"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/webjars/select2/3.5.4/select2_locale_pt-BR.js?n=1781cdbd-4a5b-45b4-9e94-44c8a6ecc22b"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-select2.js?n=5a1b788d-8d25-4df4-9b56-8b99deb7fe6d"></script>
+
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-web-2.2.41-4.js?n=fc1c2d21-aa0a-411e-bf0e-9c3cc5e96ab0"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-tooltip.js?n=246c5ee0-8c94-4be5-82b2-a33d36ea8114"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-popup-modal-1.0.0-1.js?n=3c390c44-6390-4136-bd46-1f26c02bf2ab"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-browser.js?n=79b1f9f8-f10e-43b1-a4c4-2f95099d8953"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-mascara-input.js?n=345bac87-71d5-4dc9-851c-5cd5aa2451b7"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-numeroProcesso.js?n=2ef0473d-d6d9-4591-b77c-4055570ccd19"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj-cpo-cbpesquisa.js?n=295666404"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/acessibilidade/acessibilidade.js?n=5d0c3f37-c697-4936-ba14-85c20019acfe"></script>
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/softheme/src/js/app.js?n=789536343"></script>   
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js?n=21126482-c82f-444d-aa6d-7c68dde067d2" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js?n=1791337263" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	
+
+
+
+
+<script>
+	(function($){
+		$(function(){
+			var intervalo = 1795000;
+			$.saj.manterSessao('/cpopg/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script>
+
+
+
+
+	
+    <script language="javascript" type="text/JavaScript">
+        $.saj = $.saj || {};
+        $.saj.acessoRecurso = {
+            abrirPastaDigitalEmPopup: 'true' == 'true',
+            idRecursoQueProvocouLiberacaoPorSenha: '',
+            limitaAcessoPastaDigital: 'false',
+            popupSenha: {
+                mostrar: 'false' == 'true',
+                titulo: 'Senha do processo',
+                altura: 220 + Number("10"),
+                alturaAdicionalParaMensagemValidacao: Number("0"),
+                largura: 580
+            },
+            popupMensagem: {
+                titulo: 'Aviso:',
+                texto: 'Você atingiu o limite diário de acessos Ã  pasta digital em processos que não está vinculado.'
+            }
+        };
+
+        $.saj.getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+    </script>
+    <script language="javascript" type="text/JavaScript" src="/cpopg/jsp/show-2.8.33-0.js?n=856054158"></script>
+
+	<script type="text/javascript">
+		(function($) {
+			$(function(){
+				// Correção temporária do alinhamento do divisor de seção de formulário do SPW 
+				$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top');
+				
+			})
+		})(jQuery);
+	</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if (!captcha) {
+                return;
+            }
+
+            if(!captcha){
+                return;
+            }
+            var $processoPrinc = $('.processoPrinc');
+            $processoPrinc.attr('href', $processoPrinc.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            $('.incidente').each(function () {
+                var $incidente = $(this);
+                var url = $incidente.attr('href');
+                $incidente.attr('href', url + '&uuidCaptcha=' + captcha);
+            });
+
+        })
+    })(jQuery);
+</script>
+
+<!-- HEADER-->
+<div class="unj-entity-header">
+    
+
+
+
+
+<div class="unj-entity-header__actions">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i id="setaVoltar" class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <input type="hidden" name="_csrf" value="d2ffab36-8245-4e64-a264-6b930d600268">
+                <!-- CDAS -->
+                
+                <!-- Custas -->
+                
+                    <button class="btn btn-secondary btn-space linkConsultaSG" onclick="location.href = 'https://www2.tjal.jus.br/ccpweb/abrirConsultaCustas.do?cdProcesso=01000WL9E0000&amp;nuProcesso=0709350-39.2020.8.02.0001', '_blank', 'toolbar=0,location=0,menubar=0'">
+                        Visualizar custas
+                    </button>
+                
+                <!-- Pasta digital -->
+                
+                    
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                        
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPasta" aria-hidden="true" title="Pasta digital" href="#liberarAutoPorSenha">
+                                Visualizar autos
+                            </a>
+                            <!-- link da pasta digital exibido somente para leitores de tela (deficientes visuais), neste caso o link anterior é ignorado pelo leitor
+                            Obs: necessário manter a table devido aos atributos de acessibilidade se comportarem adequadamente com a tabela, comportamento que não é possível colocando
+                            os atributos somente na tag do link-->
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPastaAcessibilidade" style="font-size:0;height:0;width:0;padding:0;margin:0;border:none" href="#liberarAutoPorSenha&amp;acessibilidade=true">
+                                Visualizar autos
+                            </a>
+                        
+                    
+                
+                
+                    
+                    
+                    
+                    
+                        <!-- Peticionar -->
+                        
+                        
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="unj-entity-header__summary">
+    <div id="containerDadosPrincipaisProcesso" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-13">
+                <!--principal -->
+                
+                    <span id="numeroProcesso" class="unj-larger-1">
+                        0709350-39.2020.8.02.0001
+                    </span>
+                    
+                    
+                        <span id="labelSituacaoProcesso" class="unj-tag">Baixado</span>
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+                
+            </div>
+
+        </div>
+        <div class="row">
+            <input type="hidden" name="_csrf" value="d2ffab36-8245-4e64-a264-6b930d600268">
+            
+                <div class="col-lg-3 col-xl-3 mb-3">
+                    <span id="labelClasseProcesso" class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2"><span id="classeProcesso" title="Procedimento Comum Cível">Procedimento Comum Cível</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-3 mb-3">
+                    <span id="labelAssuntoProcesso" class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="assuntoProcesso" title="Atos Administrativos">Atos Administrativos</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-2 mb-2">
+                    <span id="labelForoProcesso" class="unj-label">
+                        Foro
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="foroProcesso" title="Foro de Maceió">Foro de Maceió</span></div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-xl-2 mb-2">
+                    <span id="labelVaraProcesso" class="unj-label">
+                        Vara
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"><span id="varaProcesso" title="17ª Vara Cível da Capital / Fazenda Estadual">17ª Vara Cível da Capital / Fazenda Estadual</span></div>
+                </div>
+            
+
+            
+                <div class="col-lg-3 mb-2">
+                    <span id="labelJuizProcesso" class="unj-label">Juiz</span>
+                    <div class="line-clamp__2"> <span id="juizProcesso" title="Alberto Jorge Correia de Barros Lima">Alberto Jorge Correia de Barros Lima</span> </div>
+                </div>
+            
+
+            <!-- Processo principal -->
+            
+
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="unj-entity-header__details">
+    <div class="container">
+        <div class="unj-ta-r">
+            
+                <a href="#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                    <span class="unj-link-collapse__show">
+                        <i id="botaoExpandirDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                        Mais
+                    </span>
+                    <span class="unj-link-collapse__hide">
+                        <i id="botaoRecolherDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                        Recolher
+                    </span>
+                </a>
+            
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelDistribuicaoProcesso" class="unj-label">Distribuição </span>
+                        <div id="dataHoraDistribuicaoProcesso">06/04/2020 às 21:15 - Sorteio</div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelControleProcesso" class="unj-label">Controle</span>
+                        <div id="numeroControleProcesso">2020/000198</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 col-xl-2 mb-2">
+                        <span id="labelAreaProcesso" class="unj-label">Área</span>
+                        <div id="areaProcesso" class="lh-1-1 line-clamp__2"> <span title="Cível">Cível</span></div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span id="lavelValorAcaoProcesso" class="unj-label">Valor da ação</span>
+                        <div id="valorAcaoProcesso">R$         25.022,50</div>
+                    </div>
+                
+                
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span class="unj-label">Outros assuntos</span>
+                        <div class="line-clamp__2"> <span title="Indenização por Dano Moral">Indenização por Dano Moral</span></div>
+                    </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+
+<div class="div-conteudo container mb-90">
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left ">
+    <div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--light.png" alt="">
+            </a>
+        </header>
+        <nav class="aside-nav__main-menu">
+            <ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Consultas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cpopg/open.do" class="aside-nav__main-menu__list__item__link">Processos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Ordem de Processos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeAtoPg.do" class="aside-nav__main-menu__list__item__link">Publicação e Cumprimento de Atos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeJulgamentoPg.do" class="aside-nav__main-menu__list__item__link">Julgamento do 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cposg5/open.do" class="aside-nav__main-menu__list__item__link">Processos de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento-virtual" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento Virtual do Segundo Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Recolhimento de Custas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustas.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=1&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690003" class="aside-nav__main-menu__list__item__link">Custas Iniciais de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=15&amp;flTipoCusta=5&amp;cdServicoCalculoCusta=690004" class="aside-nav__main-menu__list__item__link">Atos Avulsos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=10&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690005" class="aside-nav__main-menu__list__item__link">Custas de Preparo de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=14&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690006" class="aside-nav__main-menu__list__item__link">Custas Juizado Especial - Recurso Inominado</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=3&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690009" class="aside-nav__main-menu__list__item__link">Custas Intermediárias de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustasSg.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690205&amp;flTipoCusta=0&amp;cdTipoCusta=1" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690206&amp;flTipoCusta=5&amp;cdTipoCusta=4" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690207&amp;flTipoCusta=1&amp;cdTipoCusta=3" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Jurisprudência</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaSimples.do" class="aside-nav__main-menu__list__item__link">Simples</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaCompleta.do" class="aside-nav__main-menu__list__item__link">Completa</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cdje" class="aside-nav__main-menu__list__item__link">Diário da Justiça Eletrônico</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Push</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushpg" class="aside-nav__main-menu__list__item__link">1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushsg5" class="aside-nav__main-menu__list__item__link">2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento/consulta" class="aside-nav__main-menu__list__item__link">Consulta da Pauta de Julgamento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões de 1º grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirCadastro.do" class="aside-nav__main-menu__list__item__link">Pedido de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirConferencia.do" class="aside-nav__main-menu__list__item__link">Conferência de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirDownload.do" class="aside-nav__main-menu__list__item__link">Baixar Certidão de 1º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Conferência de Documentos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/pg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/sg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Intimação e Citação Eletrônica</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosRecebidos.do" class="aside-nav__main-menu__list__item__link">Consulta de Recebidas</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosNaoRecebidos.do" class="aside-nav__main-menu__list__item__link">Recebimento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoInicial.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoIntermediaria.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoInicial.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoIntermediaria.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de Turmas Recursais / Plantão (2º Grau)/ Precatórios</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoInicial.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoIntermediaria.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições - TR/ Plantão TJ/ Precat.</a>
+</li>
+</ul></li>
+</ul></li></ul>
+        </nav>
+        <div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside>
+<aside class="aside-nav aside-nav--right aside-nav__user ">
+    <div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="https://www2.tjal.jus.br/esaj/img/aside/brasoes/br-tjal.jpg" alt="">
+            </div>
+            <ul class="aside-nav__user__sign__list">
+                <li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado de Alagoas</span></li>
+            </ul>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--dark.png" alt="">
+            </a>
+        </div>
+        <hr>
+        <div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+            <ul class="aside-nav__user__info__list-access">
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<header>
+    <link rel="shortcut icon" href="https://www2.tjal.jus.br/esaj/tema/padrao/clientes/AL/imagens/favicon.ico" type="image/x-icon">
+    <link href="https://www2.tjal.jus.br/esaj/app.css" rel="stylesheet" type="text/css">
+    <nav class="header__navbar--normal">
+        
+        <a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href=""><a class="linkLogo" href="https://www2.tjal.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos de 1º Grau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+            <li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="http://www.tjal.jus.br"> TJAL </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text">Identificar-se </span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script>
+
+
+
+<script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://www2.tjal.jus.br/esaj/menuPortalV2Html.do?servico=190101';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://www2.tjal.jus.br/sajcas/conteudoIdentificacaoJson?script=1765436553281&retorno=' + encodeURIComponent(location.href);
+</script>
+<script src="https://www2.tjal.jus.br/esaj/js/portalV2-bundle.js?n=806192629"></script>
+
+<script src="https://www2.tjal.jus.br/sajcas/seletorVersaoBeta.js?n=f4741b53-5491-43cc-ad66-7b5c4f6d6477&amp;versao=2"></script>
+<script>
+    function exibirLibras() {
+        document.getElementById("gifLibras").style.display = 'block';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'static');
+        mudarPosicao(cel2, 'static');
+    }
+    function ocultarLibras() {
+        document.getElementById("gifLibras").style.display = 'none';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'relative');
+        mudarPosicao(cel2, 'relative');
+    }
+
+    function mudarPosicao(coll, posicao) {
+        if (!coll) {
+            return;
+        }
+        for (var i = 0, len = coll.length; i < len; i++) {
+            coll[i].style["position"] = posicao;
+        }
+    }
+</script>
+
+	
+
+
+
+
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Partes do processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+
+
+
+
+
+
+
+
+
+<tbody><tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Autor&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Anisio Ramos Filho
+				
+			
+
+			
+		 
+		
+			
+				<br>
+				<span class="mensagemExibindo">Advogada:&nbsp;</span>
+				
+					
+					
+						Rayssa de Oliveira Ramos
+					
+				&nbsp;
+				
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Cleber Vieira da Silva Melo
+					
+				&nbsp;
+				
+			
+		
+		
+	</td>
+</tr>
+
+	
+		
+
+
+
+
+
+
+
+
+
+<tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Réu&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Estado de Alagoas
+				
+			
+
+			
+		 
+		
+			
+		
+		
+	</td>
+</tr>
+
+	
+</tbody></table>
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Movimentações</h2>
+		
+	
+</div>
+
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+			<thead>
+				<tr>
+				  <th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true">&nbsp;</th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+
+			
+			<tbody id="tabelaUltimasMovimentacoes" style="display: none;">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/05/2025
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-60371923" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-60371923" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Fazenda Pública - Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/04/2025
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0242/2025
+Data da Publicação: 15/04/2025
+Número do Diário: 3768
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/04/2025
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0242/2025
+Teor do ato: D E S P A C H O Compulsados os autos, verifica-se que a petição e documentos de fls. 398/400 dizem respeito ao cumprimento de sentença em tramitação no sequencial 01. Sendo assim, proceda-se ao traslado das fls. 398/400 para o sequencial 01 e mantenham-se arquivados estes autos principais. Cumpra-se. Maceió, datado eletronicamente. BRUNA DE LEÃO FIGUEIREDO CARDOSO JUÍZA DE DIREITO EM SUBSTITUIÇÃO LEGAL
+Advogados(s): Rayssa de Oliveira Ramos (OAB 15270/AL), Cleber Vieira da Silva Melo (OAB 17388/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/04/2025
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-59972982" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=59972982&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-59972982" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=59972982&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				D E S P A C H O Compulsados os autos, verifica-se que a petição e documentos de fls. 398/400 dizem respeito ao cumprimento de sentença em tramitação no sequencial 01. Sendo assim, proceda-se ao traslado das fls. 398/400 para o sequencial 01 e mantenham-se arquivados estes autos principais. Cumpra-se. Maceió, datado eletronicamente. BRUNA DE LEÃO FIGUEIREDO CARDOSO JUÍZA DE DIREITO EM SUBSTITUIÇÃO LEGAL<br><b>Vencimento: </b>12/05/2025
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/10/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Concluso para Despacho
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+			
+			
+			<tbody style="" id="tabelaTodasMovimentacoes">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/05/2025
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-60371923" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-60371923" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Fazenda Pública - Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/04/2025
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0242/2025
+Data da Publicação: 15/04/2025
+Número do Diário: 3768
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/04/2025
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0242/2025
+Teor do ato: D E S P A C H O Compulsados os autos, verifica-se que a petição e documentos de fls. 398/400 dizem respeito ao cumprimento de sentença em tramitação no sequencial 01. Sendo assim, proceda-se ao traslado das fls. 398/400 para o sequencial 01 e mantenham-se arquivados estes autos principais. Cumpra-se. Maceió, datado eletronicamente. BRUNA DE LEÃO FIGUEIREDO CARDOSO JUÍZA DE DIREITO EM SUBSTITUIÇÃO LEGAL
+Advogados(s): Rayssa de Oliveira Ramos (OAB 15270/AL), Cleber Vieira da Silva Melo (OAB 17388/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/04/2025
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-59972982" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=59972982&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-59972982" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=59972982&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				D E S P A C H O Compulsados os autos, verifica-se que a petição e documentos de fls. 398/400 dizem respeito ao cumprimento de sentença em tramitação no sequencial 01. Sendo assim, proceda-se ao traslado das fls. 398/400 para o sequencial 01 e mantenham-se arquivados estes autos principais. Cumpra-se. Maceió, datado eletronicamente. BRUNA DE LEÃO FIGUEIREDO CARDOSO JUÍZA DE DIREITO EM SUBSTITUIÇÃO LEGAL<br><b>Vencimento: </b>12/05/2025
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/10/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Concluso para Despacho
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			30/09/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.24.80104014-4
+Tipo da Petição: Manifestação do procurador do Estado
+Data: 30/09/2024 14:49
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/10/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Arquivado Definitivamente
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/10/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-50698364" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-50698364" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				ARQUIVAMENTO DE PROCESSO
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/10/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-50698345" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-50698345" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão de Arquivamento Sem Custas a recolher
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Arquivamento Sem Custas a Recolher
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/09/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-50559590" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-50559590" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Devolvido CJU - Sem Custas a Recolher
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Devolvido CJU - Sem Custas a Recolher
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/09/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Realizado cálculo de custas
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/09/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Transitado em Julgado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/09/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-50554207" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-50554207" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato Ordinatório - Artigo 162, §4º, CPC
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Ato Ordinatório Em cumprimento ao disposto no Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas, faço remessa destes autos à contadoria, para cálculo de custas finais, se houver.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/09/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Execução de Sentença Iniciada
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Seq.: 01 - Cumprimento de sentença
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/09/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0660/2023
+Data da Publicação: 22/09/2023
+Número do Diário: 3390
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/09/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0660/2023
+Teor do ato: D E C I S Ã O Providencie a Secretaria a abertura de sequencial próprio, a partir da fl. 375, para o trâmite do cumprimento de sentença, com o traslado das peças processuais pertinentes, inclusive deste Despacho, como permite o art. 307, caput e § 2º, do Provimento nº 13/2023 da Corregedoria-Geral da Justiça de Alagoas (Código de Normas das Serventias Judiciais da Corregedoria-Geral da Justiça do Estado de Alagoas). Arquivem-se os autos principais. No sequencial, intime-se a parte exequente para, no prazo de 15 (quinze) dias, enviar o memorial de cálculo e adequar o requerimento de cumprimento de sentença, aos termos do artigo 534 do Código de Processo Civil e da Resolução TJ-AL n.º 17/2020, complementando as informações apresentadas com base nos itens a seguir : i) o(s) nome(s) do(s) beneficiário(s) do crédito, do seu procurador, se houver, com o respectivo número no Cadastro de Pessoas Físicas CPF, no Cadastro Nacional de Pessoas Jurídicas CNPJ ou no Registro Nacional de Estrangeiro RNE, conforme o caso; ii) a indicação da natureza comum ou alimentar do crédito; iii) o valor total devido a cada beneficiário e o montante global requerido, constando o principal corrigido, o índice de juros ou da taxa SELIC, quando utilizada, incluindo o percentual utilizado, e o correspondente valor; iv) o termo inicial e o termo final dos juros e da correção monetária utilizados; v) a periodicidade da capitalização dos juros, se for o caso; vi) a especificação dos eventuais descontos obrigatórios realizados, incluindo o valor e o percentual da retenção, no tocante a: a) contribuições previdenciárias, bem como a indicação do órgão previdenciário com o respectivo CNPJ; b) contribuições para o Fundo de Garantia por Tempo de Serviço FGTS; e c) imposto de renda; e d) de outras contribuições devidas, se houver. vii) a(s) conta(s) bancária(s) do(s) credor(es) originário(s) e/ou beneficiário(s), inclusive do(s) advogado(s) constituído(s) no processo, na qual deverá ser disponibilizado o valor do precatório, se houver; viii) o(s) endereço(s) eletrônicos dos beneficiários do crédito. 2. O não cumprimento da determinação no prazo estabelecido acarretará a extinção do feito sem a resolução do mérito. 3. Decorrido o prazo sem haver manifestação, tornem-se os autos imediatamente conclusos. 4. Apresentado os dados pela parte exequente, intime-se o executado, no prazo legal, para se manifestar acerca do cumprimento da obrigação de fazer proferida no Acórdão de fls. 341/361 e, querendo, impugnar a execução, inclusive observando as diretrizes do CPC e da Resolução do TJ referidas no item 1 deste Despacho, tornando os autos conclusos depois. 5. Providências necessárias. 6. Cumpra-se. Maceió, datado eletronicamente. HELESTRON SILVA DA COSTA JUIZ DE DIREITO
+Advogados(s): Rayssa de Oliveira Ramos (OAB 15270AL/)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/09/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-50467308" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=50467308&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-50467308" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=50467308&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				D E C I S Ã O Providencie a Secretaria a abertura de sequencial próprio, a partir da fl. 375, para o trâmite do cumprimento de sentença, com o traslado das peças processuais pertinentes, inclusive deste Despacho, como permite o art. 307, caput e § 2º, do Provimento nº 13/2023 da Corregedoria-Geral da Justiça de Alagoas (Código de Normas das Serventias Judiciais da Corregedoria-Geral da Justiça do Estado de Alagoas). Arquivem-se os autos principais. No sequencial, intime-se a parte exequente para, no prazo de 15 (quinze) dias, enviar o memorial de cálculo e adequar o requerimento de cumprimento de sentença, aos termos do artigo 534 do Código de Processo Civil e da Resolução TJ-AL n.º 17/2020, complementando as informações apresentadas com base nos itens a seguir : i) o(s) nome(s) do(s) beneficiário(s) do crédito, do seu procurador, se houver, com o respectivo número no Cadastro de Pessoas Físicas CPF, no Cadastro Nacional de Pessoas Jurídicas CNPJ ou no Registro Nacional de Estrangeiro RNE, conforme o caso; ii) a indicação da natureza comum ou alimentar do crédito; iii) o valor total devido a cada beneficiário e o montante global requerido, constando o principal corrigido, o índice de juros ou da taxa SELIC, quando utilizada, incluindo o percentual utilizado, e o correspondente valor; iv) o termo inicial e o termo final dos juros e da correção monetária utilizados; v) a periodicidade da capitalização dos juros, se for o caso; vi) a especificação dos eventuais descontos obrigatórios realizados, incluindo o valor e o percentual da retenção, no tocante a: a) contribuições previdenciárias, bem como a indicação do órgão previdenciário com o respectivo CNPJ; b) contribuições para o Fundo de Garantia por Tempo de Serviço FGTS; e c) imposto de renda; e d) de outras contribuições devidas, se houver. vii) a(s) conta(s) bancária(s) do(s) credor(es) originário(s) e/ou beneficiário(s), inclusive do(s) advogado(s) constituído(s) no processo, na qual deverá ser disponibilizado o valor do precatório, se houver; viii) o(s) endereço(s) eletrônicos dos beneficiários do crédito. 2. O não cumprimento da determinação no prazo estabelecido acarretará a extinção do feito sem a resolução do mérito. 3. Decorrido o prazo sem haver manifestação, tornem-se os autos imediatamente conclusos. 4. Apresentado os dados pela parte exequente, intime-se o executado, no prazo legal, para se manifestar acerca do cumprimento da obrigação de fazer proferida no Acórdão de fls. 341/361 e, querendo, impugnar a execução, inclusive observando as diretrizes do CPC e da Resolução do TJ referidas no item 1 deste Despacho, tornando os autos conclusos depois. 5. Providências necessárias. 6. Cumpra-se. Maceió, datado eletronicamente. HELESTRON SILVA DA COSTA JUIZ DE DIREITO<br><b>Vencimento: </b>11/10/2023
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.23.70275276-5
+Tipo da Petição: Manifestação do Autor
+Data: 25/08/2023 11:53
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.23.70274684-6
+Tipo da Petição: Execução de Sentença
+Data: 25/08/2023 00:36
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remessa à CJU - Custas
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-49780890" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-49780890" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Transitado em Julgado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebimento da Instância Superior -  Altera situação para "Julgado"
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0524/2023
+Data da Publicação: 09/08/2023
+Número do Diário: 3361
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0524/2023
+Teor do ato: D E C I S Ã O Alimente-se o sistema com a informação "julgado". Após, remetam os autos à Contadoria para a atualização do cálculo das custas finais. Em seguida, intime-se a parte autora para o pagamento das custas finais, no prazo de 15 (quinze) dias, devendo, em igual prazo, juntar comprovante de pagamento nos autos. Não havendo pagamento das custas, expeça-se a certidão de que trata a Resolução nº 19/2007 do Tribunal de Justiça de Alagoas (art. 33, §2º), encaminhando-a ao FUNJURIS para fins de cobrança. Com a comprovação de remessa da certidão de débito ao FUNJURIS (art. 25, da Resolução 19/2007), arquivem-se os presentes autos. Cumpra-se. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO
+Advogados(s): Rayssa de Oliveira Ramos (OAB 15270AL/)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-49731239" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=49731239&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-49731239" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=49731239&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				D E C I S Ã O Alimente-se o sistema com a informação "julgado". Após, remetam os autos à Contadoria para a atualização do cálculo das custas finais. Em seguida, intime-se a parte autora para o pagamento das custas finais, no prazo de 15 (quinze) dias, devendo, em igual prazo, juntar comprovante de pagamento nos autos. Não havendo pagamento das custas, expeça-se a certidão de que trata a Resolução nº 19/2007 do Tribunal de Justiça de Alagoas (art. 33, §2º), encaminhando-a ao FUNJURIS para fins de cobrança. Com a comprovação de remessa da certidão de débito ao FUNJURIS (art. 25, da Resolução 19/2007), arquivem-se os presentes autos. Cumpra-se. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO<br><b>Vencimento: </b>29/08/2023
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/08/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/07/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Recebido recurso eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Data do julgamento: 03/05/2023
+Trânsito em julgado: 
+Tipo de julgamento: Acórdão
+Decisão: à unanimidade de votos, em CONHECER do presente recurso para, no mérito, em idêntica votação, DAR-LHE PARCIAL PROVIMENTO, nos termos do voto condutor. Dispensado o pedido de sustentação do advogado Cleber Vieira da Silva Melo, inscrito pela parte Apelante. Participou do julgamento o Exmo. Sr. Des. Tutmés Airan de Albuquerque Melo, em virtude do impedimento declarado pelo Dr. Alberto Jorge Correia de Barros Lima 
+Situação do provimento: 
+Relator: Des. Fábio Costa de Almeida Ferrario
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido recurso eletrônico ao Tribunal de Justiça/Turma de recurso
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-35310564" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-35310564" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 2.º, XLIX, do Provimento n.º 13/2009, da Corregedoria Geral da Justiça do Estado de Alagoas, considerando que já restou oportunizado prazo para a apresentação de razões e contrarrazões recursais, passo a fazer a remessa dos autos ao Egrégio Tribunal de Justiça de Alagoas, competente para o julgamento do recurso.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.20.80079824-4
+Tipo da Petição: Contrarrazões
+Data: 28/09/2020 09:04
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-35293493" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-35293493" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Citação e Intimação - Portal - Procuradoria Geral do Estado de Alagoas - PGEAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Vista à PGE - Portal Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-35190708" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-35190708" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Remessa de Citação e Intimação para o Portal - Procuradoria Geral do Estado de Alagoas - PGEAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-35190240" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-35190240" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato Ordinatório - Artigo 162, §4º, CPC
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Ato Ordinatório: Interposto recurso de apelação pela parte Autora, intime-se a parte recorrida para apresentar contrarrazões, no prazo de 30 (trinta) dias, conforme o art. 1010,§ 1º do CPC. Se apresentada Apelação Adesiva pela parte recorrida (art.997, §2º do CPC), intime-se a parte contrária para contrarrazões, no prazo de 30(trinta) dias, nos termos do Art. 1010, §2º do CPC. Caso as contrarrazões do recurso principal ou do adesivo ventilem matérias elencadas no art.1009, §1º do CPC, intime-se o recorrente para se manifestar sobre elas no prazo de 30(trinta) dias, conforme o art. 1009, § 2º, do CPC. Após as providências acima, remetam-se os autos ao Egrégio Tribunal de Justiça.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.20.70192179-0
+Tipo da Petição: Recurso de Apelação
+Data: 18/09/2020 17:00
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/09/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-35002583" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-35002583" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Citação e Intimação - Portal - Procuradoria Geral do Estado de Alagoas - PGEAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/08/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Vista à PGE - Portal Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/08/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34853355" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34853355" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Remessa de Citação e Intimação para o Portal - Procuradoria Geral do Estado de Alagoas - PGEAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/08/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Registro de Sentença
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/08/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0989/2020
+Data da Publicação: 25/08/2020
+Número do Diário: 2651
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/08/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0989/2020
+Teor do ato: S E N T E N Ç A Trata-se de ação ordinária proposta por Anísio Ramos Filho, em face do Estado de Alagoas. Alega ser agente da Polícia Civil, classe D, do Quadro de Pessoal da Polícia Civil, com matrícula nº 65.870-7 e ID Policial nº 0903, e que na data de 27/11/2014 deu entrada no processo de ascensão de nível, requerendo sua progressão horizontal para a Classe E e/ou vertical para o nível IV. Aponta que, após várias diligências, em 27/05/2016 o Secretário de Estado do Planejamento, Gestão e Patrimônio, deferiu o pedido formulado pelo Autor, ao tempo em que Autorizou a elaboração da Portaria pertinente à efetivação do ato, de modo que em 06/06/2016 foi publicada a Portaria nº 5.384/2016, concedendo a progressão funcional ao Autor para a classe E, nível IV, com efeitos financeiros a partir de 27/11/2014 (data em que o Autor deu entrada no processo). Informa que, relativamente aos cálculos dos valores retroativos, em 19/07/2017, o Gerente de análise e instrução processual da folha de pagamento, emitiu despacho no sentido de que, com base no entendimento pacificado pela Procuradoria Geral do Estado, por intermédio do Despacho Jurídico PGE/PA/CD -3850/2016, exarado no processo administrativo nº 20105-10093/2014, os efeitos financeiros devem ser delimitados seguindo os seguintes parâmetros: a) quando os certificados utilizados forem apresentados por ocasião do requerimento, os efeitos financeiros devem ser contabilizados a partir da data do protocolo; b) se os certificados forem trazidos em momentos diferentes no curso do procedimento, deve ser considerada a data de juntada do último título. Aponta que, ao final, acolhendo Parecer da PGE, em 13/09/2017, o Secretário de Estado publicou a Portaria nº 7.527/2017, na qual anulou a Portaria nº 5.384/2016, que concedia progressão funcional ao Autor com efeitos financeiros da data em que ele deu entrada (27/11/2014). Afirmou ainda que com a nova Portaria, foi concedida a promoção para a Classe E, nível IV, mas com efeitos financeiros de 22/6/2015, data em que o Autor juntou o diploma de nível médio. Noutro viés, o autor alega que em 28/11/2019 o deu entrada em sua progressão funcional para a classe F, o que foi deferido através da Portaria/SEPLAG nº 17.564/2019, na qual o Secretário Especial de Gestão e Patrimônio concedeu progressão funcional ao Autor para a classe F, com efeitos financeiros a partir de 28/11/2019, todavia, 12/03/2020 foi publicada a Portaria/SEPLAG nº 2.320/2020, que anulou aPortaria/SEPLAG nº 17.564/2019. Ao final, requer a procedência da ação para: (a) anular a Portaria/SEPLAG nº 7.527/2017 e tornar válida a Portaria/SEPLAG nº 5.384/2016, que concedeu a progressão funcional do Autor para a classe E, nível IV, com efeitos financeiros a partir da data do protocolo (27/11/2014), e, via de consequência, condenar o réu ao pagamento da quatia de R$ 15.462,41 (quinze mil, quatrocentos e sessenta e dois reais e quarenta e um centavos) referente ao retroativo do período de 27/11/2014 a 22/6/2015 e do adicional noturno também deste período no valor de R$ 2.908,03 (dois mil, novecentos e oito reais e três centavos), totalizando o valor de R$ 18.370,44 (dezoito mil, trezentos e setenta reais e quarenta e quatro centavos), devidamente corrigidos; (b) anular a Portaria/Seplag nº 2.320/2020, a fim de que continue sendo válida a Portaria/SEPLAG nº 17.564/2019 que concedeu ao Autor a progressão funcional para a classe F, com o pagamento do retroativo referente ao período de 28/11/2019 a 31/12/2019 no valor de R$ 1.652,06 (um mil, seiscentos e cinquenta e dois reais e seis centavos) e o mês de abril/2020 em diante; e, (c) condenar o réu ao pagamento de R$ 5.000,00 (cinco mil reais) a título de indenização por danos morais. Diante do indeferimento do pedido de assistência judiciária gratuita, o autor juntou comprovação quanto ao pagamento das custas iniciais às págs. 222/225. Em decisão de págs. 226/229 foi indeferido o pedido de tutela antecipada. Ao apresentar contestação, o Estado de Alagoas a prescrição de fundo de direito, defendeu que na falta de algum documento na apresentação do pedido de progressão os efeitos financeiros devem ser a partir da juntada do último documento e aduziu a ausência de caracterização de dano moral a ser reparado. Réplica às págs. 248/258. O Ministério Público informou a ausência de interesse no julgamento da demanda. É o relatório. No que diz com a alegação de prescrição, é cediço que as ações pessoais e dívidas passivas da Fazenda Pública prescrevem em 05 (cinco) anos, contados da data do ato/fato que as originaram, conforme inteligência do art. 1º do Decreto nº20.910/1932, verbis: Art. 1º - As dívidas passivas da União, dos Estados e dos Municípios, bem assim todo e qualquer direito ou ação contra a Fazenda federal, estadual ou municipal, seja qual for a sua natureza, prescrevem em cinco anos contados da data do ato ou fato do qual se originarem. Assim, sendo certo que o atos administrativos impugnados pelo autor datam de 2017 e 2020, respectivamente, não há que se falar em prescrição. Passa-se à análise do mérito. No ano de 2014 o autor da demanda, então pertencente à Classe D do quadro de pessoal da Polícia Civil, deu entrada no processo de ascensão de nível, requerendo sua progressão horizontal para a Classe E e/ou vertical para o nível IV. Conforme previsão do artigo 8º da Lei Estadual n.º 6.276/2001, com redação dada pela Lei Estadual n.º 7.602/2014: Art. 8º As Progressões nos cargos que integram as Carreiras da Parte Especial e Suplementar dar-se-ão nas linhas Horizontal e Vertical de acesso nas formas seguintes: § 1º Na linha Horizontal (...) V Classe E - Habilitação em curso de nível médio, mais cursos de capacitação, dentro da área de atuação, com carga horária que somem 240 (duzentas e quarenta) horas; (...) § 2º A progressão horizontal, Classe, será requerida no órgão de origem do servidor, devendo ser deferida e homologada pela Secretaria de Estado da Gestão Pública para sua efetivação, obedecendo, exclusivamente, a titulação exigida mais o interstício de 05 (cinco) anos contados a partir do último posicionamento na Classe imediatamente anterior. § 3º Na linha Vertical: (...) IV Nível IV - Habilitação em nível médio, mais cursos de Qualificação Profissional, na área de atuação, com carga horária de 160 (cento e sessenta) horas. (...) § 4º A progressão Vertical, será requerida no órgão de origem do servidor, devendo ser deferida e homologada pela Secretaria de Estado da Gestão Pública para sua efetivação, obedecendo-se, exclusivamente, a titulação exigida. § 5º A Secretaria de Estado da Gestão Pública deverá instituir Comissão Especial para proceder à análise e deferimento dos cursos apresentados pelos servidores integrantes da Parte Especial e Suplementar, no prazo máximo de 8 (oito) meses, a contar da data de publicação desta Lei. Conforme reconhecido pelo próprio autor na petição inicial, após várias diligências, inclusive no sentido da solicitação de documentação ao autor, em 07/06/2016 foi publicada no Diário Oficial do Estado a Portaria SEPLAG n.º 5.384/2016 (págs. 84), que conheceu sua progressão funcional para a Classe E, nível IV, com efeitos financeiros a partir de 27/11/2014, apontada como a data do requerimento administrativo. Ocorre que no ano seguinte à concessão da progressão funcional, quando o processo administrativo tramitava no sentido do pagamento de valores retroativos, a Gerente de análise e instrução processual da folha de pagamento sugeriu a retificação da Portaria SEPLAG 5.384/2016, para fazer constar os efeitos financeiros a partir de 22.06.2015, quando o autor fez a juntada do certificado de fl. 30 do processo administrativo. Isso em consonância com o entendimento exarado pela PGE-PA, que no despacho jurídico PGE/PA-CD-3850/2016, proferido nos autos do processo administrativo 20105-10093/2014, verbis: Os efeitos financeiros devem ser delimitados seguindo os seguintes parâmetros: a) quando os certificados utilizados forem apresentados por ocasião do requerimento, os efeitos financeiros devem ser contabilizados a partir da data do protocolo; b) se os certificados forem trazidos aos autos em momentos diferentes no curso do procedimento, deve ser considerada a data de juntada do último título. Em consulta aos autos verifica-se que no despacho datado de 11/06/2015 o autor foi convocado a apresentar cópia autenticada de habilitação em nível médio, solicitação cumprida em 22/06/2015 (vide págs. 72/73). Portanto, o certificado a que faz alusão a gerente de folha de pagamento é o certificado de conclusão do ensino médio (vide págs. 73), previsto como requisito essencial para a progressão funcional pretendida, nos termos do artigo 8º, §1º, V e §3º, IV, 8º da Lei Estadual n.º 6.276/2001, com redação dada pela Lei Estadual n.º 7.602/2014. Daí, a publicação das Portarias SEPLAG nº 7.526/2017, que anulou a Portaria SEPLAG 5.384/2016, e nº 7.527/2017, que concedeu a progressão funcional do autor para a Classe E, nível IV, com efeitos financeiros a partir de 22/06/2015 data em que o autor apresentou seu certificado de conclusão do ensino médio. Diferentemente do que alega o autor, não há qualquer ilegalidade nos atos administrativos em questão. Não obstante o requerimento administrativo datado de 27/11/2014, o autor, naquele momento, não demonstrou o preenchimento do requisito relativo à escolaridade necessária. Somente com a apresentação do certificado de conclusão do ensino médio, em 22/06/2015, é que a Administração tomou conhecimento do fato ensejador do benefício. Conclusão diversa consubstanciaria a aceitação do comportamento contraditório do autor, que requereu um benefício sem comprovar que teria direito a tal, em verdadeira dissonância com o brocardo nemo potest venire contra factum proprium, segundo o qual a ninguém é permitido se valer de um direito em contradição com sua conduta anterior, interpretada objetivamente, nos termos da lei, dos bons costumes ou da boa-fé. Sobre o tema, o Superior Tribunal de Justiça: PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. EMBARGOS À EXECUÇÃO. APRECIAÇÃO DE TODAS AS QUESTÕES RELEVANTES DA LIDE PELO TRIBUNAL DE ORIGEM. AUSÊNCIA DE AFRONTA AO ART. 1.022 DO CPC/2015. CONDIÇÃO PARA EXIGIBILIDADE DO TÍTULO EXECUTIVO RECONHECIDA. BALANCETES. COMPORTAMENTO CONTRADITÓRIO. TEORIA DOS ATOS PRÓPRIOS. 'VENIRE CONTRA FACTUM PROPRIUM'. DECISÃO DE ACORDO COM A JURISPRUDÊNCIA DO STJ. APLICAÇÃO DA SÚMULA N. 83/STJ. VÍCIO DE FUNDAMENTAÇÃO NÃO CONSTATADO. DECISÃO MANTIDA. 1. Inexiste afronta ao art. 1.022 do CPC/2015 quando o acórdão recorrido pronuncia-se, de forma clara e suficiente, acerca das questões suscitadas nos autos, manifestando-se sobre todos os argumentos que, em tese, poderiam infirmar a conclusão adotada pelo Juízo. 2. Segundo jurisprudência assente no STJ, " a ninguém é lícito fazer valer um direito em contradição com a sua conduta anterior ou posterior interpretada objetivamente, segundo a lei, os bons costumes e a boa-fé" (REsp n. 1.192.678/PR, Relator Ministro PAULO DE TARSO SANSEVERINO, TERCEIRA TURMA, julgado em 13/11/2012, DJe 26/11/2012). 3. Agravo interno a que se nega provimento. (AgInt no AREsp 1339580/DF, Rel. Ministro ANTONIO CARLOS FERREIRA, QUARTA TURMA, julgado em 15/06/2020, DJe 18/06/2020). Melhor sorte não assiste ao autor quanto ao pedido de anulação da Portaria SEPLAG nº 2.320/2020, que anulou a progressão funcional para a classe F conferida pela Portaria/SEPLAG nº 17.564/2019. Isso porque, nos moldes estabelecidos pelo 8º, § 2º, da Lei Estadual n.º 6.276/2001, para que seja efetivada a progressão horizontal, de Classe, é necessário o cumprimento do interstício de 05 (cinco) anos contados a partir do último posicionamento na Classe imediatamente anterior. In casu, sendo certo que o autor teve sua progressão para a Classe E, Nível IV, em 07/06/2016, resta inafastável a convicção de que este somente poderá ter o requisito temporal preenchido no ano de 2022. Por fim, quanto ao pedido de reparação por dano moral, o art.37,§6º, daConstituição Federaldefine a responsabilidade civil objetiva do Estado tendo como fundamento a teoria do risco administrativo, segundo a qual a Administração Pública deve indenizar os danos causados por seus agentes nessa qualidade, desde que comprovados e presente o nexo de causalidade. Prescreve: Art. 37. A administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios obedecerá aos princípios de legalidade, impessoalidade, moralidade, publicidade e eficiência e, também, ao seguinte. (...) § 6º - As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa. Quando a atuação do Estado (por ato comissivo ou omissivo) é determinante para a causação do resultado danoso, mister é a sua responsabilização de forma objetiva, sendo desnecessário perquirir a respeito da culpa do agente provocador do dano. Pertinente ao nexo de causalidade, para ser vinculado à administração o dano há de resultar como consequência direta, ou mesmo indireta, do procedimento administrativo. Contudo, a adoção da responsabilidade objetiva pela Constituição Federal (art. 37, § 6º) não conduz ao entendimento de que a pessoa jurídica de direito público é obrigada a indenizar todo e qualquer dano, incumbindo a quem se afirma lesado provar a ocorrência dos fatos constitutivos do seu direito, quais sejam, o dano efetivo e o nexo causal. Entrementes, como já destacado, a parte autora não trouxe qualquer comprovação pertinente à aflição moral. Quais os problemas resultaram do cancelamento da CNH do autor? O autor possui veículo? Possui o hábito de dirigir? Utiliza a CNH em sua vida cotidiana? Os autos indicam a inexistência deste e de outros desdobramentos, se existiram não foram aqui trazidos. É preciso o mínimo de provas para aquilatar-se a dor ou aflição sofrida que não pode ser confundida com o mero aborrecimento próprio da complexidade dos tempos contemporâneos. Para Yussef Said Cahali, dano moral é tudo aquilo que molesta gravemente a alma humana, ferindo-lhe gravemente os valores fundamentais inerentes à sua personalidade ou reconhecidos pela sociedade em que está integrado (Dano Moral. São Paulo: RT, 1998, p. 396). Há, portanto, uma medida, embora não exista enumerações. Dor, angústia, sofrimento, desprestígio, tristeza, desequilíbrio da normalidade psíquica carecem de uma maximização sob pena de sucumbirmos para o perigo de tornar banal a existência do dano. Vivemos hoje a denominada "pós-modernidade" com os componentes de "risco" a ela inerentes. Estamos todos ameaçados, a cada momento, por força de uma série de distorções ocorridas neste mudo plural, conflituoso e hiperbolizado por regras confusas. Não é possível admitir a existência do dano por meros aborrecimentos ou dissabores mesmo sabendo que o Estado deu causa. Para a existência do dano moral exige-se mais, notadamente contra o Estado que na verdade é uma ficção sustentada pelo dinheiro do combalido contribuinte. Em passagem arguta e com contundente advertência escreveu Calmon de Passos: Nada mais suscetível de subjetivizar-se que a dor, nem nada mais fácil de ser objeto de mistificação. Assim como já existiram carpideiras que choravam a dor dos que eram incapazes de chora-la, porque não a experimentavam, também nos tornamos extremamente hábeis em nos fazermos carpideiras de nós mesmos, chorando, para o espetáculo diante dos outros, a dor que em verdade não experimentamos. A possibilidade, inclusive, de retiramos proveitos financeiros dessa nossa dor oculta, fez-nos atores excepcionais e meliantes extremamente hábeis, quer como vítimas, quer como advogados ou magistrados. Para se ressarcir esses danos, deveríamos ter ao menos a decência ou a cautela de exigir a prova da efetiva dor do beneficiário, desocultando-a. Hipocritamente descartamos essa exigência, precisamente porque, quando real a dor, repugna ao que sofre pelo que é insubstituível substituí-lo pelo encorpamento de sua conta bancária. Daí termos também, na nossa sociedade cínica, construído uma nova forma de responsabilidade objetiva a responsabilidade por danos morais à base de standards de moralidade abstrata, já que a moralidade concreta já nem consegue se fazer ouvir, de tão debilitada que está. O anonimato do culpado ou seu rosto coletivo e a adesão à sociedade do risco desvinculou o problema moral da culpa por danos morais, desnaturando-a. A par disso, ou como consectário disso, o anonimato da moral, por força de suas muitas e mudáveis faces, porquanto se tornou kaleidoscópica, levou à responsabilidade por danos morais sem se indagar concretamente sobre o problema moral no caso concreto. Se o filho é vitimado, o pai é premiado com uma indenização, sem se cogitar das verdadeiras relações afetivas que existiam entre este reprodutor, chamado de pai, e o fruto de sua ejaculação. Antes quanto menos dor realmente ele experimenta tanto maior é sua dor oculta para fins de indenização. Não se indaga se aquele que se enche de furor ético porque teve recusado um cheque de sua emissão teve, por força disso, forte abalo emocional, ou é simplesmente um navegador esperto no mar de permissividades e tolerância que apelidamos de ousadia empreendedora. Quando a moralidade é posta debaixo do tapete, esse lixo pode ser trazido para fora no momento em que bem nos convier. E justamente porque a moralidade se fez algo descartável e de menor importância no mundo de hoje, em que o relativismo, o pluralismo, o cinismo, o ceticismo, a permissividade e o imediatismo têm papel decisivo, o ressarcimento por danos morais teria que também se objetivar para justificar-se numa sociedade tão eticamente frágil e indiferente. O ético deixa de ser algo intersubjetivamente estruturado e institucionalizado, descaracterizando-se como reparação de natureza moral para se traduzir em ressarcimento material, vale dizer, o dano moral é significativo não para reparar a ofensa à honra e a outros valores éticos, sim para acrescer alguns trocados ao patrimônio do felizardo que foi moralmente (?) enxovalhado. (PASSOS, José Joaquim Calmon de. O imoral nas indenizações por dano moral. Revista Jus Navigandi, ISSN 1518-4862, Teresina, ano 7, n. 57, 1 jul. 2002. Disponível em: &lt;https://jus.com.br/artigos/2989&gt;. Acesso em: 22 maio 2018). (Sem grifo no original). Os autos, pois, não trazem elementos configuradores da existência de um dano moral. Diante do exposto, julgo improcedente o pedido. Condeno o autor ao pagamento das custas judiciais e de honorários advocatícios, fixando-os, nos termos do art. 85, §8º, do Código de Processo Civil, em R$ 1.000,00 (mil reais). Oportunamente, arquive-se com a devida baixa. P.R.I. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO
+Advogados(s): Rayssa de Oliveira Ramos (OAB 15270/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/08/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34816624" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=34816624&amp;nmRecursoAcessado=Julgado+improcedente+o+pedido" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34816624" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=34816624&amp;nmRecursoAcessado=Julgado+improcedente+o+pedido" target="_blank"> Julgado improcedente o pedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				S E N T E N Ç A Trata-se de ação ordinária proposta por Anísio Ramos Filho, em face do Estado de Alagoas. Alega ser agente da Polícia Civil, classe D, do Quadro de Pessoal da Polícia Civil, com matrícula nº 65.870-7 e ID Policial nº 0903, e que na data de 27/11/2014 deu entrada no processo de ascensão de nível, requerendo sua progressão horizontal para a Classe E e/ou vertical para o nível IV. Aponta que, após várias diligências, em 27/05/2016 o Secretário de Estado do Planejamento, Gestão e Patrimônio, deferiu o pedido formulado pelo Autor, ao tempo em que Autorizou a elaboração da Portaria pertinente à efetivação do ato, de modo que em 06/06/2016 foi publicada a Portaria nº 5.384/2016, concedendo a progressão funcional ao Autor para a classe E, nível IV, com efeitos financeiros a partir de 27/11/2014 (data em que o Autor deu entrada no processo). Informa que, relativamente aos cálculos dos valores retroativos, em 19/07/2017, o Gerente de análise e instrução processual da folha de pagamento, emitiu despacho no sentido de que, com base no entendimento pacificado pela Procuradoria Geral do Estado, por intermédio do Despacho Jurídico PGE/PA/CD -3850/2016, exarado no processo administrativo nº 20105-10093/2014, os efeitos financeiros devem ser delimitados seguindo os seguintes parâmetros: a) quando os certificados utilizados forem apresentados por ocasião do requerimento, os efeitos financeiros devem ser contabilizados a partir da data do protocolo; b) se os certificados forem trazidos em momentos diferentes no curso do procedimento, deve ser considerada a data de juntada do último título. Aponta que, ao final, acolhendo Parecer da PGE, em 13/09/2017, o Secretário de Estado publicou a Portaria nº 7.527/2017, na qual anulou a Portaria nº 5.384/2016, que concedia progressão funcional ao Autor com efeitos financeiros da data em que ele deu entrada (27/11/2014). Afirmou ainda que com a nova Portaria, foi concedida a promoção para a Classe E, nível IV, mas com efeitos financeiros de 22/6/2015, data em que o Autor juntou o diploma de nível médio. Noutro viés, o autor alega que em 28/11/2019 o deu entrada em sua progressão funcional para a classe F, o que foi deferido através da Portaria/SEPLAG nº 17.564/2019, na qual o Secretário Especial de Gestão e Patrimônio concedeu progressão funcional ao Autor para a classe F, com efeitos financeiros a partir de 28/11/2019, todavia, 12/03/2020 foi publicada a Portaria/SEPLAG nº 2.320/2020, que anulou aPortaria/SEPLAG nº 17.564/2019. Ao final, requer a procedência da ação para: (a) anular a Portaria/SEPLAG nº 7.527/2017 e tornar válida a Portaria/SEPLAG nº 5.384/2016, que concedeu a progressão funcional do Autor para a classe E, nível IV, com efeitos financeiros a partir da data do protocolo (27/11/2014), e, via de consequência, condenar o réu ao pagamento da quatia de R$ 15.462,41 (quinze mil, quatrocentos e sessenta e dois reais e quarenta e um centavos) referente ao retroativo do período de 27/11/2014 a 22/6/2015 e do adicional noturno também deste período no valor de R$ 2.908,03 (dois mil, novecentos e oito reais e três centavos), totalizando o valor de R$ 18.370,44 (dezoito mil, trezentos e setenta reais e quarenta e quatro centavos), devidamente corrigidos; (b) anular a Portaria/Seplag nº 2.320/2020, a fim de que continue sendo válida a Portaria/SEPLAG nº 17.564/2019 que concedeu ao Autor a progressão funcional para a classe F, com o pagamento do retroativo referente ao período de 28/11/2019 a 31/12/2019 no valor de R$ 1.652,06 (um mil, seiscentos e cinquenta e dois reais e seis centavos) e o mês de abril/2020 em diante; e, (c) condenar o réu ao pagamento de R$ 5.000,00 (cinco mil reais) a título de indenização por danos morais. Diante do indeferimento do pedido de assistência judiciária gratuita, o autor juntou comprovação quanto ao pagamento das custas iniciais às págs. 222/225. Em decisão de págs. 226/229 foi indeferido o pedido de tutela antecipada. Ao apresentar contestação, o Estado de Alagoas a prescrição de fundo de direito, defendeu que na falta de algum documento na apresentação do pedido de progressão os efeitos financeiros devem ser a partir da juntada do último documento e aduziu a ausência de caracterização de dano moral a ser reparado. Réplica às págs. 248/258. O Ministério Público informou a ausência de interesse no julgamento da demanda. É o relatório. No que diz com a alegação de prescrição, é cediço que as ações pessoais e dívidas passivas da Fazenda Pública prescrevem em 05 (cinco) anos, contados da data do ato/fato que as originaram, conforme inteligência do art. 1º do Decreto nº20.910/1932, verbis: Art. 1º - As dívidas passivas da União, dos Estados e dos Municípios, bem assim todo e qualquer direito ou ação contra a Fazenda federal, estadual ou municipal, seja qual for a sua natureza, prescrevem em cinco anos contados da data do ato ou fato do qual se originarem. Assim, sendo certo que o atos administrativos impugnados pelo autor datam de 2017 e 2020, respectivamente, não há que se falar em prescrição. Passa-se à análise do mérito. No ano de 2014 o autor da demanda, então pertencente à Classe D do quadro de pessoal da Polícia Civil, deu entrada no processo de ascensão de nível, requerendo sua progressão horizontal para a Classe E e/ou vertical para o nível IV. Conforme previsão do artigo 8º da Lei Estadual n.º 6.276/2001, com redação dada pela Lei Estadual n.º 7.602/2014: Art. 8º As Progressões nos cargos que integram as Carreiras da Parte Especial e Suplementar dar-se-ão nas linhas Horizontal e Vertical de acesso nas formas seguintes: § 1º Na linha Horizontal (...) V Classe E - Habilitação em curso de nível médio, mais cursos de capacitação, dentro da área de atuação, com carga horária que somem 240 (duzentas e quarenta) horas; (...) § 2º A progressão horizontal, Classe, será requerida no órgão de origem do servidor, devendo ser deferida e homologada pela Secretaria de Estado da Gestão Pública para sua efetivação, obedecendo, exclusivamente, a titulação exigida mais o interstício de 05 (cinco) anos contados a partir do último posicionamento na Classe imediatamente anterior. § 3º Na linha Vertical: (...) IV Nível IV - Habilitação em nível médio, mais cursos de Qualificação Profissional, na área de atuação, com carga horária de 160 (cento e sessenta) horas. (...) § 4º A progressão Vertical, será requerida no órgão de origem do servidor, devendo ser deferida e homologada pela Secretaria de Estado da Gestão Pública para sua efetivação, obedecendo-se, exclusivamente, a titulação exigida. § 5º A Secretaria de Estado da Gestão Pública deverá instituir Comissão Especial para proceder à análise e deferimento dos cursos apresentados pelos servidores integrantes da Parte Especial e Suplementar, no prazo máximo de 8 (oito) meses, a contar da data de publicação desta Lei. Conforme reconhecido pelo próprio autor na petição inicial, após várias diligências, inclusive no sentido da solicitação de documentação ao autor, em 07/06/2016 foi publicada no Diário Oficial do Estado a Portaria SEPLAG n.º 5.384/2016 (págs. 84), que conheceu sua progressão funcional para a Classe E, nível IV, com efeitos financeiros a partir de 27/11/2014, apontada como a data do requerimento administrativo. Ocorre que no ano seguinte à concessão da progressão funcional, quando o processo administrativo tramitava no sentido do pagamento de valores retroativos, a Gerente de análise e instrução processual da folha de pagamento sugeriu a retificação da Portaria SEPLAG 5.384/2016, para fazer constar os efeitos financeiros a partir de 22.06.2015, quando o autor fez a juntada do certificado de fl. 30 do processo administrativo. Isso em consonância com o entendimento exarado pela PGE-PA, que no despacho jurídico PGE/PA-CD-3850/2016, proferido nos autos do processo administrativo 20105-10093/2014, verbis: Os efeitos financeiros devem ser delimitados seguindo os seguintes parâmetros: a) quando os certificados utilizados forem apresentados por ocasião do requerimento, os efeitos financeiros devem ser contabilizados a partir da data do protocolo; b) se os certificados forem trazidos aos autos em momentos diferentes no curso do procedimento, deve ser considerada a data de juntada do último título. Em consulta aos autos verifica-se que no despacho datado de 11/06/2015 o autor foi convocado a apresentar cópia autenticada de habilitação em nível médio, solicitação cumprida em 22/06/2015 (vide págs. 72/73). Portanto, o certificado a que faz alusão a gerente de folha de pagamento é o certificado de conclusão do ensino médio (vide págs. 73), previsto como requisito essencial para a progressão funcional pretendida, nos termos do artigo 8º, §1º, V e §3º, IV, 8º da Lei Estadual n.º 6.276/2001, com redação dada pela Lei Estadual n.º 7.602/2014. Daí, a publicação das Portarias SEPLAG nº 7.526/2017, que anulou a Portaria SEPLAG 5.384/2016, e nº 7.527/2017, que concedeu a progressão funcional do autor para a Classe E, nível IV, com efeitos financeiros a partir de 22/06/2015 data em que o autor apresentou seu certificado de conclusão do ensino médio. Diferentemente do que alega o autor, não há qualquer ilegalidade nos atos administrativos em questão. Não obstante o requerimento administrativo datado de 27/11/2014, o autor, naquele momento, não demonstrou o preenchimento do requisito relativo à escolaridade necessária. Somente com a apresentação do certificado de conclusão do ensino médio, em 22/06/2015, é que a Administração tomou conhecimento do fato ensejador do benefício. Conclusão diversa consubstanciaria a aceitação do comportamento contraditório do autor, que requereu um benefício sem comprovar que teria direito a tal, em verdadeira dissonância com o brocardo nemo potest venire contra factum proprium, segundo o qual a ninguém é permitido se valer de um direito em contradição com sua conduta anterior, interpretada objetivamente, nos termos da lei, dos bons costumes ou da boa-fé. Sobre o tema, o Superior Tribunal de Justiça: PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. EMBARGOS À EXECUÇÃO. APRECIAÇÃO DE TODAS AS QUESTÕES RELEVANTES DA LIDE PELO TRIBUNAL DE ORIGEM. AUSÊNCIA DE AFRONTA AO ART. 1.022 DO CPC/2015. CONDIÇÃO PARA EXIGIBILIDADE DO TÍTULO EXECUTIVO RECONHECIDA. BALANCETES. COMPORTAMENTO CONTRADITÓRIO. TEORIA DOS ATOS PRÓPRIOS. 'VENIRE CONTRA FACTUM PROPRIUM'. DECISÃO DE ACORDO COM A JURISPRUDÊNCIA DO STJ. APLICAÇÃO DA SÚMULA N. 83/STJ. VÍCIO DE FUNDAMENTAÇÃO NÃO CONSTATADO. DECISÃO MANTIDA. 1. Inexiste afronta ao art. 1.022 do CPC/2015 quando o acórdão recorrido pronuncia-se, de forma clara e suficiente, acerca das questões suscitadas nos autos, manifestando-se sobre todos os argumentos que, em tese, poderiam infirmar a conclusão adotada pelo Juízo. 2. Segundo jurisprudência assente no STJ, " a ninguém é lícito fazer valer um direito em contradição com a sua conduta anterior ou posterior interpretada objetivamente, segundo a lei, os bons costumes e a boa-fé" (REsp n. 1.192.678/PR, Relator Ministro PAULO DE TARSO SANSEVERINO, TERCEIRA TURMA, julgado em 13/11/2012, DJe 26/11/2012). 3. Agravo interno a que se nega provimento. (AgInt no AREsp 1339580/DF, Rel. Ministro ANTONIO CARLOS FERREIRA, QUARTA TURMA, julgado em 15/06/2020, DJe 18/06/2020). Melhor sorte não assiste ao autor quanto ao pedido de anulação da Portaria SEPLAG nº 2.320/2020, que anulou a progressão funcional para a classe F conferida pela Portaria/SEPLAG nº 17.564/2019. Isso porque, nos moldes estabelecidos pelo 8º, § 2º, da Lei Estadual n.º 6.276/2001, para que seja efetivada a progressão horizontal, de Classe, é necessário o cumprimento do interstício de 05 (cinco) anos contados a partir do último posicionamento na Classe imediatamente anterior. In casu, sendo certo que o autor teve sua progressão para a Classe E, Nível IV, em 07/06/2016, resta inafastável a convicção de que este somente poderá ter o requisito temporal preenchido no ano de 2022. Por fim, quanto ao pedido de reparação por dano moral, o art.37,§6º, daConstituição Federaldefine a responsabilidade civil objetiva do Estado tendo como fundamento a teoria do risco administrativo, segundo a qual a Administração Pública deve indenizar os danos causados por seus agentes nessa qualidade, desde que comprovados e presente o nexo de causalidade. Prescreve: Art. 37. A administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios obedecerá aos princípios de legalidade, impessoalidade, moralidade, publicidade e eficiência e, também, ao seguinte. (...) § 6º - As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa. Quando a atuação do Estado (por ato comissivo ou omissivo) é determinante para a causação do resultado danoso, mister é a sua responsabilização de forma objetiva, sendo desnecessário perquirir a respeito da culpa do agente provocador do dano. Pertinente ao nexo de causalidade, para ser vinculado à administração o dano há de resultar como consequência direta, ou mesmo indireta, do procedimento administrativo. Contudo, a adoção da responsabilidade objetiva pela Constituição Federal (art. 37, § 6º) não conduz ao entendimento de que a pessoa jurídica de direito público é obrigada a indenizar todo e qualquer dano, incumbindo a quem se afirma lesado provar a ocorrência dos fatos constitutivos do seu direito, quais sejam, o dano efetivo e o nexo causal. Entrementes, como já destacado, a parte autora não trouxe qualquer comprovação pertinente à aflição moral. Quais os problemas resultaram do cancelamento da CNH do autor? O autor possui veículo? Possui o hábito de dirigir? Utiliza a CNH em sua vida cotidiana? Os autos indicam a inexistência deste e de outros desdobramentos, se existiram não foram aqui trazidos. É preciso o mínimo de provas para aquilatar-se a dor ou aflição sofrida que não pode ser confundida com o mero aborrecimento próprio da complexidade dos tempos contemporâneos. Para Yussef Said Cahali, dano moral é tudo aquilo que molesta gravemente a alma humana, ferindo-lhe gravemente os valores fundamentais inerentes à sua personalidade ou reconhecidos pela sociedade em que está integrado (Dano Moral. São Paulo: RT, 1998, p. 396). Há, portanto, uma medida, embora não exista enumerações. Dor, angústia, sofrimento, desprestígio, tristeza, desequilíbrio da normalidade psíquica carecem de uma maximização sob pena de sucumbirmos para o perigo de tornar banal a existência do dano. Vivemos hoje a denominada "pós-modernidade" com os componentes de "risco" a ela inerentes. Estamos todos ameaçados, a cada momento, por força de uma série de distorções ocorridas neste mudo plural, conflituoso e hiperbolizado por regras confusas. Não é possível admitir a existência do dano por meros aborrecimentos ou dissabores mesmo sabendo que o Estado deu causa. Para a existência do dano moral exige-se mais, notadamente contra o Estado que na verdade é uma ficção sustentada pelo dinheiro do combalido contribuinte. Em passagem arguta e com contundente advertência escreveu Calmon de Passos: Nada mais suscetível de subjetivizar-se que a dor, nem nada mais fácil de ser objeto de mistificação. Assim como já existiram carpideiras que choravam a dor dos que eram incapazes de chora-la, porque não a experimentavam, também nos tornamos extremamente hábeis em nos fazermos carpideiras de nós mesmos, chorando, para o espetáculo diante dos outros, a dor que em verdade não experimentamos. A possibilidade, inclusive, de retiramos proveitos financeiros dessa nossa dor oculta, fez-nos atores excepcionais e meliantes extremamente hábeis, quer como vítimas, quer como advogados ou magistrados. Para se ressarcir esses danos, deveríamos ter ao menos a decência ou a cautela de exigir a prova da efetiva dor do beneficiário, desocultando-a. Hipocritamente descartamos essa exigência, precisamente porque, quando real a dor, repugna ao que sofre pelo que é insubstituível substituí-lo pelo encorpamento de sua conta bancária. Daí termos também, na nossa sociedade cínica, construído uma nova forma de responsabilidade objetiva a responsabilidade por danos morais à base de standards de moralidade abstrata, já que a moralidade concreta já nem consegue se fazer ouvir, de tão debilitada que está. O anonimato do culpado ou seu rosto coletivo e a adesão à sociedade do risco desvinculou o problema moral da culpa por danos morais, desnaturando-a. A par disso, ou como consectário disso, o anonimato da moral, por força de suas muitas e mudáveis faces, porquanto se tornou kaleidoscópica, levou à responsabilidade por danos morais sem se indagar concretamente sobre o problema moral no caso concreto. Se o filho é vitimado, o pai é premiado com uma indenização, sem se cogitar das verdadeiras relações afetivas que existiam entre este reprodutor, chamado de pai, e o fruto de sua ejaculação. Antes quanto menos dor realmente ele experimenta tanto maior é sua dor oculta para fins de indenização. Não se indaga se aquele que se enche de furor ético porque teve recusado um cheque de sua emissão teve, por força disso, forte abalo emocional, ou é simplesmente um navegador esperto no mar de permissividades e tolerância que apelidamos de ousadia empreendedora. Quando a moralidade é posta debaixo do tapete, esse lixo pode ser trazido para fora no momento em que bem nos convier. E justamente porque a moralidade se fez algo descartável e de menor importância no mundo de hoje, em que o relativismo, o pluralismo, o cinismo, o ceticismo, a permissividade e o imediatismo têm papel decisivo, o ressarcimento por danos morais teria que também se objetivar para justificar-se numa sociedade tão eticamente frágil e indiferente. O ético deixa de ser algo intersubjetivamente estruturado e institucionalizado, descaracterizando-se como reparação de natureza moral para se traduzir em ressarcimento material, vale dizer, o dano moral é significativo não para reparar a ofensa à honra e a outros valores éticos, sim para acrescer alguns trocados ao patrimônio do felizardo que foi moralmente (?) enxovalhado. (PASSOS, José Joaquim Calmon de. O imoral nas indenizações por dano moral. Revista Jus Navigandi, ISSN 1518-4862, Teresina, ano 7, n. 57, 1 jul. 2002. Disponível em: &lt;https://jus.com.br/artigos/2989&gt;. Acesso em: 22 maio 2018). (Sem grifo no original). Os autos, pois, não trazem elementos configuradores da existência de um dano moral. Diante do exposto, julgo improcedente o pedido. Condeno o autor ao pagamento das custas judiciais e de honorários advocatícios, fixando-os, nos termos do art. 85, §8º, do Código de Processo Civil, em R$ 1.000,00 (mil reais). Oportunamente, arquive-se com a devida baixa. P.R.I. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO<br><b>Vencimento: </b>17/09/2020
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.20.80052845-0
+Tipo da Petição: Manifestação do Promotor
+Data: 23/06/2020 12:45
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34145652" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34145652" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Citação e Intimação - Portal - Ministério Público do Estado de Alagoas - MPAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Vista ao MP - Portal Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34027309" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34027309" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Remessa de Citação e Intimação para o Portal - Ministério Público do Estado de Alagoas - MPAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34027287" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34027287" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato Ordinatório - Artigo 162, §4º, CPC
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0709350-39.2020.8.02.0001 Ação: Procedimento Comum Cível Autor: Anisio Ramos Filho Réu: Estado de Alagoas Ato Ordinatório: Em cumprimento ao Provimento nº 13/2009, da Corregedoria-Geral da Justiça do Estado de Alagoas, dou vista à(o) douta(o) representante do Ministério Público. Maceió, 10 de junho de 2020. Geomário Dourado Silva Analista Judiciário-B
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.20.70120510-5
+Tipo da Petição: Réplica
+Data: 09/06/2020 19:53
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0734/2020
+Data da Publicação: 09/06/2020
+Número do Diário: 2602
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0734/2020
+Teor do ato: Processo n°: 0709350-39.2020.8.02.0001 Ação: Procedimento Comum Cível Autor: Anisio Ramos Filho Réu: Estado de Alagoas ATO ORDINATÓRIO Em cumprimento ao Provimento 13/09 da Corregedoria Geral de Justiça do Estado de Alagoas, intime-se a parte autora acerca da contestação apresentada, para, querendo, apresente réplica no prazo legal. Maceió, 05 de junho de 2020 Geomário Dourado Silva Analista Judiciário-B
+Advogados(s): Rayssa de Oliveira Ramos (OAB 15270/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33963067" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33963067" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Processo n°: 0709350-39.2020.8.02.0001 Ação: Procedimento Comum Cível Autor: Anisio Ramos Filho Réu: Estado de Alagoas ATO ORDINATÓRIO Em cumprimento ao Provimento 13/09 da Corregedoria Geral de Justiça do Estado de Alagoas, intime-se a parte autora acerca da contestação apresentada, para, querendo, apresente réplica no prazo legal. Maceió, 05 de junho de 2020 Geomário Dourado Silva Analista Judiciário-B<br><b>Vencimento: </b>08/07/2020
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.20.80047227-6
+Tipo da Petição: Contestação
+Data: 03/06/2020 17:25
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33752187" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33752187" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Citação e Intimação - Portal - Procuradoria Geral do Estado de Alagoas - PGEAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Vista à PGE - Portal Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33537698" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33537698" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão Emitida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Remessa de Citação e Intimação para o Portal - Procuradoria Geral do Estado de Alagoas - PGEAL
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33535552" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33535552" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Carta de Citação De Ordem Fazenda Pública - Portal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0632/2020
+Data da Publicação: 05/05/2020
+Número do Diário: 2577
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0632/2020
+Teor do ato: Diante do exposto, nego o pedido de tutela antecipada. Cite-se. Intimações necessárias. Cumpra-se. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO
+Advogados(s): Rayssa de Oliveira Ramos (OAB 15270/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/05/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33506517" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=33506517&amp;nmRecursoAcessado=N%C3%A3o+Concedida+a+Antecipa%C3%A7%C3%A3o+de+tutela" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33506517" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=33506517&amp;nmRecursoAcessado=N%C3%A3o+Concedida+a+Antecipa%C3%A7%C3%A3o+de+tutela" target="_blank"> Não Concedida a Antecipação de tutela
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Diante do exposto, nego o pedido de tutela antecipada. Cite-se. Intimações necessárias. Cumpra-se. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO<br><b>Vencimento: </b>22/05/2020
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			27/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Realizado cálculo de custas
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.20.70082115-5
+Tipo da Petição: Juntada de Custas
+Data: 27/04/2020 11:04
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0590/2020
+Data da Publicação: 05/05/2020
+Número do Diário: 2570
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0590/2020
+Teor do ato: Diante do exposto, indefiro o pedido de assistência judiciária gratuita. No entanto, diante da documentação apresentada, defiro o parcelamento das custas em 5 parcelas mensais iguais e sucessivas. Concedo o prazo de 15 (quinze) dias para a juntada do comprovante de pagamento da 1ª parcela, com a juntada, obrigatória, da respectiva GRU, sob pena de extinção sem resolução do mérito. Intime-se. cumpra-se. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO
+Advogados(s): Rayssa de Oliveira Ramos (OAB 15270/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33362146" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=33362146&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33362146" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=33362146&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Diante do exposto, indefiro o pedido de assistência judiciária gratuita. No entanto, diante da documentação apresentada, defiro o parcelamento das custas em 5 parcelas mensais iguais e sucessivas. Concedo o prazo de 15 (quinze) dias para a juntada do comprovante de pagamento da 1ª parcela, com a juntada, obrigatória, da respectiva GRU, sob pena de extinção sem resolução do mérito. Intime-se. cumpra-se. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO<br><b>Vencimento: </b>22/05/2020
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WMAC.20.70076509-3
+Tipo da Petição: Pedido de Reconsideração de Decisão
+Data: 16/04/2020 14:48
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0561/2020
+Data da Publicação: 04/05/2020
+Número do Diário: 2564
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0561/2020
+Teor do ato: D E C I S Ã O 1. Trata-se de ação ordinária em que o autor pleiteia a concessão da assistência judiciária gratuita, embora haja elementos nos autos que infirme a alegação de hipossuficiência. Assim, intime-se o autor para que, no prazo de 15 dias, junte aos autos Guia de Recolhimento das Custas, pague-as ou traga elementos para apreciação do pedido de assistência judiciária gratuita. O não cumprimento no prazo acarretará a extinção do feito sem julgamento do mérito. 2. Após, conclusos à fila de ato inicial. 3. Cumpra-se. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO
+Advogados(s): Rayssa de Oliveira Ramos (OAB 15270/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-33180877" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=33180877&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-33180877" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=01000WL9E0000&amp;cdDocumento=33180877&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				D E C I S Ã O 1. Trata-se de ação ordinária em que o autor pleiteia a concessão da assistência judiciária gratuita, embora haja elementos nos autos que infirme a alegação de hipossuficiência. Assim, intime-se o autor para que, no prazo de 15 dias, junte aos autos Guia de Recolhimento das Custas, pague-as ou traga elementos para apreciação do pedido de assistência judiciária gratuita. O não cumprimento no prazo acarretará a extinção do feito sem julgamento do mérito. 2. Após, conclusos à fila de ato inicial. 3. Cumpra-se. Maceió, datado eletronicamente. ALBERTO JORGE CORREIA DE BARROS LIMA JUIZ DE DIREITO<br><b>Vencimento: </b>22/05/2020
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/04/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Distribuído por Sorteio
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+
+		
+		
+	
+</table>
+
+	<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value="
+
+">
+
+    <input id="linkNaoExibidomovimentacoes" type="hidden" value="
+        &lt;span id=&quot;setasDireitamovimentacoes&quot; class=&quot;setasDireita&quot;&gt;
+            &lt;i class=&quot;unj-link-collapse__icon glyph glyph-chevron-down&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        Mais
+    ">
+
+<span id="mensagensExibindomovimentacoes" class="mensagemExibindo"></span> &nbsp;
+
+    <a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse"><span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>Recolher</a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+
+	</div>
+
+		
+
+	
+
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Petições diversas</h2>
+		
+	
+</div>
+
+<!-- Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+	
+		
+			<thead>
+			    <tr class="label">
+			      <th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+			    <tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								16/04/2020
+							</td>
+							<td width="*">
+								Pedido de Reconsideração de Decisão <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								27/04/2020
+							</td>
+							<td width="*">
+								Juntada de Custas <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								03/06/2020
+							</td>
+							<td width="*">
+								Contestação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								09/06/2020
+							</td>
+							<td width="*">
+								Réplica <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								23/06/2020
+							</td>
+							<td width="*">
+								Manifestação do Promotor <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								18/09/2020
+							</td>
+							<td width="*">
+								Recurso de Apelação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								28/09/2020
+							</td>
+							<td width="*">
+								Contrarrazões <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								25/08/2023
+							</td>
+							<td width="*">
+								Execução de Sentença <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								25/08/2023
+							</td>
+							<td width="*">
+								Manifestação do Autor <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								30/09/2024
+							</td>
+							<td width="*">
+								Manifestação do procurador do Estado <br>
+								
+							</td>
+						</tr>
+					
+				
+			</tbody>
+		
+		
+	
+</table>
+<!--  Tabela de petições diversas -->
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+			if(!captcha){
+				return;
+			}
+			$('.incidente a').each(function(){
+				var $incidente = $(this);
+				var url = $incidente.attr('href');
+				$incidente.attr('href', url+'&uuidCaptcha='+captcha);
+			});
+		})
+	})(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+
+	
+	    <tbody><tr class="label">
+	    	<th width="140">
+				Recebido em
+			</th>
+			<th width="*" class="label">
+				Classe
+			</th>
+	    </tr>
+	    <tr class="fundoEscuro" height="2" aria-hidden="true">
+			<td></td><td></td>
+		</tr>
+
+		
+			
+			<tr class="fundoClaro">
+			  <td width="140" style="text-align:left">
+			    26/09/2023
+			  </td>
+			<td width="*">
+				
+					
+						<a class="incidente" href="/cpopg/show.do?localPesquisa.cdLocal=1&amp;processo.codigo=01000WL9E0001&amp;processo.foro=1" target="_top">
+							Cumprimento de sentença
+							
+								 - 00001
+							
+							
+						</a>
+					
+					
+				
+			</td>
+		</tr>        
+	
+	
+	
+
+</tbody></table>
+<!--  Incidentes -->
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if(!captcha){
+                return;
+            }
+            $.each($('.processoApensado'), function (i, value) {
+                var $link = $(value);
+                $link.attr('href', $link.attr('href') + '&uuidCaptcha=' + captcha);
+            })
+
+        })
+    })(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Apensos, Entranhados e Unificados</h2>
+		
+	
+</div>
+
+
+
+    
+        <table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+            <tbody id="dadosApensosNaoDisponiveis">
+            <tr>
+                <td colspan="3" align="left">Não há processos apensados, entranhados e unificados a este processo.</td>
+            </tr>
+            </tbody>
+        </table>
+
+    
+    
+
+
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Audiências</h2>
+		
+	
+</div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+            
+            
+        
+    
+    
+
+<a name="audienciasPlaceHolder"></a>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+    
+        
+        
+            <tbody><tr>
+                <td id="processoSemAudiencias" colspan="3" align="left">
+                    
+                        
+                        
+                            Não há Audiências futuras vinculadas a este processo.
+                        
+                    
+                </td>
+            </tr>
+        
+    
+</tbody></table>
+
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="popupCdas" style="display: none;">
+	<!--  dados da lista (CDAs) -->
+	<div style="height:210px; overflow: auto;">
+		<table id="tableCdasPrincipais" style="margin-left:10px; margin-top:1px; width: 98%;">
+			<thead>
+				<tr class="fundoClaro">
+					<th style="text-align:left;">Número CDA</th>
+					<th style="text-align:left;">Valor</th>
+					<th style="text-align:left;">Dt. CDA</th>
+					<th style="text-align:left;">Valor atualizado</th>
+					<th style="text-align:left;">Dt. atualização</th>
+					<th style="text-align:left;">Situação</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td colspan="6">
+				</td></tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+</form>
+
+	                
+	                
+	                
+	                
+	            
+	        
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<form action="/cpopg/show.do?processo.codigo=01000WL9E0000&amp;processo.foro=1&amp;processo.numero=0709350-39.2020.8.02.0001" id="popupSenha" style="display: none;" method="POST">
+		<input type="hidden" name="_csrf" value="d2ffab36-8245-4e64-a264-6b930d600268">
+		
+		<table role="document">
+			<tbody><tr>
+				<td colspan="2" style="padding-bottom:20px">Atendendo a resolução 121 do CNJ.</td>
+			</tr>
+			
+				<tr>
+					<td colspan="2" style="padding-bottom:20px">Se for advogado(a) nesse processo, é necessário <span id="identificacao"><strong><a href="https://www2.tjal.jus.br/esaj/identificacao.do?retorno=https%3A//www2.tjal.jus.br/cpopg/show.do%3Fprocesso.codigo%3D01000WL9E0000%26processo.foro%3D1%26processo.numero%3D0709350-39.2020.8.02.0001">Identificar-se</a></strong></span></td>
+					
+						
+						
+							<script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/conteudoIdentificacao?script=1765484828783"></script>
+						
+					
+				</tr>
+			
+			<tr align="center">
+				<td align="left" colspan="2" style="padding-bottom:20px">
+					<div style="float:left; line-height:30px;">Se for uma parte ou interessado, digite a senha do processo</div>
+					<div style="float:left;width: 140px; padding-left:15px">
+						<input type="password" name="senhaProcesso" maxlength="12" value="" rotulo="" class="form-control" id="senhaProcesso">
+						<input type="hidden" name="idRecursoQueProvocouLiberacaoPorSenha" value="">
+					</div>
+					<div class="unj-form-control-group__icon">
+						<div class="dropdown show">
+							<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyph glyph-info" aria-hidden="true"></span>
+							</a>
+							<div class="dropdown-menu tooltip-campos" aria-labelledby="dropdownMenuLink">
+								
+									É necessário informar uma senha para acessar processo em segredo de justiça, bem como para acessar autos dos demais processos.<br><br>
+									Se for parte do processo e ainda não possua uma senha, <b>solicite-a no cartório</b>.<br><br>
+								
+								
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	    
+	<input type="button" name="btFechar" value="Cancelar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotao " id="botaoFecharPopupSenha">
+
+
+					
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	<input type="submit" name="btEnviarSenha" value="Continuar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotaoDefault btn-space" id="btEnviarSenha">
+
+
+						
+					
+				</td>
+			</tr>
+		</tbody></table>
+	</form>
+
+
+
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer>
+    <nav class="navbar__footer">
+        <div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-saj.png" alt="SAJ">
+                    </a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-softplan.png" alt="Softplan">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar__footer__list-actions">
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+	
+
+
+
+
+
+
+</body></html>

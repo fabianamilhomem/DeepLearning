@@ -8,7 +8,7 @@
 
 Este repositório contém o código-fonte desenvolvido em **Jupyter Notebook** para coleta, tratamento e análise de sentenças judiciais do **Tribunal de Justiça de Alagoas (TJAL)**, com aplicação de técnicas de **Processamento de Linguagem Natural (PLN)**, **aprendizagem de máquina** e **deep learning** para classificação de sentimento jurídico.
 
-**O código notebook (Fabiana_Mairton_DeepLearning_TJAL.ipynb) deve ser executado no Jupyter Notebook**, pois contém células sequenciais, logs de execução e visualizações intermediárias que podem não funcionar corretamente fora desse ambiente.
+**O código (Fabiana_Mairton_DeepLearning_TJAL.ipynb) deve ser executado no Jupyter Notebook**, pois contém células sequenciais, logs de execução e visualizações intermediárias que podem não funcionar corretamente fora desse ambiente.
 
 **Ao final deste arquivo, são apresentadas orientações para o ajuste do parâmetro max_itens da seção [8] do Jupyter Notebook, de modo a definir o total de sentenças a serem coletadas no scraping do TJAL.**
 
@@ -33,9 +33,14 @@ O objetivo do projeto é construir uma *pipeline* completa para:
 - Conexão com a internet
 
 ## Execução:
-- Abra o arquivo .ipynb (TrabalhoFinal_DeepLearning_TJAL.ipynb) no Jupyter Notebook.
+- Abra o arquivo .ipynb (Fabiana_Mairton_DeepLearning_TJAL.ipynb) no Jupyter Notebook.
 - Execute as células sequencialmente, respeitando a ordem das seções.
 - Ajuste o valor do parâmetro max_itens, localizado na Seção [8], para definir a quantidade de processos a serem coletados antes do início do scraping.
+
+## Amostra de Sentenças Judiciais – TJAL (HTML das movimentações processuais de mérito)
+Este diretório contém uma amostra representativa das sentenças judiciais coletadas
+por meio de scraping no Tribunal de Justiça de Alagoas (TJAL), utilizada para fins
+de reprodutibilidade e validação do pipeline de coleta e processamento de dados.
 
 ## Organização do Notebook:
 O notebook está estruturado em **seções numeradas**, facilitando a leitura, execução sequencial e reprodutibilidade.

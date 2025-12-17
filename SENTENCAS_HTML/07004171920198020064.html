@@ -1,0 +1,5442 @@
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+	
+
+
+
+
+
+
+
+
+    <script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/verificarLogin.js?script=1764434355142"></script>
+
+    <script language="javascript">
+        if (window.sajcas && window.sajcas.usuarioLogadoNoCasServer) {
+            var GATEWAY_TRUE = 'gateway=true', GATEWAY_FALSE = 'gateway=false';
+            var urlRetornoSistema = '';
+            if (urlRetornoSistema === '') {
+                urlRetornoSistema = window.location.href;
+            }
+
+            if (urlRetornoSistema.indexOf(GATEWAY_FALSE) !== -1) {
+                urlRetornoSistema = urlRetornoSistema.replace(GATEWAY_FALSE, GATEWAY_TRUE);
+            } else {
+                urlRetornoSistema.lastIndexOf('?') !== -1 ? urlRetornoSistema += '&' : urlRetornoSistema += '?';
+                urlRetornoSistema += GATEWAY_TRUE;
+            }
+
+            window.location.href = urlRetornoSistema;
+        }
+    </script>
+
+
+	<title>Portal de Serviços e-SAJ</title>
+
+	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/cpopg/softheme/src/css/app.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/softheme/src/fonts/saj/styles.css?v=2.8.34-30">
+	<link rel="stylesheet" href="/cpopg/css/formulario.css?v=2.8.34-30" type="text/css">
+	
+
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2-bootstrap.css?v=2.8.34-30" type="text/css">
+	<link rel="stylesheet" href="/cpopg/css/saj/select2/saj-select2.css">
+
+	
+ 
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cpopg';
+	window.saj.env.css = '/cpopg/css';
+	window.saj.env.js = '/cpopg/js';
+	window.saj.env.imagens = '/cpopg/imagens';
+	window.saj.env.queryString = 'processo.codigo=1S00007X30000&processo.foro=64&processo.numero=0700417-19.2019.8.02.0064';	
+
+	window.saj.cpo = window.saj.cpo || {};
+
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+</script>
+
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.min.js?n=1620728708"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.func_toggle.js?n=e83d5f02-da83-4d63-9e1c-028656c6e0a3"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.blockUI.min.js?n=d9105760-8182-4c35-8c9b-ca307f219e51"></script>
+	<script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.browser.min.js?n=cd84d821-9807-4510-8a0c-550d906e46da"></script>
+
+	<script language="javascript" type="text/javascript" src="/cpopg/webjars/lodash/4.17.21/lodash.js?n=6e84eefe-af50-4a93-b699-5146183901b6"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/select2/select2.js?n=7f62b0a4-f1ea-4234-a606-842fb2683766"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/webjars/select2/3.5.4/select2_locale_pt-BR.js?n=1781cdbd-4a5b-45b4-9e94-44c8a6ecc22b"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-select2.js?n=5a1b788d-8d25-4df4-9b56-8b99deb7fe6d"></script>
+
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-web-2.2.41-4.js?n=fc1c2d21-aa0a-411e-bf0e-9c3cc5e96ab0"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-tooltip.js?n=246c5ee0-8c94-4be5-82b2-a33d36ea8114"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-popup-modal-1.0.0-1.js?n=3c390c44-6390-4136-bd46-1f26c02bf2ab"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-browser.js?n=79b1f9f8-f10e-43b1-a4c4-2f95099d8953"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-mascara-input.js?n=345bac87-71d5-4dc9-851c-5cd5aa2451b7"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-numeroProcesso.js?n=2ef0473d-d6d9-4591-b77c-4055570ccd19"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj-cpo-cbpesquisa.js?n=295666404"></script>
+	<script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/acessibilidade/acessibilidade.js?n=5d0c3f37-c697-4936-ba14-85c20019acfe"></script>
+	
+	<script language="javascript" type="text/JavaScript" src="/cpopg/softheme/src/js/app.js?n=789536343"></script>   
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js?n=21126482-c82f-444d-aa6d-7c68dde067d2" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js?n=1791337263" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	
+
+
+
+
+<script>
+	(function($){
+		$(function(){
+			var intervalo = 1795000;
+			$.saj.manterSessao('/cpopg/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script>
+
+
+
+
+	
+    <script language="javascript" type="text/JavaScript">
+        $.saj = $.saj || {};
+        $.saj.acessoRecurso = {
+            abrirPastaDigitalEmPopup: 'true' == 'true',
+            idRecursoQueProvocouLiberacaoPorSenha: '',
+            limitaAcessoPastaDigital: 'false',
+            popupSenha: {
+                mostrar: 'false' == 'true',
+                titulo: 'Senha do processo',
+                altura: 220 + Number("10"),
+                alturaAdicionalParaMensagemValidacao: Number("0"),
+                largura: 580
+            },
+            popupMensagem: {
+                titulo: 'Aviso:',
+                texto: 'Você atingiu o limite diário de acessos Ã  pasta digital em processos que não está vinculado.'
+            }
+        };
+
+        $.saj.getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+    </script>
+    <script language="javascript" type="text/JavaScript" src="/cpopg/jsp/show-2.8.33-0.js?n=856054158"></script>
+
+	<script type="text/javascript">
+		(function($) {
+			$(function(){
+				// Correção temporária do alinhamento do divisor de seção de formulário do SPW 
+				$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top');
+				
+			})
+		})(jQuery);
+	</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if (!captcha) {
+                return;
+            }
+
+            if(!captcha){
+                return;
+            }
+            var $processoPrinc = $('.processoPrinc');
+            $processoPrinc.attr('href', $processoPrinc.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            $('.incidente').each(function () {
+                var $incidente = $(this);
+                var url = $incidente.attr('href');
+                $incidente.attr('href', url + '&uuidCaptcha=' + captcha);
+            });
+
+        })
+    })(jQuery);
+</script>
+
+<!-- HEADER-->
+<div class="unj-entity-header">
+    
+
+
+
+
+<div class="unj-entity-header__actions">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i id="setaVoltar" class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+                <!-- CDAS -->
+                
+                <!-- Custas -->
+                
+                    <button class="btn btn-secondary btn-space linkConsultaSG" onclick="location.href = 'https://www2.tjal.jus.br/ccpweb/abrirConsultaCustas.do?cdProcesso=1S00007X30000&amp;nuProcesso=0700417-19.2019.8.02.0064', '_blank', 'toolbar=0,location=0,menubar=0'">
+                        Visualizar custas
+                    </button>
+                
+                <!-- Pasta digital -->
+                
+                    
+                        
+                        
+                            
+                        
+                    
+                    
+                        
+                        
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPasta" aria-hidden="true" title="Pasta digital" href="#liberarAutoPorSenha">
+                                Visualizar autos
+                            </a>
+                            <!-- link da pasta digital exibido somente para leitores de tela (deficientes visuais), neste caso o link anterior é ignorado pelo leitor
+                            Obs: necessário manter a table devido aos atributos de acessibilidade se comportarem adequadamente com a tabela, comportamento que não é possível colocando
+                            os atributos somente na tag do link-->
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPastaAcessibilidade" style="font-size:0;height:0;width:0;padding:0;margin:0;border:none" href="#liberarAutoPorSenha&amp;acessibilidade=true">
+                                Visualizar autos
+                            </a>
+                        
+                    
+                
+                
+                    
+                    
+                    
+                    
+                        <!-- Peticionar -->
+                        
+                        
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="unj-entity-header__summary">
+    <div id="containerDadosPrincipaisProcesso" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-13">
+                <!--principal -->
+                
+                    <span id="numeroProcesso" class="unj-larger-1">
+                        0700417-19.2019.8.02.0064
+                    </span>
+                    
+                    
+                        <span id="labelSituacaoProcesso" class="unj-tag">Em grau de recurso</span>
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+                
+            </div>
+
+        </div>
+        <div class="row">
+            <input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+            
+                <div class="col-lg-3 col-xl-3 mb-3">
+                    <span id="labelClasseProcesso" class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2"><span id="classeProcesso" title="Procedimento Comum Cível">Procedimento Comum Cível</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-3 mb-3">
+                    <span id="labelAssuntoProcesso" class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="assuntoProcesso" title="Indenização por Dano Moral">Indenização por Dano Moral</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-2 mb-2">
+                    <span id="labelForoProcesso" class="unj-label">
+                        Foro
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="foroProcesso" title="Foro de Taquarana">Foro de Taquarana</span></div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-xl-2 mb-2">
+                    <span id="labelVaraProcesso" class="unj-label">
+                        Vara
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"><span id="varaProcesso" title="Vara do Único Ofício de Taquarana">Vara do Único Ofício de Taquarana</span></div>
+                </div>
+            
+
+            
+                <div class="col-lg-3 mb-2">
+                    <span id="labelJuizProcesso" class="unj-label">Juiz</span>
+                    <div class="line-clamp__2"> <span id="juizProcesso" title="Eduardo Ligiéro Rocha">Eduardo Ligiéro Rocha</span> </div>
+                </div>
+            
+
+            <!-- Processo principal -->
+            
+
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="unj-entity-header__details">
+    <div class="container">
+        <div class="unj-ta-r">
+            
+                <a href="#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                    <span class="unj-link-collapse__show">
+                        <i id="botaoExpandirDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                        Mais
+                    </span>
+                    <span class="unj-link-collapse__hide">
+                        <i id="botaoRecolherDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                        Recolher
+                    </span>
+                </a>
+            
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelDistribuicaoProcesso" class="unj-label">Distribuição </span>
+                        <div id="dataHoraDistribuicaoProcesso">06/08/2019 às 16:45 - Sorteio</div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelControleProcesso" class="unj-label">Controle</span>
+                        <div id="numeroControleProcesso">2019/000662</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 col-xl-2 mb-2">
+                        <span id="labelAreaProcesso" class="unj-label">Área</span>
+                        <div id="areaProcesso" class="lh-1-1 line-clamp__2"> <span title="Cível">Cível</span></div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span id="lavelValorAcaoProcesso" class="unj-label">Valor da ação</span>
+                        <div id="valorAcaoProcesso">R$         12.826,00</div>
+                    </div>
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+
+<div class="div-conteudo container mb-90">
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left ">
+    <div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--light.png" alt="">
+            </a>
+        </header>
+        <nav class="aside-nav__main-menu">
+            <ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Consultas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cpopg/open.do" class="aside-nav__main-menu__list__item__link">Processos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Ordem de Processos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeAtoPg.do" class="aside-nav__main-menu__list__item__link">Publicação e Cumprimento de Atos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cop/abrirConsultaDeOrdemDeJulgamentoPg.do" class="aside-nav__main-menu__list__item__link">Julgamento do 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cposg5/open.do" class="aside-nav__main-menu__list__item__link">Processos de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento-virtual" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento Virtual do Segundo Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Recolhimento de Custas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustas.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=1&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690003" class="aside-nav__main-menu__list__item__link">Custas Iniciais de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=15&amp;flTipoCusta=5&amp;cdServicoCalculoCusta=690004" class="aside-nav__main-menu__list__item__link">Atos Avulsos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=10&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690005" class="aside-nav__main-menu__list__item__link">Custas de Preparo de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=14&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690006" class="aside-nav__main-menu__list__item__link">Custas Juizado Especial - Recurso Inominado</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=3&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690009" class="aside-nav__main-menu__list__item__link">Custas Intermediárias de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Custas de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/abrirConsultaCustasSg.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690205&amp;flTipoCusta=0&amp;cdTipoCusta=1" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690206&amp;flTipoCusta=5&amp;cdTipoCusta=4" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdServicoCalculoCusta=690207&amp;flTipoCusta=1&amp;cdTipoCusta=3" class="aside-nav__main-menu__list__item__link">Custas iniciais de 2º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Jurisprudência</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaSimples.do" class="aside-nav__main-menu__list__item__link">Simples</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cjsg/consultaCompleta.do" class="aside-nav__main-menu__list__item__link">Completa</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/cdje" class="aside-nav__main-menu__list__item__link">Diário da Justiça Eletrônico</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Push</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushpg" class="aside-nav__main-menu__list__item__link">1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pushsg5" class="aside-nav__main-menu__list__item__link">2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pauta-julgamento/consulta" class="aside-nav__main-menu__list__item__link">Consulta da Pauta de Julgamento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Certidões de 1º grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirCadastro.do" class="aside-nav__main-menu__list__item__link">Pedido de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirConferencia.do" class="aside-nav__main-menu__list__item__link">Conferência de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/sco/abrirDownload.do" class="aside-nav__main-menu__list__item__link">Baixar Certidão de 1º Grau</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Conferência de Documentos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/pg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/pastadigital/sg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital do 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Intimação e Citação Eletrônica</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosRecebidos.do" class="aside-nav__main-menu__list__item__link">Consulta de Recebidas</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/intimacoesweb/abrirConsultaAtosNaoRecebidos.do" class="aside-nav__main-menu__list__item__link">Recebimento</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoInicial.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirNovaPeticaoIntermediaria.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petpg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoInicial.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirNovaPeticaoIntermediaria.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petsg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico de Turmas Recursais / Plantão (2º Grau)/ Precatórios</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoInicial.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirNovaPeticaoIntermediaria.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário - TR/ Plantão TJ/ Precat.</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www2.tjal.jus.br/petcr/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições - TR/ Plantão TJ/ Precat.</a>
+</li>
+</ul></li>
+</ul></li></ul>
+        </nav>
+        <div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside>
+<aside class="aside-nav aside-nav--right aside-nav__user ">
+    <div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="https://www2.tjal.jus.br/esaj/img/aside/brasoes/br-tjal.jpg" alt="">
+            </div>
+            <ul class="aside-nav__user__sign__list">
+                <li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado de Alagoas</span></li>
+            </ul>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://www2.tjal.jus.br/esaj/img/icons/icon-close--dark.png" alt="">
+            </a>
+        </div>
+        <hr>
+        <div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+            <ul class="aside-nav__user__info__list-access">
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://www2.tjal.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<header>
+    <link rel="shortcut icon" href="https://www2.tjal.jus.br/esaj/tema/padrao/clientes/AL/imagens/favicon.ico" type="image/x-icon">
+    <link href="https://www2.tjal.jus.br/esaj/app.css" rel="stylesheet" type="text/css">
+    <nav class="header__navbar--normal">
+        
+        <a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href=""><a class="linkLogo" href="https://www2.tjal.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos de 1º Grau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+            <li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="http://www.tjal.jus.br"> TJAL </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text">Identificar-se </span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script>
+
+
+
+<script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://www2.tjal.jus.br/esaj/menuPortalV2Html.do?servico=190101';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://www2.tjal.jus.br/sajcas/conteudoIdentificacaoJson?script=1764399748930&retorno=' + encodeURIComponent(location.href);
+</script>
+<script src="https://www2.tjal.jus.br/esaj/js/portalV2-bundle.js?n=806192629"></script>
+
+<script src="https://www2.tjal.jus.br/sajcas/seletorVersaoBeta.js?n=f4741b53-5491-43cc-ad66-7b5c4f6d6477&amp;versao=2"></script>
+<script>
+    function exibirLibras() {
+        document.getElementById("gifLibras").style.display = 'block';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'static');
+        mudarPosicao(cel2, 'static');
+    }
+    function ocultarLibras() {
+        document.getElementById("gifLibras").style.display = 'none';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'relative');
+        mudarPosicao(cel2, 'relative');
+    }
+
+    function mudarPosicao(coll, posicao) {
+        if (!coll) {
+            return;
+        }
+        for (var i = 0, len = coll.length; i < len; i++) {
+            coll[i].style["position"] = posicao;
+        }
+    }
+</script>
+
+	
+
+
+
+
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Partes do processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+
+
+
+
+
+
+
+
+
+<tbody><tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Autor&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Rosilio Jovino dos Santos
+				
+			
+
+			
+		 
+		
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Gabriel Lucio Silva
+					
+				&nbsp;
+				
+			
+		
+		
+	</td>
+</tr>
+
+	
+		
+
+
+
+
+
+
+
+
+
+<tr class="fundoClaro">
+	<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Réu&nbsp;</span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Banco BMG S/A
+				
+			
+
+			
+		 
+		
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Ana Tereza de Aguiar Valença
+					
+				&nbsp;
+				
+			
+				<br>
+				<span class="mensagemExibindo">Advogada:&nbsp;</span>
+				
+					
+					
+						Fernanda Rafaella Oliveira de Carvalho
+					
+				&nbsp;
+				
+			
+				<br>
+				<span class="mensagemExibindo">Advogado:&nbsp;</span>
+				
+					
+					
+						Gabriel Lucio Silva
+					
+				&nbsp;
+				
+			
+		
+		
+	</td>
+</tr>
+
+	
+</tbody></table>
+
+
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Movimentações</h2>
+		
+	
+</div>
+
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+			<thead>
+				<tr>
+				  <th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true">&nbsp;</th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+
+			
+			<tbody id="tabelaUltimasMovimentacoes" style="display: none;">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/08/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido recurso eletrônico ao Tribunal de Justiça/Turma de recurso
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/08/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Processo Desarquivado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Arquivado equivocadamente no momento da seleção da remessa para o Tribunal.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/08/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Arquivado Definitivamente
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/08/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-55953520" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-55953520" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Cível - Remessa ao Tribunal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/07/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.24.70003972-8
+Tipo da Petição: Contrarrazões
+Data: 25/07/2024 14:38
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+			
+			
+			<tbody style="" id="tabelaTodasMovimentacoes">
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/08/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido recurso eletrônico ao Tribunal de Justiça/Turma de recurso
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/08/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Processo Desarquivado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Arquivado equivocadamente no momento da seleção da remessa para o Tribunal.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/08/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Arquivado Definitivamente
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/08/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-55953520" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-55953520" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Cível - Remessa ao Tribunal
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/07/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.24.70003972-8
+Tipo da Petição: Contrarrazões
+Data: 25/07/2024 14:38
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/07/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.24.70003956-6
+Tipo da Petição: Recurso de Apelação
+Data: 25/07/2024 10:10
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/07/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0310/2024
+Data da Publicação: 08/07/2024
+Número do Diário: 3577
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/07/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0310/2024
+Teor do ato: Procedo ao julgamento antecipado do pedido, porque as questões que remanescem são unicamente de direito e dispensam a dilação probatória (art. 355, I, CPC). Convém mencionar que, embora o réu tenha pedido o depoimento do autor, o requerimento é extemporâneo, já que deveria ter sido veiculado na contestação (art. 336, CPP). E mais: pelo que se exporá a seguir, a prova é absolutamente desnecessária. Sendo o juiz o destinatário da prova, atento ao princípio da persuasão racional, novas provas não são mesmo necessárias (art. 369, CPC). Nessa linha, saliento o dever do juiz de entregar a solução de mérito em prazo razoável (art. 5º, LXXVIII, CR; art. 4º, CPC). Antes, porém, rejeito a preliminar de carência da ação (art. 337, XI, CPC). O interesse processual se explica pelo trinômio necessidade, utilidade e adequação (art. 17, CPC). Para a caracterização dessa condição da ação, o provimento jurisdicional deve ser imprescindível para a solução do conflito, representar um proveito para a esfera jurídica da parte e ser veiculado de forma idônea. No caso, não resta dúvida a respeito da lide instaurada entre as partes a higidez do contrato, a exigir uma decisão por terceiro imparcial. Indubitável o proveito à esfera jurídica da parte autora com o eventual acolhimento do pleito. Ademais, os pedidos são adequados a esses fins. No mais, pela inafastabilidade da jurisdição, prescinde-se da tentativa de solução administrativa (art. 5º, XXXVI, CPC). Rechaço, outrossim, a prescrição. Define-se a prescrição como a ineficácia da pretensão em virtude do decurso do prazo legal sem ação do titular do direito violado (art. 189, CC). No caso, a parte autora pretende a declaração da nulidade/inexistência contratual, que não se sujeita a prazo, seja porque a pretensão declaratória é imprescritível; seja porque o nulo não se convalida com o tempo (art. 169, CC). E o pedido cumulativo de ressarcimento por danos morais submete-se ao prazo quinquenal, dada a tese de fato do serviço (arts. 14 e 27, CDC). Como a relação entre as partes perdura pela sucessão de descontos consignados, renovados mês a mês, a pretensão indenizatória é tempestiva. Presentes os demais pressupostos processuais e condições da ação, matérias de ordem pública e cuja análise cabe ao juiz de ofício, passo ao julgamento do mérito propriamente dito (arts. 139, IX, e 357, do CPC). Trata-se de ação declaratória de nulidade/inexistência cumulada com indenizatória fundada na nulidade da contratação de cartão de crédito com pagamento por reserva de margem consignada. Cinge-se a controvérsia jurídica à legalidade dessa modalidade de contratação (art. 375, II, CPC). De um lado, a parte autora reconhece a tomada de crédito, mas nega a informação adequada sobre as condições do negócio. De outro lado, a parte ré defende a manutenção do contrato, o qual teria sido livremente firmado. Assiste parcial razão à parte autora, senão vejamos. Como se sabe, a defesa do consumidor consubstancia direito fundamental e alicerce da ordem econômica (arts. 5º, XXXII, e 170, V, CR). Para concretizar os comandos constitucionais, o constituinte ordenou ao Congresso Nacional a elaboração de uma lei protetiva ao consumidor (art. 48, CR). Editou-se, então, o Código de Defesa do Consumidor, cuja aplicabilidade depende da configuração da relação de consumo. Nessa toada, o conceito legal de consumidor se fundamenta na teoria finalista. Considera-se consumidor o destinatário final fático de bens e serviços de consumo (art. 2º, CDC). Cuida-se de sujeito vulnerável no contexto do mercado de consumo, a justificar uma especial proteção estatal (art. 4ª, I, CDC). Ao seu turno, fornecedor é o responsável por introduzir o bem ou o serviço no mercado de consumo (art. 3º, CDC). Afastando qualquer dúvida, os serviços de natureza bancária foram expressamente contemplados pelo legislador (art. 3º, §2º, CDC). Confrontado a respeito, o Supremo Tribunal Federal assentou a constitucionalidade da previsão, a qual dispõe sobre contratos bancários e não diretamente sobre sistema financeiro (arts. 22, I, e 192, CR; ADIN 2.591). Igualmente, segundo o verbete número 297 da Súmula do Superior Tribunal de Justiça, "[o] Código de Defesa do Consumidor é aplicável às instituições financeiras". Na posição de tomadora do crédito, é inegável a condição de consumidora da parte autora; na posição de concedente do crédito, a parte ré é fornecedora do serviço. Consequentemente, a relação entre as partes se sujeita aos ditames do Código de Defesa do Consumidor, legislação subjetivamente tutelar e de alta densidade social. Dentre os direitos básicos do consumidor, avulta o direito à informação clara e adequada sobre os serviços, com a exposição pormenorizada de suas características e preço (art. 6º, III, CDC). A esse direito corresponde o dever de exaurimento das informações pelo fornecedor, de sorte a neutralizar a vulnerabilidade econômica do consumidor e propiciar uma decisão consciente sobre a contratação. Visa-se à liberdade de escolha e à igualdade nas contratações (art. 6º, II, CDC). Especificamente em contratos de outorga de crédito, o fornecedor deve informar o preço dos serviços, a taxa de juros, os acréscimos juridicamente admitidos, a periodicidade das prestações e o total a pagar (art. 52, CDC). Mais recentemente, incluíram-se os direitos ao crédito responsável, à educação financeira e à prevenção de tratamento a situações de superendividamento (art. 6º, XI, CDC, com redação dada pela Lei 14.181/2021). A novidade incorpora a jurisprudência de prevenção e repressão de práticas comerciais que acentuam a vulnerabilidade econômica do consumidor (art. 4º, X, CDC). Reconhecida a norma de regência, constata-se que a parte autora se desincumbiu da prova do fato constitutivo de seu direito (art. 373, I, CPC). Deveras, colacionou aos autos o documento demonstrativo de seus proventos com a redução dos valores mediante a consignação de parcelas de pagamento do cartão de crédito (fl. 25). A dinâmica dessa modalidade de contratação é a seguinte: o consumidor pretende um crédito. Boa parte das normas sobre salários e benefícios admitem a tomada de empréstimos, financiamentos e arrendamentos com pagamentos consignados em até 35% dos proventos do tomador (art. 1º, §1º, Lei 10.820/2003). Igual previsão consta para os beneficiários de aposentadoria e pensão do Regime Geral de Previdência Social (art. 6º, §5º, Lei 10.820/2003). Comumente, há uma reserva de margem consignável para o pagamento exclusivo de cartão de crédito. No âmbito das relações de emprego, admite-se o desconto de prestações de cartão de crédito em folha de pagamento até o limite de 5% (art. 1º, §1º, Lei 10.820/2003). A mesma limitação é aplicada aos beneficiários de aposentadoria e pensão do Regime Geral de Previdência Social (art. 6º, §5º, Lei 10.820/2003). Trata-se, apenas, de uma garantia de pagamento. Tais reservas de margem consignável para pagamento de cartão têm por objetivo estimular a concessão de crédito responsável e de maneira acessível. Realmente, a possibilidade de desconto em folha diminui sobremaneira os riscos da operação para o agente financeiro. Consequentemente, viabiliza a oferta de crédito mais barato, em benefício do consumidor e da própria ordem econômica (art. 170, V, CDC). Todavia, tradicionalmente, os juros de cartão de crédito são muito superiores às demais modalidades de concessão de crédito. Essa assertiva é extraída da experiência (art. 375, CPC). Muitas vezes, o consumidor não pode ser atendido na modalidade de mútuo com pagamento em consignação pelo comprometimento da margem com outros empréstimos. Outras vezes, o consumidor nem sequer conhece as diferenças entre mútuo comum e o cartão de crédito com pagamento consignado. Pela própria razão de ser dessa modalidade contratual comprometimento da margem consignada -, exige-se uma redobrada cautela pela instituição financeira, dada a perspectiva de endividamento insustentável. Disso resulta que a higidez da contratação depende, primeiro, da informação clara e precisa sobre a modalidade de crédito; segundo, da efetiva utilização como cartão de crédito, mediante lançamentos na fatura respectiva; terceiro, o envio da fatura possibilitando o pagamento integral dos gastos do período e apenas excepcionalmente o desconto, nos proventos, do saldo inadimplido. No caso, a parte ré perdeu a oportunidade de demonstrar fatos impeditivos, modificativos ou extintivos do direito autoral (art. 373, II, CPC). Vejamos. Deixou a parte ré de demonstrar o exaurimento do dever de informar. De fato, deixou de comprovar ter apresentado à parte autora as diferenças entre as modalidades de crédito, especialmente os juros efetivos e o total do preço final, evidentemente variável conforme a utilização do cartão. Não há indícios mínimos de que a parte ré teria alertado o autor dos riscos de endividamento pelo mecanismo de crédito rotativo automático. Também se observa a concessão de crédito independentemente de utilização do cartão, verdadeiro empréstimo, o que a própria ré reconhece na contestação. Tanto assim que requer a compensação com o capital mutuado. Houve uma descaracterização do contrato de reserva da margem consignável para pagamento de cartão de crédito. A rigor, houve até uma fraude à lei, considerando os limites ordinários à consignação de mútuos e financiamentos. Tampouco demonstrou-se o efetivo envio das faturas ao consumidor. Essa prática gera a consignação de apenas parcela da fatura e automatização do crédito rotativo, com juros ainda maiores, conforme regras da experiência (art. 375, CDC). Consequentemente, observa-se o endividamento progressivo em efeito cascata, pois os valores descontados diretamente em folha não amortizam suficientemente o débito, perpetuando a dívida. Mensalmente, o saldo devedor é atualizado com a incidência de novos juros. É dizer: a dívida resta impagável. Essa prática já coloca em xeque a própria temporalidade das obrigações. Portanto, tem-se uma prática evidentemente abusiva, que coloca o consumidor em extrema desvantagem por excessiva onerosidade, considerando a natureza do contrato e as circunstâncias peculiares do caso (art. 51, IV e §1ª, III, CDC). É irrelevante, para a caracterização da abusividade, a circunstância de o consumidor utilizar ou não o cartão de crédito. Fundamentalmente, a abusividade se perfaz pela ausência ou deficiência do dever de informação, associada à extrema desvantagem financeira da operação. É de rigor a declaração de nulidade da contratação. Considerando a nulidade do contrato, imperiosa a repetição do indébito, em dobro (art. 42, CDC). Ora, nessa hipótese, nem sequer se cogita de engano injustificável. Ao contrário, a avalanche de processos nesse mesmo sentido revela uma prática deliberada e reiterada das instituições financeiras. Entretanto, a jurisprudência desta Corte é pacífica quanto ao prazo quinquenal para repetição de indébito e para a compensação do valor eventualmente creditado ao consumidor montante que sempre constou do instrumento contratual - (art. 206, §5º, I, CC). Dessa forma, a revisão somente incidirá sobre os descontos realizados nos cinco anos anteriores ao ajuizamento da presente ação; a compensação somente está autorizada se o valor tiver sido disponibilizado ao consumidor nesse mesmo interregno. Devem ser desprezados descontos e créditos anteriores quinquênio. Sobre cada desconto indevido, líquido, passam a incidir juros e a correção monetária pela taxa SELIC (art. 406, CC). Oportuno mencionar o caráter híbrido da referida taxa, que agrupa os juros da meta do Conselho Monetário Nacional e a correção monetária decorrente do próprio sistema de liquidação de títulos da dívida pública. Pela referida taxa SELIC, ficam preservados o valor da moeda e os juros pela privação do capital no período. Assentada a nulidade contratual e o direito de repetição do indébito, é chegado o momento de análise do pleito condenatório à indenização pelos danos existenciais. Como cediço, a configuração da responsabilidade civil depende da conduta, do nexo causal e dos danos indenizáveis (arts. 186 e 927, CC). Em uma sociedade marcada por riscos crescentes e diversificados, a responsabilidade civil emerge como forma de tutela de interesses e direitos. Especialmente, o consumidor ostenta o direito básico à reparação integral dos danos, ressaltada a sua condição de vulnerável (arts. 4º, I, e 6º, VI, CDC). Começo pela conduta. O Código de Defesa do Consumidor funda-se na teoria do risco do empreendimento e positiva a responsabilidade objetiva do fornecedor (arts. 12 e 14, CDC). Desse modo, o fornecedor responde independentemente da prova de culpa. Basta a constatação de sua atividade no mercado de consumo e da relação com o episódio danoso. No caso, tem-se por caracterizado o fato do serviço, porquanto as informações foram insuficientes a respeito do risco de endividamento do consumidor (art. 14, §1º, II, CDC). Reconhecida a abusividade da prática comercial por excessiva onerosidade ao consumidor, há de se reconhecer-lhe, além da revisão contratual, o direito à reparação integral dos danos experimentados (arts. 6º, VI, e 51, IV e §1ª, III, do CDC). Segundo, quanto ao nexo de causalidade, aplica-se a teoria da causalidade direta e imediata (art. 403, CC). Por exclusão, não se indenizam danos que não tenham relação direta com a conduta, sob pena de um alargamento irreal da responsabilidade. Explica-se. Somente se pode atribuir responsabilidade a alguém por danos que poderiam ser por ele evitados mediante comportamento adequado. No caso, os danos resultam da própria violação do dever de informação e da cobrança de valores fixos a título de pagamento mínimo da fatura, eternizando-se a obrigação. A parte ré poderia ter se cercado de cautelas para garantir ao consumidor informação completa e clara sobre a modalidade de contratação, obter do consumidor o consentimento informado e evitar os riscos do endividamento. Tem-se, então, caracterizado o nexo de causalidade. Terceiro, os danos podem ser definidos como prejuízo à esfera patrimonial ou existencial de alguém. A esfera patrimonial do consumidor é resguardada com o provimento revisional e eventual repetição de indébito. Contudo, a esfera existencial depende da compensação de outra ordem, atentando-se ao direito básico do consumidor à efetiva prevenção e reparação de danos patrimoniais e morais, individuais, coletivos e difusos (art. 6º, VI, CDC). Vencendo a resistência histórica da doutrina, o constituinte previu a reparação dos danos morais como direito fundamental (art. 5º, V e X, CR). Apesar disso, subsistem várias vertentes interpretativas do próprio conceito de dano moral. Para parcela da doutrina e da jurisprudência, os danos morais resultariam da violação à dignidade da pessoa humana, nomeadamente dos atributos da igualdade, liberdade, solidariedade e integridade psicofísica (art. 1º, III, CR). Outra parcela os compreende como violações aos direitos da personalidade (arts. 12 e seguintes do CC). Finalmente, uma terceira parcela da doutrina e da jurisprudência se preocupa com as repercussões concretas sobre o indivíduo, como dor, sofrimento, angústia etc. Seja como for, é indubitável a ofensa à liberdade e à igualdade da parte autora. Em prejuízo à liberdade de escolha, a autora firmou com a ré um contrato sem informações adequadas, e muito provavelmente contra a sua vontade real. Em prejuízo à igualdade, a falta de informações desnivelou ainda mais a relação de consumo e colocou a parte autora em extrema vulnerabilidade financeira. Evidentemente, houve muito mais que um mero aborrecimento, sobretudo se considerarmos o período dos descontos. Conquanto não se tenha um critério estritamente objetivo para a quantificação da indenização, ao juiz cabe fundamentar as circunstâncias que conduzam ao valor arbitrado para reparação. Atento à natureza do interesse violado, este Egrégio Tribunal de Justiça tem jurisprudência variável conforme o tempo decorrido desde a contratação, o valor descontado mensalmente, a condição socioeconômica do consumidor, eventuais usos do cartão de crédito etc. Atentando-se aos vetores de quantificação, é adequada a condenação da parte ré ao pagamento de R$ 5.000,00 a título de compensação pelos danos existenciais experimentados. Realmente, os descontos comprometeram aproximadamente 5% da renda do consumidor. O autor nunca usou o cartão de crédito para compras (fls. 52/105). Sobre o quantum indenizatório, deverão incidir juros de 1% (um por cento) ao mês desde a data do evento danoso (art. 398, CC). Ou seja, os juros de 1% (um por cento) ao mês incidem desde o primeiro desconto indevido não abrangido pela prescrição quinquenal. Os juros incidem até a presente data, data do arbitramento da indenização, termo inicial da correção monetária (Súmula 362 do STJ). A partir da presente data, deve incidir unicamente a taxa Selic, que compreende tanto juros quanto a correção monetária. No mais, plenamente cabível a compensação dos valores depositados em favor da parte autora com o débito ora constituído em desfavor do réu danos materiais e morais (art. 368, CC). Por fim, importante mencionar a jurisprudência deste Egrégio Tribunal de Justiça: APELAÇÃO CÍVEL. AÇÃO DECLARATÓRIA DE NULIDADE DE CONTRATO DE CARTÃO DE CRÉDITO COM RESERVA DE MARGEM CONSIGNÁVEL (RMC) C/C RESTITUIÇÃO DE VALORES EM DOBRO E INDENIZAÇÃO POR DANO MORAL. SENTENÇA QUE JULGOU IMPROCEDENTE A PRETENSÃO AUTORAL. CONSTATAÇÃO DE ABUSIVIDADE NA PACTUAÇÃO DE EMPRÉSTIMO CONSIGNADO NA MODALIDADE CARTÃO DE CRÉDITO. ONEROSIDADE EXCESSIVA AO CONSUMIDOR. OFENSA À BOA FÉ CONTRATUAL E DEVER DE INFORMAÇÃO. DESCONTOS INDEVIDOS. DIMINUIÇÃO INJUSTA E REITERADA DA RENDA DA DEMANDANTE. DANO MORAL CONFIGURADO. REPARAÇÃO FIXADA EM R$ 2.000,00 (DOIS MIL REAIS). RESTITUIÇÃO DEVIDA EM DOBRO. MÁ-FÉ QUE EXSURGE DA CONDUTA DA INSTITUIÇÃO DEMANDADA. MEDIANTE A COMPENSAÇÃO DE VALORES, RESSALVADA A PRESCRIÇÃO QUINQUENAL. APLICAÇÃO DO ÍNDICE DE JUROS UTILIZADOS NOS CONTRATOS DE EMPRÉSTIMO CONSIGNADO OU A TAXA MÉDIA DO MERCADO. INVERSÃO DO ÔNUS DA SUCUMBÊNCIA. APELAÇÃO CONHECIDA E PROVIDA EM PARTE. (Número do Processo: 0700970-78.2023.8.02.0047; Relator (a): Des. Alcides Gusmão da Silva; Comarca: Foro de Pilar; Órgão julgador: 3ª Câmara Cível; Data do julgamento: 25/01/2024; Data de registro: 29/01/2024) APELAÇÕES CÍVEIS. AÇÃO DECLARATÓRIA DE INEXISTÊNCIA DE DÉBITO C/C OBRIGAÇÃO DE FAZER E INDENIZAÇÃO POR DANOS MORAIS. CONTRATO DE EMPRÉSTIMO CONSIGNADO NA MODALIDADE RESERVA DE MARGEM CONSIGNÁVEL (RMC). PRESCRIÇÃO QUINQUENAL. ART. 27, DO CDC. CONSUMIDOR QUE REALIZA A CONTRATAÇÃO DE EMPRÉSTIMO CONSIGNADO QUANDO, NA VERDADE, ESTÁ FORMALIZANDO CONTRATO DE CARTÃO DE CRÉDITO. REALIZAÇÃO DE DESCONTOS MENSAIS EM FOLHA DE PAGAMENTO NO VALOR MÍNIMO DA FATURA, SITUAÇÃO QUE GERA A PERPETUAÇÃO DA DÍVIDA. ATO ILÍCITO COMETIDO PELA INSTITUIÇÃO FINANCEIRA, CONSUBSTANCIANDO, A UM SÓ TEMPO: (I) INOBSERVÂNCIA DO DEVER DE INFORMAÇÃO; (II) VANTAGEM MANIFESTAMENTE EXCESSIVA PARA O FORNECEDOR DE SERVIÇOS; (III) CONFIGURAÇÃO DE VENDA CASADA. VIOLAÇÃO AOS ARTS. 39, I E VI E 51, IV, DO CÓDIGO DE DEFESA DO CONSUMIDOR. DANO MORAL CONFIGURADO ANTE À FLAGRANTE ABUSIVIDADE. FIXAÇÃO EM R$ 2.000,00 (DOIS MIL REAIS). RESTITUIÇÃO EM DOBRO. READEQUAÇÃO DO DÉBITO. AUTOR QUE UTILIZOU O CRÉDITO OFERECIDO PELO BANCO. IMPERIOSA COMPENSAÇÃO DE VALORES. JUROS E CORREÇÃO MONETÁRIA RETIFICADOS DE OFÍCIO. SENTENÇA REFORMADA. RECURSOS CONHECIDOS. PROVIMENTO PARCIAL. DECISÃO UNÂNIME. (Número do Processo: 0725661-42.2019.8.02.0001; Relator (a): Desa. Elisabeth Carvalho Nascimento; Comarca: Foro de Maceió; Órgão julgador: 2ª Câmara Cível; Data do julgamento: 25/01/2024; Data de registro: 29/01/2024) APELAÇÃO CÍVEL INTERPOSTA PELA PARTE AUTORA. AÇÃO DECLARATÓRIA DE NULIDADE DE CONTRATO DE CARTÃO DE CRÉDITO COM RESERVA DE MARGEM CONSIGNÁVEL (RMC) E INEXISTÊNCIA DE DÉBITO CUMULADA COM RESTITUIÇÃO DE VALORES EM DOBRO E INDENIZAÇÃO POR DANO MORAL. DIREITO CIVIL. CÓDIGO DE DEFESA DO CONSUMIDOR. CARTÃO DE CRÉDITO CONSIGNADO. SENTENÇA QUE JULGOU IMPROCEDENTES OS PEDIDOS FORMULADOS NA EXORDIAL. DESCONTOS INDEVIDOS REITERADOS NOS PROVENTOS. PARTE CONSUMIDORA VULNERÁVEL. DEVER DE INFORMAÇÃO NÃO OBSERVADA. ART. 6º, II E III DO CDC. PRÁTICA ILÍCITA DE VENDA CASADA. ART. 39, INCISO I DO CDC. FALHA NA PRESTAÇÃO DO SERVIÇO. NULIDADE DE CLÁUSULAS ABUSIVAS. DANO MATERIAL CONFIGURADO. RESTITUIÇÃO EM DOBRO. ART. 42, PARÁGRAFO ÚNICO DO CDC. PARTE AUTORA NÃO UTILIZOU O CRÉDITO OFERECIDO PELO BANCO. DANO MORAL IN RE IPSA. QUANTUM INDENIZATÓRIO FIXADO EM R$ 5.000,00 (CINCO MIL REAIS). ENTENDIMENTO SEDIMENTADO PELA SEÇÃO ESPECIALIZADA CÍVEL. FIXAÇÃO DOS CRITÉRIOS DE INCIDÊNCIA DOS CONSECTÁRIOS LEGAIS. INVERSÃO DO ÔNUS SUCUMBENCIAL. SENTENÇA REFORMADA. RECURSO CONHECIDO E PARCIALMENTE PROVIDO. DECISÃO UNÂNIME. (Número do Processo: 0700176-73.2021.8.02.0032; Relator (a): Des. Klever Rêgo Loureiro; Comarca: Foro de Porto Real do Colégio; Órgão julgador: 1ª Câmara Cível; Data do julgamento: 24/01/2024; Data de registro: 25/01/2024) APELAÇÃO CÍVEL. DIREITO DO CONSUMIDOR. AÇÃO DECLARATÓRIA DE INEXISTÊNCIA DE CONTRATAÇÃO DE EMPRÉSTIMO VIA CARTÃO DE CRÉDITO COM RMC E DANOS MORAIS. SENTENÇA QUE JULGOU PARCIALMENTE PROCEDENTES OS PEDIDOS AUTORAIS. CARTÕES DE CRÉDITO COM RESERVA DE MARGEM CONSIGNÁVEL. INOBSERVÂNCIA AOS DIREITOS DE INFORMAÇÃO E TRANSPARÊNCIA. PRINCÍPIO DA BOA-FÉ OBJETIVA VIOLADO. AUSÊNCIA DE REQUISITOS ESSENCIAIS DA OFERTA DE CRÉDITO AO CONSUMIDOR. OMISSÃO E ONEROSIDADE EXCESSIVA DO CONTRATO. DANOS MATERIAIS DEVIDOS. PEDIDO DE FIXAÇÃO DE INDENIZAÇÃO POR DANOS MORAIS. ACOLHIDO. DANOS MORAIS CONFIGURADOS, EM FACE DA RESPONSABILIDADE OBJETIVA DO FORNECEDOR. MÁ-FÉ CARACTERIZADA. PRÁTICA ABUSIVA. DESCONTOS INDEVIDOS POR LONGO PERÍODO. RESTITUIÇÃO EM DOBRO. INVERSÃO DO ÔNUS DE SUCUMBÊNCIA. RECURSO CONHECIDO E PROVIDO. (Número do Processo: 0723654-38.2023.8.02.0001; Relator (a): Des. Fábio Costa de Almeida Ferrario; Comarca: Foro de Maceió; Órgão julgador: 4ª Câmara Cível; Data do julgamento: 14/12/2023; Data de registro: 14/12/2023) Em razão do exposto, JULGO PARCIALMENTE PROCEDENTES OS PEDIDOS, com amparo no art. 487, I, do Código de Processo Civil, para: declarar a nulidade do contrato de cartão de crédito de margem consignável; condenar que a parte ré a reparar os danos materiais consistentes nos valores descontados nos cinco antes que antecederam a propositura da ação, em dobro, com juros e correção monetária pela SELIC, a contar de cada desconto; condenar que a parte ré ao pagamento de indenização por danos morais no valor de R$ 5.000,00 (cinco mil reais), acrescidos dos juros de mora de 1% a.m. (um por cento ao mês), a contar da data de vencimento da fatura mais antiga não atingida pela prescrição (art. 397 do CC c/c art. 161, §1º, do CTN) e até a presente data, ocasião em que passa a incidir a SELIC para fins correção monetária e juros (verbete 362 do STJ); declarar o direito à compensação da condenação da parte ré com os valores referentes à indenização por danos morais e materiais, estes consistentes nos saques/compras atualizados pela SELIC, desde que efetivados(as) nos 5 (cinco) anos anteriores à propositura da ação. Considerando que a parte autora sucumbiu na parte mínima do seu pedido (art. 86, parágrafo único, CPC), e que o arbitramento de indenização por danos morais em patamar inferior ao requerido não gera sucumbência (verbete 326 do STJ), a parte ré responderá, por inteiro, pelas despesas e honorários. Assim, condeno a parte ré no pagamento das despesas processuais (art. 82, §2º, CPC). Condeno a parte, ainda, ré ao pagamento de honorários advocatícios de sucumbência arbitrados em 10% (dez por cento) sobre o valor da condenação, tendo em vista a singeleza da questão, a brevidade do processamento e o julgamento antecipado (art. 85, §2º, CPC). Publique-se. Registre-se. Intimem-se. Com o trânsito em julgado, remeta-se os autos à Contadoria para elaboração de custas finais (art. 4º, I, da Resolução n° 16/20 TJAL). Com a elaboração, intime-se a parte responsável pelo recolhimento para que, no prazo de 15 (quinze) dias, promova o pagamento das respectivas custas (art. 601 do Código de Normas das Serventias Judiciais).
+Advogados(s): Gabriel Lucio Silva (OAB 8343AL /), Ana Tereza de Aguiar Valença (OAB 33980/PE), Fernanda Rafaella Oliveira de Carvalho (OAB 32766/PE)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/07/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-55032328" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=55032328&amp;nmRecursoAcessado=Julgado+procedente+em+parte+do+pedido" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-55032328" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=55032328&amp;nmRecursoAcessado=Julgado+procedente+em+parte+do+pedido" target="_blank"> Julgado procedente em parte do pedido
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Procedo ao julgamento antecipado do pedido, porque as questões que remanescem são unicamente de direito e dispensam a dilação probatória (art. 355, I, CPC). Convém mencionar que, embora o réu tenha pedido o depoimento do autor, o requerimento é extemporâneo, já que deveria ter sido veiculado na contestação (art. 336, CPP). E mais: pelo que se exporá a seguir, a prova é absolutamente desnecessária. Sendo o juiz o destinatário da prova, atento ao princípio da persuasão racional, novas provas não são mesmo necessárias (art. 369, CPC). Nessa linha, saliento o dever do juiz de entregar a solução de mérito em prazo razoável (art. 5º, LXXVIII, CR; art. 4º, CPC). Antes, porém, rejeito a preliminar de carência da ação (art. 337, XI, CPC). O interesse processual se explica pelo trinômio necessidade, utilidade e adequação (art. 17, CPC). Para a caracterização dessa condição da ação, o provimento jurisdicional deve ser imprescindível para a solução do conflito, representar um proveito para a esfera jurídica da parte e ser veiculado de forma idônea. No caso, não resta dúvida a respeito da lide instaurada entre as partes a higidez do contrato, a exigir uma decisão por terceiro imparcial. Indubitável o proveito à esfera jurídica da parte autora com o eventual acolhimento do pleito. Ademais, os pedidos são adequados a esses fins. No mais, pela inafastabilidade da jurisdição, prescinde-se da tentativa de solução administrativa (art. 5º, XXXVI, CPC). Rechaço, outrossim, a prescrição. Define-se a prescrição como a ineficácia da pretensão em virtude do decurso do prazo legal sem ação do titular do direito violado (art. 189, CC). No caso, a parte autora pretende a declaração da nulidade/inexistência contratual, que não se sujeita a prazo, seja porque a pretensão declaratória é imprescritível; seja porque o nulo não se convalida com o tempo (art. 169, CC). E o pedido cumulativo de ressarcimento por danos morais submete-se ao prazo quinquenal, dada a tese de fato do serviço (arts. 14 e 27, CDC). Como a relação entre as partes perdura pela sucessão de descontos consignados, renovados mês a mês, a pretensão indenizatória é tempestiva. Presentes os demais pressupostos processuais e condições da ação, matérias de ordem pública e cuja análise cabe ao juiz de ofício, passo ao julgamento do mérito propriamente dito (arts. 139, IX, e 357, do CPC). Trata-se de ação declaratória de nulidade/inexistência cumulada com indenizatória fundada na nulidade da contratação de cartão de crédito com pagamento por reserva de margem consignada. Cinge-se a controvérsia jurídica à legalidade dessa modalidade de contratação (art. 375, II, CPC). De um lado, a parte autora reconhece a tomada de crédito, mas nega a informação adequada sobre as condições do negócio. De outro lado, a parte ré defende a manutenção do contrato, o qual teria sido livremente firmado. Assiste parcial razão à parte autora, senão vejamos. Como se sabe, a defesa do consumidor consubstancia direito fundamental e alicerce da ordem econômica (arts. 5º, XXXII, e 170, V, CR). Para concretizar os comandos constitucionais, o constituinte ordenou ao Congresso Nacional a elaboração de uma lei protetiva ao consumidor (art. 48, CR). Editou-se, então, o Código de Defesa do Consumidor, cuja aplicabilidade depende da configuração da relação de consumo. Nessa toada, o conceito legal de consumidor se fundamenta na teoria finalista. Considera-se consumidor o destinatário final fático de bens e serviços de consumo (art. 2º, CDC). Cuida-se de sujeito vulnerável no contexto do mercado de consumo, a justificar uma especial proteção estatal (art. 4ª, I, CDC). Ao seu turno, fornecedor é o responsável por introduzir o bem ou o serviço no mercado de consumo (art. 3º, CDC). Afastando qualquer dúvida, os serviços de natureza bancária foram expressamente contemplados pelo legislador (art. 3º, §2º, CDC). Confrontado a respeito, o Supremo Tribunal Federal assentou a constitucionalidade da previsão, a qual dispõe sobre contratos bancários e não diretamente sobre sistema financeiro (arts. 22, I, e 192, CR; ADIN 2.591). Igualmente, segundo o verbete número 297 da Súmula do Superior Tribunal de Justiça, "[o] Código de Defesa do Consumidor é aplicável às instituições financeiras". Na posição de tomadora do crédito, é inegável a condição de consumidora da parte autora; na posição de concedente do crédito, a parte ré é fornecedora do serviço. Consequentemente, a relação entre as partes se sujeita aos ditames do Código de Defesa do Consumidor, legislação subjetivamente tutelar e de alta densidade social. Dentre os direitos básicos do consumidor, avulta o direito à informação clara e adequada sobre os serviços, com a exposição pormenorizada de suas características e preço (art. 6º, III, CDC). A esse direito corresponde o dever de exaurimento das informações pelo fornecedor, de sorte a neutralizar a vulnerabilidade econômica do consumidor e propiciar uma decisão consciente sobre a contratação. Visa-se à liberdade de escolha e à igualdade nas contratações (art. 6º, II, CDC). Especificamente em contratos de outorga de crédito, o fornecedor deve informar o preço dos serviços, a taxa de juros, os acréscimos juridicamente admitidos, a periodicidade das prestações e o total a pagar (art. 52, CDC). Mais recentemente, incluíram-se os direitos ao crédito responsável, à educação financeira e à prevenção de tratamento a situações de superendividamento (art. 6º, XI, CDC, com redação dada pela Lei 14.181/2021). A novidade incorpora a jurisprudência de prevenção e repressão de práticas comerciais que acentuam a vulnerabilidade econômica do consumidor (art. 4º, X, CDC). Reconhecida a norma de regência, constata-se que a parte autora se desincumbiu da prova do fato constitutivo de seu direito (art. 373, I, CPC). Deveras, colacionou aos autos o documento demonstrativo de seus proventos com a redução dos valores mediante a consignação de parcelas de pagamento do cartão de crédito (fl. 25). A dinâmica dessa modalidade de contratação é a seguinte: o consumidor pretende um crédito. Boa parte das normas sobre salários e benefícios admitem a tomada de empréstimos, financiamentos e arrendamentos com pagamentos consignados em até 35% dos proventos do tomador (art. 1º, §1º, Lei 10.820/2003). Igual previsão consta para os beneficiários de aposentadoria e pensão do Regime Geral de Previdência Social (art. 6º, §5º, Lei 10.820/2003). Comumente, há uma reserva de margem consignável para o pagamento exclusivo de cartão de crédito. No âmbito das relações de emprego, admite-se o desconto de prestações de cartão de crédito em folha de pagamento até o limite de 5% (art. 1º, §1º, Lei 10.820/2003). A mesma limitação é aplicada aos beneficiários de aposentadoria e pensão do Regime Geral de Previdência Social (art. 6º, §5º, Lei 10.820/2003). Trata-se, apenas, de uma garantia de pagamento. Tais reservas de margem consignável para pagamento de cartão têm por objetivo estimular a concessão de crédito responsável e de maneira acessível. Realmente, a possibilidade de desconto em folha diminui sobremaneira os riscos da operação para o agente financeiro. Consequentemente, viabiliza a oferta de crédito mais barato, em benefício do consumidor e da própria ordem econômica (art. 170, V, CDC). Todavia, tradicionalmente, os juros de cartão de crédito são muito superiores às demais modalidades de concessão de crédito. Essa assertiva é extraída da experiência (art. 375, CPC). Muitas vezes, o consumidor não pode ser atendido na modalidade de mútuo com pagamento em consignação pelo comprometimento da margem com outros empréstimos. Outras vezes, o consumidor nem sequer conhece as diferenças entre mútuo comum e o cartão de crédito com pagamento consignado. Pela própria razão de ser dessa modalidade contratual comprometimento da margem consignada -, exige-se uma redobrada cautela pela instituição financeira, dada a perspectiva de endividamento insustentável. Disso resulta que a higidez da contratação depende, primeiro, da informação clara e precisa sobre a modalidade de crédito; segundo, da efetiva utilização como cartão de crédito, mediante lançamentos na fatura respectiva; terceiro, o envio da fatura possibilitando o pagamento integral dos gastos do período e apenas excepcionalmente o desconto, nos proventos, do saldo inadimplido. No caso, a parte ré perdeu a oportunidade de demonstrar fatos impeditivos, modificativos ou extintivos do direito autoral (art. 373, II, CPC). Vejamos. Deixou a parte ré de demonstrar o exaurimento do dever de informar. De fato, deixou de comprovar ter apresentado à parte autora as diferenças entre as modalidades de crédito, especialmente os juros efetivos e o total do preço final, evidentemente variável conforme a utilização do cartão. Não há indícios mínimos de que a parte ré teria alertado o autor dos riscos de endividamento pelo mecanismo de crédito rotativo automático. Também se observa a concessão de crédito independentemente de utilização do cartão, verdadeiro empréstimo, o que a própria ré reconhece na contestação. Tanto assim que requer a compensação com o capital mutuado. Houve uma descaracterização do contrato de reserva da margem consignável para pagamento de cartão de crédito. A rigor, houve até uma fraude à lei, considerando os limites ordinários à consignação de mútuos e financiamentos. Tampouco demonstrou-se o efetivo envio das faturas ao consumidor. Essa prática gera a consignação de apenas parcela da fatura e automatização do crédito rotativo, com juros ainda maiores, conforme regras da experiência (art. 375, CDC). Consequentemente, observa-se o endividamento progressivo em efeito cascata, pois os valores descontados diretamente em folha não amortizam suficientemente o débito, perpetuando a dívida. Mensalmente, o saldo devedor é atualizado com a incidência de novos juros. É dizer: a dívida resta impagável. Essa prática já coloca em xeque a própria temporalidade das obrigações. Portanto, tem-se uma prática evidentemente abusiva, que coloca o consumidor em extrema desvantagem por excessiva onerosidade, considerando a natureza do contrato e as circunstâncias peculiares do caso (art. 51, IV e §1ª, III, CDC). É irrelevante, para a caracterização da abusividade, a circunstância de o consumidor utilizar ou não o cartão de crédito. Fundamentalmente, a abusividade se perfaz pela ausência ou deficiência do dever de informação, associada à extrema desvantagem financeira da operação. É de rigor a declaração de nulidade da contratação. Considerando a nulidade do contrato, imperiosa a repetição do indébito, em dobro (art. 42, CDC). Ora, nessa hipótese, nem sequer se cogita de engano injustificável. Ao contrário, a avalanche de processos nesse mesmo sentido revela uma prática deliberada e reiterada das instituições financeiras. Entretanto, a jurisprudência desta Corte é pacífica quanto ao prazo quinquenal para repetição de indébito e para a compensação do valor eventualmente creditado ao consumidor montante que sempre constou do instrumento contratual - (art. 206, §5º, I, CC). Dessa forma, a revisão somente incidirá sobre os descontos realizados nos cinco anos anteriores ao ajuizamento da presente ação; a compensação somente está autorizada se o valor tiver sido disponibilizado ao consumidor nesse mesmo interregno. Devem ser desprezados descontos e créditos anteriores quinquênio. Sobre cada desconto indevido, líquido, passam a incidir juros e a correção monetária pela taxa SELIC (art. 406, CC). Oportuno mencionar o caráter híbrido da referida taxa, que agrupa os juros da meta do Conselho Monetário Nacional e a correção monetária decorrente do próprio sistema de liquidação de títulos da dívida pública. Pela referida taxa SELIC, ficam preservados o valor da moeda e os juros pela privação do capital no período. Assentada a nulidade contratual e o direito de repetição do indébito, é chegado o momento de análise do pleito condenatório à indenização pelos danos existenciais. Como cediço, a configuração da responsabilidade civil depende da conduta, do nexo causal e dos danos indenizáveis (arts. 186 e 927, CC). Em uma sociedade marcada por riscos crescentes e diversificados, a responsabilidade civil emerge como forma de tutela de interesses e direitos. Especialmente, o consumidor ostenta o direito básico à reparação integral dos danos, ressaltada a sua condição de vulnerável (arts. 4º, I, e 6º, VI, CDC). Começo pela conduta. O Código de Defesa do Consumidor funda-se na teoria do risco do empreendimento e positiva a responsabilidade objetiva do fornecedor (arts. 12 e 14, CDC). Desse modo, o fornecedor responde independentemente da prova de culpa. Basta a constatação de sua atividade no mercado de consumo e da relação com o episódio danoso. No caso, tem-se por caracterizado o fato do serviço, porquanto as informações foram insuficientes a respeito do risco de endividamento do consumidor (art. 14, §1º, II, CDC). Reconhecida a abusividade da prática comercial por excessiva onerosidade ao consumidor, há de se reconhecer-lhe, além da revisão contratual, o direito à reparação integral dos danos experimentados (arts. 6º, VI, e 51, IV e §1ª, III, do CDC). Segundo, quanto ao nexo de causalidade, aplica-se a teoria da causalidade direta e imediata (art. 403, CC). Por exclusão, não se indenizam danos que não tenham relação direta com a conduta, sob pena de um alargamento irreal da responsabilidade. Explica-se. Somente se pode atribuir responsabilidade a alguém por danos que poderiam ser por ele evitados mediante comportamento adequado. No caso, os danos resultam da própria violação do dever de informação e da cobrança de valores fixos a título de pagamento mínimo da fatura, eternizando-se a obrigação. A parte ré poderia ter se cercado de cautelas para garantir ao consumidor informação completa e clara sobre a modalidade de contratação, obter do consumidor o consentimento informado e evitar os riscos do endividamento. Tem-se, então, caracterizado o nexo de causalidade. Terceiro, os danos podem ser definidos como prejuízo à esfera patrimonial ou existencial de alguém. A esfera patrimonial do consumidor é resguardada com o provimento revisional e eventual repetição de indébito. Contudo, a esfera existencial depende da compensação de outra ordem, atentando-se ao direito básico do consumidor à efetiva prevenção e reparação de danos patrimoniais e morais, individuais, coletivos e difusos (art. 6º, VI, CDC). Vencendo a resistência histórica da doutrina, o constituinte previu a reparação dos danos morais como direito fundamental (art. 5º, V e X, CR). Apesar disso, subsistem várias vertentes interpretativas do próprio conceito de dano moral. Para parcela da doutrina e da jurisprudência, os danos morais resultariam da violação à dignidade da pessoa humana, nomeadamente dos atributos da igualdade, liberdade, solidariedade e integridade psicofísica (art. 1º, III, CR). Outra parcela os compreende como violações aos direitos da personalidade (arts. 12 e seguintes do CC). Finalmente, uma terceira parcela da doutrina e da jurisprudência se preocupa com as repercussões concretas sobre o indivíduo, como dor, sofrimento, angústia etc. Seja como for, é indubitável a ofensa à liberdade e à igualdade da parte autora. Em prejuízo à liberdade de escolha, a autora firmou com a ré um contrato sem informações adequadas, e muito provavelmente contra a sua vontade real. Em prejuízo à igualdade, a falta de informações desnivelou ainda mais a relação de consumo e colocou a parte autora em extrema vulnerabilidade financeira. Evidentemente, houve muito mais que um mero aborrecimento, sobretudo se considerarmos o período dos descontos. Conquanto não se tenha um critério estritamente objetivo para a quantificação da indenização, ao juiz cabe fundamentar as circunstâncias que conduzam ao valor arbitrado para reparação. Atento à natureza do interesse violado, este Egrégio Tribunal de Justiça tem jurisprudência variável conforme o tempo decorrido desde a contratação, o valor descontado mensalmente, a condição socioeconômica do consumidor, eventuais usos do cartão de crédito etc. Atentando-se aos vetores de quantificação, é adequada a condenação da parte ré ao pagamento de R$ 5.000,00 a título de compensação pelos danos existenciais experimentados. Realmente, os descontos comprometeram aproximadamente 5% da renda do consumidor. O autor nunca usou o cartão de crédito para compras (fls. 52/105). Sobre o quantum indenizatório, deverão incidir juros de 1% (um por cento) ao mês desde a data do evento danoso (art. 398, CC). Ou seja, os juros de 1% (um por cento) ao mês incidem desde o primeiro desconto indevido não abrangido pela prescrição quinquenal. Os juros incidem até a presente data, data do arbitramento da indenização, termo inicial da correção monetária (Súmula 362 do STJ). A partir da presente data, deve incidir unicamente a taxa Selic, que compreende tanto juros quanto a correção monetária. No mais, plenamente cabível a compensação dos valores depositados em favor da parte autora com o débito ora constituído em desfavor do réu danos materiais e morais (art. 368, CC). Por fim, importante mencionar a jurisprudência deste Egrégio Tribunal de Justiça: APELAÇÃO CÍVEL. AÇÃO DECLARATÓRIA DE NULIDADE DE CONTRATO DE CARTÃO DE CRÉDITO COM RESERVA DE MARGEM CONSIGNÁVEL (RMC) C/C RESTITUIÇÃO DE VALORES EM DOBRO E INDENIZAÇÃO POR DANO MORAL. SENTENÇA QUE JULGOU IMPROCEDENTE A PRETENSÃO AUTORAL. CONSTATAÇÃO DE ABUSIVIDADE NA PACTUAÇÃO DE EMPRÉSTIMO CONSIGNADO NA MODALIDADE CARTÃO DE CRÉDITO. ONEROSIDADE EXCESSIVA AO CONSUMIDOR. OFENSA À BOA FÉ CONTRATUAL E DEVER DE INFORMAÇÃO. DESCONTOS INDEVIDOS. DIMINUIÇÃO INJUSTA E REITERADA DA RENDA DA DEMANDANTE. DANO MORAL CONFIGURADO. REPARAÇÃO FIXADA EM R$ 2.000,00 (DOIS MIL REAIS). RESTITUIÇÃO DEVIDA EM DOBRO. MÁ-FÉ QUE EXSURGE DA CONDUTA DA INSTITUIÇÃO DEMANDADA. MEDIANTE A COMPENSAÇÃO DE VALORES, RESSALVADA A PRESCRIÇÃO QUINQUENAL. APLICAÇÃO DO ÍNDICE DE JUROS UTILIZADOS NOS CONTRATOS DE EMPRÉSTIMO CONSIGNADO OU A TAXA MÉDIA DO MERCADO. INVERSÃO DO ÔNUS DA SUCUMBÊNCIA. APELAÇÃO CONHECIDA E PROVIDA EM PARTE. (Número do Processo: 0700970-78.2023.8.02.0047; Relator (a): Des. Alcides Gusmão da Silva; Comarca: Foro de Pilar; Órgão julgador: 3ª Câmara Cível; Data do julgamento: 25/01/2024; Data de registro: 29/01/2024) APELAÇÕES CÍVEIS. AÇÃO DECLARATÓRIA DE INEXISTÊNCIA DE DÉBITO C/C OBRIGAÇÃO DE FAZER E INDENIZAÇÃO POR DANOS MORAIS. CONTRATO DE EMPRÉSTIMO CONSIGNADO NA MODALIDADE RESERVA DE MARGEM CONSIGNÁVEL (RMC). PRESCRIÇÃO QUINQUENAL. ART. 27, DO CDC. CONSUMIDOR QUE REALIZA A CONTRATAÇÃO DE EMPRÉSTIMO CONSIGNADO QUANDO, NA VERDADE, ESTÁ FORMALIZANDO CONTRATO DE CARTÃO DE CRÉDITO. REALIZAÇÃO DE DESCONTOS MENSAIS EM FOLHA DE PAGAMENTO NO VALOR MÍNIMO DA FATURA, SITUAÇÃO QUE GERA A PERPETUAÇÃO DA DÍVIDA. ATO ILÍCITO COMETIDO PELA INSTITUIÇÃO FINANCEIRA, CONSUBSTANCIANDO, A UM SÓ TEMPO: (I) INOBSERVÂNCIA DO DEVER DE INFORMAÇÃO; (II) VANTAGEM MANIFESTAMENTE EXCESSIVA PARA O FORNECEDOR DE SERVIÇOS; (III) CONFIGURAÇÃO DE VENDA CASADA. VIOLAÇÃO AOS ARTS. 39, I E VI E 51, IV, DO CÓDIGO DE DEFESA DO CONSUMIDOR. DANO MORAL CONFIGURADO ANTE À FLAGRANTE ABUSIVIDADE. FIXAÇÃO EM R$ 2.000,00 (DOIS MIL REAIS). RESTITUIÇÃO EM DOBRO. READEQUAÇÃO DO DÉBITO. AUTOR QUE UTILIZOU O CRÉDITO OFERECIDO PELO BANCO. IMPERIOSA COMPENSAÇÃO DE VALORES. JUROS E CORREÇÃO MONETÁRIA RETIFICADOS DE OFÍCIO. SENTENÇA REFORMADA. RECURSOS CONHECIDOS. PROVIMENTO PARCIAL. DECISÃO UNÂNIME. (Número do Processo: 0725661-42.2019.8.02.0001; Relator (a): Desa. Elisabeth Carvalho Nascimento; Comarca: Foro de Maceió; Órgão julgador: 2ª Câmara Cível; Data do julgamento: 25/01/2024; Data de registro: 29/01/2024) APELAÇÃO CÍVEL INTERPOSTA PELA PARTE AUTORA. AÇÃO DECLARATÓRIA DE NULIDADE DE CONTRATO DE CARTÃO DE CRÉDITO COM RESERVA DE MARGEM CONSIGNÁVEL (RMC) E INEXISTÊNCIA DE DÉBITO CUMULADA COM RESTITUIÇÃO DE VALORES EM DOBRO E INDENIZAÇÃO POR DANO MORAL. DIREITO CIVIL. CÓDIGO DE DEFESA DO CONSUMIDOR. CARTÃO DE CRÉDITO CONSIGNADO. SENTENÇA QUE JULGOU IMPROCEDENTES OS PEDIDOS FORMULADOS NA EXORDIAL. DESCONTOS INDEVIDOS REITERADOS NOS PROVENTOS. PARTE CONSUMIDORA VULNERÁVEL. DEVER DE INFORMAÇÃO NÃO OBSERVADA. ART. 6º, II E III DO CDC. PRÁTICA ILÍCITA DE VENDA CASADA. ART. 39, INCISO I DO CDC. FALHA NA PRESTAÇÃO DO SERVIÇO. NULIDADE DE CLÁUSULAS ABUSIVAS. DANO MATERIAL CONFIGURADO. RESTITUIÇÃO EM DOBRO. ART. 42, PARÁGRAFO ÚNICO DO CDC. PARTE AUTORA NÃO UTILIZOU O CRÉDITO OFERECIDO PELO BANCO. DANO MORAL IN RE IPSA. QUANTUM INDENIZATÓRIO FIXADO EM R$ 5.000,00 (CINCO MIL REAIS). ENTENDIMENTO SEDIMENTADO PELA SEÇÃO ESPECIALIZADA CÍVEL. FIXAÇÃO DOS CRITÉRIOS DE INCIDÊNCIA DOS CONSECTÁRIOS LEGAIS. INVERSÃO DO ÔNUS SUCUMBENCIAL. SENTENÇA REFORMADA. RECURSO CONHECIDO E PARCIALMENTE PROVIDO. DECISÃO UNÂNIME. (Número do Processo: 0700176-73.2021.8.02.0032; Relator (a): Des. Klever Rêgo Loureiro; Comarca: Foro de Porto Real do Colégio; Órgão julgador: 1ª Câmara Cível; Data do julgamento: 24/01/2024; Data de registro: 25/01/2024) APELAÇÃO CÍVEL. DIREITO DO CONSUMIDOR. AÇÃO DECLARATÓRIA DE INEXISTÊNCIA DE CONTRATAÇÃO DE EMPRÉSTIMO VIA CARTÃO DE CRÉDITO COM RMC E DANOS MORAIS. SENTENÇA QUE JULGOU PARCIALMENTE PROCEDENTES OS PEDIDOS AUTORAIS. CARTÕES DE CRÉDITO COM RESERVA DE MARGEM CONSIGNÁVEL. INOBSERVÂNCIA AOS DIREITOS DE INFORMAÇÃO E TRANSPARÊNCIA. PRINCÍPIO DA BOA-FÉ OBJETIVA VIOLADO. AUSÊNCIA DE REQUISITOS ESSENCIAIS DA OFERTA DE CRÉDITO AO CONSUMIDOR. OMISSÃO E ONEROSIDADE EXCESSIVA DO CONTRATO. DANOS MATERIAIS DEVIDOS. PEDIDO DE FIXAÇÃO DE INDENIZAÇÃO POR DANOS MORAIS. ACOLHIDO. DANOS MORAIS CONFIGURADOS, EM FACE DA RESPONSABILIDADE OBJETIVA DO FORNECEDOR. MÁ-FÉ CARACTERIZADA. PRÁTICA ABUSIVA. DESCONTOS INDEVIDOS POR LONGO PERÍODO. RESTITUIÇÃO EM DOBRO. INVERSÃO DO ÔNUS DE SUCUMBÊNCIA. RECURSO CONHECIDO E PROVIDO. (Número do Processo: 0723654-38.2023.8.02.0001; Relator (a): Des. Fábio Costa de Almeida Ferrario; Comarca: Foro de Maceió; Órgão julgador: 4ª Câmara Cível; Data do julgamento: 14/12/2023; Data de registro: 14/12/2023) Em razão do exposto, JULGO PARCIALMENTE PROCEDENTES OS PEDIDOS, com amparo no art. 487, I, do Código de Processo Civil, para: declarar a nulidade do contrato de cartão de crédito de margem consignável; condenar que a parte ré a reparar os danos materiais consistentes nos valores descontados nos cinco antes que antecederam a propositura da ação, em dobro, com juros e correção monetária pela SELIC, a contar de cada desconto; condenar que a parte ré ao pagamento de indenização por danos morais no valor de R$ 5.000,00 (cinco mil reais), acrescidos dos juros de mora de 1% a.m. (um por cento ao mês), a contar da data de vencimento da fatura mais antiga não atingida pela prescrição (art. 397 do CC c/c art. 161, §1º, do CTN) e até a presente data, ocasião em que passa a incidir a SELIC para fins correção monetária e juros (verbete 362 do STJ); declarar o direito à compensação da condenação da parte ré com os valores referentes à indenização por danos morais e materiais, estes consistentes nos saques/compras atualizados pela SELIC, desde que efetivados(as) nos 5 (cinco) anos anteriores à propositura da ação. Considerando que a parte autora sucumbiu na parte mínima do seu pedido (art. 86, parágrafo único, CPC), e que o arbitramento de indenização por danos morais em patamar inferior ao requerido não gera sucumbência (verbete 326 do STJ), a parte ré responderá, por inteiro, pelas despesas e honorários. Assim, condeno a parte ré no pagamento das despesas processuais (art. 82, §2º, CPC). Condeno a parte, ainda, ré ao pagamento de honorários advocatícios de sucumbência arbitrados em 10% (dez por cento) sobre o valor da condenação, tendo em vista a singeleza da questão, a brevidade do processamento e o julgamento antecipado (art. 85, §2º, CPC). Publique-se. Registre-se. Intimem-se. Com o trânsito em julgado, remeta-se os autos à Contadoria para elaboração de custas finais (art. 4º, I, da Resolução n° 16/20 TJAL). Com a elaboração, intime-se a parte responsável pelo recolhimento para que, no prazo de 15 (quinze) dias, promova o pagamento das respectivas custas (art. 601 do Código de Normas das Serventias Judiciais).<br><b>Vencimento: </b>25/07/2024
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/06/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/04/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.24.70001806-2
+Tipo da Petição: Petição
+Data: 11/04/2024 14:52
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/04/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.24.70001663-9
+Tipo da Petição: Pedido de Julgamento Antecipado da Lide
+Data: 04/04/2024 14:48
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/04/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0165/2024
+Data da Publicação: 05/04/2024
+Número do Diário: 3515
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/04/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0165/2024
+Teor do ato: DESPACHO Compulsando os autos, verifico que já houve a juntada da contestação pela parte requerida (fls. 264/288), bem como a competente impugnação por parte do autor (fls. 375/385). Assim, intimem-se as partes para, em 05 (cinco) dias, especificarem as provas que efetivamente pretendem produzir, justificando suas respectivas pertinências, sob pena de indeferimento, podendo, nesse prazo, apresentar delimitação consensual a respeito das questões de fato sobre as quais recairá a atividade probatória, bem como das questões de direito relevantes para a decisão de mérito (artigo 357, § 2º, do Código de Processo Civil). Após, voltem-me os autos conclusos. Providências necessárias. Taquarana(AL), 02 de abril de 2024. André Luis Parizio Maia Paiva Juiz de Direito
+Advogados(s): Gabriel Lucio Silva (OAB 8343AL /), Ana Tereza de Aguiar Valença (OAB 33980/PE), Fernanda Rafaella Oliveira de Carvalho (OAB 32766/PE)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/04/2024
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-53370701" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=53370701&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-53370701" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=53370701&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DESPACHO Compulsando os autos, verifico que já houve a juntada da contestação pela parte requerida (fls. 264/288), bem como a competente impugnação por parte do autor (fls. 375/385). Assim, intimem-se as partes para, em 05 (cinco) dias, especificarem as provas que efetivamente pretendem produzir, justificando suas respectivas pertinências, sob pena de indeferimento, podendo, nesse prazo, apresentar delimitação consensual a respeito das questões de fato sobre as quais recairá a atividade probatória, bem como das questões de direito relevantes para a decisão de mérito (artigo 357, § 2º, do Código de Processo Civil). Após, voltem-me os autos conclusos. Providências necessárias. Taquarana(AL), 02 de abril de 2024. André Luis Parizio Maia Paiva Juiz de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/06/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-48733697" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=48733697&amp;nmRecursoAcessado=Visto+em+Autoinspe%C3%A7%C3%A3o" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-48733697" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=48733697&amp;nmRecursoAcessado=Visto+em+Autoinspe%C3%A7%C3%A3o" target="_blank"> Visto em Autoinspeção
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Despacho Visto em Autoinspeção
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.22.70001908-3
+Tipo da Petição: Impugnação à Contestação
+Data: 19/05/2022 09:11
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0158/2022
+Data da Publicação: 05/05/2022
+Número do Diário: 3053
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0158/2022
+Teor do ato: Em cumprimento ao disposto no artigo 355 do Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas, fica a parte autora intimada, por seu advogado(a), para se manifestar, no prazo de 15(quinze) dias, sobre a contestação e/ou documentos, com especial atenção às preliminares e aos fatos extintivos, impeditivos ou modificativos, acaso suscitados na defesa.
+Advogados(s): Gabriel Lucio Silva (OAB 8343/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-42833806" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-42833806" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Em cumprimento ao disposto no artigo 355 do Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas, fica a parte autora intimada, por seu advogado(a), para se manifestar, no prazo de 15(quinze) dias, sobre a contestação e/ou documentos, com especial atenção às preliminares e aos fatos extintivos, impeditivos ou modificativos, acaso suscitados na defesa.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documentos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.22.70001479-0
+Tipo da Petição: Contestação
+Data: 22/04/2022 20:21
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0107/2022
+Data da Publicação: 25/03/2022
+Número do Diário: 3028
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0107/2022
+Teor do ato: DECISÃO Presentes as condições da ação, observados os pressupostos processuais e ausentes as hipóteses de improcedência liminar do pedido, defiro a petição inicial, a qual deverá ser processada pelo rito comum. Defiro o benefício da gratuidade da justiça, por não haver nos autos elementos contrários à presunção de veracidade da declaração de hipossuficiência firmada pela parte, na forma do art. 99, § 3º, do CPC. Considerando que a designação de audiência de conciliação somente se procederá caso as partes indiquem expressamente o interesse em transigir, e diante da modificação do pedido e da causa de pedir constante na emenda à petição inicial, cite-se o réu para que, querendo, apresente contestação. Expedientes necessários. Taquarana, 23 de março de 2022. Helestron Silva da Costa Juiz de Direito
+Advogados(s): Fernanda Rafaella Oliveira de Carvalho (OAB 32766/PE), Gabriel Lucio Silva (OAB 8343/AL), Ana Tereza de Aguiar Valença (OAB 33980/PE)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-42218518" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=42218518&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-42218518" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=42218518&amp;nmRecursoAcessado=Decis%C3%A3o+Proferida" target="_blank"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DECISÃO Presentes as condições da ação, observados os pressupostos processuais e ausentes as hipóteses de improcedência liminar do pedido, defiro a petição inicial, a qual deverá ser processada pelo rito comum. Defiro o benefício da gratuidade da justiça, por não haver nos autos elementos contrários à presunção de veracidade da declaração de hipossuficiência firmada pela parte, na forma do art. 99, § 3º, do CPC. Considerando que a designação de audiência de conciliação somente se procederá caso as partes indiquem expressamente o interesse em transigir, e diante da modificação do pedido e da causa de pedir constante na emenda à petição inicial, cite-se o réu para que, querendo, apresente contestação. Expedientes necessários. Taquarana, 23 de março de 2022. Helestron Silva da Costa Juiz de Direito<br><b>Vencimento: </b>18/04/2022
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.22.70000716-6
+Tipo da Petição: Emenda a Inicial
+Data: 24/02/2022 10:23
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0063/2022
+Data da Publicação: 18/02/2022
+Número do Diário: 3006
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0063/2022
+Teor do ato: "Trata-se de ação ordinária proposta por Rosilio Jovino dos Santos em face do Banco BMG S.A., que vinha seguindo seu curso regular até a presente audiência. Na inicial, a parte autora defende que, embora nunca tenha contratado com o réu, vem sofrendo descontos em sua folha de pagamento sob a rubrica de empréstimo consignado. Na fase de resposta, o demandado apresentou documentos que comprovam a contratação. Ocorre que, muito embora a petição inicial tenha sido recebida pelo juiz que funcionava anteriormente nesta vara, ao analisa-la, constatei que a peça pórtico é inepta. Senão vejamos: Primeiramente, há clara incompatibilidade argumentativa na inicial, pois o autor afirma, alternativamente, que não contratou com o réu e, se acaso seja comprovada a contratação, esta é abusiva. Ocorre que o sistema processual vigente não permite a dedução desse tipo de argumentação alternativa na petição inicial, pois, nos termos do art. 330, §1º, III e IV, do CPC, da narrativa, deve advir conclusão lógica seguinda de pedidos congruentes com a causa de pedir e compatíveis entre si. Nesta toada, esclareço que, se o autor afirma que nunca contratou, ou que ao menos desconhece o conteúdo do contrato impugnado, não poderia arguir sua nulidade, pois sequer conheceria as cláusulas a ele vinculadas e os vícios incidentes sobre elas. Em outras palavras, para afirmar que o negócio jurídico foi eivado por vício da vontade, o autor deve apontar que tipo de negócio pretendia celebrar, contrapondo-o com o que foi lavrado no instrumento de contrato. Mais que isso, deve dizer qual vício da vontade inquina o negócio jurídico impugnado (erro, dolo, lesão, estado de perigo ou coação), apontando as provas de sua ocorrência. Atente-se que, preocupado com a generalização argumentativa da inicial, o Código de Processo Civil dispôs no seu art. 330, §2º, que nas ações que tenham por objeto a revisão de obrigação decorrente de empréstimo, de financiamento ou de alienação de bens, o autor terá de, sob pena de inépcia, discriminar na petição inicial, dentre as obrigações contratuais, aquelas que pretende controverter, além de quantificar o valor incontroverso do débito. Se não tem informações suficientes para tal, antes de propor ação de conhecimento com viés frívolo, o autor deve fazer uso do instrumento processual regulado no art. 381 do Código de Processo Civil. Afinal, a produção de prova antecipada deve ser utilizada quando o prévio conhecimento dos fatos (leia-se do contrato) possa justificar ou evitar o ajuizamento de ação. Não obstante, extrai-se da petição inicial que o autor deduziu a ermo alegação genérica de inexistência de relação jurídica com o objetivo premeditado de promover a alteração de sua causa de pedir caso o demandado comprovasse a existência da contratação (o que te fato ocorreu). Entretanto, registro que o art. 329 do Código de Processo Civil não permite a alteração da causa de pedir depois da citação, salvo se houver consentimento do réu, vedando por completo essa conduta depois de saneado o processo, mesmo se houvesse concordância da parte requerida. Mais que isso, o art. 6º do Código de Processo Civil, ao instituir o Princípio da Cooperação, dispõe que todos os sujeitos do processo devem cooperar entre si para que se obtenha, em tempo razoável, decisão de mérito justa e efetiva. Nessa linha, tem-se que o autor deve deduzir em juízo fatos e argumentos certos e verdadeiros, sob pena de incorrer em violação das diretrizes do art. 77, incisos I, II e VI, do CPC, in verbis: Art. 77. Além de outros previstos neste Código, são deveres das partes, de seus procuradores e de todos aqueles que de qualquer forma participem do processo: I - expor os fatos em juízo conforme a verdade; II - não formular pretensão ou de apresentar defesa quando cientes de que são destituídas de fundamento; [...] VI - não praticar inovação ilegal no estado de fato de bem ou direito litigioso. [...] Destarte, por conta da dicção do art. 330, §1º, III, do CPC, chamo o feito a ordem para declarar a inépcia da petição inicial e anular todos os atos desde o seu recebimento (decisão de páginas 51/54). Por conseguinte, na forma do art. 321 do CPC, intimo o autor em audiência para emendar a inicial corrigindo os vícios apontados, sob pena de seu indeferimento. O prazo em epígrafe se inicia da data de amanhã (dia 17/02/2022), pois todas as partes foram intimadas em audiência por meio de seus respectivos prouradores".
+Advogados(s): Gabriel Lucio Silva (OAB 8343/AL), Ana Tereza de Aguiar Valença (OAB 33980/PE), Fernanda Rafaella Oliveira de Carvalho (OAB 32766/PE)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-41681062" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-41681062" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Decisão Proferida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				"Trata-se de ação ordinária proposta por Rosilio Jovino dos Santos em face do Banco BMG S.A., que vinha seguindo seu curso regular até a presente audiência. Na inicial, a parte autora defende que, embora nunca tenha contratado com o réu, vem sofrendo descontos em sua folha de pagamento sob a rubrica de empréstimo consignado. Na fase de resposta, o demandado apresentou documentos que comprovam a contratação. Ocorre que, muito embora a petição inicial tenha sido recebida pelo juiz que funcionava anteriormente nesta vara, ao analisa-la, constatei que a peça pórtico é inepta. Senão vejamos: Primeiramente, há clara incompatibilidade argumentativa na inicial, pois o autor afirma, alternativamente, que não contratou com o réu e, se acaso seja comprovada a contratação, esta é abusiva. Ocorre que o sistema processual vigente não permite a dedução desse tipo de argumentação alternativa na petição inicial, pois, nos termos do art. 330, §1º, III e IV, do CPC, da narrativa, deve advir conclusão lógica seguinda de pedidos congruentes com a causa de pedir e compatíveis entre si. Nesta toada, esclareço que, se o autor afirma que nunca contratou, ou que ao menos desconhece o conteúdo do contrato impugnado, não poderia arguir sua nulidade, pois sequer conheceria as cláusulas a ele vinculadas e os vícios incidentes sobre elas. Em outras palavras, para afirmar que o negócio jurídico foi eivado por vício da vontade, o autor deve apontar que tipo de negócio pretendia celebrar, contrapondo-o com o que foi lavrado no instrumento de contrato. Mais que isso, deve dizer qual vício da vontade inquina o negócio jurídico impugnado (erro, dolo, lesão, estado de perigo ou coação), apontando as provas de sua ocorrência. Atente-se que, preocupado com a generalização argumentativa da inicial, o Código de Processo Civil dispôs no seu art. 330, §2º, que nas ações que tenham por objeto a revisão de obrigação decorrente de empréstimo, de financiamento ou de alienação de bens, o autor terá de, sob pena de inépcia, discriminar na petição inicial, dentre as obrigações contratuais, aquelas que pretende controverter, além de quantificar o valor incontroverso do débito. Se não tem informações suficientes para tal, antes de propor ação de conhecimento com viés frívolo, o autor deve fazer uso do instrumento processual regulado no art. 381 do Código de Processo Civil. Afinal, a produção de prova antecipada deve ser utilizada quando o prévio conhecimento dos fatos (leia-se do contrato) possa justificar ou evitar o ajuizamento de ação. Não obstante, extrai-se da petição inicial que o autor deduziu a ermo alegação genérica de inexistência de relação jurídica com o objetivo premeditado de promover a alteração de sua causa de pedir caso o demandado comprovasse a existência da contratação (o que te fato ocorreu). Entretanto, registro que o art. 329 do Código de Processo Civil não permite a alteração da causa de pedir depois da citação, salvo se houver consentimento do réu, vedando por completo essa conduta depois de saneado o processo, mesmo se houvesse concordância da parte requerida. Mais que isso, o art. 6º do Código de Processo Civil, ao instituir o Princípio da Cooperação, dispõe que todos os sujeitos do processo devem cooperar entre si para que se obtenha, em tempo razoável, decisão de mérito justa e efetiva. Nessa linha, tem-se que o autor deve deduzir em juízo fatos e argumentos certos e verdadeiros, sob pena de incorrer em violação das diretrizes do art. 77, incisos I, II e VI, do CPC, in verbis: Art. 77. Além de outros previstos neste Código, são deveres das partes, de seus procuradores e de todos aqueles que de qualquer forma participem do processo: I - expor os fatos em juízo conforme a verdade; II - não formular pretensão ou de apresentar defesa quando cientes de que são destituídas de fundamento; [...] VI - não praticar inovação ilegal no estado de fato de bem ou direito litigioso. [...] Destarte, por conta da dicção do art. 330, §1º, III, do CPC, chamo o feito a ordem para declarar a inépcia da petição inicial e anular todos os atos desde o seu recebimento (decisão de páginas 51/54). Por conseguinte, na forma do art. 321 do CPC, intimo o autor em audiência para emendar a inicial corrigindo os vícios apontados, sob pena de seu indeferimento. O prazo em epígrafe se inicia da data de amanhã (dia 17/02/2022), pois todas as partes foram intimadas em audiência por meio de seus respectivos prouradores".
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.22.70000572-4
+Tipo da Petição: Documentos Diversos
+Data: 15/02/2022 10:55
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.22.70000558-9
+Tipo da Petição: Informações
+Data: 14/02/2022 16:11
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0039/2022
+Data da Publicação: 03/02/2022
+Número do Diário: 2995
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0039/2022
+Teor do ato: Em cumprimento ao disposto no artigo 354, do Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada Audiência Instrução e Julgamento, para o dia 16 de fevereiro de 2022, às 10 horas e 30 minutos, a seguir, passo a expedir os atos necessários à realização da mesma, ficando ciente as partes de que poderão participar da audiência por videoconferência, através do aplicativo Zoom, caso possuam telefone smartphone com câmera e microfone (ou computador nas mesmas condições), e internet estável devendo, para tanto, estarem conectadas na plataforma no horário designado, por meio do link de acesso à reunião (https://us02web.zoom.us/j/85967186276 - ID da reunião: 859 6718 6276), munidas de documento com foto, aguardando na sala de espera a liberação de entrada pela servidora. Em caso negativo, as partes devem comparecer presencialmente neste fórum. O não comparecimento da parte na sala virtual ou na sala de audiências deste juízo implica em desistência de participação no ato processual.
+Advogados(s): Gabriel Lucio Silva (OAB 8343/AL), Ana Tereza de Aguiar Valença (OAB 33980/PE), Fernanda Rafaella Oliveira de Carvalho (OAB 32766/PE)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-41462604" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-41462604" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Em cumprimento ao disposto no artigo 354, do Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada Audiência Instrução e Julgamento, para o dia 16 de fevereiro de 2022, às 10 horas e 30 minutos, a seguir, passo a expedir os atos necessários à realização da mesma, ficando ciente as partes de que poderão participar da audiência por videoconferência, através do aplicativo Zoom, caso possuam telefone smartphone com câmera e microfone (ou computador nas mesmas condições), e internet estável devendo, para tanto, estarem conectadas na plataforma no horário designado, por meio do link de acesso à reunião (https://us02web.zoom.us/j/85967186276 - ID da reunião: 859 6718 6276), munidas de documento com foto, aguardando na sala de espera a liberação de entrada pela servidora. Em caso negativo, as partes devem comparecer presencialmente neste fórum. O não comparecimento da parte na sala virtual ou na sala de audiências deste juízo implica em desistência de participação no ato processual.
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Audiência Designada
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Instrução e Julgamento
+Data: 16/02/2022 Hora 10:30
+Local: Conciliação1
+Situacão: Realizada
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/09/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.21.70003347-6
+Tipo da Petição: Petição
+Data: 13/09/2021 10:04
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/04/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0110/2021
+Data da Publicação: 27/04/2021
+Número do Diário: 2809
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/04/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0110/2021
+Data da Publicação: 27/04/2021
+Número do Diário: 2809
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/04/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0110/2021
+Data da Publicação: 27/04/2021
+Número do Diário: 2809
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/04/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0110/2021
+Teor do ato: Autos n° 0700417-19.2019.8.02.0064 Ação: Procedimento Comum Cível Autor: Rosilio Jovino dos Santos Réu: Banco BMG S/A DESPACHO Diante do pedido de designação de audiência de instrução feito pelo réu na audiência de conciliação de fls. 221 para depoimento pessoal da parte autora e com o fito de evitar eventual alegação de nulidade, DETERMINO a designação da audiência de instrução e julgamento, conforme praxe que tem sido adotada pelo Juiz Titular da Comarca. Cumpra-se. Taquarana(AL), 16 de abril de 2021. Eric Baracho Dore Fernandes Juiz de Direito
+Advogados(s): Gabriel Lucio Silva (OAB 8343/AL), Ana Tereza de Aguiar Valença (OAB 33980/PE), Fernanda Rafaella Oliveira de Carvalho (OAB 32766/PE)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/04/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-37835046" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=37835046&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-37835046" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=37835046&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0700417-19.2019.8.02.0064 Ação: Procedimento Comum Cível Autor: Rosilio Jovino dos Santos Réu: Banco BMG S/A DESPACHO Diante do pedido de designação de audiência de instrução feito pelo réu na audiência de conciliação de fls. 221 para depoimento pessoal da parte autora e com o fito de evitar eventual alegação de nulidade, DETERMINO a designação da audiência de instrução e julgamento, conforme praxe que tem sido adotada pelo Juiz Titular da Comarca. Cumpra-se. Taquarana(AL), 16 de abril de 2021. Eric Baracho Dore Fernandes Juiz de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/03/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/03/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-37413101" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-37413101" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão de Importação de Arquivos Multimídia
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Certidão de Importação de Arquivos Multimídia
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/03/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-37395101" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-37395101" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Audiência Realizada
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				TERMO DE AUDIÊNCIA Aos 15 de março de 2021, às 09h:39min, nesta cidade de Taquarana, na Vara do Único Oficio da Comarca de Taquarana, através de videoconferência pela plataforma Zoom, em razão da suspensão das atividades presenciais conforme Ato Normativo Conjunto nº 02, de 02 de Março de 2021 do Tribunal de Justiça de Alagoas e da Corregedoria Geral de Justiça de Alagoas, não havendo nenhuma oposição das partes à esta forma de realização, encontrava-se presente a Técnica Judiciária, Belisa Tupiniquim Fontes Gomes, ausente a parte demandante, Rosilio Jovino dos Santos, presente o seu advogado, Dr(a).Gabriel Lucio Silva (OAB 8343/AL), representando-o em audiência, presente a parte demandada, Banco BMG S/A, representada pela preposta, Lara Piancó Saraiva CPF 145.834.427-42, acompanhada pelo advogado, Dr. Álvaro Renan Rodrigues Cavalcante OAB/CE 32.695. Aberta a audiência, foi proposta a conciliação entre as partes, não havendo oferta de proposta de acordo pela demandada, restando frustrada a conciliação. Verificando-se nos autos que a demandada já apresentou Contestação às fls. 31/51 e que a demandante já apresentou Réplica às fls. 208/220, foram indagadas as partes se tinham provas a produzir em audiência de instrução: a demandada requereu o depoimento pessoal da autora, já o demandante respondeu que não possuía provas a produzir em audiência e requereu que seja indeferido o pedido da demandada de designação de audiência de instrução, uma vez que todas as declarações do Autor já constam na petição inicial e impugnação à contestação, sendo o pedido da demandada meramente protelatório. Assim, não sendo possível a conciliação, façam-se os autos conclusos ao MM. Juiz de Direito desta comarca. Nada mais havendo, dou por encerrado o presente termo que foi lido e achado conforme pelas partes. Técnica Judiciária: Advogado do Autor: Demandado(a): Advogado(a):
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/03/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.21.70001073-5
+Tipo da Petição: Impugnação à Contestação
+Data: 15/03/2021 09:05
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/03/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.21.70001033-6
+Tipo da Petição: Documentos Diversos
+Data: 12/03/2021 12:50
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/03/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documento
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.21.70001029-8
+Tipo da Petição: Informações
+Data: 12/03/2021 09:58
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/03/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de AR - Cumprido
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Em 10  de  março  de  2021 é juntado a estes autos o aviso de recebimento (AR253070074TJ - Cumprido), referente  ao  ofício  n. 0700417-19.2019.8.02.0064-000001, emitido para Banco BMG S/A. Usuário: 
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/02/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0038/2021
+Data da Publicação: 25/02/2021
+Número do Diário: 2770
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/02/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0038/2021
+Data da Publicação: 25/02/2021
+Número do Diário: 2770
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/02/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-37133749" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-37133749" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				AR DIGITAL - Citação e Intimação - Audiência de Conciliação, Instrução e Julgamento - Juizado
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/02/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0038/2021
+Teor do ato: ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 354, do Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada Audiência de Conciliação, para o dia 15 de março de 2021, às 9 horas e 30 minutos, a seguir, passo a expedir os atos necessários à realização da mesma. Ficam, ainda, as partes intimadas para, no prazo de 10 (dez) dias, informarem se possuem alguma oposição à realização da audiência na modalidade virtual, através da plataforma Zoom, em razão da necessidade de priorização da prática dos atos processuais de forma virtual, conforme Resolução nº 22 de 29.06.2020 do TJ AL e CGJ AL, e artigo 1º, I, do Ato Normativo Conjunto 22 de 02.09.2020 do TJ AL e CGJ AL. Em caso negativo, ficam as partes intimadas de que deverão estarconectadas na plataforma no horário designado,por meio do link de acesso à reunião(https://us02web.zoom.us/j/84480195470 / ID da reunião: 844 8019 5470),munidas de documento com foto,aguardando na sala de espera a liberação pela servidora. Taquarana, 23 de fevereiro de 2021 Paula Roberta Silva Gueiros Técnica Judiciária
+Advogados(s): Gabriel Lucio Silva (OAB 8343/AL), Ana Tereza de Aguiar Valença (OAB 33980/PE)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/02/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-37118654" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-37118654" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Ato ordinatório praticado
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				ATO ORDINATÓRIO Em cumprimento ao disposto no artigo 354, do Provimento n.º 15/2019, da Corregedoria Geral da Justiça do Estado de Alagoas e, tendo sido pautada Audiência de Conciliação, para o dia 15 de março de 2021, às 9 horas e 30 minutos, a seguir, passo a expedir os atos necessários à realização da mesma. Ficam, ainda, as partes intimadas para, no prazo de 10 (dez) dias, informarem se possuem alguma oposição à realização da audiência na modalidade virtual, através da plataforma Zoom, em razão da necessidade de priorização da prática dos atos processuais de forma virtual, conforme Resolução nº 22 de 29.06.2020 do TJ AL e CGJ AL, e artigo 1º, I, do Ato Normativo Conjunto 22 de 02.09.2020 do TJ AL e CGJ AL. Em caso negativo, ficam as partes intimadas de que deverão estarconectadas na plataforma no horário designado,por meio do link de acesso à reunião(https://us02web.zoom.us/j/84480195470 / ID da reunião: 844 8019 5470),munidas de documento com foto,aguardando na sala de espera a liberação pela servidora. Taquarana, 23 de fevereiro de 2021 Paula Roberta Silva Gueiros Técnica Judiciária
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/02/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Audiência Designada
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Audiência Virtual
+Data: 15/03/2021 Hora 09:30
+Local: Conciliação1
+Situacão: Realizada
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/07/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Documentos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.20.70001417-9
+Tipo da Petição: Contestação
+Data: 15/07/2020 20:46
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0112/2020
+Data da Publicação: 16/06/2020
+Número do Diário: 2606
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0112/2020
+Teor do ato: DESPACHO 1. A petição inicial atende aos requisitos previstos nos artigos 319 e 320 do Código de Processo Civil brasileiro. Sendo assim, recebo-a para os seus devidos fins. 2. Não é o caso de improcedência liminar, vez que a situação narrada pela parte autora não se enquadra em nenhuma das hipóteses previstas nos incisos do artigo 332 do CPC. 3. Defiro o requerimento de concessão de assistência judiciária gratuita, ante a afirmação da parte demandante de ser necessitada de assistência judiciária e se achar em condição de pobreza jurídica, afirmação realizada sob as penas da lei, e sob pena de pagamento do décuplo das custas judiciais, e por não haver, neste momento, indícios que infirmem a presunção de veracidade de tal afirmação (art. 5º, LXXIV da CF e art. 99, §3º do CPC). 4. Por se tratar de causa que admite autocomposição, sendo certo que a parte autora não indicou expressamente seu desinteresse pela realização do ato inaugural do procedimento comum (CPC, art. 319, VII), designe-se audiência de conciliação ou de mediação. 5. Intime-se a parte autora, na pessoa de seu advogado, e cite-se a parte ré para audiência designada. 6. Na audiência, as partes deverão estar acompanhadas por advogado ou Defensor Público (CPC, art. 334, §9º). 7. Ficam as partes intimadas, desde já, que o não comparecimento de qualquer delas à audiência será considerado ato atentatório à dignidade da justiça e será sancionado com multa, na forma do §8º do art. 334 do CPC. 8. Caso não haja transação na audiência, fica o réu ciente que começará a fluir seu prazo para oferecer contestação (CPC, art. 335, inciso I). Cumpra-se. Expedientes necessários. Taquarana/AL, 10 de junho de 2020. Rômulo Vasconcelos de Albuquerque Juiz de Direito
+Advogados(s): Gabriel Lucio Silva (OAB 8343/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/06/2020
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-34014668" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=34014668&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-34014668" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=34014668&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				DESPACHO 1. A petição inicial atende aos requisitos previstos nos artigos 319 e 320 do Código de Processo Civil brasileiro. Sendo assim, recebo-a para os seus devidos fins. 2. Não é o caso de improcedência liminar, vez que a situação narrada pela parte autora não se enquadra em nenhuma das hipóteses previstas nos incisos do artigo 332 do CPC. 3. Defiro o requerimento de concessão de assistência judiciária gratuita, ante a afirmação da parte demandante de ser necessitada de assistência judiciária e se achar em condição de pobreza jurídica, afirmação realizada sob as penas da lei, e sob pena de pagamento do décuplo das custas judiciais, e por não haver, neste momento, indícios que infirmem a presunção de veracidade de tal afirmação (art. 5º, LXXIV da CF e art. 99, §3º do CPC). 4. Por se tratar de causa que admite autocomposição, sendo certo que a parte autora não indicou expressamente seu desinteresse pela realização do ato inaugural do procedimento comum (CPC, art. 319, VII), designe-se audiência de conciliação ou de mediação. 5. Intime-se a parte autora, na pessoa de seu advogado, e cite-se a parte ré para audiência designada. 6. Na audiência, as partes deverão estar acompanhadas por advogado ou Defensor Público (CPC, art. 334, §9º). 7. Ficam as partes intimadas, desde já, que o não comparecimento de qualquer delas à audiência será considerado ato atentatório à dignidade da justiça e será sancionado com multa, na forma do §8º do art. 334 do CPC. 8. Caso não haja transação na audiência, fica o réu ciente que começará a fluir seu prazo para oferecer contestação (CPC, art. 335, inciso I). Cumpra-se. Expedientes necessários. Taquarana/AL, 10 de junho de 2020. Rômulo Vasconcelos de Albuquerque Juiz de Direito
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/09/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/09/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-30190441" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-30190441" title="Visualizar documento em inteiro teor" href="#liberarAutoPorSenha"> Certidão
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Genérico
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/09/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Juntada de Petição
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Nº Protocolo: WFTQ.19.70001850-4
+Tipo da Petição: Petição
+Data: 04/09/2019 11:17
+
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Ato Publicado
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação :0653/2019
+Data da Publicação: 26/08/2019
+Número do Diário: 2412
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Disponibilização no Diário da Justiça Eletrônico
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Relação: 0653/2019
+Teor do ato: Autos n° 0700417-19.2019.8.02.0064 Ação: Procedimento Ordinário Autor: Rosilio Jovino dos Santos Réu: Banco BMG S/A DESPACHO 1. Da análise dos autos, observo que há vício na petição inicial que deve ser sanado pela parte demandante. 2. Assim, nos termos do artigo 321 do CPC, intime-se a parte autora para, no prazo de 15 (quinze) dias, sob pena de extinção do processo sem resolução do mérito, efetuar o pagamento das custas processuais devidas ou juntar aos autos documento que comprove o estado de pobreza. 3. Após, conclusos. 4. Cumpra-se. Expedientes necessários. Taquarana - AL, 12 de agosto de 2019. Lucas Carvalho Tenório de Albuquerque Juiz de Direito
+Advogados(s): Gabriel Lucio Silva (OAB 8343/AL)
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-29850142" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=29850142&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png">
+				</a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-29850142" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=1S00007X30000&amp;cdDocumento=29850142&amp;nmRecursoAcessado=Despacho+de+Mero+Expediente" target="_blank"> Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				Autos n° 0700417-19.2019.8.02.0064 Ação: Procedimento Ordinário Autor: Rosilio Jovino dos Santos Réu: Banco BMG S/A DESPACHO 1. Da análise dos autos, observo que há vício na petição inicial que deve ser sanado pela parte demandante. 2. Assim, nos termos do artigo 321 do CPC, intime-se a parte autora para, no prazo de 15 (quinze) dias, sob pena de extinção do processo sem resolução do mérito, efetuar o pagamento das custas processuais devidas ou juntar aos autos documento que comprove o estado de pobreza. 3. Após, conclusos. 4. Cumpra-se. Expedientes necessários. Taquarana - AL, 12 de agosto de 2019. Lucas Carvalho Tenório de Albuquerque Juiz de Direito<br><b>Vencimento: </b>12/09/2019
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoEscuro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+	<tr class="fundoClaro containerMovimentacao" style="">
+		<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/08/2019
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Distribuído por Sorteio
+				
+			
+			
+			<br>
+			<span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+	
+
+
+				
+			</tbody>
+
+		
+		
+	
+</table>
+
+	<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value="
+
+">
+
+    <input id="linkNaoExibidomovimentacoes" type="hidden" value="
+        &lt;span id=&quot;setasDireitamovimentacoes&quot; class=&quot;setasDireita&quot;&gt;
+            &lt;i class=&quot;unj-link-collapse__icon glyph glyph-chevron-down&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        Mais
+    ">
+
+<span id="mensagensExibindomovimentacoes" class="mensagemExibindo"></span> &nbsp;
+
+    <a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse"><span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>Recolher</a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+
+	</div>
+
+		
+
+	
+
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Petições diversas</h2>
+		
+	
+</div>
+
+<!-- Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+	
+		
+			<thead>
+			    <tr class="label">
+			      <th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+			    <tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								04/09/2019
+							</td>
+							<td width="*">
+								Petição <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								15/07/2020
+							</td>
+							<td width="*">
+								Contestação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								12/03/2021
+							</td>
+							<td width="*">
+								Informações <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								12/03/2021
+							</td>
+							<td width="*">
+								Documentos Diversos <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								15/03/2021
+							</td>
+							<td width="*">
+								Impugnação à Contestação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								13/09/2021
+							</td>
+							<td width="*">
+								Petição <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								14/02/2022
+							</td>
+							<td width="*">
+								Informações <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								15/02/2022
+							</td>
+							<td width="*">
+								Documentos Diversos <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								24/02/2022
+							</td>
+							<td width="*">
+								Emenda a Inicial <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								22/04/2022
+							</td>
+							<td width="*">
+								Contestação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								19/05/2022
+							</td>
+							<td width="*">
+								Impugnação à Contestação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								04/04/2024
+							</td>
+							<td width="*">
+								Pedido de Julgamento Antecipado da Lide <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								11/04/2024
+							</td>
+							<td width="*">
+								Petição <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoEscuro"> 
+							<td width="140" style="text-align:left">
+								25/07/2024
+							</td>
+							<td width="*">
+								Recurso de Apelação <br>
+								
+							</td>
+						</tr>
+					
+				
+					
+						<tr class="fundoClaro"> 
+							<td width="140" style="text-align:left">
+								25/07/2024
+							</td>
+							<td width="*">
+								Contrarrazões <br>
+								
+							</td>
+						</tr>
+					
+				
+			</tbody>
+		
+		
+	
+</table>
+<!--  Tabela de petições diversas -->
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+			if(!captcha){
+				return;
+			}
+			$('.incidente a').each(function(){
+				var $incidente = $(this);
+				var url = $incidente.attr('href');
+				$incidente.attr('href', url+'&uuidCaptcha='+captcha);
+			});
+		})
+	})(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+
+	
+	
+		<tbody><tr>
+		  <td id="processoSemIncidentes" colspan="3" align="left">
+		 	
+ 				
+ 				
+ 					Não há incidentes, ações incidentais, recursos ou execuções de sentenças vinculados a este processo.
+ 				
+ 			
+		  </td> 
+	    </tr>
+	
+
+</tbody></table>
+<!--  Incidentes -->
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if(!captcha){
+                return;
+            }
+            $.each($('.processoApensado'), function (i, value) {
+                var $link = $(value);
+                $link.attr('href', $link.attr('href') + '&uuidCaptcha=' + captcha);
+            })
+
+        })
+    })(jQuery);
+</script>
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Apensos, Entranhados e Unificados</h2>
+		
+	
+</div>
+
+
+
+    
+        <table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+            <tbody id="dadosApensosNaoDisponiveis">
+            <tr>
+                <td colspan="3" align="left">Não há processos apensados, entranhados e unificados a este processo.</td>
+            </tr>
+            </tbody>
+        </table>
+
+    
+    
+
+
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Audiências</h2>
+		
+	
+</div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+            
+            
+        
+    
+    
+
+<a name="audienciasPlaceHolder"></a>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+    
+        
+            <tbody><tr class="label">
+                <th align="left" valign="top" width="140">Data</th>
+                <th align="left" valign="top" width="*">Audiência</th>
+                <th align="left" valign="top" width="100">Situação</th>
+                <th align="left" valign="top" width="100">Qt. Pessoas</th>
+            </tr>
+            <tr class="fundoEscuro" height="2" aria-hidden="true">
+                <td colspan="4"></td>
+            </tr>
+            
+                <tr class="fundoClaro">
+                    <td valign="top" align="left" width="140">
+                        15/03/2021
+                    </td>
+                    
+                        
+                        
+                            <td valign="top" align="left" width="*">
+                                Audiência Virtual
+                            </td>
+                        
+                    
+
+                    <td align="left" valign="top" width="100">
+                        Realizada
+                    </td>
+                    <td align="left" valign="top" width="100">
+                        2
+                    </td>
+                </tr>
+            
+                <tr class="fundoEscuro">
+                    <td valign="top" align="left" width="140">
+                        16/02/2022
+                    </td>
+                    
+                        
+                        
+                            <td valign="top" align="left" width="*">
+                                Instrução e Julgamento
+                            </td>
+                        
+                    
+
+                    <td align="left" valign="top" width="100">
+                        Realizada
+                    </td>
+                    <td align="left" valign="top" width="100">
+                        3
+                    </td>
+                </tr>
+            
+        
+        
+    
+</tbody></table>
+
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="popupCdas" style="display: none;">
+	<!--  dados da lista (CDAs) -->
+	<div style="height:210px; overflow: auto;">
+		<table id="tableCdasPrincipais" style="margin-left:10px; margin-top:1px; width: 98%;">
+			<thead>
+				<tr class="fundoClaro">
+					<th style="text-align:left;">Número CDA</th>
+					<th style="text-align:left;">Valor</th>
+					<th style="text-align:left;">Dt. CDA</th>
+					<th style="text-align:left;">Valor atualizado</th>
+					<th style="text-align:left;">Dt. atualização</th>
+					<th style="text-align:left;">Situação</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td colspan="6">
+				</td></tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+</form>
+
+	                
+	                
+	                
+	                
+	            
+	        
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<form action="/cpopg/show.do?processo.codigo=1S00007X30000&amp;processo.foro=64&amp;processo.numero=0700417-19.2019.8.02.0064" id="popupSenha" style="display: none;" method="POST">
+		<input type="hidden" name="_csrf" value="aefed3c3-7113-4be7-a1cc-566476362656">
+		
+		<table role="document">
+			<tbody><tr>
+				<td colspan="2" style="padding-bottom:20px">Atendendo a resolução 121 do CNJ.</td>
+			</tr>
+			
+				<tr>
+					<td colspan="2" style="padding-bottom:20px">Se for advogado(a) nesse processo, é necessário <span id="identificacao"><strong><a href="https://www2.tjal.jus.br/esaj/identificacao.do?retorno=https%3A//www2.tjal.jus.br/cpopg/show.do%3Fprocesso.codigo%3D1S00007X30000%26processo.foro%3D64%26processo.numero%3D0700417-19.2019.8.02.0064">Identificar-se</a></strong></span></td>
+					
+						
+						
+							<script language="javascript" type="text/JavaScript" src="https://www2.tjal.jus.br/sajcas/conteudoIdentificacao?script=1764434355148"></script>
+						
+					
+				</tr>
+			
+			<tr align="center">
+				<td align="left" colspan="2" style="padding-bottom:20px">
+					<div style="float:left; line-height:30px;">Se for uma parte ou interessado, digite a senha do processo</div>
+					<div style="float:left;width: 140px; padding-left:15px">
+						<input type="password" name="senhaProcesso" maxlength="12" value="" rotulo="" class="form-control" id="senhaProcesso">
+						<input type="hidden" name="idRecursoQueProvocouLiberacaoPorSenha" value="">
+					</div>
+					<div class="unj-form-control-group__icon">
+						<div class="dropdown show">
+							<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyph glyph-info" aria-hidden="true"></span>
+							</a>
+							<div class="dropdown-menu tooltip-campos" aria-labelledby="dropdownMenuLink">
+								
+									É necessário informar uma senha para acessar processo em segredo de justiça, bem como para acessar autos dos demais processos.<br><br>
+									Se for parte do processo e ainda não possua uma senha, <b>solicite-a no cartório</b>.<br><br>
+								
+								
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	    
+	<input type="button" name="btFechar" value="Cancelar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotao " id="botaoFecharPopupSenha">
+
+
+					
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	<input type="submit" name="btEnviarSenha" value="Continuar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotaoDefault btn-space" id="btEnviarSenha">
+
+
+						
+					
+				</td>
+			</tr>
+		</tbody></table>
+	</form>
+
+
+
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer>
+    <nav class="navbar__footer">
+        <div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-saj.png" alt="SAJ">
+                    </a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="https://www2.tjal.jus.br/esaj/img/brand/icon-softplan.png" alt="Softplan">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar__footer__list-actions">
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+	
+
+
+
+
+
+
+</body></html>
