@@ -10,7 +10,7 @@ Este repositório contém o código-fonte desenvolvido em **Jupyter Notebook** p
 
 **O código (Fabiana_Mairton_DeepLearning_TJAL.ipynb) deve ser executado no Jupyter Notebook**, pois contém células sequenciais, logs de execução e visualizações intermediárias que podem não funcionar corretamente fora desse ambiente.
 
-**Ao final deste arquivo, são apresentadas orientações para o ajuste do parâmetro max_itens da seção [8] do Jupyter Notebook, de modo a definir o total de sentenças a serem coletadas no scraping do TJAL.**
+**Ao final deste arquivo, são apresentadas orientações para o ajuste do parâmetro "max_itens" da seção [8] do Jupyter Notebook, de modo a definir o total de sentenças a serem coletadas no scraping do TJAL.**
 
 ---
 
