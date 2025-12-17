@@ -10144,7 +10144,22 @@ Variáveis disponíveis para os modelos:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="13)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-1:-%22Naive-Bayes%22-com-TF-IDF">13) Análise de Sentimento – Modelo 1: "Naive Bayes" com TF-IDF<a class="anchor-link" href="#13)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-1:-%22Naive-Bayes%22-com-TF-IDF">¶</a></h4>
+<blockquote>
+<p>Após as etapas de <em>scraping</em>, limpeza e pré-processamento, obteve-se um <strong>conjunto final de 1.516 sentenças válidas</strong>, utilizadas como base para o treinamento e avaliação dos modelos de análise de sentimento. Para garantir uma avaliação adequada da capacidade de generalização dos modelos, o <em>dataset</em> foi particionado em conjuntos de treino e teste, adotando-se a proporção de <strong>80% para treinamento e 20% para teste</strong>, com estratificação das classes. Dessa forma, <strong>aproximadamente 1.212 sentenças foram utilizadas para o treinamento dos modelos, enquanto 304 sentenças compuseram o conjunto de teste</strong>, reservado exclusivamente para a avaliação de desempenho.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="13)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-1:-%22Naive-Bayes%22-com-TF-IDF">13) Análise de Sentimento – Modelo 1: "Naive Bayes" com TF-IDF<a class="anchor-link" href="#13)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-1:-%22Naive-Bayes%22-com-TF-IDF">¶</a></h4><blockquote>
+<p>Nesta etapa, apresenta-se o desempenho do <strong>modelo Naive Bayes com TF-IDF</strong>, treinado a partir do conjunto de treinamento correspondente a aproximadamente 80% do <em>dataset</em> total e <strong>avaliado exclusivamente sobre o conjunto de teste</strong>, composto por 304 sentenças, o que representa cerca de 20% da base final de dados. Essa estratégia assegura que as métricas apresentadas reflitam a capacidade de generalização do modelo, evitando <em>vieses</em> decorrentes da avaliação em dados previamente vistos durante o treinamento.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -10367,8 +10382,10 @@ Matriz de confusão gerada com sucesso.
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h5 id="Resultados-do-Modelo-Naive-Bayes-(TF-IDF):"><strong>Resultados do Modelo <em>Naive Bayes</em> (TF-IDF):</strong><a class="anchor-link" href="#Resultados-do-Modelo-Naive-Bayes-(TF-IDF):">¶</a></h5><blockquote>
-<p><strong>O modelo apresenta uma taxa de acerto de 81,58% nas sentenças do <em>corpus</em> analisado. Esse percentual pode variar conforme a quantidade de processos incluídos na seção [8]</strong>.</p>
-<p><strong>Negativo:</strong> 153 casos negativos classificados corretamente; apenas 7 erros (5 para positivo e 2 para neutro). Isso significa que o modelo tem "quase certeza" ao identificar improcedência.</p>
+<p><span style="color:#1f77b4"><strong>Obs.: A matriz de confusão apresentada acima refere-se exclusivamente às predições realizadas sobre o <em>conjunto de teste</em>, permitindo analisar a distribuição de acertos e erros entre as classes negativo, positivo e neutro, a partir de dados não utilizados durante o treinamento do modelo</strong>.</span></p>
+<p><strong>O modelo Naive Bayes apresentou acurácia de 81,58% no conjunto de teste, calculada a partir das predições realizadas sobre 304 sentenças não utilizadas durante o treinamento. Esse resultado reflete o desempenho do modelo na tarefa de classificação de sentimento jurídico, considerando o particionamento adotado do *dataset***.
+Os dados a seguir permitem analisar, de forma detalhada, o desempenho do modelo **Naive Bayes</strong> em cada classe de sentimento:<br/>
+<strong>Negativo:</strong> 153 casos negativos classificados corretamente; apenas 7 erros (5 para positivo e 2 para neutro). Isso significa que o modelo tem "quase certeza" ao identificar improcedência.</p>
 <ul>
 <li>Precisão: 0.8742 (quando o modelo diz <code>negativo</code>, ele está certo 87% das vezes).</li>
 <li>Recall: 0.9562 (o modelo identifica quase todos os casos realmente <code>negativos</code>). A alta taxa de recall sugere que muitas sentenças possuem estrutura redacional muito marcada, como “indeferir”, “não acolho”, “julgo improcedente”.</li>
@@ -10416,7 +10433,9 @@ Matriz de confusão gerada com sucesso.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="14)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-2:-BERT-(Pr%C3%A9-treinado---sem-fine-tuning)">14) Análise de Sentimento – Modelo 2: BERT (Pré-treinado - sem <em>fine-tuning</em>)<a class="anchor-link" href="#14)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-2:-BERT-(Pr%C3%A9-treinado---sem-fine-tuning)">¶</a></h4>
+<h4 id="14)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-2:-BERT-(Pr%C3%A9-treinado---sem-fine-tuning)">14) Análise de Sentimento – Modelo 2: BERT (Pré-treinado - sem <em>fine-tuning</em>)<a class="anchor-link" href="#14)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-2:-BERT-(Pr%C3%A9-treinado---sem-fine-tuning)">¶</a></h4><blockquote>
+<p>Nesta etapa, apresenta-se o desempenho do <strong>modelo mBERT</strong>, treinado a partir do conjunto de treinamento correspondente a aproximadamente 80% do <em>dataset</em> total e <strong>avaliado exclusivamente sobre o conjunto de teste</strong>, composto por 304 sentenças, o que representa cerca de 20% da base final de dados. Essa estratégia assegura que as métricas apresentadas reflitam a capacidade de generalização do modelo, evitando <em>vieses</em> decorrentes da avaliação em dados previamente vistos durante o treinamento.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -10689,9 +10708,11 @@ Gerando matriz de confusão...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Resultados-do-Modelo-BERT-Multil%C3%ADngue-sem-Fine-Tuning"><strong>Resultados do Modelo BERT Multilíngue sem Fine-Tuning</strong><a class="anchor-link" href="#Resultados-do-Modelo-BERT-Multil%C3%ADngue-sem-Fine-Tuning">¶</a></h5><blockquote>
-<p><strong>O modelo acerta somente metade das sentenças do <em>corpus</em> analisado (aproximadamente 52,63% das sentenças). Esse percentual pode variar conforme a quantidade de processos incluídos na seção [8]!</strong></p>
-<p><strong>Negativo:</strong> O modelo classificou 159 casos <code>negativos</code> corretamente e 1 caso apenas como neutro. Mas isso ocorreu porque ele classificou praticamente todas as sentenças como negativas, independentemente do conteúdo. Isso significa que o modelo não simplesmente não consegue distinguir nenhuma outra classe e colapsa para o rótulo majoritário.</p>
+<h5 id="**Resultados-do-Modelo-BERT-Multil%C3%ADngue-sem-*Fine-Tuning***">**Resultados do Modelo BERT Multilíngue sem *Fine-Tuning***<a class="anchor-link" href="#**Resultados-do-Modelo-BERT-Multil%C3%ADngue-sem-*Fine-Tuning***">¶</a></h5><blockquote>
+<p><span style="color:#1f77b4"><strong>Obs.: Embora o modelo mBERT seja um modelo pré-treinado em larga escala, sua avaliação neste estudo seguiu a mesma estratégia metodológica adotada para os modelos clássicos, utilizando exclusivamente o conjunto de teste composto por 304 sentenças. Tal escolha visa garantir comparabilidade entre os modelos avaliados, bem como assegurar uniformidade nos critérios de avaliação.</strong> </span></p>
+<p><strong>O modelo mBERT apresentou acurácia de 52,63% no conjunto de teste, calculada a partir das predições realizadas sobre 304 sentenças não utilizadas durante o treinamento. Esse resultado indica desempenho inferior ao observado nos modelos clássicos, sugerindo limitações na aplicação direta do mBERT, sem fine-tuning, à tarefa específica de classificação de sentimento jurídico no contexto analisado.</strong></p>
+<p>Os dados a seguir permitem analisar, de forma detalhada, o desempenho do modelo <strong>mBERT</strong> em cada classe de sentimento:<br/>
+<strong>Negativo:</strong> O modelo classificou 159 casos <code>negativos</code> corretamente e 1 caso apenas como neutro. Mas isso ocorreu porque ele classificou praticamente todas as sentenças como negativas, independentemente do conteúdo. Isso significa que o modelo não simplesmente não consegue distinguir nenhuma outra classe e colapsa para o rótulo majoritário.</p>
 <ul>
 <li>Precisão: 0.5282 (quando o modelo diz “negativo”, ele só acerta porque escolhe negativo para todos os casos).</li>
 <li>Recall: 0.9937 (ele acerta todos os negativos porque praticamente tudo é classificado como negativo).</li>
@@ -10732,7 +10753,9 @@ Gerando matriz de confusão...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="15)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-3:-Logistic-Regression-(TF-IDF)">15) Análise de Sentimento – Modelo 3: Logistic Regression (TF-IDF)<a class="anchor-link" href="#15)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-3:-Logistic-Regression-(TF-IDF)">¶</a></h4>
+<h4 id="15)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-3:-Logistic-Regression-(TF-IDF)">15) Análise de Sentimento – Modelo 3: Logistic Regression (TF-IDF)<a class="anchor-link" href="#15)-An%C3%A1lise-de-Sentimento-%E2%80%93-Modelo-3:-Logistic-Regression-(TF-IDF)">¶</a></h4><blockquote>
+<p>Nesta etapa, apresenta-se o desempenho do <strong>modelo de Regressão Logística (TF-IDF)</strong>, treinado a partir do conjunto de treinamento correspondente a aproximadamente 80% do <em>dataset</em> total e <strong>avaliado exclusivamente sobre o conjunto de teste</strong>, composto por 304 sentenças, o que representa cerca de 20% da base final de dados. Essa estratégia assegura que as métricas apresentadas reflitam a capacidade de generalização do modelo, evitando <em>vieses</em> decorrentes da avaliação em dados previamente vistos durante o treinamento.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -10961,8 +10984,10 @@ Acurácia geral do modelo (Regressão Logística): 0.8882 (88.82%)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h5 id="Resultados-do-Modelo-Regress%C3%A3o-Log%C3%ADstica-(TF-IDF)"><strong>Resultados do Modelo Regressão Logística (TF-IDF)</strong><a class="anchor-link" href="#Resultados-do-Modelo-Regress%C3%A3o-Log%C3%ADstica-(TF-IDF)">¶</a></h5><blockquote>
-<p>O <strong>modelo de Regressão Logística, utilizando a representação TF-IDF</strong>, demonstrou desempenho superior na análise de sentimento das sentenças judiciais. A <strong>acurácia geral</strong> atingiu <strong>88,82%</strong> no <em>corpus</em> analisado, superando os demais modelos avaliados. Ressalta-se que esse percentual pode variar conforme a quantidade de processos incluídos na seção [8].</p>
-<p><strong>Negativo:</strong> O modelo classifica corretamente a maioria das sentenças <code>negativas</code> (153 casos negativos classificados corretamente).</p>
+<p><span style="color:#1f77b4"><strong>Obs.: A matriz de confusão apresentada acima refere-se exclusivamente às predições realizadas sobre o <em>conjunto de teste</em>, permitindo analisar a distribuição de acertos e erros entre as classes negativo, positivo e neutro, a partir de dados não utilizados durante o treinamento do modelo</strong>. </span></p>
+<p><strong>O modelo de Regressão Logística, utilizando representação TF-IDF, apresentou acurácia de 88,82% no conjunto de teste, calculada a partir das predições realizadas sobre 304 sentenças não utilizadas durante o treinamento. Esse resultado indica desempenho superior em relação aos demais modelos avaliados, evidenciando a eficácia da combinação entre vetorização TF-IDF e classificação linear para a tarefa de análise de sentimento em sentenças judiciais.</strong></p>
+<p>Os dados a seguir permitem analisar, de forma detalhada, o desempenho do modelo <strong>Regressão Logística (TF-IDF)</strong> em cada classe de sentimento:<br/>
+<strong>Negativo:</strong> O modelo classifica corretamente a maioria das sentenças <code>negativas</code> (153 casos negativos classificados corretamente).</p>
 <ul>
 <li>Precisão: 0.9386 (quando o modelo prevê <code>negativo</code>, ele está certo 93,8% das vezes).</li>
 <li>Recall: 0.9562 (o modelo identifica quase todos os casos realmente <code>negativos</code>).</li>
@@ -11390,9 +11415,10 @@ Comparação concluída com sucesso!
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h5 id="Resultados-da-Compara%C3%A7%C3%A3o-entre-os-3-modelos"><strong>Resultados da Comparação entre os 3 modelos</strong><a class="anchor-link" href="#Resultados-da-Compara%C3%A7%C3%A3o-entre-os-3-modelos">¶</a></h5><blockquote>
-<p>O modelo <strong>BERT multilíngue pré-treinado</strong> teve baixo desempenho (acurácia ≈ 52,63%) porque ele não foi treinado no domínio jurídico e porque utiliza uma escala de sentimento baseada em <em>reviews</em>, que não se adequa à estrutura e ao propósito linguístico de sentenças judiciais. O modelo classificou todos os textos como <code>negativos</code>, evidenciando incapacidade de capturar nuances entre decisões procedentes, improcedentes e parcialmente procedentes. Portanto, o uso do modelo sem fine-tuning não é apropriado para esta tarefa, ao contrário do <strong>Naive Bayes com TF-IDF</strong>, que demonstrou desempenho superior (acurácia ≈ 81,58%).
-O modelo <strong>Regressão Logística com TF-IDF</strong> apresenta desempenho excepcional para análise de sentimento jurídico, alcançando 88,82% de acurácia geral e métricas robustas em todas as classes.
-Isso reforça que <strong>modelos lineares + TF-IDF</strong> ainda são poderosos para linguagem jurídica. Mas há clara oportunidade de ganho adicional com BERT treinado especificamente no seu conjunto de dados.</p>
+<p>Os resultados obtidos evidenciam diferenças significativas de desempenho entre os modelos avaliados para a tarefa de análise de sentimento em sentenças judiciais. O <strong>modelo mBERT multilíngue pré-treinado, utilizado sem etapa de ajuste fino (<em>fine-tuning</em>)</strong>, apresentou <strong>acurácia de 52,63% no conjunto de teste</strong>, desempenho inferior aos modelos clássicos. Tal resultado sugere limitações na aplicação direta de modelos de linguagem geral a tarefas especializadas no domínio jurídico, em especial quando não há adaptação ao vocabulário, à estrutura sintática e às convenções discursivas próprias das decisões judiciais. A distribuição das predições indica dificuldade do modelo em discriminar adequadamente entre as classes procedente, improcedente e procedente em parte, reforçando a necessidade de especialização do modelo ao domínio analisado.
+Em contraste, os <strong>modelos clássicos baseados em vetorização TF-IDF</strong> apresentaram desempenho substancialmente superior. O <strong>Naive Bayes alcançou acurácia de 81,58% no conjunto de teste</strong>, demonstrando boa capacidade de generalização e desempenho particularmente robusto na identificação de sentenças improcedentes.
+O <strong>modelo de Regressão Logística com TF-IDF apresentou o melhor desempenho entre os algoritmos avaliados, atingindo acurácia de 88,82%</strong>, além de métricas equilibradas de precisão, recall e F1-score em todas as classes. Esse resultado indica que modelos lineares bem ajustados, aliados a representações vetoriais adequadas, permanecem altamente eficazes para tarefas de processamento de linguagem natural em contextos jurídicos caracterizados por forte padronização linguística e recorrência terminológica.<br/>
+<span style="color:#1f77b4"><strong>De forma geral, os achados deste trabalho reforçam que abordagens clássicas de aprendizado supervisionado ainda constituem soluções competitivas e eficientes para análise de sentimento jurídico. Ao mesmo tempo, os resultados obtidos com o mBERT apontam para oportunidades de ganho futuro por meio do treinamento ou ajuste fino de modelos baseados em <em>Transformers</em> sobre corpora jurídicos específicos, o que pode permitir a captura mais precisa de nuances semânticas e contextuais presentes nas decisões judiciais.</strong> </span></p>
 </blockquote>
 </div>
 </div>
